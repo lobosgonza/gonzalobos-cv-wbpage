@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# Gonzalo Lobos - Especialista en Ecommerce / Ecommerce Specialist
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esta es mi página personal donde muestro mi perfil profesional en Ecommerce, gestión de proyectos y desarrollo web. Aquí podrás encontrar información sobre mis competencias, experiencia laboral y las herramientas que utilizo para optimizar estrategias digitales y mejorar la experiencia del usuario.
 
-## Available Scripts
+This is my personal webpage where I showcase my professional profile in Ecommerce, project management, and web development. Here, you will find information about my skills, work experience, and the tools I use to optimize digital strategies and enhance the user experience.
 
-In the project directory, you can run:
+## Descripción / Description
 
-### `npm start`
+Soy Gonzalo Lobos, especialista en Ecommerce y desarrollo de proyectos digitales con experiencia en UX/UI. He trabajado con marcas como Nespresso y soy experto en el uso de herramientas como Google Analytics para optimizar la experiencia del cliente en entornos digitales.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+I am Gonzalo Lobos, a specialist in Ecommerce and digital project development with experience in UX/UI. I have worked with brands like Nespresso, and I am an expert in using tools like Google Analytics to optimize customer experiences in digital environments.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Tecnologías utilizadas / Technologies Used:
 
-### `npm test`
+- HTML5
+- CSS3
+- JavaScript (React)
+- Font Awesome for icons
+- Google Analytics
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## SEO y Marketing / SEO and Marketing
 
-### `npm run build`
+Esta página está optimizada para motores de búsqueda (SEO) y cuenta con metaetiquetas que permiten una mejor visibilidad en redes sociales, como las etiquetas Open Graph para Facebook y las Twitter Cards. Además, he integrado Google Analytics para realizar un seguimiento de las visitas y analizar el comportamiento de los usuarios.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This website is SEO-optimized and includes meta tags for better visibility on social media, such as Open Graph tags for Facebook and Twitter Cards. I have also integrated Google Analytics to track visits and analyze user behavior.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Metaetiquetas utilizadas / Meta Tags Used:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Descripción / Description**: Gonzalo Lobos - Ecommerce | Gestión de Proyectos | Desarrollo Web. Experto en optimizar estrategias digitales y mejorar la experiencia del usuario. / Gonzalo Lobos - Ecommerce | Project Management | Web Development. Expert in optimizing digital strategies and improving user experience.
+- **Palabras clave / Keywords**: Ecommerce, Gestión de Proyectos, Desarrollo Web, UX/UI, Nespresso, Google Analytics. / Ecommerce, Project Management, Web Development, UX/UI, Nespresso, Google Analytics.
+- **Open Graph**: Para compartir contenido fácilmente en redes sociales. / For easy social media content sharing.
+- **Twitter Card**: Para mejorar la visibilidad en Twitter. / To enhance visibility on Twitter.
 
-### `npm run eject`
+## Instrucciones para ejecutar el proyecto localmente / How to Run Locally
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clona este repositorio:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   git clone https://github.com/tu-usuario/mi-pagina-personal.git
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   Clone this repository:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   git clone https://github.com/your-username/my-personal-page.git
+   ```
 
-## Learn More
+2. Entra en el directorio del proyecto:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   cd mi-pagina-personal
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   Navigate to the project directory:
 
-### Code Splitting
+   ```bash
+   cd my-personal-page
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. Instala las dependencias (si estás usando React):
 
-### Analyzing the Bundle Size
+   ```bash
+   npm install
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   Install dependencies (if using React):
 
-### Making a Progressive Web App
+   ```bash
+   npm install
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+4. Ejecuta el proyecto:
+   ```bash
+   npm start
+   ```
+   Run the project:
+   ```bash
+   npm start
+   ```
 
-### Advanced Configuration
+## Contribuciones / Contributions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Si tienes alguna sugerencia o mejora para mi página personal, no dudes en abrir un issue o enviar un pull request. ¡Toda retroalimentación es bienvenida!
 
-### Deployment
+If you have any suggestions or improvements for my personal page, feel free to open an issue or submit a pull request. Any feedback is welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Licencia / License
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este proyecto está bajo la licencia MIT. / This project is licensed under the MIT License.
