@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "target": "gonzalobos.com",
     "public": "build",
     "ignore": [
       "firebase.json",

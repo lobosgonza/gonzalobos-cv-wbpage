@@ -1,0 +1,48 @@
+[debug] [2024-10-12T01:56:53.548Z] ----------------------------------------------------------------------
+[debug] [2024-10-12T01:56:53.552Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\gonza\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --token YOUR_FIREBASE_TOKEN
+[debug] [2024-10-12T01:56:53.552Z] CLI Version:   13.20.2
+[debug] [2024-10-12T01:56:53.552Z] Platform:      win32
+[debug] [2024-10-12T01:56:53.552Z] Node Version:  v20.15.0
+[debug] [2024-10-12T01:56:53.553Z] Time:          Fri Oct 11 2024 22:56:53 GMT-0300 (hora de verano de Chile)
+[debug] [2024-10-12T01:56:53.553Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-10-12T01:56:53.628Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-10-12T01:56:53.628Z] > authorizing via --token option
+[warn] !  Authenticating with `--token` is deprecated and will be removed in a future major version of `firebase-tools`. Instead, use a service account key with `GOOGLE_APPLICATION_CREDENTIALS`: https://cloud.google.com/docs/authentication/getting-started 
+[debug] [2024-10-12T01:56:53.630Z] [iam] checking project gonzalo-lobos-ba5e7 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-10-12T01:56:53.632Z] No OAuth tokens found
+[debug] [2024-10-12T01:56:53.632Z] No OAuth tokens found
+[debug] [2024-10-12T01:56:53.633Z] > refreshing access token with scopes: []
+[debug] [2024-10-12T01:56:53.634Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-10-12T01:56:53.634Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-10-12T01:56:53.766Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2024-10-12T01:56:53.766Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-10-12T01:56:53.766Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/gonzalo-lobos-ba5e7:testIamPermissions [none]
+[debug] [2024-10-12T01:56:53.766Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/gonzalo-lobos-ba5e7:testIamPermissions x-goog-quota-user=projects/gonzalo-lobos-ba5e7
+[debug] [2024-10-12T01:56:53.766Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/gonzalo-lobos-ba5e7:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-10-12T01:56:54.682Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/gonzalo-lobos-ba5e7:testIamPermissions 401
+[debug] [2024-10-12T01:56:54.682Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/gonzalo-lobos-ba5e7:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2024-10-12T01:56:54.682Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2024-10-12T01:56:54.683Z] No OAuth tokens found
+[debug] [2024-10-12T01:56:54.683Z] No OAuth tokens found
+[debug] [2024-10-12T01:56:54.683Z] > refreshing access token with scopes: []
+[debug] [2024-10-12T01:56:54.684Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-10-12T01:56:54.684Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-10-12T01:56:54.715Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2024-10-12T01:56:54.715Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-10-12T01:56:54.716Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-10-12T01:56:54.717Z] No OAuth tokens found
+[debug] [2024-10-12T01:56:54.717Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/gonzalo-lobos-ba5e7 [none]
+[debug] [2024-10-12T01:56:54.807Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/gonzalo-lobos-ba5e7 401
+[debug] [2024-10-12T01:56:54.807Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/gonzalo-lobos-ba5e7 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2024-10-12T01:56:54.807Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2024-10-12T01:56:54.807Z] No OAuth tokens found
+[debug] [2024-10-12T01:56:54.807Z] No OAuth tokens found
+[debug] [2024-10-12T01:56:54.808Z] > refreshing access token with scopes: []
+[debug] [2024-10-12T01:56:54.808Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-10-12T01:56:54.808Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-10-12T01:56:54.834Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2024-10-12T01:56:54.834Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-10-12T01:56:54.835Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
