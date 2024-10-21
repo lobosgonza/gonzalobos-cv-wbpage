@@ -1,0 +1,115 @@
+{
+    "navbar": {
+        "about": "¿Quién Soy?",
+        "experience": "Experiencia",
+        "studies": "Estudios",
+        "skills": "Habilidades",
+        "contact": "Contacto"
+    },
+    "footer": {
+        "copyright": "Todos los derechos reservados."
+    },
+    "home": {
+        "welcome": "¡Bienvenido a mi portafolio!"
+    },
+    "experience": {
+        "sectionTitle": "Experiencia",
+        "jobTitle": "Ecommerce Merchandising Specialist",
+        "fullTime": "Jornada completa",
+        "since": "{{years}} años y {{months}} meses",
+        "responsibilities": [
+            "Liderar la estrategia de Ecommerce de nespresso.com.",
+            "Implementación de mejoras UX/UI.",
+            "Monitoreo del proceso de compra en Nespresso.cl.",
+            "Desarrollar campañas online como Cyber Day y Black Friday.",
+            "Seguimiento de KPIs a través de Google Analytics.",
+            "Mejorar el posicionamiento SEO del sitio web."
+        ],
+        "pastExperiences": [
+            {
+                "title": "Gestión de Desarrollo de Capacitaciones",
+                "place": "Todo Mejora",
+                "type": "Jornada completa",
+                "duration": "marzo de 2021 - diciembre de 2021 (10 meses)",
+                "location": "Santiago, Región Metropolitana de Santiago, Chile",
+                "responsibilities": [
+                    "Coordinación de capacitaciones en salud y educación.",
+                    "Control de ingresos y gastos.",
+                    "Coordinación de pagos con instituciones."
+                ]
+            },
+            {
+                "title": "Desarrollador de front-end",
+                "place": "Simple y Creativo",
+                "type": "Jornada completa",
+                "duration": "marzo de 2020 - febrero de 2021 (1 año)",
+                "location": "Santiago, Región Metropolitana de Santiago, Chile",
+                "responsibilities": [
+                    "Generación de Mockups y Wireframes para clientes."
+                ]
+            }
+        ]
+    },
+    "about": {
+        "title": "Un placer conocerte",
+        "introduction": "Soy <strong>Ingeniero Comercial con especialización en Comercio Electrónico y Desarrollo Web</strong>, con una sólida trayectoria liderando proyectos de alto impacto en entornos digitales. Mi experiencia abarca la <strong>gestión de estrategias de Ecommerce</strong>, la <strong>optimización de experiencias de usuario (UX/UI)</strong> y la <strong>implementación de campañas de alto rendimiento</strong> en sitios web y aplicaciones móviles. He colaborado con marcas globales como <strong>Nespresso</strong>, desarrollando soluciones digitales que incrementan la conversión y mejoran la satisfacción del cliente.",
+        "skills": "Mi pasión por la tecnología y los canales digitales me ha permitido integrar <strong>habilidades técnicas y analíticas</strong> para diseñar experiencias de compra centradas en el usuario y monitorear el desempeño a través de herramientas como <strong>Google Analytics</strong>. Además, cuento con experiencia en {{strong2}}desarrollo front-end{{/strong2}}, donde combino mis conocimientos de <strong>diseño</strong> y <strong>programación</strong> para crear interfaces funcionales y visualmente atractivas.",
+        "callToAction": "Si estás buscando a alguien que combine habilidades estratégicas y técnicas para llevar tu proyecto al siguiente nivel, no dudes en contactarme. ¡Estoy listo para nuevos desafíos y oportunidades!"
+    },
+    "studies": {
+        "title": "Estudios",
+        "items": [
+            {
+                "title": "Magíster en Psicología Organizacional",
+                "place": "Universidad Adolfo Ibáñez",
+                "duration": "2016 - 2017",
+                "location": "Santiago, Región Metropolitana de Santiago, Chile"
+            },
+            {
+                "title": "Ingeniería Comercial, Mención en Administración de Empresas",
+                "place": "Universidad Adolfo Ibáñez",
+                "duration": "2011 - 2015",
+                "location": "Santiago, Región Metropolitana de Santiago, Chile"
+            },
+            {
+                "title": "Técnico en Fotografía Publicitaria",
+                "place": "Instituto Profesional ARCOS",
+                "duration": "2018 - 2020",
+                "location": "Santiago, Región Metropolitana de Santiago, Chile"
+            }
+        ]
+    },
+    "skills": {
+        "title": "Habilidades",
+        "items": [
+            {
+                "title": "Inglés",
+                "description": "Medio.",
+                "degree": "5"
+            },
+            {
+                "title": "Desarrollo Web",
+                "description": "HTML, CSS, JS.",
+                "degree": "8"
+            },
+            {
+                "title": "Diseño",
+                "description": "Photoshop, Illustrator, Lightroom, Capture One.",
+                "degree": "8"
+            },
+            {
+                "title": "Negocios y Organización",
+                "description": "Gestión de proyectos, Análisis de negocios, Planificación estratégica.",
+                "degree": "8"
+            }
+        ]
+    },
+    "contact": {
+        "title": "Contacto",
+        "email": "Correo Electrónico: ",
+        "phone": "Teléfono: ",
+        "whatsapp": "WhatsApp",
+        "linkedin": "LinkedIn",
+        "github": "GitHub"
+    }
+}

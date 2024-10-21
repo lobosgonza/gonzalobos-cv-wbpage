@@ -1,9 +1,15 @@
 'use client'; // Indica que este es un componente del cliente
 
-import React, { useState } from 'react';
-import { AnimatePresence, motion } from 'framer-motion'; // Importar framer-motion
+import React, { useState, useEffect } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
 import 'bulma/css/bulma.css';
 import './styles/styles.css';
+
+import { BrowserRouter as Router, Routes, Route, Navigate, useParams } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import i18n from './i18n.js'; // Configuración de i18n
+
+
 import Navbar from './components/Navbar.js'
 import Footer from './components/Footer'
 import Home from './sections/Home.js';
@@ -17,10 +23,61 @@ import Skills from './sections/Skills.js';
 
 function App() {
 
+
+  const { i18n } = useTranslation();
+
+  // Cambiar el idioma dinámicamente según la ruta activa
+  const updateHtmlLang = (lang) => {
+    document.documentElement.lang = lang;
+  };
+
+
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Navigate to="/en" />} />
+        <Route
+          path="/:lang/*"
+          element={
+            <LanguageWrapper onChangeLang={updateHtmlLang}>
+              <MainLayout />
+            </LanguageWrapper>
+          }
+        />
+      </Routes>
+    </Router>
+  );
+}
+
+
+
+// Wrapper para cambiar el idioma dinámicamente
+const LanguageWrapper = ({ onChangeLang, children }) => {
+  const { lang } = useParams();
+
+  useEffect(() => {
+    i18n.changeLanguage(lang); // Cambiar idioma en i18n
+    onChangeLang(lang); // Cambiar atributo lang en <html>
+  }, [lang, onChangeLang]);
+
+  return children;
+};
+
+
+
+
+
+
+
+// Componente principal con animaciones y Footer
+const MainLayout = () => {
+
+
   // Crear un estado para manejar el componente actual
   const [currentComponent, setCurrentComponent] = useState('Home');
 
-  // Definir una función para cambiar el componente
+
+  // Función que renderiza los componentes según el estado
   const renderComponent = () => {
     switch (currentComponent) {
       case 'Home':
@@ -36,31 +93,28 @@ function App() {
       case 'Contact':
         return <Contact onBtnClick={setCurrentComponent} />;
       default:
-        return <About onBtnClick={setCurrentComponent} />;
+        return <Home onBtnClick={setCurrentComponent} />;
     }
   };
 
 
-
   return (
     <div>
-      {/* Navbar recibe setCurrentComponent como prop */}
       {/* <Navbar onBtnClick={setCurrentComponent} /> */}
-      <div className='container'>
-
+      <div className="container">
         <motion.div
-          className='container'
+          className="container"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
           <Home onBtnClick={setCurrentComponent} />
         </motion.div>
-        {/* Contenedor con AnimatePresence para animaciones al desmontar */}
-        <AnimatePresence mode='wait'>
+
+        <AnimatePresence mode="wait">
           <motion.div
-            key={currentComponent} // Se asegura de que cada componente tenga una animación independiente
-            className='container'
+            key={currentComponent}
+            className="container"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -71,9 +125,11 @@ function App() {
         </AnimatePresence>
       </div>
       <Footer />
-
     </div>
-  );
+
+  )
+
 }
+
 
 export default App;

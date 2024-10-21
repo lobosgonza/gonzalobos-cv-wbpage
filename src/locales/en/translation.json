@@ -1,0 +1,115 @@
+{
+    "navbar": {
+        "about": "About me",
+        "experience": "Experience",
+        "studies": "Studies",
+        "skills": "Skills",
+        "contact": "Contact"
+    },
+    "footer": {
+        "copyright": "All rights reserved."
+    },
+    "home": {
+        "welcome": "Welcome to my portfolio!"
+    },
+    "experience": {
+        "sectionTitle": "Experience",
+        "jobTitle": "Ecommerce Merchandising Specialist",
+        "fullTime": "Full-time",
+        "since": "{{years}} years and {{months}} months",
+        "responsibilities": [
+            "Lead the Ecommerce strategy for nespresso.com.",
+            "Implement UX/UI improvements.",
+            "Monitor the purchase process on Nespresso.cl.",
+            "Develop online campaigns like Cyber Day and Black Friday.",
+            "Track KPIs through Google Analytics.",
+            "Improve the SEO positioning of the website."
+        ],
+        "pastExperiences": [
+            {
+                "title": "Training Development Management",
+                "place": "Todo Mejora",
+                "type": "Full-time",
+                "duration": "March 2021 - December 2021 (10 months)",
+                "location": "Santiago, Metropolitan Region of Santiago, Chile",
+                "responsibilities": [
+                    "Coordinate training in health and education sectors.",
+                    "Manage income and expenses.",
+                    "Coordinate payments with institutions."
+                ]
+            },
+            {
+                "title": "Front-end Developer",
+                "place": "Simple y Creativo",
+                "type": "Full-time",
+                "duration": "March 2020 - February 2021 (1 year)",
+                "location": "Santiago, Metropolitan Region of Santiago, Chile",
+                "responsibilities": [
+                    "Create mockups and wireframes for clients."
+                ]
+            }
+        ]
+    },
+    "about": {
+        "title": "A Pleasure to Meet You",
+        "introduction": "I am a <strong>Commercial Engineer specialized in E-commerce and Web Development</strong>, with solid experience leading high-impact projects in digital environments. My background includes <strong>managing e-commerce strategies</strong>, <strong>optimizing user experiences (UX/UI)</strong>, and <strong>implementing high-performance campaigns</strong> on websites and mobile applications. I have collaborated with global brands like <strong>Nespresso</strong>, developing digital solutions that increase conversion rates and enhance customer satisfaction.",
+        "skills": "My passion for technology and digital channels has allowed me to integrate <strong>technical and analytical skills</strong> to design user-centered shopping experiences and monitor performance through tools like <strong>Google Analytics</strong>. I also have experience in <strong>front-end development</strong>, where I combine my knowledge of <strong>design</strong> and <strong>programming</strong> to create functional and visually appealing interfaces.",
+        "callToAction": "If you are looking for someone who combines strategic and technical skills to take your project to the next level, don't hesitate to contact me. I'm ready for new challenges and opportunities!"
+    },
+    "studies": {
+        "title": "Studies",
+        "items": [
+            {
+                "title": "Master in Organizational Psychology",
+                "place": "Adolfo Ibáñez University",
+                "duration": "2016 - 2017",
+                "location": "Santiago, Santiago Metropolitan Region, Chile"
+            },
+            {
+                "title": "Business Engineering, Specialization in Business Administration",
+                "place": "Adolfo Ibáñez University",
+                "duration": "2011 - 2015",
+                "location": "Santiago, Santiago Metropolitan Region, Chile"
+            },
+            {
+                "title": "Technical Degree in Advertising Photography",
+                "place": "ARCOS Professional Institute",
+                "duration": "2018 - 2020",
+                "location": "Santiago, Santiago Metropolitan Region, Chile"
+            }
+        ]
+    },
+    "skills": {
+        "title": "Skills",
+        "items": [
+            {
+                "title": "English",
+                "description": "Intermediate.",
+                "degree": "5"
+            },
+            {
+                "title": "Web Development",
+                "description": "HTML, CSS, JS.",
+                "degree": "8"
+            },
+            {
+                "title": "Design",
+                "description": "Photoshop, Illustrator, Lightroom, Capture One.",
+                "degree": "8"
+            },
+            {
+                "title": "Business and Organization",
+                "description": "Project management, Business analysis, Strategic planning.",
+                "degree": "8"
+            }
+        ]
+    },
+    "contact": {
+        "title": "Contact",
+        "email": "Email:",
+        "phone": "Phone:",
+        "whatsapp": "WhatsApp",
+        "linkedin": "LinkedIn",
+        "github": "GitHub"
+    }
+}

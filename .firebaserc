@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "gonzalo-lobos-ba5e7"
-  }
+  },
+  "targets": {
+    "gonzalo-lobos-ba5e7": {
+      "hosting": {
+        "gonzalobos.com": [
+          "gonzalo-lobos-ba5e7"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

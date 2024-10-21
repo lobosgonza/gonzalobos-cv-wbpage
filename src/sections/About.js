@@ -1,18 +1,29 @@
-import React from "react"
-import Card from "../components/Card"
-
+import React from "react";
+import Card from "../components/Card";
+import { motion } from "framer-motion"; // Importa framer-motion
+import { Trans, useTranslation } from "react-i18next"; // Importa react-i18next
 
 function About() {
+    const { t } = useTranslation(); // Hook de traducción
 
-    return (<>
-        {/* Sección 2: Sobre mí */}
-        <Card id='informacion-personal' title='Un placer conocerte'>
-            <p>Soy <strong>Ingeniero Comercial con especialización en Comercio Electrónico y Desarrollo Web</strong>, con una sólida trayectoria liderando proyectos de alto impacto en entornos digitales. Mi experiencia abarca la <strong>gestión de estrategias de Ecommerce</strong>, la <strong>optimización de experiencias de usuario (UX/UI)</strong> y la <strong>implementación de campañas de alto rendimiento</strong> en sitios web y aplicaciones móviles. He colaborado con marcas globales como <strong>Nespresso</strong>, desarrollando soluciones digitales que incrementan la conversión y mejoran la satisfacción del cliente.</p> <p>Mi pasión por la tecnología y los canales digitales me ha permitido integrar <strong>habilidades técnicas y analíticas</strong> para diseñar experiencias de compra centradas en el usuario y monitorear el desempeño a través de herramientas como <strong>Google Analytics</strong>. Además, cuento con experiencia en <strong>desarrollo front-end</strong>, donde combino mis conocimientos de <strong>diseño</strong> y <strong>programación</strong> para crear interfaces funcionales y visualmente atractivas.</p> <p>Si estás buscando a alguien que combine <strong>habilidades estratégicas y técnicas</strong> para llevar tu proyecto al siguiente nivel, no dudes en contactarme. ¡Estoy listo para nuevos desafíos y oportunidades!</p>
-            <div className='buttons is-centered'></div>
-        </Card>
-
-    </>)
+    return (
+        <>
+            <Card id="informacion-personal" title={t("about.title")}>
+                <p>
+                    <Trans i18nKey="about.introduction">
+                        I am a <strong>Commercial Engineer specialized in E-commerce and Web Development</strong>, with solid experience leading high-impact projects in digital environments. My background includes <strong>managing e-commerce strategies</strong>, <strong>optimizing user experiences (UX/UI)</strong>, and <strong>implementing high-performance campaigns</strong> on websites and mobile applications. I have collaborated with global brands like <strong>Nespresso</strong>, developing digital solutions that increase conversion rates and enhance customer satisfaction.
+                    </Trans>
+                </p>
+                <p>
+                    <Trans i18nKey="about.skills">
+                        My passion for technology and digital channels has allowed me to integrate <strong>technical and analytical skills</strong> to design user-centered shopping experiences and monitor performance through tools like <strong>Google Analytics</strong>. I also have experience in <strong>front-end development</strong>, where I combine my knowledge of <strong>design</strong> and <strong>programming</strong> to create functional and visually appealing interfaces.
+                    </Trans>
+                </p>
+                <p>{t("about.callToAction")}</p>
+                <div className="buttons is-centered"></div>
+            </Card>
+        </>
+    );
 }
 
-
-export default About
+export default About;
