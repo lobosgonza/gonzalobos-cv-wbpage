@@ -1,34 +1,40 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#000000" />
-  <meta name="description"
-    content="Gonzalo Lobos - Ecommerce | Gestión de Proyectos | Desarrollo Web. Experto en optimizar estrategias digitales y mejorar la experiencia del usuario." />
-  <meta name="keywords" content="Ecommerce, Gestión de Proyectos, Desarrollo Web, UX/UI, Nespresso, Google Analytics" />
+  <meta name="description" id="meta-description"
+    content="Gonzalo Lobos - Ecommerce | Project Management | Web Development. Expert in optimizing digital strategies and enhancing user experience." />
+  <meta name="keywords" id="meta-keywords"
+    content="Ecommerce, Project Management, Web Development, UX/UI, Nespresso, Google Analytics" />
   <meta name="author" content="Gonzalo Lobos" />
 
   <link rel="icon" href="/logo_GonzaloLobos_15x15.png" />
   <link rel="apple-touch-icon" href="/logo192.png" />
   <link rel="manifest" href="/manifest.json" />
 
-  <title>Gonzalo Lobos - Especialista en Ecommerce</title>
+  <!-- Canonical link for the English version -->
+  <link rel="canonical" href="https://gonzalobos.com/en" />
+
+
+  <title id="page-title">Gonzalo Lobos - Ecommerce Specialist</title>
+
 
   <!-- Open Graph meta tags for social media sharing -->
-  <meta property="og:title" content="Gonzalo Lobos - Especialista en Ecommerce" />
+  <meta property="og:title" content="Gonzalo Lobos - Ecommerce Specialist" />
   <meta property="og:description"
-    content="Experto en estrategias de ecommerce y gestión de proyectos con un enfoque en mejorar la experiencia del usuario." />
+    content="Expert in ecommerce strategies and project management with a focus on enhancing user experience." />
   <meta property="og:image" content="/logo192.png" />
-  <meta property="og:url" content="https://gonzalobos.com/" />
+  <meta property="og:url" content="https://gonzalobos.com/en" />
   <meta property="og:type" content="website" />
 
   <!-- Twitter Card meta tags for social media sharing -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Gonzalo Lobos - Especialista en Ecommerce" />
+  <meta name="twitter:title" content="Gonzalo Lobos - Ecommerce Specialist" />
   <meta name="twitter:description"
-    content="Experto en estrategias de ecommerce y gestión de proyectos con un enfoque en mejorar la experiencia del usuario." />
+    content="Expert in ecommerce strategies and project management with a focus on enhancing user experience." />
   <meta name="twitter:image" content="/logo192.png" />
 </head>
 <!-- Google tag (gtag.js) -->
@@ -37,9 +43,29 @@
   window.dataLayer = window.dataLayer || [];
   function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
-
   gtag('config', 'G-Q0B3FZXRWM');
+
+  // Función para cambiar metadatos según el idioma
+  function updateMetaData(lang) {
+    if (lang === 'es') {
+      document.documentElement.lang = 'es';
+      document.getElementById('meta-description').content = "Gonzalo Lobos - Ecommerce | Gestión de Proyectos | Desarrollo Web. Experto en optimizar estrategias digitales y mejorar la experiencia del usuario.";
+      document.getElementById('meta-keywords').content = "Ecommerce, Gestión de Proyectos, Desarrollo Web, UX/UI, Nespresso, Google Analytics";
+      document.getElementById('page-title').innerText = "Gonzalo Lobos - Especialista en Ecommerce";
+    } else {
+      document.documentElement.lang = 'en';
+      document.getElementById('meta-description').content = "Gonzalo Lobos - Ecommerce | Project Management | Web Development. Expert in optimizing digital strategies and enhancing user experience.";
+      document.getElementById('meta-keywords').content = "Ecommerce, Project Management, Web Development, UX/UI, Nespresso, Google Analytics";
+      document.getElementById('page-title').innerText = "Gonzalo Lobos - Ecommerce Specialist";
+    }
+  }
+
+  // Llamar a la función según el idioma deseado
+  const lang = window.location.pathname.split('/')[1]; // Asumiendo que la ruta contiene el idioma
+  updateMetaData(lang);
 </script>
+
+
 
 <body>
   <div id="root"></div>

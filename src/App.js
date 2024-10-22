@@ -39,7 +39,7 @@ function App() {
         <Route
           path="/:lang/*"
           element={
-            <LanguageWrapper onChangeLang={updateHtmlLang}>
+            <LanguageWrapper>
               <MainLayout />
             </LanguageWrapper>
           }
@@ -52,13 +52,14 @@ function App() {
 
 
 // Wrapper para cambiar el idioma dinámicamente
-const LanguageWrapper = ({ onChangeLang, children }) => {
+const LanguageWrapper = ({ children }) => {
   const { lang } = useParams();
 
+  // Cambiar idioma en i18n y en el atributo lang del HTML
   useEffect(() => {
     i18n.changeLanguage(lang); // Cambiar idioma en i18n
-    onChangeLang(lang); // Cambiar atributo lang en <html>
-  }, [lang, onChangeLang]);
+    document.documentElement.lang = lang; // Cambiar atributo lang en <html>
+  }, [lang]);
 
   return children;
 };
