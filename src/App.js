@@ -36,14 +36,8 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Navigate to="/en" />} />
-        <Route
-          path="/:lang/*"
-          element={
-            <LanguageWrapper>
-              <MainLayout />
-            </LanguageWrapper>
-          }
-        />
+        <Route path="/:lang" element={<LanguageWrapper onChangeLang={updateHtmlLang}><MainLayout /></LanguageWrapper>} />
+        <Route path="/:lang/*" element={<LanguageWrapper onChangeLang={updateHtmlLang}><MainLayout /></LanguageWrapper>} />
       </Routes>
     </Router>
   );
