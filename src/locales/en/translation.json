@@ -46,7 +46,32 @@
                 "duration": "March 2020 - February 2021 (1 year)",
                 "location": "Santiago, Metropolitan Region of Santiago, Chile",
                 "responsibilities": [
-                    "Create mockups and wireframes for clients."
+                    "Coordination with clients to create Mockups and Wireframes tailored to their needs for requested website development."
+                ]
+            },
+            {
+                "title": "Photography Technician",
+                "place": "Estudio FE",
+                "type": "Internship",
+                "duration": "October 2019 - February 2021 (1 year)",
+                "location": "Santiago, Metropolitan Region of Santiago, Chile",
+                "responsibilities": [
+                    "Assistance in photographic and audiovisual productions for major brands.",
+                    "Coordination of casting for photographic and audiovisual projects."
+                ]
+            },
+            {
+                "title": "Marketing Product Management",
+                "place": "Grupo Copesa",
+                "type": "Internship",
+                "duration": "October 2019 - February 2021 (1 year)",
+                "location": "Santiago, Metropolitan Region of Santiago, Chile",
+                "responsibilities": [
+                    "Coordination for the implementation of graphic materials in La Tercera, La Hora, Motores, and Paula.",
+                    "Coordination with the design team to create graphic materials for subscription campaigns for La Tercera newspaper.",
+                    "Coordination with the layout team for the implementation of graphics in the newspaper on scheduled dates.",
+                    "Drafting contracts with various suppliers for subscription-related products for the newspaper.",
+                    "Monitoring income and expenses for the subscription area of La Tercera."
                 ]
             }
         ]
@@ -77,6 +102,12 @@
                 "place": "ARCOS Professional Institute",
                 "duration": "2018 - 2020",
                 "location": "Santiago, Santiago Metropolitan Region, Chile"
+            },
+            {
+                "title": "The Complete 2024 Web Development Bootcamp",
+                "place": "UDEMY",
+                "duration": "2020",
+                "location": "Online Course"
             }
         ]
     },

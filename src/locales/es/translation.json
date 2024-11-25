@@ -46,7 +46,32 @@
                 "duration": "marzo de 2020 - febrero de 2021 (1 año)",
                 "location": "Santiago, Región Metropolitana de Santiago, Chile",
                 "responsibilities": [
-                    "Generación de Mockups y Wireframes para clientes."
+                    "Coordinación con clientes para generar Mockups y Wireframes acordes a sus necesidades para el desarrollo de páginas web solicitadas."
+                ]
+            },
+            {
+                "title": "Técnico en Fotografía",
+                "place": "Estudio FE",
+                "type": "Contrato de prácticas",
+                "duration": "octubre de 2019 - febrero de 2021 (1 año)",
+                "location": "Santiago, Región Metropolitana de Santiago, Chile",
+                "responsibilities": [
+                    "Asistencia en producciones fotográficas y audiovisuales para grandes marcas.",
+                    "Coordinacion de casting para proyectos fotográficos y audiovisuales."
+                ]
+            },
+            {
+                "title": "Marketing Product Management",
+                "place": "Grupo Copesa",
+                "type": "Contrato de prácticas",
+                "duration": "octubre de 2019 - febrero de 2021 (1 año)",
+                "location": "Santiago, Región Metropolitana de Santiago, Chile",
+                "responsibilities": [
+                    "Coordinación para la implementación de material gráfico en La Tercera, La Hora, Motores y Paula.",
+                    "Coordinación con el área de diseño para la construcción de material gráfico para campañas de suscripción al periódico La Tercera.",
+                    "Coordinación con el área de diagramación para la implementación de gráficos en el periódico en las fechas establecidas.",
+                    "Generación de contratos con diferentes proveedores para productos de suscripción al periódico.",
+                    "Control de ingresos y gastos del area de suscripciones de La Tercera."
                 ]
             }
         ]
@@ -77,6 +102,12 @@
                 "place": "Instituto Profesional ARCOS",
                 "duration": "2018 - 2020",
                 "location": "Santiago, Región Metropolitana de Santiago, Chile"
+            },
+            {
+                "title": "The Complete 2024 Web Development Bootcamp",
+                "place": "UDEMY",
+                "duration": "2020",
+                "location": "Curso Online"
             }
         ]
     },

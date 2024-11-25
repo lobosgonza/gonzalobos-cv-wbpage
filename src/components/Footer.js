@@ -17,9 +17,9 @@ function Footer() {
 
             {/* Botones para cambiar el idioma */}
             <div className="content has-text-centered" style={{ marginTop: "10px" }}>
-                <p><a onClick={() => i18n.changeLanguage('en')} className="">
+                <p className="has-text-white"><a className="has-text-white" onClick={() => i18n.changeLanguage('en')}>
                     English
-                </a> | <a onClick={() => i18n.changeLanguage('es')} className="">
+                </a> | <a className="has-text-white" onClick={() => i18n.changeLanguage('es')}>
                         Español
                     </a></p>
                 <p>

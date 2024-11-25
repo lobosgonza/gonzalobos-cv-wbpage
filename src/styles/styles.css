@@ -1,8 +1,6 @@
 /* styles.css */
 
-/* Establece el fondo blanco y el texto negro para todo el documento */
-body {
-	/* background-color: #fff; */
-}
-.card {
+body.fade-out {
+	opacity: 0; /* Hacer que el cuerpo se desvanezca */
+	transition: opacity 0.3s ease; /* Duración y tipo de transición */
 }
