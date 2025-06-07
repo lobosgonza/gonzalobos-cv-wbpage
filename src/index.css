@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styles.css */
+
+body.fade-out {
+	opacity: 0; /* Hacer que el cuerpo se desvanezca */
+	transition: opacity 0.3s ease; /* Duración y tipo de transición */
+}
+
+.navbar {
+	padding: 12px;
+}
+
+.field.is-grouped {
+	display: flex;
+	gap: 0.75rem;
+	justify-content: flex-start;
+}
+.img {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+}

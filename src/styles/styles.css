@@ -1,6 +1,0 @@
-/* styles.css */
-
-body.fade-out {
-	opacity: 0; /* Hacer que el cuerpo se desvanezca */
-	transition: opacity 0.3s ease; /* Duración y tipo de transición */
-}
