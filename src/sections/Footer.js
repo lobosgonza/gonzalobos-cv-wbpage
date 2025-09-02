@@ -32,18 +32,21 @@ function Footer() {
                     </p>
 
                     {/* Botón "Volver al Inicio" */}
-                    <button
+                    <motion.button
                         onClick={scrollToTop}
-                        className="group flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors duration-300"
+                        className="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors duration-300"
+                        whileHover={{ y: -3 }}
+                        whileTap={{ scale: 0.95 }}
+                        transition={{ type: "spring", stiffness: 400, damping: 17 }}
                     >
                         {footer.button}
                         {/* Icono de flecha hacia arriba */}
-                        <span className="transform group-hover:-translate-y-1 transition-transform duration-300">
+                        <motion.span>
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
                             </svg>
-                        </span>
-                    </button>
+                        </motion.span>
+                    </motion.button>
 
                 </div>
             </div>
