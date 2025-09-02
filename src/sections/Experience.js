@@ -81,7 +81,6 @@ function Experience() {
                     </div>
                 </div>
 
-              // Dentro de Experience.jsx
 
                 <motion.div
                     className="max-w-2xl mx-auto space-y-8"

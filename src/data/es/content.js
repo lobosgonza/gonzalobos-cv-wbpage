@@ -156,12 +156,17 @@ export const content = {
                 "CSS3",
                 "Tailwind CSS",
                 "Git & GitHub",
-                "SQL para análisis de datos"
+                "SQL para análisis de datos",
+                "Firebase", "GitHub Actions (CI/CD)"
+
             ],
 
             // Columna 3: Software y plataformas específicas
             tools: [
                 "Google Analytics 4",
+                "Google Search Console",
+                "Google Keyword Planner",
+                "Schema Markup (JSON-LD)",
                 // "Salesforce Commerce Cloud", // <--- EJEMPLO, aquí iría la que me digas
                 "Photoshop",
                 "Illustrator",
@@ -174,31 +179,35 @@ export const content = {
     caseStudies: [
         {
             id: 1,
-            title: "Optimización del Funnel de Conversión",
-            tags: ["CRO", "A/B Testing", "Google Analytics", "UX"],
-            problem: "La tasa de conversión en la página de producto era un 8% inferior al promedio de la industria, generando una pérdida de ventas potenciales.",
-            objective: "Mi objetivo era incrementar la tasa de conversión en un 10% en 3 meses, sin afectar el ticket promedio.",
+            title: "Gestión de Campañas Estratégicas en Web y App",
+            tags: ["E-commerce", "Gestión de Campañas", "UX/UI", "App"],
+            problem: "La necesidad de mantener un calendario comercial dinámico y ejecutar múltiples campañas simultáneamente en la web y la aplicación móvil para impulsar las ventas y la interacción del cliente.",
+            objective: "Orquestar y ejecutar más de 30 campañas comerciales a lo largo del año, asegurando una experiencia de usuario consistente y de alta calidad en todos los puntos de contacto digitales.",
             actions: [
-                "Analicé el comportamiento de los usuarios con mapas de calor y Google Analytics, identificando cuellos de botella.",
-                "Lideré una serie de tests A/B en los llamados a la acción (CTA) y las descripciones de producto.",
-                "Colaboré con el equipo de desarrollo para implementar un nuevo módulo de 'Compra Rápida'."
+                "Planificación y ejecución de un calendario anual con más de 30 campañas en la web y la aplicación móvil.",
+                "Coordinación con equipos de diseño, desarrollo y marketing para asegurar la correcta implementación de cada campaña.",
+                "Monitoreo constante del rendimiento de las campañas para optimizar los resultados en tiempo real."
             ],
             results: [
-                "Incremento del 12% en la tasa de conversión.",
-                "Reducción del 20% en la tasa de rebote de la página."
+                "Impacto significativo en el volumen de ventas, con una estimación de más de 8.4 millones de unidades de producto desplazadas a través de estas campañas.",
+                "Mejora en la recurrencia de compra y en la interacción de los usuarios con la marca en los canales digitales."
             ]
         },
         {
             id: 2,
-            title: "Reducción de la Tasa de Abandono con Acciones Segmentadas",
-            tags: ["CRM", "Segmentación", "Fidelización"],
-            problem: "Se detectó una alta tasa de abandono de clientes recurrentes, representando un riesgo para los ingresos sostenidos del canal.",
-            objective: "Diseñar e implementar una estrategia de incentivos segmentados para disminuir la tasa de abandono en un 15%.",
+            title: "Incremento de Share de Órdenes por SEO",
+            tags: ["SEO", "Google Analytics", "Estrategia de Contenidos", "Schema"],
+            problem: "El canal orgánico representaba solo un 9% del total de las órdenes, indicando una oportunidad de crecimiento para reducir la dependencia de medios pagados.",
+            objective: "Aumentar la participación de las órdenes orgánicas del 9% al 13% durante el primer semestre de 2025.",
             actions: [
-                "Lideré la creación de campañas personalizadas dirigidas a segmentos específicos de usuarios, ofreciendo beneficios exclusivos para incentivar la recompra a través del canal online."
+                "Mejora y optimización de las keywords principales del negocio.",
+                "Integración de nuevas keywords long-tail identificadas con Semrush y Google Keyword Planner.",
+                "Implementación de secciones de FAQ en las páginas de producto (PDP) y listado de productos (PLP).",
+                "Implementación de datos estructurados (Schema) para mejorar la visibilidad en los resultados de búsqueda."
             ],
             results: [
-                "Disminución de la tasa de abandono en un 15%, fortaleciendo la lealtad de los clientes y asegurando los ingresos recurrentes."
+                "Aumento del 4% en el share de órdenes orgánicas (del 9% al 13%).",
+                "Reducción del 5% en el costo de adquisición de clientes (CAC)."
             ]
         },
         {
