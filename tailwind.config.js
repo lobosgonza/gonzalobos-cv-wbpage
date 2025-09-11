@@ -1,5 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  // AÑADE ESTA LÍNEA PARA ACTIVAR EL MODO OSCURO MANUALMENTE
+  darkMode: 'class',
+
   // 1. CONTENT: Le decimos a Tailwind qué archivos escanear
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -13,7 +16,7 @@ module.exports = {
 
       // 3. COLORS: Tu paleta de colores personalizada
       colors: {
-        'primary': '#0D47A1',   // Un azul oscuro y profesional para acentos y botones
+        'primary': '#2563EB',   // Un azul oscuro y profesional para acentos y botones
         'secondary': '#D32F2F', // Un rojo elegante como segundo acento (opcional)
         'background-light': '#F8F9FA', // Fondo para el modo claro (un gris muy suave)
         'background-dark': '#121212',  // Fondo para el modo oscuro (un negro no tan puro)

@@ -1,0 +1,264 @@
+{
+    "navbar": {
+        "about": "¿Quién soy?",
+        "projects": "Proyectos",
+        "caseStudies": "Casos de Estudio",
+        "experience": "Experiencia",
+        "studies": "Estudios",
+        "skills": "Habilidades",
+        "contact": "Contacto"
+    },
+    "hero": {
+        "name": "Gonzalo Lobos",
+        "title": "Ingeniero Comercial Especialista en E-commerce y Desarrollo Web.",
+        "subtitle": "Convierto estrategias en experiencias digitales que impulsan el crecimiento.",
+        "primaryButton": "Ver Casos de Estudio",
+        "secondaryButton": "Contacto"
+    },
+    "about": {
+        "title": "Sobre Mí",
+        "imageAlt": "Retrato de Gonzalo Lobos, especialista en Ecommerce y Desarrollo Web",
+        "introduction": "Soy Ingeniero Comercial de la UAI, y mi pasión es construir los puentes entre la <strong>estrategia de negocio y la tecnología</strong>. Mi experiencia en el dinámico mundo del e-commerce, especialmente liderando iniciativas para una marca global como <strong>Nespresso</strong>, me ha enseñado que las mejores soluciones digitales nacen de una profunda comprensión del cliente y los objetivos comerciales. No se trata solo de vender online, sino de crear <strong>experiencias de usuario memorables</strong> que impulsan la conversión y fomentan la lealtad.",
+        "skills": "Mi enfoque es <strong>data-driven</strong>. Utilizo herramientas como <strong>Google Analytics</strong> para obtener insights y transformarlos en acción, optimizando cada punto de contacto del funnel de ventas. Esta visión analítica se complementa con mi experiencia en <strong>desarrollo front-end</strong>, lo que me permite no solo diseñar la estrategia, sino también prototipar, validar ideas y colaborar eficazmente con los equipos técnicos para asegurar que la visión se ejecute con <strong>precisión y calidad</strong>. Este portafolio, construido por mí desde cero con React, es un ejemplo de esa pasión por la ejecución técnica.",
+        "callToAction": "Busco conectar con equipos innovadores donde pueda aportar esta visión híbrida para crear productos digitales excepcionales. Si mi perfil resuena contigo, hablemos."
+    },
+    "projects": {
+        "title": "Trabajos Recientes",
+        "items": [
+            {
+                "id": 1,
+                "title": "Expansis - Soluciones Digitales",
+                "description": "Desarrollo y consultoría de soluciones digitales a medida para impulsar negocios online, abarcando desarrollo web, marketing digital y estrategias SEO.",
+                "image": "/images/proyecto-expansis.jpg",
+                "tags": [
+                    "Desarrollo Web",
+                    "Consultoría Digital",
+                    "Marketing",
+                    "SEO"
+                ],
+                "liveUrl": "https://expansispro.com/",
+                "repoUrl": null
+            },
+            {
+                "id": 2,
+                "title": "Lobos Miniexcavadoras",
+                "description": "Sitio web para empresa de arriendo de miniexcavadoras, enfocada en excavaciones y movimiento de tierra en espacios reducidos en el Valle del Aconcagua.",
+                "image": "/images/proyecto-lobos.jpg",
+                "tags": [
+                    "Desarrollo Web",
+                    "Maquinaria",
+                    "Servicios"
+                ],
+                "liveUrl": "https://lobosminiexcavadoras.cl/",
+                "repoUrl": null
+            },
+            {
+                "id": 3,
+                "title": "Mi Portafolio Personal",
+                "description": "Diseño y desarrollo de mi propia página web para mostrar mi perfil profesional. Construida desde cero con React y Tailwind CSS, y desplegada con Firebase.",
+                "image": "/images/proyecto-portafolio.jpg",
+                "tags": [
+                    "React",
+                    "Tailwind CSS",
+                    "Firebase",
+                    "UX/UI"
+                ],
+                "liveUrl": "https://gonzalobos.com",
+                "repoUrl": "https://github.com/lobosgonza/gonzalobos-cv-wbpage"
+            }
+        ]
+    },
+    "caseStudies": {
+        "title": "Casos de Estudio",
+        "subtitle": "Una selección de mis logros y proyectos más recientes.",
+        "items": [
+            {
+                "id": 1,
+                "title": "Gestión Estratégica de Campañas en Web y App",
+                "tags": [
+                    "E-commerce",
+                    "Gestión de Campañas",
+                    "UX/UI",
+                    "App"
+                ],
+                "problem": "La necesidad de mantener un calendario comercial dinámico y ejecutar múltiples campañas simultáneamente en la web y la aplicación móvil para impulsar las ventas y la interacción con los clientes.",
+                "objective": "Orquestar y ejecutar más de 30 campañas comerciales a lo largo del año, asegurando una experiencia de usuario consistente y de alta calidad en todos los puntos de contacto digitales.",
+                "actions": [
+                    "Planificación y ejecución de un calendario anual con más de 30 campañas en la web y la aplicación móvil.",
+                    "Coordinación con equipos de diseño, desarrollo y marketing para asegurar la correcta implementación de cada campaña.",
+                    "Monitoreo constante del rendimiento de las campañas para optimizar los resultados en tiempo real."
+                ],
+                "results": [
+                    "Impacto significativo en el volumen de ventas, con un estimado de más de 8.4 millones de unidades de productos movidos a través de estas campañas.",
+                    "Mejora en la frecuencia de compra y la interacción del usuario con la marca en los canales digitales."
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Incremento del Share de Órdenes por SEO",
+                "tags": [
+                    "SEO",
+                    "Google Analytics",
+                    "Estrategia de Contenido",
+                    "Schema"
+                ],
+                "problem": "El canal orgánico representaba solo el 9% del total de las órdenes, lo que indicaba una oportunidad de crecimiento para reducir la dependencia de los medios pagados.",
+                "objective": "Aumentar la participación de las órdenes orgánicas del 9% al 13% durante el primer semestre de 2025.",
+                "actions": [
+                    "Mejora y optimización de las principales palabras clave del negocio.",
+                    "Integración de nuevas palabras clave long-tail identificadas con Semrush y Google Keyword Planner.",
+                    "Implementación de secciones de preguntas frecuentes (FAQ) en las páginas de detalle de producto (PDP) y listado de productos (PLP).",
+                    "Implementación de datos estructurados (Schema) para mejorar la visibilidad en los resultados de búsqueda."
+                ],
+                "results": [
+                    "Aumento del 4% en la participación de las órdenes orgánicas (del 9% al 13%).",
+                    "Reducción del 5% en el costo de adquisición de clientes (CAC)."
+                ]
+            },
+            {
+                "id": 3,
+                "title": "Potenciación de Canales de Retiro y Autogestión",
+                "tags": [
+                    "Omnicanalidad",
+                    "UX",
+                    "Eficiencia Operacional"
+                ],
+                "problem": "Existía la oportunidad de mejorar la experiencia omnicanal y reducir la carga operativa del equipo de atención al cliente.",
+                "objective": "Fortalecer el sistema de retiro en tienda y comunicar eficazmente las herramientas de autogestión a los clientes.",
+                "actions": [
+                    "Optimicé el flujo de compra para la modalidad de retiro, resultando en una experiencia más fluida.",
+                    "Se mejoró la comunicación, invitando a los clientes a vivir la experiencia en la boutique.",
+                    "Finalmente, se optimizaron los correos transaccionales para agilizar el retiro de pedidos, reduciendo así su tiempo de permanencia en la tienda."
+                ],
+                "results": [
+                    "Aumento del 15% en los pedidos con la modalidad de retiro.",
+                    "Adopción de estas iniciativas como buenas prácticas por la gerencia global de Nespresso."
+                ]
+            }
+        ]
+    },
+    "experience": {
+        "sectionTitle": "Experiencia",
+        "pastExperienceTitle": "Experiencia Previa",
+        "current": {
+            "jobTitle": "E-commerce Merchandising Specialist",
+            "company": "Nestlé Nespresso SA",
+            "startDate": "2021-12-01",
+            "since": "{{years}} años y {{months}} meses",
+            "responsibilities": [
+                "Liderar la estrategia de e-commerce para Nespresso.com.",
+                "Implementar mejoras de UX/UI.",
+                "Monitorear el proceso de compra en Nespresso.cl.",
+                "Desarrollar campañas online como Cyber Day y Black Friday.",
+                "Realizar seguimiento de KPIs a través de Google Analytics.",
+                "Mejorar el posicionamiento SEO del sitio web."
+            ]
+        },
+        "past": [
+            {
+                "id": 1,
+                "title": "Gestor de Desarrollo Formativo",
+                "place": "Todo Mejora",
+                "duration": "mar. 2021 – dic. 2021 (10 meses)",
+                "responsibilities": [
+                    "Coordinación de capacitaciones en el área de la salud y educación.",
+                    "Gestión de ingresos y egresos.",
+                    "Coordinación de pagos con instituciones."
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Desarrollador Front-End",
+                "place": "Simple y Creativo",
+                "duration": "mar. 2020 – feb. 2021 (1 año)",
+                "responsibilities": [
+                    "Coordinación con clientes para la creación de Mockups y Wireframes a la medida para el desarrollo de sitios web solicitados."
+                ]
+            },
+            {
+                "id": 3,
+                "title": "Técnico en Fotografía",
+                "place": "Estudio FE",
+                "duration": "oct. 2019 – feb. 2021 (1 año, 5 meses)",
+                "responsibilities": [
+                    "Asistencia en producciones fotográficas y audiovisuales para grandes marcas.",
+                    "Coordinación de casting para proyectos fotográficos y audiovisuales."
+                ]
+            },
+            {
+                "id": 4,
+                "title": "Gestión de Productos de Marketing",
+                "place": "Grupo Copesa",
+                "duration": "oct. 2018 – feb. 2019 (5 meses)",
+                "responsibilities": [
+                    "Coordinación para la implementación de material gráfico en La Tercera, La Hora, Motores y Paula.",
+                    "Coordinación con el equipo de diseño para material gráfico de campañas de suscripción del diario La Tercera.",
+                    "Coordinación con el equipo de diagramación para la implementación de gráficas en el diario en las fechas calendarizadas.",
+                    "Redacción de contratos con diversos proveedores para productos relacionados con la suscripción.",
+                    "Seguimiento de ingresos y egresos del área de suscripción de La Tercera."
+                ]
+            }
+        ]
+    },
+    "skills": {
+        "title": "Caja de Herramientas",
+        "strategyTitle": "Estrategia & Negocio",
+        "technicalTitle": "Habilidades Técnicas",
+        "toolsTitle": "Herramientas & Plataformas",
+        "items": {
+            "strategy": [
+                {
+                    "title": "Estrategia E-commerce",
+                    "description": "Definición de roadmap, gestión de P&L y liderazgo de campañas de alto impacto (Cyber Day, Black Friday)."
+                },
+                {
+                    "title": "Optimización de la Tasa de Conversión (CRO)",
+                    "description": "Análisis del funnel de ventas, A/B testing y mejora continua de la experiencia de usuario (UX/UI)."
+                },
+                {
+                    "title": "Marketing Digital & SEO",
+                    "description": "Estrategias de posicionamiento orgánico, SEM y automatización de marketing para la fidelización (CRM)."
+                },
+                {
+                    "title": "Gestión de Proyectos Digitales",
+                    "description": "Coordinación de equipos multidisciplinarios para la ejecución de proyectos tecnológicos y comerciales."
+                }
+            ],
+            "technical": [
+                "React.js",
+                "JavaScript (ES6+)",
+                "HTML5",
+                "CSS3",
+                "Tailwind CSS",
+                "Git & GitHub",
+                "SQL para análisis de datos",
+                "Firebase",
+                "GitHub Actions (CI/CD)"
+            ],
+            "tools": [
+                "Google Analytics 4",
+                "Google Search Console",
+                "Google Keyword Planner",
+                "Schema Markup (JSON-LD)",
+                "Photoshop",
+                "Illustrator",
+                "Lightroom",
+                "Capture One",
+                "Inglés Profesional (B2/C1)"
+            ]
+        }
+    },
+    "contact": {
+        "title": "Contacto",
+        "subtitle": "Si tienes interés en colaborar o alguna pregunta, no dudes en contactarme. ¡Hay apertura a nuevas oportunidades!",
+        "email": "Correo:",
+        "phone": "Teléfono:",
+        "whatsapp": "WhatsApp",
+        "linkedin": "LinkedIn",
+        "github": "GitHub"
+    },
+    "footer": {
+        "rights": "Todos los derechos reservados.",
+        "button": "Volver al inicio"
+    }
+}

@@ -1,38 +1,165 @@
 {
     "navbar": {
-        "about": "About me",
+        "about": "About Me",
+        "projects": "Projects",
+        "caseStudies": "Case Studies",
         "experience": "Experience",
-        "studies": "Studies",
+        "studies": "Education",
         "skills": "Skills",
         "contact": "Contact"
     },
-    "footer": {
-        "rights": "All rights reserved.",
-        "button": "Back to Top"
+    "hero": {
+        "name": "Gonzalo Lobos",
+        "title": "Business Engineer Specializing in E-commerce and Web Development.",
+        "subtitle": "I turn business strategies into digital experiences that drive growth and conversion.",
+        "primaryButton": "View Case Studies",
+        "secondaryButton": "Contact"
     },
-    "home": {
-        "welcome": "Welcome to my portfolio!"
+    "about": {
+        "title": "About Me",
+        "imageAlt": "Portrait of Gonzalo Lobos, E-commerce and Web Development Specialist",
+        "introduction": "I'm a Business Engineer from UAI, passionate about building bridges between <strong>business strategy and technology</strong>. My experience in the dynamic world of e-commerce, especially leading initiatives for a global brand like <strong>Nespresso</strong>, has taught me that the best digital solutions are born from a deep understanding of the customer and business goals. It's not just about selling online, but about creating <strong>memorable user experiences</strong> that drive conversion and foster loyalty.",
+        "skills": "My approach is <strong>data-driven</strong>. I use tools like <strong>Google Analytics</strong> to gain insights and turn them into action, optimizing every touchpoint of the sales funnel. This analytical vision is complemented by my experience in <strong>front-end development</strong>, which allows me not only to design the strategy but also to prototype, validate ideas, and collaborate effectively with technical teams to ensure the vision is executed with <strong>precision and quality</strong>. This portfolio, built by me from scratch with React, is an example of that passion for technical execution.",
+        "callToAction": "I'm looking to connect with innovative teams where I can contribute this hybrid vision to create exceptional digital products. If my profile resonates with you, let's talk."
+    },
+    "projects": {
+        "title": "Recent Work",
+        "items": [
+            {
+                "id": 1,
+                "title": "Expansis - Digital Solutions",
+                "description": "Development and consulting of custom digital solutions to boost online businesses, covering web development, digital marketing, and SEO strategies.",
+                "image": "/images/proyecto-expansis.jpg",
+                "tags": [
+                    "Web Development",
+                    "Digital Consulting",
+                    "Marketing",
+                    "SEO"
+                ],
+                "liveUrl": "https://expansispro.com/",
+                "repoUrl": null
+            },
+            {
+                "id": 2,
+                "title": "Lobos Mini Excavators",
+                "description": "Website for a mini excavator rental company, focused on excavations and earthmoving in confined spaces in the Aconcagua Valley.",
+                "image": "/images/proyecto-lobos.jpg",
+                "tags": [
+                    "Web Development",
+                    "Machinery",
+                    "Services"
+                ],
+                "liveUrl": "https://lobosminiexcavadoras.cl/",
+                "repoUrl": null
+            },
+            {
+                "id": 3,
+                "title": "My Personal Portfolio",
+                "description": "Design and development of my own professional portfolio website. Built from scratch with React and Tailwind CSS, and deployed with Firebase.",
+                "image": "/images/proyecto-portafolio.jpg",
+                "tags": [
+                    "React",
+                    "Tailwind CSS",
+                    "Firebase",
+                    "UX/UI"
+                ],
+                "liveUrl": "https://gonzalobos.com",
+                "repoUrl": "https://github.com/lobosgonza/gonzalobos-cv-wbpage"
+            }
+        ]
+    },
+    "caseStudies": {
+        "title": "Case Studies",
+        "subtitle": "A selection of my most recent achievements and projects.",
+        "items": [
+            {
+                "id": 1,
+                "title": "Strategic Campaign Management on Web and App",
+                "tags": [
+                    "E-commerce",
+                    "Campaign Management",
+                    "UX/UI",
+                    "App"
+                ],
+                "problem": "The need to maintain a dynamic commercial calendar and run multiple campaigns simultaneously on the web and mobile app to drive sales and customer interaction.",
+                "objective": "To orchestrate and execute over 30 commercial campaigns throughout the year, ensuring a consistent and high-quality user experience across all digital touchpoints.",
+                "actions": [
+                    "Planning and execution of an annual calendar with over 30 campaigns on the web and mobile app.",
+                    "Coordination with design, development, and marketing teams to ensure the correct implementation of each campaign.",
+                    "Constant monitoring of campaign performance to optimize results in real-time."
+                ],
+                "results": [
+                    "Significant impact on sales volume, with an estimated over 8.4 million product units moved through these campaigns.",
+                    "Improvement in purchase frequency and user interaction with the brand on digital channels."
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Increase in Order Share through SEO",
+                "tags": [
+                    "SEO",
+                    "Google Analytics",
+                    "Content Strategy",
+                    "Schema"
+                ],
+                "problem": "The organic channel represented only 9% of total orders, indicating a growth opportunity to reduce dependency on paid media.",
+                "objective": "To increase the share of organic orders from 9% to 13% during the first half of 2025.",
+                "actions": [
+                    "Improvement and optimization of the main business keywords.",
+                    "Integration of new long-tail keywords identified with Semrush and Google Keyword Planner.",
+                    "Implementation of FAQ sections on product detail pages (PDP) and product listing pages (PLP).",
+                    "Implementation of structured data (Schema) to improve visibility in search results."
+                ],
+                "results": [
+                    "4% increase in the share of organic orders (from 9% to 13%).",
+                    "5% reduction in customer acquisition cost (CAC)."
+                ]
+            },
+            {
+                "id": 3,
+                "title": "Enhancement of Pickup and Self-Service Channels",
+                "tags": [
+                    "Omnichannel",
+                    "UX",
+                    "Operational Efficiency"
+                ],
+                "problem": "There was an opportunity to improve the omnichannel experience and reduce the operational load on the customer support team.",
+                "objective": "To strengthen the in-store pickup system and effectively communicate self-service tools to customers.",
+                "actions": [
+                    "I optimized the purchase flow for the pickup modality, resulting in a smoother experience.",
+                    "Communication was improved, inviting customers to live the boutique experience.",
+                    "Finally, transactional emails were optimized to speed up order pickup, thus reducing their in-store dwell time."
+                ],
+                "results": [
+                    "15% increase in orders with the pickup modality.",
+                    "Adoption of these initiatives as best practices by Nespresso's global management."
+                ]
+            }
+        ]
     },
     "experience": {
         "sectionTitle": "Experience",
-        "jobTitle": "Ecommerce Merchandising Specialist",
-        "fullTime": "Full-time",
-        "since": "{{years}} years and {{months}} months",
-        "responsibilities": [
-            "Lead the Ecommerce strategy for nespresso.com.",
-            "Implement UX/UI improvements.",
-            "Monitor the purchase process on Nespresso.cl.",
-            "Develop online campaigns like Cyber Day and Black Friday.",
-            "Track KPIs through Google Analytics.",
-            "Improve the SEO positioning of the website."
-        ],
-        "pastExperiences": [
+        "pastExperienceTitle": "Previous Experience",
+        "current": {
+            "jobTitle": "E-commerce Merchandising Specialist",
+            "company": "Nestlé Nespresso SA",
+            "startDate": "2021-12-01",
+            "since": "{{years}} years and {{months}} months",
+            "responsibilities": [
+                "Lead the e-commerce strategy for Nespresso.com.",
+                "Implement UX/UI improvements.",
+                "Monitor the purchase process on Nespresso.cl.",
+                "Develop online campaigns like Cyber Day and Black Friday.",
+                "Track KPIs through Google Analytics.",
+                "Improve the SEO positioning of the website."
+            ]
+        },
+        "past": [
             {
+                "id": 1,
                 "title": "Training Development Management",
                 "place": "Todo Mejora",
-                "type": "Full-time",
                 "duration": "March 2021 - December 2021 (10 months)",
-                "location": "Santiago, Metropolitan Region of Santiago, Chile",
                 "responsibilities": [
                     "Coordinate training in health and education sectors.",
                     "Manage income and expenses.",
@@ -40,108 +167,98 @@
                 ]
             },
             {
-                "title": "Front-end Developer",
+                "id": 2,
+                "title": "Front-End Developer",
                 "place": "Simple y Creativo",
-                "type": "Full-time",
                 "duration": "March 2020 - February 2021 (1 year)",
-                "location": "Santiago, Metropolitan Region of Santiago, Chile",
                 "responsibilities": [
                     "Coordination with clients to create Mockups and Wireframes tailored to their needs for requested website development."
                 ]
             },
             {
+                "id": 3,
                 "title": "Photography Technician",
                 "place": "Estudio FE",
-                "type": "Internship",
-                "duration": "October 2019 - February 2021 (1 year)",
-                "location": "Santiago, Metropolitan Region of Santiago, Chile",
+                "duration": "October 2019 - February 2021 (1 year, 5 months)",
                 "responsibilities": [
                     "Assistance in photographic and audiovisual productions for major brands.",
                     "Coordination of casting for photographic and audiovisual projects."
                 ]
             },
             {
+                "id": 4,
                 "title": "Marketing Product Management",
                 "place": "Grupo Copesa",
-                "type": "Internship",
-                "duration": "October 2019 - February 2021 (1 year)",
-                "location": "Santiago, Metropolitan Region of Santiago, Chile",
+                "duration": "October 2018 - February 2019 (5 months)",
                 "responsibilities": [
                     "Coordination for the implementation of graphic materials in La Tercera, La Hora, Motores, and Paula.",
-                    "Coordination with the design team to create graphic materials for subscription campaigns for La Tercera newspaper.",
+                    "Coordination with the design team for graphic materials for La Tercera newspaper's subscription campaigns.",
                     "Coordination with the layout team for the implementation of graphics in the newspaper on scheduled dates.",
-                    "Drafting contracts with various suppliers for subscription-related products for the newspaper.",
-                    "Monitoring income and expenses for the subscription area of La Tercera."
+                    "Drafting contracts with various suppliers for subscription-related products.",
+                    "Monitoring income and expenses for La Tercera's subscription area."
                 ]
             }
         ]
     },
-    "about": {
-        "title": "A Pleasure to Meet You",
-        "introduction": "I am a <strong>Commercial Engineer specialized in E-commerce and Web Development</strong>, with solid experience leading high-impact projects in digital environments. My background includes <strong>managing e-commerce strategies</strong>, <strong>optimizing user experiences (UX/UI)</strong>, and <strong>implementing high-performance campaigns</strong> on websites and mobile applications. I have collaborated with global brands like <strong>Nespresso</strong>, developing digital solutions that increase conversion rates and enhance customer satisfaction.",
-        "skills": "My passion for technology and digital channels has allowed me to integrate <strong>technical and analytical skills</strong> to design user-centered shopping experiences and monitor performance through tools like <strong>Google Analytics</strong>. I also have experience in <strong>front-end development</strong>, where I combine my knowledge of <strong>design</strong> and <strong>programming</strong> to create functional and visually appealing interfaces.",
-        "callToAction": "If you are looking for someone who combines strategic and technical skills to take your project to the next level, don't hesitate to contact me. I'm ready for new challenges and opportunities!"
-    },
-    "studies": {
-        "title": "Studies",
-        "items": [
-            {
-                "title": "Master in Organizational Psychology",
-                "place": "Adolfo Ibáñez University",
-                "duration": "2016 - 2017",
-                "location": "Santiago, Santiago Metropolitan Region, Chile"
-            },
-            {
-                "title": "Business Engineering, Specialization in Business Administration",
-                "place": "Adolfo Ibáñez University",
-                "duration": "2011 - 2015",
-                "location": "Santiago, Santiago Metropolitan Region, Chile"
-            },
-            {
-                "title": "Technical Degree in Advertising Photography",
-                "place": "ARCOS Professional Institute",
-                "duration": "2018 - 2020",
-                "location": "Santiago, Santiago Metropolitan Region, Chile"
-            },
-            {
-                "title": "The Complete 2024 Web Development Bootcamp",
-                "place": "UDEMY",
-                "duration": "2020",
-                "location": "Online Course"
-            }
-        ]
-    },
     "skills": {
-        "title": "Skills",
-        "items": [
-            {
-                "title": "English",
-                "description": "Intermediate.",
-                "degree": "5"
-            },
-            {
-                "title": "Web Development",
-                "description": "HTML, CSS, JS.",
-                "degree": "8"
-            },
-            {
-                "title": "Design",
-                "description": "Photoshop, Illustrator, Lightroom, Capture One.",
-                "degree": "8"
-            },
-            {
-                "title": "Business and Organization",
-                "description": "Project management, Business analysis, Strategic planning.",
-                "degree": "8"
-            }
-        ]
+        "title": "Toolbox",
+        "strategyTitle": "Strategy & Business",
+        "technicalTitle": "Technical Skills",
+        "toolsTitle": "Tools & Platforms",
+        "items": {
+            "strategy": [
+                {
+                    "title": "E-commerce Strategy",
+                    "description": "Roadmap definition, P&L management, and leadership of high-impact campaigns (Cyber Day, Black Friday)."
+                },
+                {
+                    "title": "Conversion Rate Optimization (CRO)",
+                    "description": "Sales funnel analysis, A/B testing, and continuous improvement of user experience (UX/UI)."
+                },
+                {
+                    "title": "Digital Marketing & SEO",
+                    "description": "Organic positioning strategies, SEM, and marketing automation for customer loyalty (CRM)."
+                },
+                {
+                    "title": "Digital Project Management",
+                    "description": "Coordination of multidisciplinary teams for the execution of technological and commercial projects."
+                }
+            ],
+            "technical": [
+                "React.js",
+                "JavaScript (ES6+)",
+                "HTML5",
+                "CSS3",
+                "Tailwind CSS",
+                "Git & GitHub",
+                "SQL for data analysis",
+                "Firebase",
+                "GitHub Actions (CI/CD)"
+            ],
+            "tools": [
+                "Google Analytics 4",
+                "Google Search Console",
+                "Google Keyword Planner",
+                "Schema Markup (JSON-LD)",
+                "Photoshop",
+                "Illustrator",
+                "Lightroom",
+                "Capture One",
+                "Professional English (B2/C1)"
+            ]
+        }
     },
     "contact": {
         "title": "Contact",
+        "subtitle": "If you are interested in collaborating or have any questions, feel free to contact me. I'm open to new opportunities!",
         "email": "Email:",
         "phone": "Phone:",
         "whatsapp": "WhatsApp",
         "linkedin": "LinkedIn",
         "github": "GitHub"
+    },
+    "footer": {
+        "rights": "All rights reserved.",
+        "button": "Back to Top"
     }
 }

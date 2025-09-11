@@ -1,17 +1,15 @@
 // src/sections/Footer.jsx
-
 import React from 'react';
 import { motion } from 'framer-motion';
-import { content } from '../data/es/content.js';
+import { useTranslation } from 'react-i18next';
 
 function Footer() {
-    const { footer } = content;
+    const { t } = useTranslation();
 
-    // Función para hacer scroll suave hacia el tope de la página
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
-            behavior: 'smooth' // ¡La clave para el scroll suave!
+            behavior: 'smooth'
         });
     };
 
@@ -25,13 +23,9 @@ function Footer() {
         >
             <div className="container mx-auto px-6 py-6">
                 <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
-
-                    {/* Copyright */}
                     <p className="text-center sm:text-left text-sm">
-                        © {new Date().getFullYear()} Gonzalo Lobos. {footer.rights}
+                        © {new Date().getFullYear()} Gonzalo Lobos. {t('footer.rights')}
                     </p>
-
-                    {/* Botón "Volver al Inicio" */}
                     <motion.button
                         onClick={scrollToTop}
                         className="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors duration-300"
@@ -39,15 +33,13 @@ function Footer() {
                         whileTap={{ scale: 0.95 }}
                         transition={{ type: "spring", stiffness: 400, damping: 17 }}
                     >
-                        {footer.button}
-                        {/* Icono de flecha hacia arriba */}
+                        {t('footer.button')}
                         <motion.span>
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
                             </svg>
                         </motion.span>
                     </motion.button>
-
                 </div>
             </div>
         </motion.footer>

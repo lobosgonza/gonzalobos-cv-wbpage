@@ -1,9 +1,9 @@
-// src/main.jsx
-
+// src/index.jsx
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.js';
 import './index.css';
+import './i18n'; // Importa la configuración de i18next
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

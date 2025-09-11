@@ -1,141 +1,133 @@
-import React from 'react';
-import { motion } from 'framer-motion'; // Importa framer-motion
-import { useTranslation } from 'react-i18next'; // Hook para las traducciones
+import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
+import LanguageSwitcher from './LanguageSwitcher';
+import ThemeSwitcher from './ThemeSwitcher';
 
-function Navbar({ onBtnClick }) {
-    const { t, i18n } = useTranslation(); // Hook para usar las traducciones
+const navLinks = [
+    { id: 'about', labelKey: 'navbar.about' },
+    { id: 'projects', labelKey: 'navbar.projects' },
+    { id: 'caseStudies', labelKey: 'navbar.caseStudies' },
+    { id: 'experience', labelKey: 'navbar.experience' },
+    { id: 'skills', labelKey: 'navbar.skills' },
+    { id: 'contact', labelKey: 'navbar.contact' },
+];
 
-    const changeLanguage = (lang) => {
-        console.log(`Cambiando idioma a: ${lang}`);
-        i18n.changeLanguage(lang); // Cambia el idioma dinámicamente
+function Navbar() {
+    const { t } = useTranslation();
+    const [isOpen, setIsOpen] = useState(false);
+    const [scrollPosition, setScrollPosition] = useState(0);
+
+    const handleScroll = () => {
+        setScrollPosition(window.scrollY);
     };
-    const [isActive, setisActive] = React.useState(false);
-    // return (
-    //     // <motion.nav
-    //     //     className=''
-    //     //     initial={{ opacity: 0 }}
-    //     //     animate={{ opacity: 1 }}
-    //     //     transition={{ duration: 1 }}
-    //     // >
-    //     <nav className='navbar' role='navigation' aria-label='main navigation'>
 
-    //         <div className="navbar-brand">
-    //             <a className="navbar-item" href='#inicio' onClick={() => onBtnClick('Home')}>
-    //                 Gonzalo Lobos
-    //             </a>
-    //             <div className="navbar-burger js-burger" data-target="navbarBasicExample">
-    //                 <span ></span>
-    //                 <span ></span>
-    //                 <span ></span>
-    //                 <span ></span>
-    //             </div>
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
-    //         </div>
+    const isScrolled = scrollPosition > 0;
 
-    //         <div id="navbarBasicExample" className="navbar-menu">
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
 
-    //             <div className="navbar-start">
-    //                 <a className="navbar-item" onClick={() => onBtnClick('About')}>
-    //                     {t('navbar.about')}
-    //                 </a>  <a className="navbar-item" onClick={() => onBtnClick('Experience')}>
-    //                     {t('navbar.experience')}
-    //                 </a>
-    //                 <a className="navbar-item" onClick={() => onBtnClick('Studies')}>
-    //                     {t('navbar.studies')}
-    //                 </a>  <a className="navbar-item" onClick={() => onBtnClick('Skills')}>
-    //                     {t('navbar.skills')}
-    //                 </a>  <a className="navbar-item" onClick={() => onBtnClick('Contact')}>
-    //                     {t('navbar.contact')}
-    //                 </a>
+    const closeMenu = () => {
+        setIsOpen(false);
+    };
 
+    const menuVariants = {
+        hidden: { opacity: 0, y: -50 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
+        exit: { opacity: 0, y: -50, transition: { duration: 0.2 } },
+    };
 
-
-    //             </div>
-
-    //             <div className="navbar-end">
-    //                 <div className='navbar-item'>
-
-    //                     <a className="button is-primary" onClick={() => changeLanguage('es')}>
-    //                         Español
-    //                     </a><a className="button is-primary" onClick={() => changeLanguage('en')}>
-    //                         English
-    //                     </a>
-
-    //                 </div>
-    //             </div>
-    //         </div>
-
-    //     </nav>
-
-
-    // );
+    const listItemVariants = {
+        hidden: { opacity: 0, x: -20 },
+        visible: { opacity: 1, x: 0 },
+    };
 
     return (
-
-        <nav className="navbar" role="navigation" aria-label="main navigation">
-            <div className="navbar-brand">
-
-                <a className="navbar-item" href='#inicio' onClick={() => onBtnClick('Home')}>
+        <nav className={`fixed w-full z-50 transition-colors duration-300 ${isScrolled ? 'bg-white/80 dark:bg-slate-900/80 shadow-lg backdrop-blur-sm' : 'bg-transparent'}`}>
+            <div className="container mx-auto px-6 py-4 flex justify-between items-center">
+                {/* Logo o Nombre */}
+                <a href="#hero" className="text-2xl font-bold text-white transition-colors duration-300">
                     Gonzalo Lobos
                 </a>
 
-                <a
-                    onClick={() => {
-                        setisActive(!isActive);
-                    }}
-                    role="button"
-                    className={`navbar-burger burger ${isActive ? "is-active" : ""}`}
-                    aria-label="menu"
-                    aria-expanded="false"
-                    data-target="navbarBasicExample"
-                >
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>
-            </div>
-            <div
-                id="navbarBasicExample"
-                className={`navbar-menu ${isActive ? "is-active" : ""}`}
-            >
-                <div className="navbar-start">
-                    <a className="navbar-item" onClick={() => onBtnClick('About')}>
-                        {t('navbar.about')}
-                    </a>  <a className="navbar-item" onClick={() => onBtnClick('Experience')}>
-                        {t('navbar.experience')}
-                    </a>
-                    <a className="navbar-item" onClick={() => onBtnClick('Studies')}>
-                        {t('navbar.studies')}
-                    </a>  <a className="navbar-item" onClick={() => onBtnClick('Skills')}>
-                        {t('navbar.skills')}
-                    </a>  <a className="navbar-item" onClick={() => onBtnClick('Contact')}>
-                        {t('navbar.contact')}
-                    </a>
-                </div>
-
-                <div className="navbar-end">
-                    <div className="navbar-item">
-                        <div className="field is-grouped">
-
-                            <a className="button" onClick={() => changeLanguage('es')}>
-                                Español
+                {/* Navegación para pantallas grandes */}
+                <ul className="hidden md:flex space-x-8">
+                    {navLinks.map((link) => (
+                        <motion.li
+                            key={link.id}
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                        >
+                            <a
+                                href={`#${link.id}`}
+                                className="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-blue-400 text-lg transition-colors duration-300"
+                            >
+                                {t(link.labelKey)}
                             </a>
-                            <a className="button" onClick={() => changeLanguage('en')}>
-                                English
-                            </a>
-                        </div>
+                        </motion.li>
+                    ))}
+                </ul>
+
+                {/* Switchers y Botón de menú para móviles */}
+                <div className="flex items-center space-x-4">
+                    <LanguageSwitcher />
+                    <ThemeSwitcher />
+                    <div className="md:hidden">
+                        <button onClick={toggleMenu} className="text-slate-700 dark:text-slate-300 focus:outline-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                {isOpen ? (
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                                ) : (
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                                )}
+                            </svg>
+                        </button>
                     </div>
-
                 </div>
 
-
+                {/* Menú móvil (oculto por defecto, visible al hacer clic) */}
+                <AnimatePresence>
+                    {isOpen && (
+                        <motion.div
+                            className="md:hidden absolute top-full left-0 w-full bg-white dark:bg-slate-800 shadow-lg pb-4"
+                            variants={menuVariants}
+                            initial="hidden"
+                            animate="visible"
+                            exit="exit"
+                        >
+                            <ul className="flex flex-col items-center space-y-4 pt-4">
+                                {navLinks.map((link, index) => (
+                                    <motion.li
+                                        key={link.id}
+                                        variants={listItemVariants}
+                                        initial="hidden"
+                                        animate="visible"
+                                        transition={{ delay: index * 0.1 }}
+                                        onClick={closeMenu}
+                                    >
+                                        <a
+                                            href={`#${link.id}`}
+                                            className="text-slate-800 dark:text-slate-200 hover:text-primary dark:hover:text-blue-400 text-xl font-medium transition-colors duration-300"
+                                        >
+                                            {t(link.labelKey)}
+                                        </a>
+                                    </motion.li>
+                                ))}
+                            </ul>
+                        </motion.div>
+                    )}
+                </AnimatePresence>
             </div>
         </nav>
-
-
-    )
-
+    );
 }
 
 export default Navbar;
