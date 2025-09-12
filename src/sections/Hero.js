@@ -78,8 +78,8 @@ const Hero = () => {
                     >
                         {/* Botón Primario (Ver Casos de Estudio) */}
                         <motion.a
-                            href="#caseStudies"
-                            onClick={(e) => handleScroll(e, '#caseStudies')}
+                            href="#projects"
+                            onClick={(e) => handleScroll(e, '#projects')}
                             className="flex items-center justify-center gap-2 bg-primary text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:shadow-primary/30 transition-all duration-300 w-full sm:w-auto"
                             whileHover={{ y: -4, transition: { type: 'spring', stiffness: 300 } }}
                         >
