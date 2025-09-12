@@ -18,9 +18,9 @@
     "about": {
         "title": "Sobre Mí",
         "imageAlt": "Retrato de Gonzalo Lobos, especialista en Ecommerce y Desarrollo Web",
-        "introduction": "Soy Ingeniero Comercial de la UAI, y mi pasión es construir los puentes entre la <strong>estrategia de negocio y la tecnología</strong>. Mi experiencia en el dinámico mundo del e-commerce, especialmente liderando iniciativas para una marca global como <strong>Nespresso</strong>, me ha enseñado que las mejores soluciones digitales nacen de una profunda comprensión del cliente y los objetivos comerciales. No se trata solo de vender online, sino de crear <strong>experiencias de usuario memorables</strong> que impulsan la conversión y fomentan la lealtad.",
-        "skills": "Mi enfoque es <strong>data-driven</strong>. Utilizo herramientas como <strong>Google Analytics</strong> para obtener insights y transformarlos en acción, optimizando cada punto de contacto del funnel de ventas. Esta visión analítica se complementa con mi experiencia en <strong>desarrollo front-end</strong>, lo que me permite no solo diseñar la estrategia, sino también prototipar, validar ideas y colaborar eficazmente con los equipos técnicos para asegurar que la visión se ejecute con <strong>precisión y calidad</strong>. Este portafolio, construido por mí desde cero con React, es un ejemplo de esa pasión por la ejecución técnica.",
-        "callToAction": "Busco conectar con equipos innovadores donde pueda aportar esta visión híbrida para crear productos digitales excepcionales. Si mi perfil resuena contigo, hablemos."
+        "introduction": "Ingeniero Comercial de la UAI apasionado por conectar <strong>negocios y tecnología</strong>. Con experiencia liderando iniciativas de e-commerce para <strong>Nespresso</strong>, me enfoco en crear <strong>experiencias de usuario memorables</strong> que impulsan la conversión y fomentan la lealtad.",
+        "skills": "Mi enfoque es <strong>data-driven</strong>, utilizando <strong>Google Analytics</strong> para transformar datos en acción y optimizar el funnel de ventas. Complemento mi visión analítica con experiencia en <strong>desarrollo front-end</strong> para diseñar, prototipar y colaborar eficazmente con equipos técnicos, asegurando una ejecución precisa.",
+        "callToAction": "Busco conectar con equipos innovadores para crear productos digitales excepcionales. Si mi perfil resuena contigo, hablemos."
     },
     "projects": {
         "title": "Trabajos Recientes",
@@ -74,65 +74,63 @@
         "items": [
             {
                 "id": 1,
-                "title": "Gestión Estratégica de Campañas en Web y App",
+                "title": "Gestión de Campañas Digitales",
                 "tags": [
                     "E-commerce",
                     "Gestión de Campañas",
                     "UX/UI",
                     "App"
                 ],
-                "problem": "La necesidad de mantener un calendario comercial dinámico y ejecutar múltiples campañas simultáneamente en la web y la aplicación móvil para impulsar las ventas y la interacción con los clientes.",
-                "objective": "Orquestar y ejecutar más de 30 campañas comerciales a lo largo del año, asegurando una experiencia de usuario consistente y de alta calidad en todos los puntos de contacto digitales.",
+                "problem": "Necesidad de ejecutar múltiples campañas simultáneas en web y app para impulsar ventas.",
+                "objective": "Orquestar más de 30 campañas anuales con una experiencia de usuario consistente.",
                 "actions": [
-                    "Planificación y ejecución de un calendario anual con más de 30 campañas en la web y la aplicación móvil.",
-                    "Coordinación con equipos de diseño, desarrollo y marketing para asegurar la correcta implementación de cada campaña.",
-                    "Monitoreo constante del rendimiento de las campañas para optimizar los resultados en tiempo real."
+                    "Planificación y ejecución de calendario anual de campañas.",
+                    "Coordinación con equipos de diseño, desarrollo y marketing.",
+                    "Monitoreo y optimización constante del rendimiento."
                 ],
                 "results": [
-                    "Impacto significativo en el volumen de ventas, con un estimado de más de 8.4 millones de unidades de productos movidos a través de estas campañas.",
-                    "Mejora en la frecuencia de compra y la interacción del usuario con la marca en los canales digitales."
+                    "Impacto significativo en ventas, moviendo más de 8.4 millones de unidades.",
+                    "Mejora en la frecuencia de compra e interacción del usuario."
                 ]
             },
             {
                 "id": 2,
-                "title": "Incremento del Share de Órdenes por SEO",
+                "title": "Crecimiento de Órdenes por SEO",
                 "tags": [
                     "SEO",
                     "Google Analytics",
                     "Estrategia de Contenido",
                     "Schema"
                 ],
-                "problem": "El canal orgánico representaba solo el 9% del total de las órdenes, lo que indicaba una oportunidad de crecimiento para reducir la dependencia de los medios pagados.",
-                "objective": "Aumentar la participación de las órdenes orgánicas del 9% al 13% durante el primer semestre de 2025.",
+                "problem": "El canal orgánico solo representaba el 9% de las órdenes, mostrando una oportunidad de crecimiento.",
+                "objective": "Aumentar la participación de órdenes orgánicas del 9% al 13% en el primer semestre de 2025.",
                 "actions": [
-                    "Mejora y optimización de las principales palabras clave del negocio.",
-                    "Integración de nuevas palabras clave long-tail identificadas con Semrush y Google Keyword Planner.",
-                    "Implementación de secciones de preguntas frecuentes (FAQ) en las páginas de detalle de producto (PDP) y listado de productos (PLP).",
-                    "Implementación de datos estructurados (Schema) para mejorar la visibilidad en los resultados de búsqueda."
+                    "Optimización de palabras clave principales y long-tail.",
+                    "Implementación de secciones FAQ en páginas de producto.",
+                    "Uso de datos estructurados (Schema) para mejorar visibilidad."
                 ],
                 "results": [
-                    "Aumento del 4% en la participación de las órdenes orgánicas (del 9% al 13%).",
-                    "Reducción del 5% en el costo de adquisición de clientes (CAC)."
+                    "Aumento del 4% en la participación de órdenes orgánicas (de 9% a 13%)."
                 ]
             },
             {
                 "id": 3,
-                "title": "Potenciación de Canales de Retiro y Autogestión",
+                "title": "Optimización de Canales de Retiro",
                 "tags": [
                     "Omnicanalidad",
                     "UX",
                     "Eficiencia Operacional"
                 ],
-                "problem": "Existía la oportunidad de mejorar la experiencia omnicanal y reducir la carga operativa del equipo de atención al cliente.",
-                "objective": "Fortalecer el sistema de retiro en tienda y comunicar eficazmente las herramientas de autogestión a los clientes.",
+                "problem": "Mejorar la experiencia omnicanal y reducir la carga operativa en atención al cliente.",
+                "objective": "Fortalecer el sistema de retiro en tienda y comunicar herramientas de autogestión.",
                 "actions": [
-                    "Optimicé el flujo de compra para la modalidad de retiro, resultando en una experiencia más fluida.",
-                    "Se mejoró la comunicación, invitando a los clientes a vivir la experiencia en la boutique.",
-                    "Finalmente, se optimizaron los correos transaccionales para agilizar el retiro de pedidos, reduciendo así su tiempo de permanencia en la tienda."
+                    "Optimicé el flujo de compra para la modalidad de retiro.",
+                    "Mejora en la comunicación para invitar a la experiencia en boutique.",
+                    "Optimización de correos transaccionales para agilizar el retiro.",
+                    "Capacitación al equipo de boutique para mejorar la experiencia del cliente."
                 ],
                 "results": [
-                    "Aumento del 15% en los pedidos con la modalidad de retiro.",
-                    "Adopción de estas iniciativas como buenas prácticas por la gerencia global de Nespresso."
+                    "Aumento del 15% en los pedidos con la modalidad de retiro."
                 ]
             }
         ]

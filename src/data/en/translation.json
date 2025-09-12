@@ -11,16 +11,16 @@
     "hero": {
         "name": "Gonzalo Lobos",
         "title": "Business Engineer Specializing in E-commerce and Web Development.",
-        "subtitle": "I turn business strategies into digital experiences that drive growth and conversion.",
+        "subtitle": "I turn strategies into digital experiences that drive growth.",
         "primaryButton": "View Case Studies",
         "secondaryButton": "Contact"
     },
     "about": {
         "title": "About Me",
         "imageAlt": "Portrait of Gonzalo Lobos, E-commerce and Web Development Specialist",
-        "introduction": "I'm a Business Engineer from UAI, passionate about building bridges between <strong>business strategy and technology</strong>. My experience in the dynamic world of e-commerce, especially leading initiatives for a global brand like <strong>Nespresso</strong>, has taught me that the best digital solutions are born from a deep understanding of the customer and business goals. It's not just about selling online, but about creating <strong>memorable user experiences</strong> that drive conversion and foster loyalty.",
-        "skills": "My approach is <strong>data-driven</strong>. I use tools like <strong>Google Analytics</strong> to gain insights and turn them into action, optimizing every touchpoint of the sales funnel. This analytical vision is complemented by my experience in <strong>front-end development</strong>, which allows me not only to design the strategy but also to prototype, validate ideas, and collaborate effectively with technical teams to ensure the vision is executed with <strong>precision and quality</strong>. This portfolio, built by me from scratch with React, is an example of that passion for technical execution.",
-        "callToAction": "I'm looking to connect with innovative teams where I can contribute this hybrid vision to create exceptional digital products. If my profile resonates with you, let's talk."
+        "introduction": "UAI Business Engineer passionate about connecting <strong>business and technology</strong>. With experience leading e-commerce initiatives for <strong>Nespresso</strong>, I focus on creating <strong>memorable user experiences</strong> that drive conversion and foster loyalty.",
+        "skills": "My approach is <strong>data-driven</strong>, using <strong>Google Analytics</strong> to turn data into action and optimize the sales funnel. I complement my analytical vision with experience in <strong>front-end development</strong> to design, prototype, and collaborate effectively with technical teams, ensuring precise execution.",
+        "callToAction": "I'm looking to connect with innovative teams to create exceptional digital products. If my profile resonates with you, let's talk."
     },
     "projects": {
         "title": "Recent Work",
@@ -74,65 +74,63 @@
         "items": [
             {
                 "id": 1,
-                "title": "Strategic Campaign Management on Web and App",
+                "title": "Strategic Digital Campaign Management",
                 "tags": [
                     "E-commerce",
                     "Campaign Management",
                     "UX/UI",
                     "App"
                 ],
-                "problem": "The need to maintain a dynamic commercial calendar and run multiple campaigns simultaneously on the web and mobile app to drive sales and customer interaction.",
-                "objective": "To orchestrate and execute over 30 commercial campaigns throughout the year, ensuring a consistent and high-quality user experience across all digital touchpoints.",
+                "problem": "Need to run multiple simultaneous campaigns on web and app to boost sales.",
+                "objective": "Orchestrate over 30 annual campaigns with a consistent user experience.",
                 "actions": [
-                    "Planning and execution of an annual calendar with over 30 campaigns on the web and mobile app.",
-                    "Coordination with design, development, and marketing teams to ensure the correct implementation of each campaign.",
-                    "Constant monitoring of campaign performance to optimize results in real-time."
+                    "Planning and execution of an annual campaign calendar.",
+                    "Coordination with design, development, and marketing teams.",
+                    "Constant performance monitoring and optimization."
                 ],
                 "results": [
-                    "Significant impact on sales volume, with an estimated over 8.4 million product units moved through these campaigns.",
-                    "Improvement in purchase frequency and user interaction with the brand on digital channels."
+                    "Significant sales impact, moving over 8.4 million units.",
+                    "Improved purchase frequency and user interaction."
                 ]
             },
             {
                 "id": 2,
-                "title": "Increase in Order Share through SEO",
+                "title": "SEO Order Share Growth",
                 "tags": [
                     "SEO",
                     "Google Analytics",
                     "Content Strategy",
                     "Schema"
                 ],
-                "problem": "The organic channel represented only 9% of total orders, indicating a growth opportunity to reduce dependency on paid media.",
-                "objective": "To increase the share of organic orders from 9% to 13% during the first half of 2025.",
+                "problem": "The organic channel represented only 9% of orders, showing a growth opportunity.",
+                "objective": "Increase the share of organic orders from 9% to 13% in the first half of 2025.",
                 "actions": [
-                    "Improvement and optimization of the main business keywords.",
-                    "Integration of new long-tail keywords identified with Semrush and Google Keyword Planner.",
-                    "Implementation of FAQ sections on product detail pages (PDP) and product listing pages (PLP).",
-                    "Implementation of structured data (Schema) to improve visibility in search results."
+                    "Optimization of main and long-tail keywords.",
+                    "Implementation of FAQ sections on product pages.",
+                    "Use of structured data (Schema) to improve visibility."
                 ],
                 "results": [
-                    "4% increase in the share of organic orders (from 9% to 13%).",
-                    "5% reduction in customer acquisition cost (CAC)."
+                    "4% increase in the share of organic orders (from 9% to 13%)."
                 ]
             },
             {
                 "id": 3,
-                "title": "Enhancement of Pickup and Self-Service Channels",
+                "title": "Pickup Channel Optimization",
                 "tags": [
                     "Omnichannel",
                     "UX",
                     "Operational Efficiency"
                 ],
-                "problem": "There was an opportunity to improve the omnichannel experience and reduce the operational load on the customer support team.",
-                "objective": "To strengthen the in-store pickup system and effectively communicate self-service tools to customers.",
+                "problem": "Improve the omnichannel experience and reduce the operational load on customer service.",
+                "objective": "Strengthen the in-store pickup system and communicate self-service tools.",
                 "actions": [
-                    "I optimized the purchase flow for the pickup modality, resulting in a smoother experience.",
-                    "Communication was improved, inviting customers to live the boutique experience.",
-                    "Finally, transactional emails were optimized to speed up order pickup, thus reducing their in-store dwell time."
+                    "I optimized the purchase flow for the pickup modality.",
+                    "Communication was improved to invite customers to the boutique experience.",
+                    "Transactional emails were optimized to expedite pickup.",
+                    "Boutique team training to enhance the customer experience."
                 ],
                 "results": [
-                    "15% increase in orders with the pickup modality.",
-                    "Adoption of these initiatives as best practices by Nespresso's global management."
+                    "15% increase in orders with the pickup modality."
                 ]
             }
         ]
@@ -157,29 +155,29 @@
         "past": [
             {
                 "id": 1,
-                "title": "Training Development Management",
+                "title": "Training Development Manager",
                 "place": "Todo Mejora",
-                "duration": "March 2021 - December 2021 (10 months)",
+                "duration": "Mar 2021 – Dec 2021 (10 months)",
                 "responsibilities": [
-                    "Coordinate training in health and education sectors.",
-                    "Manage income and expenses.",
-                    "Coordinate payments with institutions."
+                    "Coordination of training in the health and education sectors.",
+                    "Income and expense management.",
+                    "Coordination of payments with institutions."
                 ]
             },
             {
                 "id": 2,
                 "title": "Front-End Developer",
                 "place": "Simple y Creativo",
-                "duration": "March 2020 - February 2021 (1 year)",
+                "duration": "Mar 2020 – Feb 2021 (1 year)",
                 "responsibilities": [
-                    "Coordination with clients to create Mockups and Wireframes tailored to their needs for requested website development."
+                    "Coordination with clients to create custom Mockups and Wireframes for website development."
                 ]
             },
             {
                 "id": 3,
                 "title": "Photography Technician",
                 "place": "Estudio FE",
-                "duration": "October 2019 - February 2021 (1 year, 5 months)",
+                "duration": "Oct 2019 – Feb 2021 (1 year, 5 months)",
                 "responsibilities": [
                     "Assistance in photographic and audiovisual productions for major brands.",
                     "Coordination of casting for photographic and audiovisual projects."
@@ -189,7 +187,7 @@
                 "id": 4,
                 "title": "Marketing Product Management",
                 "place": "Grupo Copesa",
-                "duration": "October 2018 - February 2019 (5 months)",
+                "duration": "Oct 2018 – Feb 2019 (5 months)",
                 "responsibilities": [
                     "Coordination for the implementation of graphic materials in La Tercera, La Hora, Motores, and Paula.",
                     "Coordination with the design team for graphic materials for La Tercera newspaper's subscription campaigns.",
