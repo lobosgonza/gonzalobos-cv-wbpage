@@ -14,7 +14,7 @@ jobs:
 
       # === INICIO DE LA MODIFICACIÓN ===
       # Aquí le decimos que use los secretos durante el 'build'
-      - run: npm ci && npm run build
+      - run: npm ci --legacy-peer-deps && npm run build
         env:
           REACT_APP_EMAILJS_SERVICE_ID: ${{ secrets.REACT_APP_EMAILJS_SERVICE_ID }}
           REACT_APP_EMAILJS_TEMPLATE_ID: ${{ secrets.REACT_APP_EMAILJS_TEMPLATE_ID }}
