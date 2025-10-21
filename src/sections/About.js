@@ -8,6 +8,7 @@ import SectionTitle from '../components/SectionTitle';
 function About() {
     const { t } = useTranslation();
 
+
     return (
         <section id="about" className="py-16 sm:py-20 bg-white dark:bg-slate-900">
             <div className="container mx-auto px-6">
