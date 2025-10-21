@@ -21,14 +21,24 @@ function Experience() {
     const currentExperience = t('experience.current', { returnObjects: true }) || {};
     const pastExperiences = t('experience.past', { returnObjects: true }) || [];
 
+    // --- INICIO DE LA CORRECCIÓN ---
+
+    // 1. Extrae solo la fecha, que es la dependencia real.
+    const startDate = currentExperience.startDate;
+
     const [calculatedExp, setCalculatedExp] = useState({ years: 0, months: 0 });
 
     useEffect(() => {
-        if (currentExperience && currentExperience.startDate) {
-            const { years, months } = calculateExperience(currentExperience.startDate);
+        // 2. Ejecuta el cálculo solo si 'startDate' existe.
+        if (startDate) {
+            const { years, months } = calculateExperience(startDate);
             setCalculatedExp({ years, months });
         }
-    }, [currentExperience]);
+        // 3. El 'useEffect' ahora solo depende del string 'startDate'.
+        // No se volverá a ejecutar a menos que el idioma cambie (lo que cambia el string).
+    }, [startDate]);
+
+    // --- FIN DE LA CORRECCIÓN ---
 
     const sinceText = currentExperience.since
         ? currentExperience.since
@@ -50,7 +60,7 @@ function Experience() {
                             <p className="text-md text-slate-500 dark:text-slate-400 mt-2">{sinceText}</p>
                         </div>
                         <div className="md:col-span-2">
-                            <p className="font-semibold text-text-dark dark:text-text-light mb-3">Responsabilidades Clave:</p>
+                            <p className="font-semibold text-text-dark dark:text-text-light mb-3">{t('experience.keyResponsibilities')}</p>
                             <ul className="list-disc list-inside space-y-2 text-slate-600 dark:text-slate-300">
                                 {currentExperience.responsibilities && currentExperience.responsibilities.map((item, index) => (
                                     <li key={index}>{item}</li>

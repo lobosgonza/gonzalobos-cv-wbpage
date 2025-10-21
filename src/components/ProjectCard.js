@@ -1,8 +1,13 @@
 // src/components/ProjectCard.jsx
 
 import React from 'react';
+// 1. IMPORTA EL HOOK DE TRADUCCIÓN
+import { useTranslation } from 'react-i18next';
 
 const ProjectCard = ({ project }) => {
+    // 2. INICIALIZA EL HOOK
+    const { t } = useTranslation();
+
     return (
         <div className="bg-white dark:bg-slate-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
             <img src={project.image} alt={`Mockup de la página web del proyecto ${project.title}`} className="w-full h-48 object-cover" />
@@ -19,14 +24,27 @@ const ProjectCard = ({ project }) => {
                 </div>
 
                 <div className="mt-auto flex justify-end gap-4">
+
+                    {/* --- INICIO DE LA LÓGICA DE HUMOR --- */}
                     {project.liveUrl && (
-                        <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-primary hover:underline">
-                            Ver Proyecto
-                        </a>
+                        // Si 'liveUrlText' existe en el JSON, muestra el texto de humor (como <span>)
+                        project.liveUrlText ? (
+                            <span className="text-sm font-semibold text-primary cursor-default">
+                                {project.liveUrlText}
+                            </span>
+                        ) : (
+                            // Si no, muestra el link normal con el texto traducido
+                            <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-primary hover:underline">
+                                {t('projects.liveButton')}
+                            </a>
+                        )
                     )}
+                    {/* --- FIN DE LA LÓGICA DE HUMOR --- */}
+
                     {project.repoUrl && (
                         <a href={project.repoUrl} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-slate-500 hover:underline">
-                            Ver Código
+                            {/* Usa el texto traducido para "Ver Código" */}
+                            {t('projects.repoButton')}
                         </a>
                     )}
                 </div>

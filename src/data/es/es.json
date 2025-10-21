@@ -24,6 +24,8 @@
     },
     "projects": {
         "title": "Trabajos Recientes",
+        "liveButton": "Ver Proyecto",
+        "repoButton": "Ver Código",
         "items": [
             {
                 "id": 1,
@@ -63,7 +65,8 @@
                     "Firebase",
                     "UX/UI"
                 ],
-                "liveUrl": "https://gonzalobos.com",
+                "liveUrl": "#",
+                "liveUrlText": "Ya estás aquí 😉",
                 "repoUrl": "https://github.com/lobosgonza/gonzalobos-cv-wbpage"
             }
         ]
@@ -71,6 +74,12 @@
     "caseStudies": {
         "title": "Casos de Estudio",
         "subtitle": "Una selección de mis logros y proyectos más recientes.",
+        "headings": {
+            "problem": "Problema",
+            "objective": "Objetivo",
+            "actions": "Acciones",
+            "results": "Resultados Clave"
+        },
         "items": [
             {
                 "id": 1,
@@ -139,6 +148,7 @@
     "experience": {
         "sectionTitle": "Experiencia",
         "pastExperienceTitle": "Experiencia Previa",
+        "keyResponsibilities": "Responsabilidades Clave:",
         "current": {
             "jobTitle": "E-commerce Merchandising Specialist",
             "company": "Nestlé Nespresso SA",
@@ -249,12 +259,19 @@
     },
     "contact": {
         "title": "Contacto",
-        "subtitle": "Si tienes interés en colaborar o alguna pregunta, no dudes en contactarme. ¡Hay apertura a nuevas oportunidades!",
-        "email": "Correo:",
-        "phone": "Teléfono:",
+        "subtitle": "Si te interesa colaborar o tienes preguntas, contáctame. Siempre estoy abierto/a a escuchar sobre nuevos y atractivos desafíos.",
         "whatsapp": "WhatsApp",
         "linkedin": "LinkedIn",
-        "github": "GitHub"
+        "github": "GitHub",
+        "formName": "Nombre",
+        "formEmail": "Tu Email",
+        "formCompany": "Empresa (Opcional)",
+        "formMessage": "Mensaje",
+        "formSend": "Enviar Mensaje",
+        "formSuccess": "¡Mensaje enviado! Gracias por contactarme.",
+        "formError": "Hubo un error al enviar el mensaje. Inténtalo más tarde.",
+        "copied": "¡Copiado al portapapeles!",
+        "sendMessage": "Envíame un mensaje"
     },
     "footer": {
         "rights": "Todos los derechos reservados.",

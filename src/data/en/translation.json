@@ -24,6 +24,8 @@
     },
     "projects": {
         "title": "Recent Work",
+        "liveButton": "View Project",
+        "repoButton": "View Code",
         "items": [
             {
                 "id": 1,
@@ -63,7 +65,8 @@
                     "Firebase",
                     "UX/UI"
                 ],
-                "liveUrl": "https://gonzalobos.com",
+                "liveUrl": "#",
+                "liveUrlText": "You're already here 😉",
                 "repoUrl": "https://github.com/lobosgonza/gonzalobos-cv-wbpage"
             }
         ]
@@ -71,6 +74,12 @@
     "caseStudies": {
         "title": "Case Studies",
         "subtitle": "A selection of my most recent achievements and projects.",
+        "headings": {
+            "problem": "Problem",
+            "objective": "Objective",
+            "actions": "Actions",
+            "results": "Key Results"
+        },
         "items": [
             {
                 "id": 1,
@@ -139,6 +148,7 @@
     "experience": {
         "sectionTitle": "Experience",
         "pastExperienceTitle": "Previous Experience",
+        "keyResponsibilities": "Key Responsibilities:",
         "current": {
             "jobTitle": "E-commerce Merchandising Specialist",
             "company": "Nestlé Nespresso SA",
@@ -249,12 +259,19 @@
     },
     "contact": {
         "title": "Contact",
-        "subtitle": "If you are interested in collaborating or have any questions, feel free to contact me. I'm open to new opportunities!",
-        "email": "Email:",
-        "phone": "Phone:",
+        "subtitle": "If you are interested in collaborating or have any questions, feel free to contact me. I am always interested in hearing about new and compelling challenges.",
         "whatsapp": "WhatsApp",
         "linkedin": "LinkedIn",
-        "github": "GitHub"
+        "github": "GitHub",
+        "formName": "Name",
+        "formEmail": "Your Email",
+        "formCompany": "Company (Optional)",
+        "formMessage": "Message",
+        "formSend": "Send Message",
+        "formSuccess": "Message sent! Thanks for reaching out.",
+        "formError": "There was an error sending the message. Please try again later.",
+        "copied": "Copied to clipboard!",
+        "sendMessage": "Send me a message"
     },
     "footer": {
         "rights": "All rights reserved.",
