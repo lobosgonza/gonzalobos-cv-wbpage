@@ -23,12 +23,12 @@ const Contact = () => {
         {
             name: t('contact.whatsapp'),
             icon: <FaWhatsapp className="w-5 h-5" />,
-            url: 'https://wa.me/+56965961086',
+            url: 'https://wa.me/56965961086',
         },
         {
             name: t('contact.linkedin'),
             icon: <FaLinkedin className="w-5 h-5" />,
-            url: 'https://www.linkedin.com/in/gonzalobos/',
+            url: 'https://www.linkedin.com/in/gonzalo-lobos-ram%C3%ADrez/',
         },
         {
             name: t('contact.github'),
