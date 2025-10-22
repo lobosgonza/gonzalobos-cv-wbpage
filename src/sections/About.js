@@ -15,7 +15,7 @@ function About() {
                 <SectionTitle title={t('about.title')} />
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-center mt-12">
                     <motion.div className="md:col-span-1 flex justify-center" initial={{ opacity: 0, scale: 0.8 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-                        <img className="rounded-full shadow-lg w-48 h-48 sm:w-64 sm:h-64 object-cover" src={Img} alt={t('about.imageAlt')} />
+                        <img className="rounded-full shadow-lg w-64 h-64 sm:w-80 sm:h-80 object-cover" src={Img} alt={t('about.imageAlt')} />
                     </motion.div>
                     <div className="md:col-span-2 text-slate-600 dark:text-slate-300 space-y-4 text-lg">
                         <motion.p dangerouslySetInnerHTML={{ __html: t('about.introduction') }} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.2 }} />
