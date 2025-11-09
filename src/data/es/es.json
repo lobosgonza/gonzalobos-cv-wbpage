@@ -18,8 +18,8 @@
     "about": {
         "title": "Sobre Mí",
         "imageAlt": "Retrato de Gonzalo Lobos, especialista en Ecommerce y Desarrollo Web",
-        "introduction": "Ingeniero Comercial de la UAI apasionado por conectar <strong>negocios y tecnología</strong>. Con experiencia liderando iniciativas de e-commerce para <strong>Nespresso</strong>, me enfoco en crear <strong>experiencias de usuario memorables</strong> que impulsan la conversión y fomentan la lealtad.",
-        "skills": "Mi enfoque es <strong>data-driven</strong>, utilizando <strong>Google Analytics</strong> para transformar datos en acción y optimizar el funnel de ventas. Complemento mi visión analítica con experiencia en <strong>desarrollo front-end</strong> para diseñar, prototipar y colaborar eficazmente con equipos técnicos, asegurando una ejecución precisa.",
+        "introduction": "Soy un profesional apasionado por conectar <strong>negocios y tecnología</strong>. Aplicando mi experiencia en liderar iniciativas de e-commerce para <strong>marcas globales</strong>, me enfoco en crear <strong>experiencias de usuario memorables</strong> que impulsan la conversión y fomentan la lealtad.",
+        "skills": "Conecto la analítica con el desarrollo. Me apoyo en <strong>Google Analytics 4</strong>, <strong>Search Console</strong> y <strong>BrightEdge</strong> para guiar la estrategia. Mi experiencia en <strong>front-end</strong> (React, Tailwind CSS) me permite luego diseñar prototipos y asegurar una implementación técnica precisa.",
         "callToAction": "Busco conectar con equipos innovadores para crear productos digitales excepcionales. Si mi perfil resuena contigo, hablemos."
     },
     "projects": {
@@ -98,7 +98,7 @@
                     "Monitoreo y optimización constante del rendimiento."
                 ],
                 "results": [
-                    "Impacto significativo en ventas, moviendo más de 8.4 millones de unidades.",
+                    "+8.4 millones de unidades vendidas.",
                     "Mejora en la frecuencia de compra e interacción del usuario."
                 ]
             },
@@ -112,15 +112,15 @@
                     "Schema"
                 ],
                 "problem": "El canal orgánico solo representaba el 9% de las órdenes, mostrando una oportunidad de crecimiento.",
-                "objective": "Aumentar la participación de órdenes orgánicas del 9% al 13% en el primer semestre de 2025.",
+                "objective": "Incrementar las ventas del canal orgánico en un 20%, aumentando secundariamente su participación de órdenes (de 9% a 13%).",
                 "actions": [
                     "Optimización de palabras clave principales y long-tail.",
                     "Implementación de secciones FAQ en páginas de producto.",
                     "Uso de datos estructurados (Schema) para mejorar visibilidad."
                 ],
                 "results": [
-                    "La participación de órdenes orgánicas aumentó de 9% a 13%.",
-                    "Aumentamos las ventas a través de orgánico en un 20%."
+                    "Aumento del 20% en ventas del canal orgánico.",
+                    "Crecimiento del 'order share' orgánico de 9% a 13%."
                 ]
             },
             {
@@ -131,13 +131,13 @@
                     "UX",
                     "Eficiencia Operacional"
                 ],
-                "problem": "Mejorar la experiencia omnicanal y reducir la carga operativa en atención al cliente.",
-                "objective": "Fortalecer el sistema de retiro en tienda y comunicar herramientas de autogestión.",
+                "problem": "La experiencia omnicanal era inconsistente, ya que el servicio \"Boutique Pickup\" no estaba habilitado en todas las tiendas del país, generando confusión y carga operativa.",
+                "objective": "Liderar la implementación y estandarización del servicio \"Boutique Pickup\" en el 100% de las tiendas a nivel nacional para unificar la experiencia del cliente.",
                 "actions": [
-                    "Optimicé el flujo de compra para la modalidad de retiro.",
-                    "Mejora en la comunicación para invitar a la experiencia en boutique.",
-                    "Optimización de correos transaccionales para agilizar el retiro.",
-                    "Capacitación al equipo de boutique para mejorar la experiencia del cliente."
+                    "Habilitación del servicio en todas las boutiques del país.",
+                    "Capacitación de los equipos en tienda sobre el nuevo flujo operativo.",
+                    "Optimización de canales de comunicación para el monitoreo de pedidos.",
+                    "Redacción y mejora de emails de notificación para asegurar el retiro oportuno."
                 ],
                 "results": [
                     "Aumento del 15% en los pedidos con la modalidad de retiro."
@@ -209,6 +209,39 @@
             }
         ]
     },
+    "studies": {
+        "title": "Educación",
+        "items": [
+            {
+                "title": "Magíster, Psicología Organizacional",
+                "place": "Universidad Adolfo Ibáñez",
+                "duration": "mar. 2016 - mar. 2017",
+                "location": "Santiago, Chile",
+                "responsibilities": [
+                    "Enfoque en la intersección del comportamiento humano y la estrategia de negocio."
+                ]
+            },
+            {
+                "title": "Ingeniería Comercial, Mención en Administración de Empresas",
+                "place": "Universidad Adolfo Ibáñez",
+                "duration": "2011 - 2015",
+                "location": "Santiago, Chile",
+                "responsibilities": [
+                    "Formación integral en gestión, finanzas y estrategia de marketing.",
+                    "Especialización en administración y desarrollo de negocios."
+                ]
+            },
+            {
+                "title": "Técnico, Fotografía Publicitaria",
+                "place": "Instituto Profesional ARCOS",
+                "duration": "2018 - 2020",
+                "location": "Santiago, Chile",
+                "responsibilities": [
+                    "Formación técnica en composición, iluminación y post-producción digital (Photoshop, Lightroom)."
+                ]
+            }
+        ]
+    },
     "skills": {
         "title": "Caja de Herramientas",
         "strategyTitle": "Estrategia & Negocio",
@@ -247,6 +280,8 @@
             "tools": [
                 "Google Analytics 4",
                 "Google Search Console",
+                "Google Ads",
+                "BrightEdge",
                 "Google Keyword Planner",
                 "Schema Markup (JSON-LD)",
                 "Photoshop",

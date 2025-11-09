@@ -5,6 +5,7 @@ import About from './sections/About';
 import Projects from './sections/Projects';
 import CaseStudies from './sections/CaseStudies';
 import Experience from './sections/Experience';
+import Studies from './sections/Studies'; // <-- 1. Importar
 import Skills from './sections/Skills';
 import Contact from './sections/Contact';
 import Footer from './sections/Footer';
@@ -20,6 +21,7 @@ function App() {
         <CaseStudies />
         <Experience />
         <Skills />
+        <Studies /> {/* <-- 2. Añadir aquí */}
         <Contact />
       </main>
       <Footer />

@@ -18,8 +18,8 @@
     "about": {
         "title": "About Me",
         "imageAlt": "Portrait of Gonzalo Lobos, E-commerce and Web Development Specialist",
-        "introduction": "UAI Business Engineer passionate about connecting <strong>business and technology</strong>. With experience leading e-commerce initiatives for <strong>Nespresso</strong>, I focus on creating <strong>memorable user experiences</strong> that drive conversion and foster loyalty.",
-        "skills": "My approach is <strong>data-driven</strong>, using <strong>Google Analytics</strong> to turn data into action and optimize the sales funnel. I complement my analytical vision with experience in <strong>front-end development</strong> to design, prototype, and collaborate effectively with technical teams, ensuring precise execution.",
+        "introduction": "I am a professional who is passionate about connecting <strong>business and technology</strong>. Applying my experience leading e-commerce initiatives for <strong>global brands</strong>, I focus on creating <strong>memorable user experiences</strong> that drive conversion and foster loyalty.",
+        "skills": "I turn insights into action. I use <strong>Google Analytics 4</strong>, <strong>Search Console</strong>, and <strong>BrightEdge</strong> to optimize the sales funnel. My experience in <strong>front-end development</strong> (React, Tailwind CSS) allows me to prototype and collaborate effectively with technical teams, ensuring precise execution.",
         "callToAction": "I'm looking to connect with innovative teams to create exceptional digital products. If my profile resonates with you, let's talk."
     },
     "projects": {
@@ -90,7 +90,7 @@
                     "UX/UI",
                     "App"
                 ],
-                "problem": "Need to run multiple simultaneous campaigns on web and app to boost sales.",
+                "problem": "Need to execute multiple simultaneous campaigns on web and app to drive sales.",
                 "objective": "Orchestrate over 30 annual campaigns with a consistent user experience.",
                 "actions": [
                     "Planning and execution of an annual campaign calendar.",
@@ -98,8 +98,8 @@
                     "Constant performance monitoring and optimization."
                 ],
                 "results": [
-                    "Significant sales impact, moving over 8.4 million units.",
-                    "Improved purchase frequency and user interaction."
+                    "+8.4 million units sold.",
+                    "Improvement in purchase frequency and user interaction."
                 ]
             },
             {
@@ -112,15 +112,15 @@
                     "Schema"
                 ],
                 "problem": "The organic channel represented only 9% of orders, showing a growth opportunity.",
-                "objective": "Increase the share of organic orders from 9% to 13% in the first half of 2025.",
+                "objective": "Increase organic channel sales by 20%, secondarily increasing its order share (from 9% to 13%).",
                 "actions": [
                     "Optimization of main and long-tail keywords.",
                     "Implementation of FAQ sections on product pages.",
                     "Use of structured data (Schema) to improve visibility."
                 ],
                 "results": [
-                    "The share of organic orders increased from 9% to 13%.",
-                    "We increased sales through organic by 20%."
+                    "20% increase in organic channel sales.",
+                    "Growth in organic 'order share' from 9% to 13%."
                 ]
             },
             {
@@ -131,13 +131,13 @@
                     "UX",
                     "Operational Efficiency"
                 ],
-                "problem": "Improve the omnichannel experience and reduce the operational load on customer service.",
-                "objective": "Strengthen the in-store pickup system and communicate self-service tools.",
+                "problem": "The omnichannel experience was inconsistent, as the \"Boutique Pickup\" service was not enabled in all Nespresso stores nationwide, generating customer confusion and operational load.",
+                "objective": "Lead the implementation and standardization of the \"Boutique Pickup\" service in 100% of stores nationwide to unify the customer experience.",
                 "actions": [
-                    "I optimized the purchase flow for the pickup modality.",
-                    "Communication was improved to invite customers to the boutique experience.",
-                    "Transactional emails were optimized to expedite pickup.",
-                    "Boutique team training to enhance the customer experience."
+                    "Enablement of the service in all boutiques nationwide.",
+                    "Training of in-store teams on the new operational flow.",
+                    "Optimization of communication channels for order monitoring.",
+                    "Copywriting and improvement of notification emails to ensure timely pickup."
                 ],
                 "results": [
                     "15% increase in orders with the pickup modality."
@@ -209,6 +209,39 @@
             }
         ]
     },
+    "studies": {
+        "title": "Education",
+        "items": [
+            {
+                "title": "Master's Degree, Organizational Psychology",
+                "place": "Universidad Adolfo Ibáñez",
+                "duration": "Mar 2016 - Mar 2017",
+                "location": "Santiago, Chile",
+                "responsibilities": [
+                    "Focused on the intersection of human behavior and business strategy."
+                ]
+            },
+            {
+                "title": "Business Administration",
+                "place": "Universidad Adolfo Ibáñez",
+                "duration": "2011 - 2015",
+                "location": "Santiago, Chile",
+                "responsibilities": [
+                    "Comprehensive training in management, finance, and marketing strategy.",
+                    "Specialization in business administration and development."
+                ]
+            },
+            {
+                "title": "Technician, Advertising Photography",
+                "place": "Instituto Profesional ARCOS",
+                "duration": "2018 - 2020",
+                "location": "Santiago, Chile",
+                "responsibilities": [
+                    "Technical training in composition, lighting, and digital post-production (Photoshop, Lightroom)."
+                ]
+            }
+        ]
+    },
     "skills": {
         "title": "Toolbox",
         "strategyTitle": "Strategy & Business",
@@ -247,6 +280,8 @@
             "tools": [
                 "Google Analytics 4",
                 "Google Search Console",
+                "Google Ads",
+                "BrightEdge",
                 "Google Keyword Planner",
                 "Schema Markup (JSON-LD)",
                 "Photoshop",
