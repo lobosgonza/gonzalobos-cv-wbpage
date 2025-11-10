@@ -15,7 +15,9 @@ function Footer() {
 
     return (
         <motion.footer
-            className="bg-slate-900 dark:bg-background-dark text-slate-400"
+            // --- ESTAS SON LAS CLASES CORREGIDAS ---
+            className="bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 border-t border-slate-200 dark:border-slate-800"
+            // --- FIN DE LA CORRECCIÓN ---
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
@@ -28,7 +30,9 @@ function Footer() {
                     </p>
                     <motion.button
                         onClick={scrollToTop}
-                        className="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors duration-300"
+                        // --- CLASES CORREGIDAS PARA EL TEXTO DEL BOTÓN ---
+                        className="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors duration-300"
+                        // --- FIN DE LA CORRECCIÓN ---
                         whileHover={{ y: -3 }}
                         whileTap={{ scale: 0.95 }}
                         transition={{ type: "spring", stiffness: 400, damping: 17 }}

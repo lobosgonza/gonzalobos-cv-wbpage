@@ -23,3 +23,23 @@ body.fade-out {
 	width: 200px;
 	border-radius: 50%;
 }
+/* Punto inactivo */
+.swiper-pagination-bullet {
+	width: 8px; /* Ancho de 'w-2' */
+	height: 8px; /* Alto de 'h-2' */
+	background-color: #cbd5e1; /* 'bg-slate-300' */
+	opacity: 1;
+	transition: all 0.3s ease;
+}
+
+/* Punto activo */
+.swiper-pagination-bullet-active {
+	width: 16px; /* Ancho de 'w-4' */
+	border-radius: 9999px; /* 'rounded-full' */
+	background-color: #2563eb; /* 'bg-primary' */
+}
+
+/* --- Modo Oscuro --- */
+.dark .swiper-pagination-bullet {
+	background-color: #475569; /* 'dark:bg-slate-600' */
+}

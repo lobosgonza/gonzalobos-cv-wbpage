@@ -10,7 +10,7 @@
     },
     "hero": {
         "name": "Gonzalo Lobos",
-        "title": "Especialista en E-commerce y Desarrollo Web, con formación en Negocios.",
+        "title": "Estrategia de Negocios, E-commerce y Desarrollo Web.",
         "subtitle": "Convierto estrategias en experiencias digitales que impulsan el crecimiento.",
         "primaryButton": "Ver Trabajos Recientes",
         "secondaryButton": "Contacto"
@@ -90,8 +90,8 @@
                     "UX/UI",
                     "App"
                 ],
-                "problem": "Necesidad de ejecutar múltiples campañas simultáneas en web y app para impulsar ventas.",
-                "objective": "Orquestar más de 30 campañas anuales con una experiencia de usuario consistente.",
+                "problem": "Necesidad de ejecutar múltiples campañas simultáneas en web y app para impulsar las ventas.",
+                "objective": "Orquestar más de 30 campañas anuales asegurando una experiencia de usuario consistente.",
                 "actions": [
                     "Planificación y ejecución de calendario anual de campañas.",
                     "Coordinación con equipos de diseño, desarrollo y marketing.",
@@ -99,7 +99,7 @@
                 ],
                 "results": [
                     "+8.4 millones de unidades vendidas.",
-                    "Mejora en la frecuencia de compra e interacción del usuario."
+                    "Mejora en la frecuencia de compra e interacción."
                 ]
             },
             {
@@ -108,15 +108,15 @@
                 "tags": [
                     "SEO",
                     "Google Analytics",
-                    "Estrategia de Contenido",
+                    "Contenido",
                     "Schema"
                 ],
-                "problem": "El canal orgánico solo representaba el 9% de las órdenes, mostrando una oportunidad de crecimiento.",
-                "objective": "Incrementar las ventas del canal orgánico en un 20%, aumentando secundariamente su participación de órdenes (de 9% a 13%).",
+                "problem": "El canal orgánico representaba solo el 9% de las órdenes, una clara oportunidad de crecimiento.",
+                "objective": "Incrementar las ventas orgánicas en un 20% y elevar la participación de órdenes del 9% al 13%.",
                 "actions": [
-                    "Optimización de palabras clave principales y long-tail.",
+                    "Optimización de palabras clave (principales y long-tail).",
                     "Implementación de secciones FAQ en páginas de producto.",
-                    "Uso de datos estructurados (Schema) para mejorar visibilidad."
+                    "Uso de datos estructurados (Schema) para visibilidad."
                 ],
                 "results": [
                     "Aumento del 20% en ventas del canal orgánico.",
@@ -129,18 +129,40 @@
                 "tags": [
                     "Omnicanalidad",
                     "UX",
-                    "Eficiencia Operacional"
+                    "Operaciones"
                 ],
-                "problem": "La experiencia omnicanal era inconsistente, ya que el servicio \"Boutique Pickup\" no estaba habilitado en todas las tiendas del país, generando confusión y carga operativa.",
-                "objective": "Liderar la implementación y estandarización del servicio \"Boutique Pickup\" en el 100% de las tiendas a nivel nacional para unificar la experiencia del cliente.",
+                "problem": "El servicio \"Boutique Pickup\" era inconsistente, no estaba en todas las tiendas y generaba confusión.",
+                "objective": "Implementar y estandarizar el servicio \"Boutique Pickup\" en el 100% de las tiendas para unificar la experiencia.",
                 "actions": [
                     "Habilitación del servicio en todas las boutiques del país.",
                     "Capacitación de los equipos en tienda sobre el nuevo flujo operativo.",
-                    "Optimización de canales de comunicación para el monitoreo de pedidos.",
-                    "Redacción y mejora de emails de notificación para asegurar el retiro oportuno."
+                    "Optimización de canales de comunicación para monitoreo de pedidos.",
+                    "Redacción y mejora de emails de notificación para asegurar el retiro."
                 ],
                 "results": [
-                    "Aumento del 15% en los pedidos con la modalidad de retiro."
+                    "Aumento del 15% en pedidos con modalidad de retiro."
+                ]
+            },
+            {
+                "id": 4,
+                "title": "Lanzamiento y Gestión de Campañas SEM",
+                "tags": [
+                    "SEM",
+                    "Google Ads",
+                    "Performance",
+                    "Consultoría"
+                ],
+                "problem": "Lanzar la presencia en Google Ads de un cliente (Expansis Pro) para generar tráfico calificado y primeras conversiones.",
+                "objective": "Implementar una estrategia SEM desde cero, configurar el tracking de conversiones y obtener los primeros resultados.",
+                "actions": [
+                    "Investigación de palabras clave y análisis de competencia.",
+                    "Estructuración de cuenta y grupos de anuncios en Google Ads.",
+                    "Configuración de eventos de conversión.",
+                    "Gestión y optimización inicial de la campaña."
+                ],
+                "results": [
+                    "Se obtuvieron los primeros eventos de conversión del cliente.",
+                    "Validación exitosa del embudo de performance."
                 ]
             }
         ]
@@ -181,7 +203,8 @@
                 "place": "Simple y Creativo",
                 "duration": "mar. 2020 – feb. 2021 (1 año)",
                 "responsibilities": [
-                    "Coordinación con clientes para la creación de Mockups y Wireframes a la medida para el desarrollo de sitios web solicitados."
+                    "Desarrollo de sitios web y landing pages para clientes.",
+                    "Traducción de requerimientos de cliente a mockups y wireframes."
                 ]
             },
             {
@@ -190,8 +213,8 @@
                 "place": "Estudio FE",
                 "duration": "oct. 2019 – dic. 2021 (3 meses)",
                 "responsibilities": [
-                    "Asistencia en producciones fotográficas y audiovisuales para grandes marcas.",
-                    "Coordinación de casting para proyectos fotográficos y audiovisuales."
+                    "Asistencia en producción digital (foto y audiovisual) para grandes marcas.",
+                    "Coordinación de equipos y casting para proyectos."
                 ]
             },
             {
@@ -200,11 +223,9 @@
                 "place": "Grupo Copesa",
                 "duration": "jun. 2015 – dic. 2015 (7 meses)",
                 "responsibilities": [
-                    "Coordinación para la implementación de material gráfico en La Tercera, La Hora, Motores y Paula.",
-                    "Coordinación con el equipo de diseño para material gráfico de campañas de suscripción del diario La Tercera.",
-                    "Coordinación con el equipo de diagramación para la implementación de gráficas en el diario en las fechas calendarizadas.",
-                    "Redacción de contratos con diversos proveedores para productos relacionados con la suscripción.",
-                    "Seguimiento de ingresos y egresos del área de suscripción de La Tercera."
+                    "Gestión de campañas de suscripción para el diario La Tercera.",
+                    "Coordinación de equipos de diseño y diagramación para material gráfico.",
+                    "Seguimiento de presupuesto y gestión de contratos con proveedores."
                 ]
             }
         ]
@@ -245,8 +266,11 @@
     "skills": {
         "title": "Caja de Herramientas",
         "strategyTitle": "Estrategia & Negocio",
+        "strategyDesc": "Mi visión para impactar en resultados.",
         "technicalTitle": "Habilidades Técnicas",
+        "technicalDesc": "Lenguajes para construir y prototipar.",
         "toolsTitle": "Herramientas & Plataformas",
+        "toolsDesc": "El stack de software que uso a diario.",
         "items": {
             "strategy": [
                 {
@@ -255,7 +279,7 @@
                 },
                 {
                     "title": "Optimización de la Tasa de Conversión (CRO)",
-                    "description": "Análisis del funnel de ventas, A/B testing y mejora continua de la experiencia de usuario (UX/UI)."
+                    "description": "Análisis del funnel de ventas, A/B testing (Optimizely) y mejora continua de la experiencia de usuario (UX/UI)."
                 },
                 {
                     "title": "Marketing Digital & SEO",
@@ -280,6 +304,8 @@
             "tools": [
                 "Google Analytics 4",
                 "Google Search Console",
+                "Looker Studio",
+                "Optimizely",
                 "Google Ads",
                 "BrightEdge",
                 "Google Keyword Planner",
@@ -294,7 +320,7 @@
     },
     "contact": {
         "title": "Contacto",
-        "subtitle": "Si te interesa colaborar o tienes preguntas, contáctame. Siempre estoy abierto/a a escuchar sobre nuevos y atractivos desafíos.",
+        "subtitle": "Si te interesa colaborar o tienes preguntas, contáctame. Siempre estoy abierto a escuchar sobre nuevos y atractivos desafíos.",
         "whatsapp": "WhatsApp",
         "linkedin": "LinkedIn",
         "github": "GitHub",

@@ -10,7 +10,7 @@
     },
     "hero": {
         "name": "Gonzalo Lobos",
-        "title": "Business Administration Professional, specializing in E-commerce and Web Development.",
+        "title": "Business Strategy, E-commerce & Web Development.",
         "subtitle": "I turn strategies into digital experiences that drive growth.",
         "primaryButton": "View Case Studies",
         "secondaryButton": "Contact"
@@ -91,7 +91,7 @@
                     "App"
                 ],
                 "problem": "Need to execute multiple simultaneous campaigns on web and app to drive sales.",
-                "objective": "Orchestrate over 30 annual campaigns with a consistent user experience.",
+                "objective": "Orchestrate over 30 annual campaigns ensuring a consistent user experience.",
                 "actions": [
                     "Planning and execution of an annual campaign calendar.",
                     "Coordination with design, development, and marketing teams.",
@@ -108,15 +108,15 @@
                 "tags": [
                     "SEO",
                     "Google Analytics",
-                    "Content Strategy",
+                    "Content",
                     "Schema"
                 ],
-                "problem": "The organic channel represented only 9% of orders, showing a growth opportunity.",
-                "objective": "Increase organic channel sales by 20%, secondarily increasing its order share (from 9% to 13%).",
+                "problem": "The organic channel represented only 9% of orders, a clear growth opportunity.",
+                "objective": "Increase organic sales by 20% and lift the channel's order share from 9% to 13%.",
                 "actions": [
-                    "Optimization of main and long-tail keywords.",
-                    "Implementation of FAQ sections on product pages.",
-                    "Use of structured data (Schema) to improve visibility."
+                    "Keyword optimization (main and long-tail).",
+                    "FAQ section implementation on product pages.",
+                    "Structured data (Schema) utilization for visibility."
                 ],
                 "results": [
                     "20% increase in organic channel sales.",
@@ -129,18 +129,40 @@
                 "tags": [
                     "Omnichannel",
                     "UX",
-                    "Operational Efficiency"
+                    "Operations"
                 ],
-                "problem": "The omnichannel experience was inconsistent, as the \"Boutique Pickup\" service was not enabled in all Nespresso stores nationwide, generating customer confusion and operational load.",
-                "objective": "Lead the implementation and standardization of the \"Boutique Pickup\" service in 100% of stores nationwide to unify the customer experience.",
+                "problem": "The \"Boutique Pickup\" service was inconsistent, not in all stores, and caused customer confusion.",
+                "objective": "Implement and standardize the \"Boutique Pickup\" service in 100% of stores to unify the customer experience.",
                 "actions": [
                     "Enablement of the service in all boutiques nationwide.",
                     "Training of in-store teams on the new operational flow.",
                     "Optimization of communication channels for order monitoring.",
-                    "Copywriting and improvement of notification emails to ensure timely pickup."
+                    "Copywriting and improvement of notification emails."
                 ],
                 "results": [
                     "15% increase in orders with the pickup modality."
+                ]
+            },
+            {
+                "id": 4,
+                "title": "SEM Campaign Launch and Management",
+                "tags": [
+                    "SEM",
+                    "Google Ads",
+                    "Performance",
+                    "Consulting"
+                ],
+                "problem": "Launch a client's Google Ads presence (Expansis Pro) to generate qualified traffic and first conversions.",
+                "objective": "Implement an SEM strategy from scratch, set up conversion tracking, and achieve initial results.",
+                "actions": [
+                    "Keyword research and competitor analysis.",
+                    "Account and ad group structuring in Google Ads.",
+                    "Conversion event setup.",
+                    "Initial campaign management and optimization."
+                ],
+                "results": [
+                    "Achieved the client's first conversion events.",
+                    "Successful validation of the performance funnel."
                 ]
             }
         ]
@@ -181,7 +203,8 @@
                 "place": "Simple y Creativo",
                 "duration": "Mar 2020 – Feb 2021 (1 year)",
                 "responsibilities": [
-                    "Coordination with clients to create custom Mockups and Wireframes for website development."
+                    "Developed websites and landing pages for various clients.",
+                    "Translated client requirements into functional mockups and wireframes."
                 ]
             },
             {
@@ -190,8 +213,8 @@
                 "place": "Estudio FE",
                 "duration": "Oct 2019 – Dic 2020 (3 months)",
                 "responsibilities": [
-                    "Assistance in photographic and audiovisual productions for major brands.",
-                    "Coordination of casting for photographic and audiovisual projects."
+                    "Assisted in digital production (photo and audiovisual) for major brands.",
+                    "Coordinated teams and casting for projects."
                 ]
             },
             {
@@ -200,11 +223,9 @@
                 "place": "Grupo Copesa",
                 "duration": "Jun 2015 – Dic 2015 (7 months)",
                 "responsibilities": [
-                    "Coordination for the implementation of graphic materials in La Tercera, La Hora, Motores, and Paula.",
-                    "Coordination with the design team for graphic materials for La Tercera newspaper's subscription campaigns.",
-                    "Coordination with the layout team for the implementation of graphics in the newspaper on scheduled dates.",
-                    "Drafting contracts with various suppliers for subscription-related products.",
-                    "Monitoring income and expenses for La Tercera's subscription area."
+                    "Managed subscription campaigns for La Tercera newspaper.",
+                    "Coordinated design and layout teams for graphic materials.",
+                    "Tracked budgets and managed supplier contracts."
                 ]
             }
         ]
@@ -245,8 +266,11 @@
     "skills": {
         "title": "Toolbox",
         "strategyTitle": "Strategy & Business",
+        "strategyDesc": "My vision for impacting business goals.",
         "technicalTitle": "Technical Skills",
+        "technicalDesc": "Languages I use to build and prototype.",
         "toolsTitle": "Tools & Platforms",
+        "toolsDesc": "My day-to-day software stack.",
         "items": {
             "strategy": [
                 {
@@ -255,7 +279,7 @@
                 },
                 {
                     "title": "Conversion Rate Optimization (CRO)",
-                    "description": "Sales funnel analysis, A/B testing, and continuous improvement of user experience (UX/UI)."
+                    "description": "Sales funnel analysis, A/B testing (Optimizely), and continuous improvement of user experience (UX/UI)."
                 },
                 {
                     "title": "Digital Marketing & SEO",
@@ -280,6 +304,8 @@
             "tools": [
                 "Google Analytics 4",
                 "Google Search Console",
+                "Looker Studio",
+                "Optimizely",
                 "Google Ads",
                 "BrightEdge",
                 "Google Keyword Planner",

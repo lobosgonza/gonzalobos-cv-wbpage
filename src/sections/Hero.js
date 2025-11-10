@@ -52,7 +52,7 @@ const Hero = () => {
                     animate="visible"
                 >
                     <motion.h1
-                        className="text-5xl md:text-7xl lg:text-8xl font-extrabold font-display text-text-dark dark:text-text-light pb-4"
+                        className="text-3xl md:text-4xl lg:text-5xl font-extrabold font-display text-text-dark dark:text-text-light pb-4"
                         variants={itemVariants}
                     >
                         {t('hero.name')}
