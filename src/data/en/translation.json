@@ -83,44 +83,44 @@
         "items": [
             {
                 "id": 1,
-                "title": "Strategic Digital Campaign Management",
+                "title": "Digital Campaign Management",
                 "tags": [
                     "E-commerce",
                     "Campaign Management",
                     "UX/UI",
                     "App"
                 ],
-                "problem": "Need to execute multiple simultaneous campaigns on web and app to drive sales.",
-                "objective": "Orchestrate over 30 annual campaigns ensuring a consistent user experience.",
+                "problem": "Need to execute multiple simultaneous campaigns on web and app to boost sales.",
+                "objective": "Orchestrate over 30 annual campaigns, ensuring a consistent user experience.",
                 "actions": [
-                    "Planning and execution of an annual campaign calendar.",
+                    "Planning and execution of the annual campaign calendar.",
                     "Coordination with design, development, and marketing teams.",
                     "Constant performance monitoring and optimization."
                 ],
                 "results": [
-                    "+8.4 million units sold.",
-                    "Improvement in purchase frequency and user interaction."
+                    "Successful execution of campaigns, resulting in high annual sales volume.",
+                    "Improvement in purchase frequency and interaction."
                 ]
             },
             {
                 "id": 2,
-                "title": "SEO Order Share Growth",
+                "title": "SEO Order Growth",
                 "tags": [
                     "SEO",
                     "Google Analytics",
                     "Content",
                     "Schema"
                 ],
-                "problem": "The organic channel represented only 9% of orders, a clear growth opportunity.",
-                "objective": "Increase organic sales by 20% and lift the channel's order share from 9% to 13%.",
+                "problem": "Identified a growth opportunity in the organic channel, which had an order share below the brand's potential.",
+                "objective": "Increase visibility and sales share from the organic channel through a content and technical optimization strategy.",
                 "actions": [
-                    "Keyword optimization (main and long-tail).",
-                    "FAQ section implementation on product pages.",
-                    "Structured data (Schema) utilization for visibility."
+                    "Keyword optimization (primary and long-tail).",
+                    "Implementation of FAQ sections on product pages.",
+                    "Use of structured data (Schema) for visibility."
                 ],
                 "results": [
-                    "20% increase in organic channel sales.",
-                    "Growth in organic 'order share' from 9% to 13%."
+                    "Double-digit growth in sales from the organic channel.",
+                    "Significant increase in the channel's order share within the sales mix."
                 ]
             },
             {
@@ -131,16 +131,16 @@
                     "UX",
                     "Operations"
                 ],
-                "problem": "The \"Boutique Pickup\" service was inconsistent, not in all stores, and caused customer confusion.",
-                "objective": "Implement and standardize the \"Boutique Pickup\" service in 100% of stores to unify the customer experience.",
+                "problem": "The \"Boutique Pickup\" service was inconsistent, not available in all stores, and generated confusion.",
+                "objective": "Implement and standardize the \"Boutique Pickup\" service in 100% of stores to unify the experience.",
                 "actions": [
-                    "Enablement of the service in all boutiques nationwide.",
+                    "Service rollout to all boutiques nationwide.",
                     "Training of in-store teams on the new operational flow.",
                     "Optimization of communication channels for order monitoring.",
-                    "Copywriting and improvement of notification emails."
+                    "Drafting and improvement of notification emails to ensure pickup."
                 ],
                 "results": [
-                    "15% increase in orders with the pickup modality."
+                    "Notable increase in the adoption of the pickup modality."
                 ]
             },
             {
@@ -152,16 +152,16 @@
                     "Performance",
                     "Consulting"
                 ],
-                "problem": "Launch a client's Google Ads presence (Expansis Pro) to generate qualified traffic and first conversions.",
-                "objective": "Implement an SEM strategy from scratch, set up conversion tracking, and achieve initial results.",
+                "problem": "Launch the Google Ads presence for a client (Expansis Pro) to generate qualified traffic and initial conversions.",
+                "objective": "Implement an SEM strategy from scratch, set up conversion tracking, and obtain initial results.",
                 "actions": [
                     "Keyword research and competitor analysis.",
-                    "Account and ad group structuring in Google Ads.",
-                    "Conversion event setup.",
+                    "Structuring of the account and ad groups in Google Ads.",
+                    "Configuration of conversion events.",
                     "Initial campaign management and optimization."
                 ],
                 "results": [
-                    "Achieved the client's first conversion events.",
+                    "The client's first conversion events were obtained.",
                     "Successful validation of the performance funnel."
                 ]
             }
@@ -211,7 +211,7 @@
                 "id": 3,
                 "title": "Photography Technician",
                 "place": "Estudio FE",
-                "duration": "Oct 2019 – Dic 2020 (3 months)",
+                "duration": "Oct 2019 – Dec 2019 (3 months)",
                 "responsibilities": [
                     "Assisted in digital production (photo and audiovisual) for major brands.",
                     "Coordinated teams and casting for projects."
@@ -221,7 +221,7 @@
                 "id": 4,
                 "title": "Marketing Product Management",
                 "place": "Grupo Copesa",
-                "duration": "Jun 2015 – Dic 2015 (7 months)",
+                "duration": "Jun 2015 – Dec 2015 (7 months)",
                 "responsibilities": [
                     "Managed subscription campaigns for La Tercera newspaper.",
                     "Coordinated design and layout teams for graphic materials.",
@@ -236,7 +236,7 @@
             {
                 "title": "Master's Degree, Organizational Psychology",
                 "place": "Universidad Adolfo Ibáñez",
-                "duration": "Mar 2016 - Mar 2017",
+                "duration": "2016 - 2017",
                 "location": "Santiago, Chile",
                 "responsibilities": [
                     "Focused on the intersection of human behavior and business strategy."

@@ -98,7 +98,7 @@
                     "Monitoreo y optimización constante del rendimiento."
                 ],
                 "results": [
-                    "+8.4 millones de unidades vendidas.",
+                    "Ejecución exitosa de campañas, resultando en un alto volumen de ventas anuales.",
                     "Mejora en la frecuencia de compra e interacción."
                 ]
             },
@@ -111,16 +111,16 @@
                     "Contenido",
                     "Schema"
                 ],
-                "problem": "El canal orgánico representaba solo el 9% de las órdenes, una clara oportunidad de crecimiento.",
-                "objective": "Incrementar las ventas orgánicas en un 20% y elevar la participación de órdenes del 9% al 13%.",
+                "problem": "Se identificó una oportunidad de crecimiento en el canal orgánico, que tenía una participación de órdenes por debajo del potencial de la marca.",
+                "objective": "Aumentar la visibilidad y la participación de ventas del canal orgánico a través de una estrategia de contenido y optimización técnica.",
                 "actions": [
                     "Optimización de palabras clave (principales y long-tail).",
                     "Implementación de secciones FAQ en páginas de producto.",
                     "Uso de datos estructurados (Schema) para visibilidad."
                 ],
                 "results": [
-                    "Aumento del 20% en ventas del canal orgánico.",
-                    "Crecimiento del 'order share' orgánico de 9% a 13%."
+                    "Crecimiento de dos dígitos en las ventas del canal orgánico.",
+                    "Incremento significativo en la participación del canal (order share) dentro del mix de ventas."
                 ]
             },
             {
@@ -140,7 +140,7 @@
                     "Redacción y mejora de emails de notificación para asegurar el retiro."
                 ],
                 "results": [
-                    "Aumento del 15% en pedidos con modalidad de retiro."
+                    "Aumento notable en la adopción de la modalidad de retiro en tienda."
                 ]
             },
             {
@@ -211,7 +211,7 @@
                 "id": 3,
                 "title": "Técnico en Fotografía",
                 "place": "Estudio FE",
-                "duration": "oct. 2019 – dic. 2021 (3 meses)",
+                "duration": "oct. 2019 – dic. 2019 (3 meses)",
                 "responsibilities": [
                     "Asistencia en producción digital (foto y audiovisual) para grandes marcas.",
                     "Coordinación de equipos y casting para proyectos."
