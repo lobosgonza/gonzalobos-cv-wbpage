@@ -11,8 +11,8 @@ const navLinks = [
     { id: 'projects', labelKey: 'navbar.projects' },
     { id: 'caseStudies', labelKey: 'navbar.caseStudies' },
     { id: 'experience', labelKey: 'navbar.experience' },
-    { id: 'skills', labelKey: 'navbar.skills' },
     { id: 'studies', labelKey: 'navbar.studies' }, // <-- Añadir aquí
+    { id: 'skills', labelKey: 'navbar.skills' },
     { id: 'contact', labelKey: 'navbar.contact' },
 ];
 

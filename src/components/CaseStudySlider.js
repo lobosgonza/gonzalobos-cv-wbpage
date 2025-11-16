@@ -17,7 +17,7 @@ const ArrowIcon = (props) => (
 
 const CaseStudySlider = ({ items, renderItem }) => {
     return (
-        <div className="relative w-full max-w-6xl mx-auto">
+        <div className="relative w-full">
             <Swiper
                 // 2. CORRECCIÓN: Quitamos 'Loop' del array de módulos
                 modules={[Navigation, Pagination]}

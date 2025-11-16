@@ -48,7 +48,7 @@ const Contact = () => {
                         {t('contact.subtitle')}
                     </p>
 
-                    <div className="grid lg:grid-cols-2 gap-12 items-start max-w-4xl mx-auto">
+                    <div className="grid lg:grid-cols-2 gap-12 items-start">
 
                         {/* Columna Izquierda: Links */}
                         <div className="space-y-6">

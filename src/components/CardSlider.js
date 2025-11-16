@@ -77,7 +77,7 @@ const CardSlider = ({ items, renderItem }) => {
 
 
     return (
-        <div className="relative w-full max-w-xl mx-auto">
+        <div className="relative w-full">
             <div className="relative overflow-hidden pb-10">
                 <AnimatePresence initial={false} custom={direction} mode="wait">
                     <motion.div

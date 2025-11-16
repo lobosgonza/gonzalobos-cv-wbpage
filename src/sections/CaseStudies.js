@@ -33,7 +33,7 @@ function CaseStudies() {
 
                     {/* --- CASO 1: Grid (Solo para Desktop y si hay MENOS de 4 items) --- */}
                     {studiesCount < DESKTOP_SLIDER_THRESHOLD && (
-                        <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                        <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {validCaseStudies.map(renderSlideCard)}
                         </div>
                     )}
