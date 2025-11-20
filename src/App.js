@@ -10,8 +10,7 @@ import Studies from './sections/Studies'; // Asegúrate de que esté importado
 import Contact from './sections/Contact';
 import Footer from './sections/Footer';
 
-// 1. Importa el nuevo componente wrapper
-import AnimatedSection from './components/AnimatedSection';
+
 
 function App() {
   return (
