@@ -6,7 +6,7 @@ module.exports = {
   // 1. CONTENT: Le decimos a Tailwind qué archivos escanear
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
-    "./public/index.html",
+    "./index.html", // <-- Apuntando directamente a la raíz
   ],
 
   // 2. THEME: Aquí personalizamos el diseño

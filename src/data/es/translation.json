@@ -23,51 +23,136 @@
         "callToAction": "Busco conectar con equipos innovadores para crear productos digitales excepcionales. Si mi perfil resuena contigo, hablemos."
     },
     "projects": {
-        "title": "Trabajos Recientes",
+        "title": "Trabajos Realizados",
         "liveButton": "Ver Proyecto",
         "repoButton": "Ver Código",
         "items": [
             {
-                "id": 1,
-                "title": "Expansis - Soluciones Digitales",
-                "description": "Desarrollo y consultoría de soluciones digitales a medida para impulsar negocios online, abarcando desarrollo web, marketing digital y estrategias SEO.",
-                "image": "/images/proyecto-expansis.jpg",
-                "tags": [
-                    "Desarrollo Web",
-                    "Consultoría Digital",
-                    "Marketing",
-                    "SEO"
+                "id": "2v-express",
+                "title": "2V Express",
+                "category": "Branding & Desarrollo Web",
+                "sector": "Logística Internacional & Courier",
+                "image": "/images/2VExpress-web.webp",
+                "description": "Desarrollo integral de <strong>identidad corporativa y ecosistema digital</strong> para una empresa especializada en el retiro de excedentes. El proyecto abarcó desde la definición estratégica de marca (branding) hasta la habilitación técnica de canales de comunicación profesional y una plataforma web de alta autoridad, generando coherencia operativa en cada punto de contacto.",
+                "results": [
+                    "Creación de identidad visual completa (Logo y Manual de Estilo)",
+                    "Digitalización corporativa: Configuración de correos, firmas y herramientas de comunicación",
+                    "Desarrollo web optimizado para proyectar solidez en un sector industrial de baja rotación"
                 ],
-                "liveUrl": "https://expansispro.com/",
+                "tags": [
+                    "React",
+                    "Branding",
+                    "Canales Corporativos",
+                    "Identidad Corporativa"
+                ],
+                "liveUrl": "https://2vexpressglobal.com/",
                 "repoUrl": null
             },
             {
-                "id": 2,
-                "title": "Lobos Miniexcavadoras",
-                "description": "Sitio web para empresa de arriendo de miniexcavadoras, enfocada en excavaciones y movimiento de tierra en espacios reducidos en el Valle del Aconcagua.",
-                "image": "/images/proyecto-lobos.jpg",
+                "id": "claudia-gallardo",
+                "title": "Claudia Gallardo",
+                "category": "Desarrollo Web & Portafolio",
+                "sector": "Dirección de Arte & Cine Internacional",
+                "image": "/images/ClaudiaGallardo-web.webp",
+                "description": "Desarrollo de portafolio para Directora de Arte de trayectoria internacional. El proyecto consistió en crear una <strong>vitrina digital de alto impacto</strong> para organizar una filmografía destacada en plataformas como Netflix, HBO y Prime Video. La arquitectura se centró en una estética cinematográfica que proyecta el estatus de una ganadora del Premio Pedro Sienna.",
+                "results": [
+                    "Arquitectura de información diseñada para destacar producciones de clase mundial",
+                    "Interfaz minimalista y sofisticada que cede el protagonismo a la obra visual",
+                    "Optimización de activos para la carga fluida de galerías en alta resolución"
+                ],
                 "tags": [
-                    "Desarrollo Web",
-                    "Maquinaria",
-                    "Servicios"
+                    "React",
+                    "Dirección de Arte",
+                    "Cine & Series",
+                    "Portafolio de Autor"
+                ],
+                "liveUrl": "https://claudiagallardo.com/",
+                "repoUrl": null
+            },
+            {
+                "id": "lobos-miniexcavadoras",
+                "title": "Lobos Miniexcavadoras",
+                "category": "Desarrollo Web",
+                "sector": "Movimiento de Tierra & Construcción",
+                "image": "/images/lobosMiniexcavadoras-web.webp",
+                "description": "Desarrollo de una <strong>infraestructura digital de alto rendimiento</strong> para el sector industrial. Transformamos la presencia online en una máquina de <strong>generación de leads locales</strong>, priorizando la velocidad de carga en terreno y una arquitectura técnica que proyecta la solidez operativa de la marca.",
+                "results": [
+                    "Optimización de <strong>conversión estratégica</strong> para arriendo de maquinaria",
+                    "Interfaz ultra-rápida (WPO) diseñada para uso en condiciones de baja señal",
+                    "Posicionamiento de autoridad en el mercado del Valle del Aconcagua"
+                ],
+                "tags": [
+                    "React",
+                    "Tailwind CSS",
+                    "SEO Local",
+                    "Servicios Industriales"
                 ],
                 "liveUrl": "https://lobosminiexcavadoras.cl/",
                 "repoUrl": null
             },
             {
-                "id": 3,
-                "title": "Mi Portafolio Personal",
-                "description": "Diseño y desarrollo de mi propia página web para mostrar mi perfil profesional. Construida desde cero con React y Tailwind CSS, y desplegada con Firebase.",
-                "image": "/images/proyecto-portafolio.jpg",
+                "id": "gonzalo-lobos",
+                "title": "Gonzalo Lobos",
+                "category": "Consultoría & Branding",
+                "sector": "Psicología Organizacional & Estrategia",
+                "image": "/images/gonzalobos-web.webp",
+                "description": "Diseño de ecosistema digital para marca personal de alto nivel. El proyecto sintetiza una trayectoria en <strong>psicología organizacional</strong> con herramientas de gestión de negocios, creando una plataforma que equilibra <strong>humanismo y robustez técnica</strong> para atraer clientes corporativos.",
+                "results": [
+                    "Unificación de <strong>narrativa estratégica</strong> y sistema de estilo visual",
+                    "Arquitectura web optimizada para el posicionamiento de autoridad personal",
+                    "Estructura orientada a la <strong>captación de clientes B2B</strong> de alto valor"
+                ],
+                "tags": [
+                    "React",
+                    "Psicología Organizacional",
+                    "Branding Estratégico",
+                    "Consultoría"
+                ],
+                "liveUrl": "https://gonzalobos.com/",
+                "repoUrl": null
+            },
+            {
+                "id": "estudio-brkovic",
+                "title": "Estudio Jurídico Brkovic",
+                "category": "Desarrollo Web Corporativo",
+                "sector": "Servicios Legales & Litigación Compleja",
+                "image": "/images/estudiobrkovic-web.webp",
+                "description": "Desarrollo de una <strong>plataforma web institucional premium</strong> para una firma de Abogados con más de 30 años de trayectoria en alta complejidad y derechos humanos. El ecosistema fue diseñado bajo una arquitectura limpia y solemne que organiza múltiples áreas de práctica especializada, balanceando la seriedad institucional con flujos de conversión optimizados.",
+                "results": [
+                    "Arquitectura modular para la indexación y desglose de áreas complejas (Justicia, DD.HH. y Defensa de Comunidades)",
+                    "Integración estratégica de canales de atención inmediata y asesoría directa vía WhatsApp",
+                    "Optimización avanzada de rendimiento (WPO) mediante precarga de activos críticos para una navegación sin fricciones"
+                ],
                 "tags": [
                     "React",
                     "Tailwind CSS",
-                    "Firebase",
-                    "UX/UI"
+                    "Infraestructura Digital",
+                    "Sector Legal"
                 ],
-                "liveUrl": "#",
-                "liveUrlText": "Ya estás aquí 😉",
-                "repoUrl": "https://github.com/lobosgonza/gonzalobos-cv-wbpage"
+                "liveUrl": "https://estudiobrkovic.cl/",
+                "repoUrl": null
+            },
+            {
+                "id": "expansis-oscar",
+                "title": "OSCAR: Agente Comercial Inteligente",
+                "category": "Agentes de IA",
+                "sector": "Automatización Comercial",
+                "image": "/images/expansis-oscar-web.webp",
+                "description": "Diseño y desarrollo de un <strong>agente conversacional autónomo y arquitectura de API centralizada</strong>. El proyecto interconecta los modelos de lenguaje avanzado de Gemini 2.5 Flash con la API oficial de WhatsApp (Meta) y Chatwoot, implementando un modelo de 'Única Fuente de Verdad' (Single Source of Truth) para sincronizar en tiempo real el conocimiento corporativo del bot y de la página web de la agencia.",
+                "results": [
+                    "Automatización del embudo de ventas y calificación de leads mediante respuestas ultra-sintéticas orientadas a la conversión (Cal.com)",
+                    "Arquitectura híbrida orientada a eventos con sistema de seguridad 'Human-in-the-Loop' para desvíos automáticos por etiquetas",
+                    "Exposición de endpoints API protegidos con soporte CORS para el consumo dinámico de datos del ecosistema en el frontend"
+                ],
+                "tags": [
+                    "Node.js",
+                    "Express",
+                    "Gemini AI",
+                    "Webhooks",
+                    "Conversational AI"
+                ],
+                "liveUrl": "https://api.whatsapp.com/send/?phone=56988318443&text=%C2%A1Hola%21+%0A%0AMe+gustar%C3%ADa+potenciar+mi+negocio+con+un+%2ADesarrollo+Web%2A+a+medida.%0A%0A%C2%BFPodr%C3%ADan+darme+m%C3%A1s+detalles%3F&type=phone_number&app_absent=0",
+                "repoUrl": null
             }
         ]
     },
@@ -152,7 +237,7 @@
                     "Performance",
                     "Consultoría"
                 ],
-                "problem": "Lanzar la presencia en Google Ads de un cliente (Expansis Pro) para generar tráfico calificado y primeras conversiones.",
+                "problem": "Lanzar la presencia en Google Ads de un cliente para generar tráfico calificado y primeras conversiones.",
                 "objective": "Implementar una estrategia SEM desde cero, configurar el tracking de conversiones y obtener los primeros resultados.",
                 "actions": [
                     "Investigación de palabras clave y análisis de competencia.",
@@ -172,22 +257,35 @@
         "pastExperienceTitle": "Experiencia Previa",
         "keyResponsibilities": "Responsabilidades Clave:",
         "current": {
-            "jobTitle": "E-commerce Merchandising Specialist",
-            "company": "Nestlé Nespresso SA",
-            "startDate": "2021-12-01",
+            "jobTitle": "Estratega Digital y Fundador",
+            "company": "Expansis Pro",
+            "startDate": "2026-05-01",
             "since": "{{years}} años y {{months}} meses",
             "responsibilities": [
-                "Liderar la estrategia de e-commerce para Nespresso.com.",
-                "Implementar mejoras de UX/UI.",
-                "Monitorear el proceso de compra en Nespresso.cl.",
-                "Desarrollar campañas online como Cyber Day y Black Friday.",
-                "Realizar seguimiento de KPIs a través de Google Analytics.",
-                "Mejorar el posicionamiento SEO del sitio web."
+                "Liderar la dirección general de Expansis Pro, enfocada en la optimización operativa y estratégica de negocios.",
+                "Diseñar estrategias digitales y definir la hoja de ruta tecnológica para empresas que buscan escalar su presencia online y mejorar su conversión.",
+                "Proveer consultoría operativa aplicando metodologías de eficiencia y estándares de excelencia en procesos digitales.",
+                "Gestionar proyectos digitales de forma integral, supervisando el desarrollo de plataformas y alineando el diseño con los objetivos comerciales.",
+                "Brindar acompañamiento estratégico y asesoría personalizada en la implementación de herramientas para optimizar la gestión empresarial."
             ]
         },
         "past": [
             {
                 "id": 1,
+                "title": "Ecommerce Merchandising Specialist",
+                "place": "Nestlé Nespresso SA",
+                "duration": "dic. 2021 – abr. 2026 (4 años y 5 meses)",
+                "responsibilities": [
+                    "Liderar la estrategia de e-commerce para Nespresso.com, garantizando una experiencia de compra fluida y efectiva.",
+                    "Implementar mejoras de UX/UI en plataformas digitales, optimizando la navegación y funcionalidad para los usuarios.",
+                    "Monitorear el proceso de compra en Nespresso.cl, asegurando el cumplimiento de procesos y la resolución de problemas críticos.",
+                    "Coordinar y ejecutar campañas online clave como Cyber Day, Cyber Monday y Black Friday, asegurando el éxito en su implementación.",
+                    "Realizar seguimiento de KPIs a través de Google Analytics.",
+                    "Liderar la estrategia de posicionamiento SEO, mejorando la visibilidad orgánica del sitio web."
+                ]
+            },
+            {
+                "id": 2,
                 "title": "Gestor de Desarrollo Formativo",
                 "place": "Todo Mejora",
                 "duration": "mar. 2021 – dic. 2021 (10 meses)",
@@ -199,7 +297,7 @@
                 ]
             },
             {
-                "id": 2,
+                "id": 3,
                 "title": "Desarrollador Front-End",
                 "place": "Simple y Creativo",
                 "duration": "mar. 2020 – feb. 2021 (1 año)",
@@ -209,7 +307,7 @@
                 ]
             },
             {
-                "id": 3,
+                "id": 4,
                 "title": "Técnico en Fotografía",
                 "place": "Estudio FE",
                 "duration": "oct. 2019 – dic. 2019 (3 meses)",
@@ -219,7 +317,7 @@
                 ]
             },
             {
-                "id": 4,
+                "id": 5,
                 "title": "Gestión de Productos de Marketing",
                 "place": "Grupo Copesa",
                 "duration": "jun. 2015 – dic. 2015 (7 meses)",

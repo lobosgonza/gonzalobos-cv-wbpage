@@ -28,46 +28,131 @@
         "repoButton": "View Code",
         "items": [
             {
-                "id": 1,
-                "title": "Expansis - Digital Solutions",
-                "description": "Development and consulting of custom digital solutions to boost online businesses, covering web development, digital marketing, and SEO strategies.",
-                "image": "/images/proyecto-expansis.jpg",
-                "tags": [
-                    "Web Development",
-                    "Digital Consulting",
-                    "Marketing",
-                    "SEO"
+                "id": "2v-express",
+                "title": "2V Express",
+                "category": "Branding & Web Development",
+                "sector": "International Logistics & Courier",
+                "image": "/images/2VExpress-web.webp",
+                "description": "Comprehensive development of <strong>corporate identity and digital ecosystem</strong> for a company specialized in surplus removal. The project ranged from strategic brand definition (branding) to the technical enablement of professional communication channels and a high-authority web platform, generating operational consistency at every touchpoint.",
+                "results": [
+                    "Creation of a complete visual identity (Logo and Style Guide)",
+                    "Corporate digitalization: Configuration of emails, signatures, and communication tools",
+                    "Optimized web development to project solidity in a low-turnover industrial sector"
                 ],
-                "liveUrl": "https://expansispro.com/",
+                "tags": [
+                    "React",
+                    "Branding",
+                    "Corporate Channels",
+                    "Corporate Identity"
+                ],
+                "liveUrl": "https://2vexpressglobal.com/",
                 "repoUrl": null
             },
             {
-                "id": 2,
-                "title": "Lobos Mini Excavators",
-                "description": "Website for a mini excavator rental company, focused on excavations and earthmoving in confined spaces in the Aconcagua Valley.",
-                "image": "/images/proyecto-lobos.jpg",
+                "id": "claudia-gallardo",
+                "title": "Claudia Gallardo",
+                "category": "Web Development & Portfolio",
+                "sector": "Art Direction & International Cinema",
+                "image": "/images/ClaudiaGallardo-web.webp",
+                "description": "Portfolio development for an Art Director with an international trajectory. The project consisted of creating a <strong>high-impact digital showcase</strong> to organize a prominent filmography on platforms such as Netflix, HBO, and Prime Video. The architecture centered on a cinematographic aesthetic that projects the status of a Pedro Sienna Award winner.",
+                "results": [
+                    "Information architecture designed to highlight world-class productions",
+                    "Minimalist and sophisticated interface that gives center stage to the visual work",
+                    "Asset optimization for smooth loading of high-resolution galleries"
+                ],
                 "tags": [
-                    "Web Development",
-                    "Machinery",
-                    "Services"
+                    "React",
+                    "Art Direction",
+                    "Cinema & Series",
+                    "Auteur Portfolio"
+                ],
+                "liveUrl": "https://claudiagallardo.com/",
+                "repoUrl": null
+            },
+            {
+                "id": "lobos-miniexcavadoras",
+                "title": "Lobos Mini Excavators",
+                "category": "Web Development",
+                "sector": "Earthmoving & Construction",
+                "image": "/images/lobosMiniexcavadoras-web.webp",
+                "description": "Development of a <strong>high-performance digital infrastructure</strong> for the industrial sector. We transformed the online presence into a local <strong>lead generation machine</strong>, prioritizing loading speed on-site and a technical architecture that projects the brand's operational solidity.",
+                "results": [
+                    "Strategic <strong>conversion optimization</strong> for machinery rental",
+                    "Ultra-fast interface (WPO) designed for use in low-signal conditions",
+                    "Authority positioning in the Aconcagua Valley market"
+                ],
+                "tags": [
+                    "React",
+                    "Tailwind CSS",
+                    "Local SEO",
+                    "Industrial Services"
                 ],
                 "liveUrl": "https://lobosminiexcavadoras.cl/",
                 "repoUrl": null
             },
             {
-                "id": 3,
-                "title": "My Personal Portfolio",
-                "description": "Design and development of my own professional portfolio website. Built from scratch with React and Tailwind CSS, and deployed with Firebase.",
-                "image": "/images/proyecto-portafolio.jpg",
+                "id": "gonzalo-lobos",
+                "title": "Gonzalo Lobos",
+                "category": "Consulting & Branding",
+                "sector": "Organizational Psychology & Strategy",
+                "image": "/images/gonzalobos-web.webp",
+                "description": "Digital ecosystem design for a high-level personal brand. The project synthesizes a trajectory in <strong>organizational psychology</strong> with business management tools, creating a platform that balances <strong>humanism and technical robustness</strong> to attract corporate clients.",
+                "results": [
+                    "Unification of <strong>strategic narrative</strong> and visual style system",
+                    "Web architecture optimized for personal authority positioning",
+                    "Structure oriented towards capturing high-value <strong>B2B clients</strong>"
+                ],
+                "tags": [
+                    "React",
+                    "Organizational Psychology",
+                    "Strategic Branding",
+                    "Consulting"
+                ],
+                "liveUrl": "https://gonzalobos.com/",
+                "repoUrl": null
+            },
+            {
+                "id": "estudio-brkovic",
+                "title": "Brkovic Law Firm",
+                "category": "Corporate Web Development",
+                "sector": "Legal Services & Complex Litigation",
+                "image": "/images/estudiobrkovic-web.webp",
+                "description": "Development of a <strong>premium institutional web platform</strong> for a law firm with over 30 years of experience in high complexity and human rights. The ecosystem was designed under a clean and solemn architecture that organizes multiple specialized practice areas, balancing institutional seriousness with optimized conversion flows.",
+                "results": [
+                    "Modular architecture for indexing and breaking down complex areas (Justice, Human Rights, and Community Defense)",
+                    "Strategic integration of immediate response channels and direct advisory via WhatsApp",
+                    "Advanced performance optimization (WPO) through preloading of critical assets for friction-free navigation"
+                ],
                 "tags": [
                     "React",
                     "Tailwind CSS",
-                    "Firebase",
-                    "UX/UI"
+                    "Digital Infrastructure",
+                    "Legal Sector"
                 ],
-                "liveUrl": "#",
-                "liveUrlText": "You're already here 😉",
-                "repoUrl": "https://github.com/lobosgonza/gonzalobos-cv-wbpage"
+                "liveUrl": "https://estudiobrkovic.cl/",
+                "repoUrl": null
+            },
+            {
+                "id": "expansis-oscar",
+                "title": "OSCAR: Intelligent Commercial Agent",
+                "category": "AI Agents",
+                "sector": "Commercial Automation",
+                "image": "/images/expansis-oscar-web.webp",
+                "description": "Design and development of an <strong>autonomous conversational agent and centralized API architecture</strong>. The project interconnects advanced Gemini 2.5 Flash language models with the official WhatsApp API (Meta) and Chatwoot, implementing a 'Single Source of Truth' model to synchronize the bot's and agency's website corporate knowledge in real time.",
+                "results": [
+                    "Automation of the sales funnel and lead qualification through ultra-synthetic responses oriented toward conversion (Cal.com)",
+                    "Event-driven hybrid architecture with a 'Human-in-the-Loop' security system for automatic routing via tags",
+                    "Exposure of protected API endpoints with CORS support for dynamic ecosystem data consumption on the frontend"
+                ],
+                "tags": [
+                    "Node.js",
+                    "Express",
+                    "Gemini AI",
+                    "Webhooks",
+                    "Conversational AI"
+                ],
+                "liveUrl": "https://api.whatsapp.com/send/?phone=56988318443&text=%C2%A1Hola%21+%0A%0AMe+gustar%C3%ADa+potenciar+mi+negocio+con+un+%2ADesarrollo+Web%2A+a+medida.%0A%0A%C2%BFPodr%C3%ADan+darme+m%C3%A1s+detalles%3F&type=phone_number&app_absent=0",
+                "repoUrl": null
             }
         ]
     },
@@ -152,7 +237,7 @@
                     "Performance",
                     "Consulting"
                 ],
-                "problem": "Launch the Google Ads presence for a client (Expansis Pro) to generate qualified traffic and initial conversions.",
+                "problem": "Launch the Google Ads presence for a client to generate qualified traffic and initial conversions.",
                 "objective": "Implement an SEM strategy from scratch, set up conversion tracking, and obtain initial results.",
                 "actions": [
                     "Keyword research and competitor analysis.",
@@ -172,22 +257,35 @@
         "pastExperienceTitle": "Previous Experience",
         "keyResponsibilities": "Key Responsibilities:",
         "current": {
-            "jobTitle": "E-commerce Merchandising Specialist",
-            "company": "Nestlé Nespresso SA",
-            "startDate": "2021-12-01",
+            "jobTitle": "Digital Strategist & Founder",
+            "company": "Expansis Pro",
+            "startDate": "2026-05-01",
             "since": "{{years}} years and {{months}} months",
             "responsibilities": [
-                "Lead the e-commerce strategy for Nespresso.com.",
-                "Implement UX/UI improvements.",
-                "Monitor the purchase process on Nespresso.cl.",
-                "Develop online campaigns like Cyber Day and Black Friday.",
-                "Track KPIs through Google Analytics.",
-                "Improve the SEO positioning of the website."
+                "Leadership and overall direction of Expansis Pro, a digital solutions company oriented toward strategic and operational business optimization.",
+                "Digital Strategy Design: Defining technological roadmaps for businesses looking to scale their online presence and maximize conversions.",
+                "Operational Consulting: Applying efficiency methodologies and excellence standards to digital processes, leveraging high-level operational experience.",
+                "Digital Project Management: End-to-end supervision of platform development, ensuring that architecture and layout align perfectly with client business goals.",
+                "Strategic Advisory: Providing personalized guidance on implementing digital tools to optimize management and drive business growth."
             ]
         },
         "past": [
             {
                 "id": 1,
+                "title": "E-commerce Merchandising Specialist",
+                "place": "Nestlé Nespresso SA",
+                "duration": "Dec 2021 – Apr 2026 (4 years and 5 months)",
+                "responsibilities": [
+                    "Lead the e-commerce strategy for Nespresso.com, guaranteeing a fluid and effective shopping experience.",
+                    "Implement UX/UI improvements on digital platforms, optimizing navigation and functionality for users.",
+                    "Monitor the purchase process on Nespresso.cl, ensuring process compliance and the resolution of critical issues.",
+                    "Coordinate and execute key campaigns such as Cyber Day, Cyber Monday, and Black Friday, ensuring success in their implementation.",
+                    "Track KPIs through Google Analytics.",
+                    "Lead the SEO positioning strategy, improving the website's organic visibility."
+                ]
+            },
+            {
+                "id": 2,
                 "title": "Training Development Manager",
                 "place": "Todo Mejora",
                 "duration": "Mar 2021 – Dec 2021 (10 months)",
@@ -199,7 +297,7 @@
                 ]
             },
             {
-                "id": 2,
+                "id": 3,
                 "title": "Front-End Developer",
                 "place": "Simple y Creativo",
                 "duration": "Mar 2020 – Feb 2021 (1 year)",
@@ -209,7 +307,7 @@
                 ]
             },
             {
-                "id": 3,
+                "id": 4,
                 "title": "Photography Technician",
                 "place": "Estudio FE",
                 "duration": "Oct 2019 – Dec 2019 (3 months)",
@@ -219,7 +317,7 @@
                 ]
             },
             {
-                "id": 4,
+                "id": 5,
                 "title": "Marketing Product Management",
                 "place": "Grupo Copesa",
                 "duration": "Jun 2015 – Dec 2015 (7 months)",
