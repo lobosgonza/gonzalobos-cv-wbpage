@@ -12,20 +12,24 @@
         "name": "Gonzalo Lobos",
         "title": "Business Strategy, E-commerce & Web Development.",
         "subtitle": "I turn strategies into digital experiences that drive growth.",
-        "primaryButton": "View Case Studies",
+        "primaryButton": "View Recent Work",
         "secondaryButton": "Contact"
     },
     "about": {
         "title": "About Me",
         "imageAlt": "Portrait of Gonzalo Lobos, E-commerce and Web Development Specialist",
         "introduction": "I am a professional who is passionate about connecting <strong>business and technology</strong>. Applying my experience leading e-commerce initiatives for <strong>global brands</strong>, I focus on creating <strong>memorable user experiences</strong> that drive conversion and foster loyalty.",
-        "skills": "I turn insights into action. I use <strong>Google Analytics 4</strong>, <strong>Search Console</strong>, and <strong>BrightEdge</strong> to optimize the sales funnel. My experience in <strong>front-end development</strong> (React, Tailwind CSS) allows me to prototype and collaborate effectively with technical teams, ensuring precise execution.",
+        "skills": "I connect analytics with development. I rely on <strong>Google Analytics 4</strong>, <strong>Search Console</strong>, and <strong>BrightEdge</strong> to guide strategy. My experience in <strong>front-end development</strong> (React, Tailwind CSS) then allows me to design prototypes and ensure precise technical implementation.",
         "callToAction": "I'm looking to connect with innovative teams to create exceptional digital products. If my profile resonates with you, let's talk."
     },
     "projects": {
         "title": "Recent Work",
         "liveButton": "View Project",
         "repoButton": "View Code",
+        "headings": {
+            "showMore": "Show more ▼",
+            "showLess": "Show less ▲"
+        },
         "items": [
             {
                 "id": "2v-express",
@@ -256,6 +260,7 @@
         "sectionTitle": "Experience",
         "pastExperienceTitle": "Previous Experience",
         "keyResponsibilities": "Key Responsibilities:",
+        "detailedTasksTitle": "Specific Tasks & Technical Impact",
         "current": {
             "jobTitle": "Digital Strategist & Founder",
             "company": "Expansis Pro",
@@ -276,12 +281,15 @@
                 "place": "Nestlé Nespresso SA",
                 "duration": "Dec 2021 – Apr 2026 (4 years and 5 months)",
                 "responsibilities": [
-                    "Lead the e-commerce strategy for Nespresso.com, guaranteeing a fluid and effective shopping experience.",
-                    "Implement UX/UI improvements on digital platforms, optimizing navigation and functionality for users.",
-                    "Monitor the purchase process on Nespresso.cl, ensuring process compliance and the resolution of critical issues.",
-                    "Coordinate and execute key campaigns such as Cyber Day, Cyber Monday, and Black Friday, ensuring success in their implementation.",
-                    "Track KPIs through Google Analytics.",
-                    "Lead the SEO positioning strategy, improving the website's organic visibility."
+                    "Ensure operational excellence and correct local adaptation of the global e-commerce strategy for Nespresso.com, guaranteeing a frictionless checkout flow.",
+                    "Successful orchestration and execution of over 30 high-demand annual commercial campaigns (Cyber Days, Black Friday, and HVC).",
+                    "Implement UX/UI improvements on digital platforms, optimizing navigation and functionality for users."
+                ],
+                "detailedTasks": [
+                    "<strong>Checkout Optimization & Debugging:</strong> Auditing the sales funnel on Nespresso.cl combining <strong>GA4</strong> and <strong>Glassbox</strong> to analyze live sessions, detect technical glitches, and fix critical conversion drops.",
+                    "<strong>Tag & Pixel Validation:</strong> Continuous use of <strong>Google Tag Assistant</strong> to test and correctly implement measurement tags and website integrations, ensuring behavioral data integrity.",
+                    "<strong>Technical SEO & Organic Performance:</strong> Monitoring indexing, site health, and keyword optimization using advanced tools such as <strong>Google Search Console (GSC)</strong> and <strong>BrightEdge</strong>.",
+                    "<strong>Agile Campaign Coordination:</strong> Daily control and synchronization of requirements with design and inventory teams through <strong>Jira, Asana, and Trello</strong> to meet launch deadlines and high-volume email deployments (HVC / Reactivation)."
                 ]
             },
             {
@@ -294,6 +302,11 @@
                     "Income and expense management.",
                     "Coordination of payments with institutions.",
                     "Managed event invitations through email marketing campaigns using Mailchimp."
+                ],
+                "detailedTasks": [
+                    "To mitigate friction in remote training coordination, I centralized interdepartmental communication by implementing tracking channels in <strong>Slack</strong>, increasing the team's response speed.",
+                    "With the aim of maximizing attendance at institutional call-outs, I structured segmented databases and executed massive email marketing campaigns via <strong>Mailchimp</strong>, monitoring metrics like Open Rate.",
+                    "Managed the operational control of financial flows, directly coordinating payment statuses with health and education entities to ensure program continuity."
                 ]
             },
             {
@@ -302,8 +315,13 @@
                 "place": "Simple y Creativo",
                 "duration": "Mar 2020 – Feb 2021 (1 year)",
                 "responsibilities": [
-                    "Developed websites and landing pages for various clients.",
-                    "Translated client requirements into functional mockups and wireframes."
+                    "Development and optimization of responsive websites and landing pages oriented toward conversion.",
+                    "Translation of business requirements into information architectures, wireframes, and visual prototypes."
+                ],
+                "detailedTasks": [
+                    "<strong>WordPress Ecosystem & Builders:</strong> Construction, customization, and maintenance of self-managed sites using advanced builders like <strong>Divi</strong> and <strong>Elementor</strong>.",
+                    "<strong>User Interface (UI) Design:</strong> Creation of high-fidelity mockups and user flows to ensure usability and visual consistency prior to technical layout.",
+                    "<strong>Requirements Gathering:</strong> Direct meetings with end clients to define project scopes, sitemaps, and delivery deadlines."
                 ]
             },
             {
@@ -333,31 +351,67 @@
         "title": "Education",
         "items": [
             {
+                "id": 1,
                 "title": "Master's Degree, Organizational Psychology",
                 "place": "Universidad Adolfo Ibáñez",
-                "duration": "2016 - 2017",
+                "duration": "Mar 2016 - Mar 2017",
                 "location": "Santiago, Chile",
                 "responsibilities": [
-                    "Focused on the intersection of human behavior and business strategy."
+                    "Study of human behavior in corporate environments, applying psychology to the strategic alignment of the business.",
+                    "Development of leadership competencies, operational structure design, and optimization of collaborative workflows."
+                ],
+                "detailedTasks": [
+                    "<strong>Consumer Behavior:</strong> Deep understanding of cognitive biases, decision-making, and user archetypes, applied directly to the design of user experience (UX/UI) flows and digital conversion.",
+                    "<strong>Change Management & Digital Adoption:</strong> Diagnosis and intervention in digital transformation processes, facilitating the integration of new interdepartmental technological tools.",
+                    "<strong>Work Cell Dynamics:</strong> Specialization in high-performance collaboration frameworks to seamlessly coordinate multidisciplinary design and development teams."
                 ]
             },
             {
-                "title": "Business Administration",
+                "id": 2,
+                "title": "Business Administration, Major in Business Management",
                 "place": "Universidad Adolfo Ibáñez",
                 "duration": "2011 - 2015",
                 "location": "Santiago, Chile",
                 "responsibilities": [
-                    "Comprehensive training in management, finance, and marketing strategy.",
-                    "Specialization in business administration and development."
+                    "Strategic training in financial management, formulation of sustainable business models, and market positioning strategies.",
+                    "Specialization in operations management and direction of commercial scalability projects."
+                ],
+                "detailedTasks": [
+                    "<strong>Commercial Strategy & Funnel:</strong> Design of positioning plans and optimization of the digital sales funnel under constant analysis of financial metrics.",
+                    "<strong>Finance & P&L Control:</strong> Management of corporate budgets, project evaluation, profitability analysis, and reconciliation of income and expense flows.",
+                    "<strong>Operational Process Optimization:</strong> Application of efficiency methodologies and logistics structuring to standardize traditional and omnichannel sales channels."
                 ]
             },
             {
+                "id": 3,
                 "title": "Technician, Advertising Photography",
                 "place": "Instituto Profesional ARCOS",
                 "duration": "2018 - 2020",
                 "location": "Santiago, Chile",
                 "responsibilities": [
-                    "Technical training in composition, lighting, and digital post-production (Photoshop, Lightroom)."
+                    "Technical specialization in corporate image design, art direction, advanced lighting schemes, and visual advertising composition.",
+                    "Management of digital production projects and aesthetic quality control for major commercial brands."
+                ],
+                "detailedTasks": [
+                    "<strong>Post-Production & Digital Workflow:</strong> Advanced digital image processing, color correction, and photocomcomposition using professional software such as <strong>Photoshop, Lightroom, and Capture One</strong>.",
+                    "<strong>Art Direction & UI Aesthetics:</strong> Practical application of visual balance, spatial hierarchy, contrast, and color theory concepts, with direct transfer to web interface design.",
+                    "<strong>Digital Asset Optimization:</strong> Format management, technical image compression, and preparation of high-fidelity digital assets optimized for smooth web loading performance (WPO)."
+                ]
+            },
+            {
+                "id": 4,
+                "title": "Self-Taught Specialization in Full-Stack Web Development",
+                "place": "App Brewery London / Self-Directed Learning",
+                "duration": "+40 hours of practical specialization",
+                "responsibilities": [
+                    "Intensive study focused on the architecture, construction, and deployment of modern, responsive web applications.",
+                    "Hands-on development of real-world projects to master advanced programming logic and professional workflows."
+                ],
+                "detailedTasks": [
+                    "<strong>Frontend Development with React:</strong> Building dynamic user interfaces, designing reusable components, and managing complex states using React Hooks.",
+                    "<strong>Backend Architecture & APIs:</strong> Implementation of robust servers and microservices with <strong>Node.js</strong> and <strong>Express.js</strong>, integrating routing logic and API consumption under REST standards.",
+                    "<strong>Advanced Layout & Styling:</strong> Mastery of semantic markup and modern structuring using HTML5, CSS3, Flexbox, and Grid to ensure a seamless multi-device experience.",
+                    "<strong>Version Control & Logic:</strong> Professional management of repositories and version control using Git and GitHub, along with deepening logic skills in modern JavaScript (ES6+)."
                 ]
             }
         ]

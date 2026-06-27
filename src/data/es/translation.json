@@ -26,6 +26,10 @@
         "title": "Trabajos Realizados",
         "liveButton": "Ver Proyecto",
         "repoButton": "Ver Código",
+        "headings": {
+            "showMore": "Ver más ▼",
+            "showLess": "Ver menos ▲"
+        },
         "items": [
             {
                 "id": "2v-express",
@@ -256,6 +260,7 @@
         "sectionTitle": "Experiencia",
         "pastExperienceTitle": "Experiencia Previa",
         "keyResponsibilities": "Responsabilidades Clave:",
+        "detailedTasksTitle": "Tareas Específicas e Impacto Técnico",
         "current": {
             "jobTitle": "Estratega Digital y Fundador",
             "company": "Expansis Pro",
@@ -276,12 +281,15 @@
                 "place": "Nestlé Nespresso SA",
                 "duration": "dic. 2021 – abr. 2026 (4 años y 5 meses)",
                 "responsibilities": [
-                    "Liderar la estrategia de e-commerce para Nespresso.com, garantizando una experiencia de compra fluida y efectiva.",
-                    "Implementar mejoras de UX/UI en plataformas digitales, optimizando la navegación y funcionalidad para los usuarios.",
-                    "Monitorear el proceso de compra en Nespresso.cl, asegurando el cumplimiento de procesos y la resolución de problemas críticos.",
-                    "Coordinar y ejecutar campañas online clave como Cyber Day, Cyber Monday y Black Friday, asegurando el éxito en su implementación.",
-                    "Realizar seguimiento de KPIs a través de Google Analytics.",
-                    "Liderar la estrategia de posicionamiento SEO, mejorando la visibilidad orgánica del sitio web."
+                    "Asegurar la excelencia operativa y la correcta adaptación local de la estrategia global de e-commerce para Nespresso.com, garantizando un flujo de compra sin fricciones.",
+                    "Orquestación y ejecución exitosa de más de 30 campañas comerciales anuales de alta demanda (Cyber Days, Black Friday y HVC).",
+                    "Implementar mejoras de UX/UI en plataformas digitales, optimizando la navegación y funcionalidad para los usuarios."
+                ],
+                "detailedTasks": [
+                    "<strong>Optimización y Debugging del Checkout:</strong> Auditoría del embudo de ventas en Nespresso.cl combinando <strong>GA4</strong> y <strong>Glassbox</strong> para analizar sesiones en vivo, detectar errores técnicos y corregir caídas críticas de conversión.",
+                    "<strong>Validación de Tags y Pixeles:</strong> Uso constante de <strong>Google Tag Assistant</strong> para testear e implementar correctamente las etiquetas de medición e integraciones del sitio web, asegurando la data de comportamiento.",
+                    "<strong>SEO Técnico y Rendimiento Orgánico:</strong> Monitoreo de indexación, salud del sitio y optimización de palabras clave utilizando herramientas avanzadas como <strong>Google Search Console (GSC)</strong> y <strong>BrightEdge</strong>.",
+                    "<strong>Coordinación Ágil de Campañas:</strong> Control y sincronización diaria de requerimientos con equipos de diseño y stock a través de <strong>Jira, Asana y Trello</strong> para cumplir con los plazos de lanzamientos y envíos de email masivo (HVC / Reactivación)."
                 ]
             },
             {
@@ -294,6 +302,11 @@
                     "Gestión de ingresos y egresos.",
                     "Coordinación de pagos con instituciones.",
                     "Gestión de convocatorias mediante campañas de email marketing con Mailchimp."
+                ],
+                "detailedTasks": [
+                    "Para mitigar la fricción en la coordinación remota de capacitaciones, centralicé la comunicación interdepartamental implementando canales de seguimiento en <strong>Slack</strong>, aumentando la velocidad de respuesta del equipo.",
+                    "Con el objetivo de maximizar la asistencia a convocatorias institucionales, estructuré bases de datos segmentadas y ejecuté campañas masivas de email marketing a través de <strong>Mailchimp</strong>, supervisando métricas de apertura (Open Rate).",
+                    "Administré el control operativo de flujos financieros, coordinando de manera directa los estados de pago con entidades de salud y educación para asegurar la continuidad de los programas."
                 ]
             },
             {
@@ -302,8 +315,13 @@
                 "place": "Simple y Creativo",
                 "duration": "mar. 2020 – feb. 2021 (1 año)",
                 "responsibilities": [
-                    "Desarrollo de sitios web y landing pages para clientes.",
-                    "Traducción de requerimientos de cliente a mockups y wireframes."
+                    "Desarrollo y optimización de sitios web y landing pages responsivas orientadas a la conversión.",
+                    "Traducción de requerimientos comerciales en estructuras de información, wireframes y prototipos visuales."
+                ],
+                "detailedTasks": [
+                    "<strong>Ecosistema WordPress y Builders:</strong> Construcción, personalización y mantenimiento de sitios autogestionables utilizando maquetadores avanzados como <strong>Divi</strong> y <strong>Elementor</strong>.",
+                    "<strong>Diseño de Interfaces (UI):</strong> Creación de mockups de alta fidelidad y flujos de usuario (user flows) para asegurar la usabilidad y consistencia visual antes de la maquetación técnica.",
+                    "<strong>Levantamiento de Requerimientos:</strong> Reuniones directas con clientes finales para la definición de alcances de proyecto, mapas de sitio (sitemaps) y control de plazos de entrega."
                 ]
             },
             {
@@ -338,7 +356,13 @@
                 "duration": "mar. 2016 - mar. 2017",
                 "location": "Santiago, Chile",
                 "responsibilities": [
-                    "Enfoque en la intersección del comportamiento humano y la estrategia de negocio."
+                    "Estudio del comportamiento humano en entornos corporativos, aplicando la psicología a la alineación estratégica del negocio.",
+                    "Desarrollo de competencias en liderazgo, diseño de estructuras operativas y optimización de flujos de trabajo colaborativos."
+                ],
+                "detailedTasks": [
+                    "<strong>Comportamiento del Consumidor:</strong> Comprensión profunda de sesgos cognitivos, toma de decisiones y arquetipos de usuario, aplicados directamente al diseño de flujos de experiencia de usuario (UX/UI) y conversión digital.",
+                    "<strong>Gestión del Cambio y Adopción Digital:</strong> Diagnóstico e intervención en procesos de transformación digital, facilitando la incorporación de nuevas herramientas tecnológicas interdepartamentales.",
+                    "<strong>Dinámicas de Células de Trabajo:</strong> Especialización en lógicas de colaboración de alto rendimiento para coordinar de manera fluida a equipos multidisciplinarios de diseño y desarrollo."
                 ]
             },
             {
@@ -347,8 +371,13 @@
                 "duration": "2011 - 2015",
                 "location": "Santiago, Chile",
                 "responsibilities": [
-                    "Formación integral en gestión, finanzas y estrategia de marketing.",
-                    "Especialización en administración y desarrollo de negocios."
+                    "Formación estratégica en gestión financiera, formulación de modelos de negocios sustentables y estrategias de posicionamiento de mercado.",
+                    "Especialización en administración de operaciones y dirección de proyectos de escalabilidad comercial."
+                ],
+                "detailedTasks": [
+                    "<strong>Estrategia Comercial y Funnel:</strong> Diseño de planes de posicionamiento y optimización del embudo de ventas digital (funnel) bajo el análisis constante de métricas financieras.",
+                    "<strong>Finanzas y Control de P&L:</strong> Administración de presupuestos corporativos, evaluación de proyectos, análisis de rentabilidad y conciliación de flujos de ingresos y egresos.",
+                    "<strong>Optimización de Procesos Operativos:</strong> Aplicación de metodologías de eficiencia y estructuración logística para estandarizar canales de venta tradicionales y omnicanales."
                 ]
             },
             {
@@ -357,7 +386,28 @@
                 "duration": "2018 - 2020",
                 "location": "Santiago, Chile",
                 "responsibilities": [
-                    "Formación técnica en composición, iluminación y post-producción digital (Photoshop, Lightroom)."
+                    "Especialización técnica en diseño de imagen corporativa, dirección de arte, esquemas de iluminación avanzados y composición visual publicitaria.",
+                    "Dirección de proyectos de producción digital y control de calidad estética para grandes marcas comerciales."
+                ],
+                "detailedTasks": [
+                    "<strong>Post-producción y Flujo Digital:</strong> Procesamiento digital avanzado de imágenes, corrección de color y fotocomposición utilizando software profesional como <strong>Photoshop, Lightroom y Capture One</strong>.",
+                    "<strong>Dirección de Arte y Estética UI:</strong> Aplicación práctica de conceptos de balance visual, jerarquía espacial, contraste y teoría del color, con transferencia directa al diseño de interfaces web.",
+                    "<strong>Optimización de Activos Digitales:</strong> Gestión de formatos, compresión técnica de imágenes y preparación de recursos digitales de alta fidelidad optimizados para un rendimiento de carga web fluido (WPO)."
+                ]
+            },
+            {
+                "title": "Especialización Autónoma en Desarrollo Web Full-Stack",
+                "place": "App Brewery London / Aprendizaje Autodidacta",
+                "duration": "+40 horas de especialización práctica",
+                "responsibilities": [
+                    "Estudio intensivo enfocado en la arquitectura, construcción y despliegue de aplicaciones web modernas y responsivas.",
+                    "Desarrollo práctico de proyectos reales para dominar la lógica de programación avanzada y los flujos de trabajo profesionales."
+                ],
+                "detailedTasks": [
+                    "<strong>Desarrollo Frontend con React:</strong> Construcción de interfaces de usuario dinámicas, diseño de componentes reutilizables y gestión de estados complejos mediante React Hooks.",
+                    "<strong>Arquitectura Backend y APIs:</strong> Implementación de servidores y microservicios robustos con <strong>Node.js</strong> y <strong>Express.js</strong>, integrando lógicas de enrutamiento y consumo de APIs bajo estándares REST.",
+                    "<strong>Maquetación y Estilos Avanzados:</strong> Dominio de maquetación semántica y estructuración moderna utilizando HTML5, CSS3, Flexbox y Grid para garantizar una experiencia multidispositivo fluida.",
+                    "<strong>Control de Versiones y Lógica:</strong> Manejo profesional de repositorios y control de versiones mediante Git y GitHub, junto con la profundización en lógica lógica con JavaScript moderno (ES6+)."
                 ]
             }
         ]
