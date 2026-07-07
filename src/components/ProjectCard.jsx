@@ -10,10 +10,10 @@ const ProjectCard = ({ project }) => {
 			<img src={project.image} alt={project.title} className='w-full h-full  transition-all duration-500' />
 
 			<div className='p-5 flex flex-col flex-grow'>
-				<span className='text-[10px] font-black uppercase tracking-widest text-teal-700 mb-1'>
+				<span className='text-[10px] font-black uppercase tracking-wide md:tracking-widest text-primary mb-1 block break-words w-full'>
 					{project.category} {project.sector && `• ${project.sector}`}
 				</span>
-				<h3 className='text-lg font-bold text-stone-900 mb-3 tracking-wide'>{project.title}</h3>
+				<h3 className='text-xl font-black text-structural uppercase tracking-tighter leading-tight mb-3'>{project.title}</h3>
 
 				{/* Badges de tecnología rígidos */}
 				<div className='flex flex-wrap gap-1.5 mb-4'>

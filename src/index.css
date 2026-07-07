@@ -10,20 +10,6 @@
    1. CONFIGURACIÓN GLOBAL (Cemento Limpio)
    ========================================== */
 
-html,
-body,
-#root {
-	max-width: 100vw;
-	overflow-x: hidden; /* Bloquea por completo cualquier fuga lateral accidental */
-}
-
-body {
-	background-color: #eae7e2;
-	color: #1a1816;
-	font-family: ui-sans-serif, system-ui, sans-serif;
-	transition: opacity 0.3s ease;
-}
-
 body.fade-out {
 	opacity: 0;
 }
