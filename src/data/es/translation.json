@@ -27,6 +27,7 @@
         "liveButton": "Ver Proyecto",
         "repoButton": "Ver Código",
         "headings": {
+            "description": "Descripción",
             "showMore": "Ver más ▼",
             "showLess": "Ver menos ▲"
         },
@@ -79,9 +80,9 @@
                 "category": "Desarrollo Web",
                 "sector": "Movimiento de Tierra & Construcción",
                 "image": "/images/lobosMiniexcavadoras-web.webp",
-                "description": "Desarrollo de una <strong>infraestructura digital de alto rendimiento</strong> para el sector industrial. Transformamos la presencia online en una máquina de <strong>generación de leads locales</strong>, priorizando la velocidad de carga en terreno y una arquitectura técnica que proyecta la solidez operativa de la marca.",
+                "description": "Desarrollo de una infraestructura digital de alto rendimiento para el sector industrial. Transformamos la presencia online en una máquina de <strong>generación de leads locales, priorizando la velocidad de carga en terreno y una arquitectura técnica que proyecta la solidez operativa de la marca.",
                 "results": [
-                    "Optimización de <strong>conversión estratégica</strong> para arriendo de maquinaria",
+                    "Optimización de conversión estratégica para arriendo de maquinaria",
                     "Interfaz ultra-rápida (WPO) diseñada para uso en condiciones de baja señal",
                     "Posicionamiento de autoridad en el mercado del Valle del Aconcagua"
                 ],
@@ -102,9 +103,9 @@
                 "image": "/images/gonzalobos-web.webp",
                 "description": "Diseño de ecosistema digital para marca personal de alto nivel. El proyecto sintetiza una trayectoria en <strong>psicología organizacional</strong> con herramientas de gestión de negocios, creando una plataforma que equilibra <strong>humanismo y robustez técnica</strong> para atraer clientes corporativos.",
                 "results": [
-                    "Unificación de <strong>narrativa estratégica</strong> y sistema de estilo visual",
+                    "Unificación de narrativa estratégica y sistema de estilo visual",
                     "Arquitectura web optimizada para el posicionamiento de autoridad personal",
-                    "Estructura orientada a la <strong>captación de clientes B2B</strong> de alto valor"
+                    "Estructura orientada a la *captación de clientes B2B de alto valor"
                 ],
                 "tags": [
                     "React",
@@ -262,17 +263,18 @@
         "keyResponsibilities": "Responsabilidades Clave:",
         "detailedTasksTitle": "Tareas Específicas e Impacto Técnico",
         "current": {
-            "jobTitle": "Estratega Digital y Fundador",
-            "company": "Expansis Pro",
+            "title": "Estratega Digital y Fundador",
+            "place": "Expansis Pro",
             "startDate": "2026-05-01",
-            "since": "{{years}} años y {{months}} meses",
+            "duration": "{{years}} años y {{months}} meses",
             "responsibilities": [
                 "Liderar la dirección general de Expansis Pro, enfocada en la optimización operativa y estratégica de negocios.",
                 "Diseñar estrategias digitales y definir la hoja de ruta tecnológica para empresas que buscan escalar su presencia online y mejorar su conversión.",
                 "Proveer consultoría operativa aplicando metodologías de eficiencia y estándares de excelencia en procesos digitales.",
                 "Gestionar proyectos digitales de forma integral, supervisando el desarrollo de plataformas y alineando el diseño con los objetivos comerciales.",
                 "Brindar acompañamiento estratégico y asesoría personalizada en la implementación de herramientas para optimizar la gestión empresarial."
-            ]
+            ],
+            "detailedTasks": []
         },
         "past": [
             {

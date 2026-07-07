@@ -1,130 +1,75 @@
 // src/sections/Hero.jsx
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
-// Pequeño componente para los iconos de los botones
-const ButtonIcon = ({ children }) => <div className="w-5 h-5">{children}</div>;
+const ButtonIcon = ({ children }) => <div className='w-5 h-5 flex-shrink-0'>{children}</div>;
 
 const Hero = () => {
-    const { t } = useTranslation();
+	const { t } = useTranslation();
 
-    const handleScroll = (e, targetId) => {
-        e.preventDefault();
-        const targetElement = document.querySelector(targetId);
-        if (targetElement) {
-            const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
-            window.scrollTo({
-                top: targetPosition,
-                behavior: 'smooth'
-            });
-        }
-    };
+	const handleScroll = (e, targetId) => {
+		e.preventDefault();
+		const targetElement = document.querySelector(targetId);
+		if (targetElement) {
+			const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+			window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+		}
+	};
 
-    const containerVariants = {
-        hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: {
-                staggerChildren: 0.2
-            }
-        }
-    };
+	return (
+		<section id='home' className='relative min-h-screen flex items-center justify-start bg-concrete bg-textura-prehispanica overflow-hidden'>
+			<div className='container mx-auto px-6 text-left max-w-5xl'>
+				<motion.div initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6, ease: 'easeOut' }} className='space-y-4'>
+					{/* TITULO PRINCIPAL: Letra masiva, compacta y aplastada */}
+					<h1 className='uppercase text-5xl md:text-7xl lg:text-8xl font-black font-display text-structural tracking-tighter leading-none'>{t('hero.name')}</h1>
 
-    const itemVariants = {
-        hidden: { opacity: 0, y: 20 },
-        visible: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                duration: 0.6
-            }
-        }
-    };
+					{/* SUBTITULO: Un bloque rígido con acento Jade de fondo */}
+					<div className='inline-block bg-primary text-white px-3 py-1 text-sm md:text-base font-black uppercase tracking-wider'>{t('hero.title')}</div>
 
-    return (
-        <section id="home" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background-light via-slate-50 to-slate-200 dark:from-background-dark dark:via-slate-950 dark:to-slate-900 transition-colors duration-300 overflow-hidden">
-            <div className="container mx-auto px-6 text-center">
-                <motion.div
-                    variants={containerVariants}
-                    initial="hidden"
-                    animate="visible"
-                >
-                    <motion.h1
-                        className="text-3xl md:text-4xl lg:text-5xl font-extrabold font-display text-text-dark dark:text-text-light pb-4"
-                        variants={itemVariants}
-                    >
-                        {t('hero.name')}
-                    </motion.h1>
+					{/* PÁRRAFO: Mayúsculas de peso medio estilo manifiesto */}
+					<p className='uppercase text-xs md:text-sm font-medium tracking-widest max-w-2xl text-structural/80 leading-relaxed pt-2'>{t('hero.subtitle')}</p>
 
-                    <motion.h2
-                        className="mt-2 text-xl md:text-2xl font-semibold text-text-dark/80 dark:text-text-light/80"
-                        variants={itemVariants}
-                    >
-                        {t('hero.title')}
-                    </motion.h2>
+					{/* BOTONES: Bloques monolíticos con borde grueso de acero */}
+					<div className='mt-10 flex flex-col sm:flex-row items-stretch sm:items-center justify-start gap-4 pt-4'>
+						<motion.a
+							href='#projects'
+							onClick={(e) => handleScroll(e, '#projects')}
+							className='flex items-center justify-center gap-3 border-structural hover:border-primary bg-structural border-2 hover:bg-primary  text-white font-black py-3.5 px-8 text-xs uppercase tracking-widest transition-colors duration-200 shadow-none'
+							whileTap={{ scale: 0.98 }}>
+							<ButtonIcon>
+								<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth={2.5} stroke='currentColor'>
+									<path
+										strokeLinecap='round'
+										strokeLinejoin='round'
+										d='M3.75 9.776c.112-.017.227-.026.344-.026h15.812c.117 0 .232.009.344.026m-16.5 0a2.25 2.25 0 00-1.883 2.542l.857 6a2.25 2.25 0 002.227 1.932H19.05a2.25 2.25 0 002.227-1.932l.857-6a2.25 2.25 0 00-1.883-2.542m-16.5 0A2.25 2.25 0 015.625 7.5h12.75c1.243 0 2.25.992 2.25 2.224v.002z'
+									/>
+								</svg>
+							</ButtonIcon>
+							{t('hero.primaryButton')}
+						</motion.a>
 
-                    <motion.p
-                        className="mt-4 text-base md:text-lg max-w-3xl mx-auto text-text-dark/70 dark:text-text-light/70"
-                        variants={itemVariants}
-                    >
-                        {t('hero.subtitle')}
-                    </motion.p>
-
-                    <motion.div
-                        className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
-                        variants={itemVariants}
-                    >
-                        {/* Botón Primario (Ver Casos de Estudio) */}
-                        <motion.a
-                            href="#projects"
-                            onClick={(e) => handleScroll(e, '#projects')}
-                            className="flex items-center justify-center gap-2 bg-primary text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:shadow-primary/30 transition-all duration-300 w-full sm:w-auto"
-                            whileHover={{ y: -4, transition: { type: 'spring', stiffness: 300 } }}
-                        >
-                            <ButtonIcon><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9.776c.112-.017.227-.026.344-.026h15.812c.117 0 .232.009.344.026m-16.5 0a2.25 2.25 0 00-1.883 2.542l.857 6a2.25 2.25 0 002.227 1.932H19.05a2.25 2.25 0 002.227-1.932l.857-6a2.25 2.25 0 00-1.883-2.542m-16.5 0A2.25 2.25 0 015.625 7.5h12.75c1.243 0 2.25.992 2.25 2.224v.002z" /></svg></ButtonIcon>
-                            {t('hero.primaryButton')}
-                        </motion.a>
-
-                        {/* Botón Secundario (Contacto) - CORREGIDO */}
-                        <motion.a
-                            href="#contact"
-                            onClick={(e) => handleScroll(e, '#contact')}
-                            className="flex items-center justify-center gap-2 bg-transparent border-2 border-text-dark/50 dark:border-text-light/50 text-text-dark dark:text-text-light hover:bg-text-dark hover:text-background-light dark:hover:bg-text-light dark:hover:text-background-dark font-bold py-3 px-8 rounded-lg transition-all duration-300 w-full sm:w-auto"
-                            whileHover={{ y: -4, transition: { type: 'spring', stiffness: 300 } }}
-                        >
-                            <ButtonIcon><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg></ButtonIcon>
-                            {t('hero.secondaryButton')}
-                        </motion.a>
-                    </motion.div>
-                </motion.div>
-            </div>
-
-            {/* Icono de Scroll Abajo */}
-            <motion.a
-                href="#about"
-                onClick={(e) => handleScroll(e, '#about')}
-                className="absolute bottom-8 left-1/2 -translate-x-1/2"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1, delay: 1.5 }}
-            >
-                <motion.div
-                    className="w-8 h-8 text-text-dark/50 dark:text-text-light/50"
-                    animate={{ y: [0, 10, 0] }}
-                    transition={{
-                        duration: 1.5,
-                        repeat: Infinity,
-                        repeatType: "loop",
-                        ease: "easeInOut"
-                    }}
-                >
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" /></svg>
-                </motion.div>
-            </motion.a>
-        </section>
-    );
+						<motion.a
+							href='#contact'
+							onClick={(e) => handleScroll(e, '#contact')}
+							className='border-structural flex  items-center justify-center gap-3  border-2 hover:border-primary hover:bg-primary hover:text-white text-structural font-black py-3.5 px-8 text-xs uppercase tracking-widest transition-all duration-200'
+							whileTap={{ scale: 0.98 }}>
+							<ButtonIcon>
+								<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth={2.5} stroke='currentColor'>
+									<path
+										strokeLinecap='round'
+										strokeLinejoin='round'
+										d='M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75'
+									/>
+								</svg>
+							</ButtonIcon>
+							{t('hero.secondaryButton')}
+						</motion.a>
+					</div>
+				</motion.div>
+			</div>
+		</section>
+	);
 };
 
 export default Hero;

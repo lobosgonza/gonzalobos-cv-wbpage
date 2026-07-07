@@ -1,116 +1,72 @@
-// src/sections/Contact.js
-
+// src/sections/Contact.jsx
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import SectionTitle from '../components/SectionTitle';
-import { FaGithub, FaLinkedin, FaWhatsapp, FaClipboard, FaCheck } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaClipboard, FaCheck } from 'react-icons/fa';
 import { ContactForm } from '../components/ContactForm';
 import AnimatedSection from '../components/AnimatedSection';
 
 const Contact = () => {
-    const { t } = useTranslation();
-    const [isCopied, setIsCopied] = useState(false);
-    const emailAddress = 'gonzalo.lobos.ramirez@gmail.com';
+	const { t } = useTranslation();
+	const [isCopied, setIsCopied] = useState(false);
+	const emailAddress = 'gonzalo.lobos.ramirez@gmail.com';
 
-    const handleCopyEmail = () => {
-        navigator.clipboard.writeText(emailAddress).then(() => {
-            setIsCopied(true);
-            setTimeout(() => setIsCopied(false), 2000);
-        }, (err) => {
-            console.error('No se pudo copiar el texto: ', err);
-        });
-    };
-    const socialLinks = [
-        {
-            name: t('contact.whatsapp'),
-            icon: <FaWhatsapp className="w-5 h-5" />,
-            url: 'https://wa.me/56965961086',
-        },
-        {
-            name: t('contact.linkedin'),
-            icon: <FaLinkedin className="w-5 h-5" />,
-            url: 'https://www.linkedin.com/in/gonzalo-lobos-ram%C3%ADrez/',
-        },
-        {
-            name: t('contact.github'),
-            icon: <FaGithub className="w-5 h-5" />,
-            url: 'https://github.com/lobosgonza',
-        },
-    ];
+	const handleCopyEmail = () => {
+		navigator.clipboard.writeText(emailAddress).then(() => {
+			setIsCopied(true);
+			setTimeout(() => setIsCopied(false), 2000);
+		});
+	};
 
-    const linkBaseClass = "flex items-center space-x-4 p-4 rounded-lg bg-white dark:bg-slate-800 hover:bg-gray-50 dark:hover:bg-slate-700 transition duration-300 group shadow-sm";
-    return (
-        <section id="contact" className="py-20 bg-background-light dark:bg-background-dark">
-            <AnimatedSection>
-                <div className="container mx-auto px-4">
-                    <SectionTitle title={t('contact.title')} />
-                    <p className="text-center text-lg text-slate-600 dark:text-slate-300 mb-12 max-w-2xl mx-auto">
-                        {t('contact.subtitle')}
-                    </p>
+	const socialLinks = [
+		{ name: t('contact.linkedin'), icon: <FaLinkedin className='w-4 h-4' />, url: 'https://www.linkedin.com/in/gonzalo-lobos-ram%C3%ADrez/' },
+		{ name: t('contact.github'), icon: <FaGithub className='w-4 h-4' />, url: 'https://github.com/lobosgonza' },
+	];
 
-                    <div className="grid lg:grid-cols-2 gap-12 items-start">
+	const blockClass =
+		'flex items-center space-x-4 p-4 rounded-none bg-white border-4  hover:bg-stone-50 transition-colors duration-200 text-xs font-black uppercase tracking-widest text-structural';
 
-                        {/* Columna Izquierda: Links */}
-                        <div className="space-y-6">
+	return (
+		<section id='contact' className='py-16 sm:py-20 bg-concrete'>
+			<AnimatedSection>
+				<div className='container mx-auto px-6 max-w-5xl text-left'>
+					<SectionTitle title={t('contact.title')} />
+					<p className='text-left uppercase text-xs font-medium tracking-widest text-stone-500 mb-12 max-w-xl leading-relaxed'>{t('contact.subtitle')}</p>
 
-                            <button
-                                onClick={handleCopyEmail}
-                                className={`${linkBaseClass} w-full text-left`}
-                            >
-                                <span className={`transition-colors ${isCopied ? 'text-green-500' : 'text-primary dark:text-primary-light'}`}>
-                                    {isCopied ? <FaCheck className="w-5 h-5" /> : <FaClipboard className="w-5 h-5" />}
-                                </span>
+					<div className='grid lg:grid-cols-2 gap-12 items-start'>
+						<div className='space-y-4'>
+							<button onClick={handleCopyEmail} className={`${blockClass} w-full text-left justify-between`}>
+								<div className='flex items-center space-x-4 min-w-0 flex-grow'>
+									<span className={isCopied ? 'text-emerald-700 flex-shrink-0' : 'text-primary flex-shrink-0'}>
+										{isCopied ? <FaCheck className='w-4 h-4' /> : <FaClipboard className='w-4 h-4' />}
+									</span>
+									{/* MÁGIA DE CORRECCIÓN: 
+										Agregamos 'break-all' para forzar el quiebre de palabra en celulares compactos
+									*/}
+									<span className={`uppercase text-xs font-black break-all ${isCopied ? 'text-emerald-700' : 'text-structural'}`}>
+										{isCopied ? t('contact.copied') : emailAddress}
+									</span>
+								</div>
+								{!isCopied && <span className='text-[10px] text-stone-400 font-black tracking-widest uppercase flex-shrink-0 pl-2'>Copiar</span>}
+							</button>
 
-                                {/* --- INICIO DE LA CORRECCIÓN DE ESTILO --- */}
-                                {/* Usamos un condicional (ternario) para mostrar 
-                                el email O el mensaje de "Copiado", pero no ambos.
-                            */}
-                                {isCopied ? (
-                                    <span className="flex-1 text-green-600 dark:text-green-400 font-medium">
-                                        {t('contact.copied')}
-                                    </span>
-                                ) : (
-                                    <span className="flex-1 text-slate-700 dark:text-slate-300 font-medium">
-                                        {emailAddress}
-                                    </span>
-                                )}
-                                {/* --- FIN DE LA CORRECCIÓN DE ESTILO --- */}
+							{socialLinks.map((link, index) => (
+								<a key={index} href={link.url} target='_blank' rel='noopener noreferrer' className={blockClass}>
+									<span className='text-primary'>{link.icon}</span>
+									<span>{link.name}</span>
+								</a>
+							))}
+						</div>
 
-                                {/* Ya no necesitamos el <span> absoluto que se superponía.
-                                Lo hemos eliminado. 
-                            */}
-                            </button>
-
-                            {socialLinks.map((link, index) => (
-                                <a
-                                    key={index}
-                                    href={link.url}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className={`${linkBaseClass} group`}
-                                >
-                                    <span className="text-primary dark:text-primary-light">
-                                        {link.icon}
-                                    </span>
-                                    <span className="text-slate-700 dark:text-slate-300 font-medium group-hover:text-primary dark:group-hover:text-primary-light transition-colors">
-                                        {link.name}
-                                    </span>
-                                </a>
-                            ))}
-                        </div>
-
-                        {/* Columna Derecha: Formulario */}
-                        <div className="bg-white dark:bg-slate-900 p-8 rounded-lg shadow-lg">
-                            <h3 className="text-2xl font-semibold text-text-dark dark:text-text-light mb-6">
-                                {t('contact.sendMessage')}
-                            </h3>
-                            <ContactForm />
-                        </div>
-                    </div>
-                </div>
-            </AnimatedSection>
-        </section>
-    );
+						<div className='bg-white p-8 rounded-none border-4 '>
+							<h3 className='text-sm font-black uppercase tracking-widest text-structural mb-6 font-display'>{t('contact.sendMessage')}</h3>
+							<ContactForm />
+						</div>
+					</div>
+				</div>
+			</AnimatedSection>
+		</section>
+	);
 };
 
 export default Contact;

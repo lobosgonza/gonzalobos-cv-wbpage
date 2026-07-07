@@ -1,42 +1,41 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  // AÑADE ESTA LÍNEA PARA ACTIVAR EL MODO OSCURO MANUALMENTE
-  darkMode: 'class',
+  // Eliminamos darkMode para comprometernos con una sola atmósfera monolítica premium
 
   // 1. CONTENT: Le decimos a Tailwind qué archivos escanear
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
-    "./index.html", // <-- Apuntando directamente a la raíz
+    "./index.html",
   ],
 
-  // 2. THEME: Aquí personalizamos el diseño
+  // 2. THEME: Aquí personalizamos el diseño estructural
   theme: {
-    // 'extend' nos permite AÑADIR nuestras personalizaciones sin borrar las de Tailwind
+    // 'extend' nos permite añadir nuestras personalizaciones sin pisar el core de Tailwind
     extend: {
 
-      // 3. COLORS: Tu paleta de colores personalizada
+      // 3. COLORS: Tu nueva paleta de arquitectura moderna
       colors: {
-        'primary': '#2563EB',   // Un azul oscuro y profesional para acentos y botones
-        'secondary': '#D32F2F', // Un rojo elegante como segundo acento (opcional)
-        'background-light': '#F8F9FA', // Fondo para el modo claro (un gris muy suave)
-        'background-dark': '#121212',  // Fondo para el modo oscuro (un negro no tan puro)
-        'text-light': '#E0E0E0',       // Texto principal para modo oscuro
-        'text-dark': '#212121',        // Texto principal para modo claro
+        'primary': '#0d9488',          // Jade Sagrado: señales de giro, enlaces y acentos técnicos
+        'concrete': '#eae7e2',         // Cemento crudo: el tono de fondo rústico para todo el sitio
+        'structural': '#1a1816',       // Negro piedra: para bloques masivos, botones y textos principales
+        'stone-card': '#ffffff',       // Blanco puro: para destacar las tarjetas del fondo texturizado
       },
 
-      // 4. FONTS: Tus tipografías personalizadas
+      // 4. FONTS: La tipografía como elemento de construcción masivo
+      // Dentro de tailwind.config.js -> theme -> extend
       fontFamily: {
-        // Esta será la fuente por defecto para todo el cuerpo del texto (párrafos)
-        // La puedes usar con la clase 'font-sans'
+        // Cuerpo de texto limpio y matemático
         sans: ['Inter', 'sans-serif'],
 
-        // Esta es una fuente opcional para títulos grandes y destacados
-        // La puedes usar con la clase 'font-display'
-        display: ['Montserrat', 'sans-serif'],
+        // Títulos: Elige 'Oswald' o 'Bebas Neue'. Ambas son verticales y comprimidas.
+        display: ['Oswald', 'sans-serif'],
+
+        // Detalles técnicos e ingeniería
+        mono: ['Space Mono', 'monospace'],
       }
     },
   },
 
-  // 5. PLUGINS: Aquí se pueden añadir plugins de Tailwind en el futuro
+  // 5. PLUGINS
   plugins: [],
 }

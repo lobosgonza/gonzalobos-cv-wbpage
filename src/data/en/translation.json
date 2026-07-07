@@ -27,6 +27,7 @@
         "liveButton": "View Project",
         "repoButton": "View Code",
         "headings": {
+            "description": "Description",
             "showMore": "Show more ▼",
             "showLess": "Show less ▲"
         },
@@ -81,7 +82,7 @@
                 "image": "/images/lobosMiniexcavadoras-web.webp",
                 "description": "Development of a <strong>high-performance digital infrastructure</strong> for the industrial sector. We transformed the online presence into a local <strong>lead generation machine</strong>, prioritizing loading speed on-site and a technical architecture that projects the brand's operational solidity.",
                 "results": [
-                    "Strategic <strong>conversion optimization</strong> for machinery rental",
+                    "Strategic conversion optimization for machinery rental",
                     "Ultra-fast interface (WPO) designed for use in low-signal conditions",
                     "Authority positioning in the Aconcagua Valley market"
                 ],
@@ -102,9 +103,9 @@
                 "image": "/images/gonzalobos-web.webp",
                 "description": "Digital ecosystem design for a high-level personal brand. The project synthesizes a trajectory in <strong>organizational psychology</strong> with business management tools, creating a platform that balances <strong>humanism and technical robustness</strong> to attract corporate clients.",
                 "results": [
-                    "Unification of <strong>strategic narrative</strong> and visual style system",
+                    "Unification of strategic narrative< and visual style system",
                     "Web architecture optimized for personal authority positioning",
-                    "Structure oriented towards capturing high-value <strong>B2B clients</strong>"
+                    "Structure oriented towards capturing high-value B2B clients"
                 ],
                 "tags": [
                     "React",
@@ -262,17 +263,18 @@
         "keyResponsibilities": "Key Responsibilities:",
         "detailedTasksTitle": "Specific Tasks & Technical Impact",
         "current": {
-            "jobTitle": "Digital Strategist & Founder",
-            "company": "Expansis Pro",
+            "title": "Digital Strategist & Founder",
+            "place": "Expansis Pro",
             "startDate": "2026-05-01",
-            "since": "{{years}} years and {{months}} months",
+            "duration": "{{years}} years and {{months}} months",
             "responsibilities": [
                 "Leadership and overall direction of Expansis Pro, a digital solutions company oriented toward strategic and operational business optimization.",
                 "Digital Strategy Design: Defining technological roadmaps for businesses looking to scale their online presence and maximize conversions.",
                 "Operational Consulting: Applying efficiency methodologies and excellence standards to digital processes, leveraging high-level operational experience.",
                 "Digital Project Management: End-to-end supervision of platform development, ensuring that architecture and layout align perfectly with client business goals.",
                 "Strategic Advisory: Providing personalized guidance on implementing digital tools to optimize management and drive business growth."
-            ]
+            ],
+            "detailedTasks": []
         },
         "past": [
             {
