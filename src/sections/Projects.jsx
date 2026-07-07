@@ -5,7 +5,7 @@ import SectionTitle from '../components/SectionTitle';
 import ProjectCard from '../components/ProjectCard';
 import AnimatedSection from '../components/AnimatedSection';
 import CardSlider from '../components/CardSlider';
-import ProjectSlider from '../components/DesktopSlider';
+import DesktopSlider from '../components/DesktopSlider';
 
 const Projects = () => {
 	const { t } = useTranslation();
@@ -37,7 +37,7 @@ const Projects = () => {
 
 					{projectsCount >= DESKTOP_SLIDER_THRESHOLD && (
 						<div className='hidden md:block mt-12'>
-							<ProjectSlider items={validProjects} renderItem={renderSlideCard} sectionId='projects' />
+							<DesktopSlider items={validProjects} renderItem={renderSlideCard} sectionId='projects' />
 						</div>
 					)}
 				</div>

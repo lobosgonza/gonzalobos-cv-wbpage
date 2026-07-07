@@ -10,20 +10,20 @@
     },
     "hero": {
         "name": "Gonzalo Lobos",
-        "title": "Business Strategy, E-commerce & Web Development.",
-        "subtitle": "I turn strategies into digital experiences that drive growth.",
+        "title": "Business Strategy, Web Development & Applied Artificial Intelligence.",
+        "subtitle": "Bridging business administration with modern frontend architectures and autonomous AI agents to maximize business conversion.",
         "primaryButton": "View Recent Work",
         "secondaryButton": "Contact"
     },
     "about": {
         "title": "About Me",
         "imageAlt": "Portrait of Gonzalo Lobos, E-commerce and Web Development Specialist",
-        "introduction": "I am a professional who is passionate about connecting <strong>business and technology</strong>. Applying my experience leading e-commerce initiatives for <strong>global brands</strong>, I focus on creating <strong>memorable user experiences</strong> that drive conversion and foster loyalty.",
-        "skills": "I connect analytics with development. I rely on <strong>Google Analytics 4</strong>, <strong>Search Console</strong>, and <strong>BrightEdge</strong> to guide strategy. My experience in <strong>front-end development</strong> (React, Tailwind CSS) then allows me to design prototypes and ensure precise technical implementation.",
-        "callToAction": "I'm looking to connect with innovative teams to create exceptional digital products. If my profile resonates with you, let's talk."
+        "introduction": "I am a professional passionate about merging <strong>business strategy and technology</strong>. Throughout my career, I have led high-demand e-commerce initiatives for <strong>global brands</strong>, focusing on designing <strong>memorable user experiences (UX/UI)</strong> that not only retain customers but skyrocket conversion rates.",
+        "skills": "My approach integrates advanced analytics with technical development. I drive data-backed decision-making using <strong>Google Analytics 4, Search Console, and BrightEdge</strong>. Within the development ecosystem, I master frontend engineering with <strong>React and Tailwind CSS</strong>, enabling me to prototype and deploy ultra-fast interfaces.<br><br>My key differentiator is the ability to automate business processes through Artificial Intelligence, a milestone consolidated with the creation of <strong>OSCAR</strong>: an autonomous commercial agent integrated with large language models (Gemini AI) that acts as a Single Source of Truth (SSoT). I possess the professional background and interpersonal skills required to act as a linguistic and strategic bridge between technical teams, clients, and commercial business units.",
+        "callToAction": "I am looking to join innovative teams focused on digital growth. If you are seeking a technical profile with a business mindset and AI expertise, let's connect."
     },
     "projects": {
-        "title": "Recent Work",
+        "title": "Recent Projects",
         "liveButton": "View Project",
         "repoButton": "View Code",
         "headings": {
@@ -33,16 +33,40 @@
         },
         "items": [
             {
+                "id": "expansis-oscar",
+                "title": "OSCAR: Autonomous Sales Agent & AI Infrastructure",
+                "category": "AI Engineering & DevOps",
+                "sector": "Commercial Automation & Cybersecurity",
+                "image": "/images/expansis-oscar-web.webp",
+                "description": "End-to-end design, development, and deployment of an <strong>intelligent conversational assistant (SDR)</strong> and centralized API architecture. The system securely interconnects the Official WhatsApp API (Meta), Chatwoot, and the Cal.com v2 API using <strong>Function Calling</strong> with Gemini 2.5 Flash. The entire ecosystem is containerized and independently hosted on a <strong>Hetzner</strong> VPS managed via <strong>Coolify</strong>, ensuring high availability and low latency.",
+                "results": [
+                    "Advanced Cryptographic Security: Implementation of SHA-256 signature validation on Webhooks to mitigate fraudulent requests.",
+                    "Single Source of Truth (SSoT): Dual architecture that feeds the WhatsApp bot and the indexable official website frontend in real time (SEO with Schema.org).",
+                    "Automated Governance (Human-in-the-Loop): Dual safety net featuring an analog handbrake ('human intervention') and an intelligent string-truncation system to prevent exceptions in Meta's API.",
+                    "Multi-Stage Consultative Logic: SDR algorithm prioritizing the lead's technical diagnosis and active listening before enabling scheduling features."
+                ],
+                "tags": [
+                    "Node.js",
+                    "Gemini AI (Tools)",
+                    "Hetzner VPS",
+                    "Coolify (DevOps)",
+                    "Meta Cloud API",
+                    "SHA-256 Cybersecurity"
+                ],
+                "liveUrl": "https://api.whatsapp.com/send/?phone=56988318443&text=%C2%A1Hola%21+%0A%0AMe+gustar%C3%ADa+potenciar+mi+negocio+con+un+%2ADesarrollo+Web%2A+a+medida.%0A%0A%C2%BFPodr%C3%ADan+darme+m%C3%A1s+detalles%3F&type=phone_number&app_absent=0",
+                "repoUrl": null
+            },
+            {
                 "id": "2v-express",
                 "title": "2V Express",
                 "category": "Branding & Web Development",
                 "sector": "International Logistics & Courier",
                 "image": "/images/2VExpress-web.webp",
-                "description": "Comprehensive development of <strong>corporate identity and digital ecosystem</strong> for a company specialized in surplus removal. The project ranged from strategic brand definition (branding) to the technical enablement of professional communication channels and a high-authority web platform, generating operational consistency at every touchpoint.",
+                "description": "Comprehensive development of a <strong>corporate identity and digital ecosystem</strong> for a company specializing in surplus removal. The project ranged from strategic brand definition (branding) to the technical enablement of professional communication channels and a high-authority web platform, delivering operational consistency across every touchpoint.",
                 "results": [
                     "Creation of a complete visual identity (Logo and Style Guide)",
-                    "Corporate digitalization: Configuration of emails, signatures, and communication tools",
-                    "Optimized web development to project solidity in a low-turnover industrial sector"
+                    "Corporate digitalization: Configuration of corporate emails, signatures, and communication tools",
+                    "Optimized web development to project industry solidity in a low-turnover industrial sector"
                 ],
                 "tags": [
                     "React",
@@ -59,7 +83,7 @@
                 "category": "Web Development & Portfolio",
                 "sector": "Art Direction & International Cinema",
                 "image": "/images/ClaudiaGallardo-web.webp",
-                "description": "Portfolio development for an Art Director with an international trajectory. The project consisted of creating a <strong>high-impact digital showcase</strong> to organize a prominent filmography on platforms such as Netflix, HBO, and Prime Video. The architecture centered on a cinematographic aesthetic that projects the status of a Pedro Sienna Award winner.",
+                "description": "Portfolio development for an Art Director with an international career. The project consisted of creating a <strong>high-impact digital showcase</strong> to organize a prominent filmography across platforms like Netflix, HBO, and Prime Video. The architecture centered on a cinematographic aesthetic that projects the status of a Pedro Sienna Award winner.",
                 "results": [
                     "Information architecture designed to highlight world-class productions",
                     "Minimalist and sophisticated interface that gives center stage to the visual work",
@@ -80,10 +104,10 @@
                 "category": "Web Development",
                 "sector": "Earthmoving & Construction",
                 "image": "/images/lobosMiniexcavadoras-web.webp",
-                "description": "Development of a <strong>high-performance digital infrastructure</strong> for the industrial sector. We transformed the online presence into a local <strong>lead generation machine</strong>, prioritizing loading speed on-site and a technical architecture that projects the brand's operational solidity.",
+                "description": "Development of a high-performance digital infrastructure for the industrial sector. We transformed the online presence into a local <strong>lead generation machine</strong>, prioritizing loading speed on-site (WPO) and a technical architecture that projects the brand's operational solidity.",
                 "results": [
                     "Strategic conversion optimization for machinery rental",
-                    "Ultra-fast interface (WPO) designed for use in low-signal conditions",
+                    "Ultra-fast interface (WPO) designed for optimal performance in low-signal field conditions",
                     "Authority positioning in the Aconcagua Valley market"
                 ],
                 "tags": [
@@ -101,11 +125,11 @@
                 "category": "Consulting & Branding",
                 "sector": "Organizational Psychology & Strategy",
                 "image": "/images/gonzalobos-web.webp",
-                "description": "Digital ecosystem design for a high-level personal brand. The project synthesizes a trajectory in <strong>organizational psychology</strong> with business management tools, creating a platform that balances <strong>humanism and technical robustness</strong> to attract corporate clients.",
+                "description": "Digital ecosystem design for a high-level personal brand. The project synthesizes a career in <strong>organizational psychology</strong> with business management tools, creating a platform that balances <strong>humanism and technical robustness</strong> to attract corporate clients.",
                 "results": [
-                    "Unification of strategic narrative< and visual style system",
+                    "Unification of strategic narrative and visual style system",
                     "Web architecture optimized for personal authority positioning",
-                    "Structure oriented towards capturing high-value B2B clients"
+                    "Structure oriented toward capturing high-value B2B clients"
                 ],
                 "tags": [
                     "React",
@@ -136,28 +160,6 @@
                 ],
                 "liveUrl": "https://estudiobrkovic.cl/",
                 "repoUrl": null
-            },
-            {
-                "id": "expansis-oscar",
-                "title": "OSCAR: Intelligent Commercial Agent",
-                "category": "AI Agents",
-                "sector": "Commercial Automation",
-                "image": "/images/expansis-oscar-web.webp",
-                "description": "Design and development of an <strong>autonomous conversational agent and centralized API architecture</strong>. The project interconnects advanced Gemini 2.5 Flash language models with the official WhatsApp API (Meta) and Chatwoot, implementing a 'Single Source of Truth' model to synchronize the bot's and agency's website corporate knowledge in real time.",
-                "results": [
-                    "Automation of the sales funnel and lead qualification through ultra-synthetic responses oriented toward conversion (Cal.com)",
-                    "Event-driven hybrid architecture with a 'Human-in-the-Loop' security system for automatic routing via tags",
-                    "Exposure of protected API endpoints with CORS support for dynamic ecosystem data consumption on the frontend"
-                ],
-                "tags": [
-                    "Node.js",
-                    "Express",
-                    "Gemini AI",
-                    "Webhooks",
-                    "Conversational AI"
-                ],
-                "liveUrl": "https://api.whatsapp.com/send/?phone=56988318443&text=%C2%A1Hola%21+%0A%0AMe+gustar%C3%ADa+potenciar+mi+negocio+con+un+%2ADesarrollo+Web%2A+a+medida.%0A%0A%C2%BFPodr%C3%ADan+darme+m%C3%A1s+detalles%3F&type=phone_number&app_absent=0",
-                "repoUrl": null
             }
         ]
     },
@@ -180,16 +182,16 @@
                     "UX/UI",
                     "App"
                 ],
-                "problem": "Need to execute multiple simultaneous campaigns on web and app to boost sales.",
+                "problem": "Need to execute multiple simultaneous campaigns across web and app platforms to boost sales.",
                 "objective": "Orchestrate over 30 annual campaigns, ensuring a consistent user experience.",
                 "actions": [
-                    "Planning and execution of the annual campaign calendar.",
-                    "Coordination with design, development, and marketing teams.",
+                    "Planning and execution of the annual commercial campaign calendar.",
+                    "Cross-functional coordination with design, development, and marketing teams.",
                     "Constant performance monitoring and optimization."
                 ],
                 "results": [
                     "Successful execution of campaigns, resulting in high annual sales volume.",
-                    "Improvement in purchase frequency and interaction."
+                    "Improvement in purchase frequency and user interaction."
                 ]
             },
             {
@@ -204,13 +206,13 @@
                 "problem": "Identified a growth opportunity in the organic channel, which had an order share below the brand's potential.",
                 "objective": "Increase visibility and sales share from the organic channel through a content and technical optimization strategy.",
                 "actions": [
-                    "Keyword optimization (primary and long-tail).",
+                    "Keyword optimization (primary and long-tail keywords).",
                     "Implementation of FAQ sections on product pages.",
-                    "Use of structured data (Schema) for visibility."
+                    "Use of structured data (Schema) for enhanced search engine visibility."
                 ],
                 "results": [
-                    "Double-digit growth in sales from the organic channel.",
-                    "Significant increase in the channel's order share within the sales mix."
+                    "Double-digit growth in sales driven by the organic channel.",
+                    "Significant increase in the channel's order share within the total sales mix."
                 ]
             },
             {
@@ -221,16 +223,16 @@
                     "UX",
                     "Operations"
                 ],
-                "problem": "The \"Boutique Pickup\" service was inconsistent, not available in all stores, and generated confusion.",
-                "objective": "Implement and standardize the \"Boutique Pickup\" service in 100% of stores to unify the experience.",
+                "problem": "The \"Boutique Pickup\" service was inconsistent, unavailable in 100% of stores, and caused user confusion.",
+                "objective": "Implement and standardize the \"Boutique Pickup\" service across all stores to unify the omnichannel experience.",
                 "actions": [
-                    "Service rollout to all boutiques nationwide.",
+                    "Service rollout to all boutique locations nationwide.",
                     "Training of in-store teams on the new operational flow.",
-                    "Optimization of communication channels for order monitoring.",
-                    "Drafting and improvement of notification emails to ensure pickup."
+                    "Optimization of communication channels for real-time order monitoring.",
+                    "Drafting and optimization of transactional notification emails to secure pickup completion."
                 ],
                 "results": [
-                    "Notable increase in the adoption of the pickup modality."
+                    "Notable increase in the adoption rate of the pickup modality."
                 ]
             },
             {
@@ -242,17 +244,17 @@
                     "Performance",
                     "Consulting"
                 ],
-                "problem": "Launch the Google Ads presence for a client to generate qualified traffic and initial conversions.",
-                "objective": "Implement an SEM strategy from scratch, set up conversion tracking, and obtain initial results.",
+                "problem": "Launch a client's presence in Google Ads to generate highly qualified traffic and drive initial conversions.",
+                "objective": "Implement an SEM strategy from scratch, configure conversion tracking, and obtain initial data insights.",
                 "actions": [
-                    "Keyword research and competitor analysis.",
-                    "Structuring of the account and ad groups in Google Ads.",
-                    "Configuration of conversion events.",
-                    "Initial campaign management and optimization."
+                    "Keyword research and comprehensive competitor analysis.",
+                    "Structuring account architecture and ad groups within Google Ads.",
+                    "Configuration and testing of conversion events.",
+                    "Initial campaign management, bidding management, and optimization."
                 ],
                 "results": [
-                    "The client's first conversion events were obtained.",
-                    "Successful validation of the performance funnel."
+                    "Obtained the client's first conversion events.",
+                    "Successful validation of the full-funnel performance model."
                 ]
             }
         ]
@@ -268,7 +270,7 @@
             "startDate": "2026-05-01",
             "duration": "{{years}} years and {{months}} months",
             "responsibilities": [
-                "Leadership and overall direction of Expansis Pro, a digital solutions company oriented toward strategic and operational business optimization.",
+                "Leadership and overall direction of Expansis Pro, a digital solutions firm focused on strategic and operational business optimization.",
                 "Digital Strategy Design: Defining technological roadmaps for businesses looking to scale their online presence and maximize conversions.",
                 "Operational Consulting: Applying efficiency methodologies and excellence standards to digital processes, leveraging high-level operational experience.",
                 "Digital Project Management: End-to-end supervision of platform development, ensuring that architecture and layout align perfectly with client business goals.",
@@ -279,7 +281,7 @@
         "past": [
             {
                 "id": 1,
-                "title": "E-commerce Merchandising Specialist",
+                "title": "Ecommerce Merchandising Specialist",
                 "place": "Nestlé Nespresso SA",
                 "duration": "Dec 2021 – Apr 2026 (4 years and 5 months)",
                 "responsibilities": [
@@ -300,14 +302,14 @@
                 "place": "Todo Mejora",
                 "duration": "Mar 2021 – Dec 2021 (10 months)",
                 "responsibilities": [
-                    "Coordination of training in the health and education sectors.",
-                    "Income and expense management.",
-                    "Coordination of payments with institutions.",
-                    "Managed event invitations through email marketing campaigns using Mailchimp."
+                    "Coordination of professional training programs in the health and education sectors.",
+                    "Budgetary oversight: Management of departmental income and expenses.",
+                    "Coordination of accounts receivable and financial flows with institutional partners.",
+                    "Managed event invitations and outreach through targeted email marketing campaigns using Mailchimp."
                 ],
                 "detailedTasks": [
                     "To mitigate friction in remote training coordination, I centralized interdepartmental communication by implementing tracking channels in <strong>Slack</strong>, increasing the team's response speed.",
-                    "With the aim of maximizing attendance at institutional call-outs, I structured segmented databases and executed massive email marketing campaigns via <strong>Mailchimp</strong>, monitoring metrics like Open Rate.",
+                    "With the aim of maximizing attendance at institutional call-outs, I structured segmented databases and executed massive email marketing campaigns via <strong>Mailchimp</strong>, monitoring performance metrics like Open Rate.",
                     "Managed the operational control of financial flows, directly coordinating payment statuses with health and education entities to ensure program continuity."
                 ]
             },
@@ -318,7 +320,7 @@
                 "duration": "Mar 2020 – Feb 2021 (1 year)",
                 "responsibilities": [
                     "Development and optimization of responsive websites and landing pages oriented toward conversion.",
-                    "Translation of business requirements into information architectures, wireframes, and visual prototypes."
+                    "Translation of business requirements into detailed information architectures, wireframes, and high-fidelity visual prototypes."
                 ],
                 "detailedTasks": [
                     "<strong>WordPress Ecosystem & Builders:</strong> Construction, customization, and maintenance of self-managed sites using advanced builders like <strong>Divi</strong> and <strong>Elementor</strong>.",
@@ -332,8 +334,8 @@
                 "place": "Estudio FE",
                 "duration": "Oct 2019 – Dec 2019 (3 months)",
                 "responsibilities": [
-                    "Assisted in digital production (photo and audiovisual) for major brands.",
-                    "Coordinated teams and casting for projects."
+                    "Assisted in digital production (photo and audiovisual) for major commercial brands.",
+                    "Coordinated creative teams and casting logistics for large-scale projects."
                 ]
             },
             {
@@ -344,7 +346,7 @@
                 "responsibilities": [
                     "Managed subscription campaigns for La Tercera newspaper.",
                     "Coordinated design and layout teams for graphic materials.",
-                    "Tracked budgets and managed supplier contracts."
+                    "Tracked marketing budgets and managed supplier contracts."
                 ]
             }
         ]
@@ -353,7 +355,6 @@
         "title": "Education",
         "items": [
             {
-                "id": 1,
                 "title": "Master's Degree, Organizational Psychology",
                 "place": "Universidad Adolfo Ibáñez",
                 "duration": "Mar 2016 - Mar 2017",
@@ -363,13 +364,12 @@
                     "Development of leadership competencies, operational structure design, and optimization of collaborative workflows."
                 ],
                 "detailedTasks": [
-                    "<strong>Consumer Behavior:</strong> Deep understanding of cognitive biases, decision-making, and user archetypes, applied directly to the design of user experience (UX/UI) flows and digital conversion.",
-                    "<strong>Change Management & Digital Adoption:</strong> Diagnosis and intervention in digital transformation processes, facilitating the integration of new interdepartmental technological tools.",
-                    "<strong>Work Cell Dynamics:</strong> Specialization in high-performance collaboration frameworks to seamlessly coordinate multidisciplinary design and development teams."
+                    "<strong>Consumer Behavior:</strong> Deep understanding of cognitive biases, decision-making models, and user archetypes, applied directly to the design of user experience (UX/UI) flows and digital conversion.",
+                    "<strong>Change Management & Digital Adoption:</strong> Diagnosis and intervention in digital transformation processes, facilitating the seamless integration of new interdepartmental technological tools.",
+                    "<strong>Work Cell Dynamics:</strong> Specialization in high-performance agile collaboration frameworks to smoothly coordinate multidisciplinary design and development teams."
                 ]
             },
             {
-                "id": 2,
                 "title": "Business Administration, Major in Business Management",
                 "place": "Universidad Adolfo Ibáñez",
                 "duration": "2011 - 2015",
@@ -385,7 +385,6 @@
                 ]
             },
             {
-                "id": 3,
                 "title": "Technician, Advertising Photography",
                 "place": "Instituto Profesional ARCOS",
                 "duration": "2018 - 2020",
@@ -395,13 +394,12 @@
                     "Management of digital production projects and aesthetic quality control for major commercial brands."
                 ],
                 "detailedTasks": [
-                    "<strong>Post-Production & Digital Workflow:</strong> Advanced digital image processing, color correction, and photocomcomposition using professional software such as <strong>Photoshop, Lightroom, and Capture One</strong>.",
+                    "<strong>Post-Production & Digital Workflow:</strong> Advanced digital image processing, color correction, and photocomposition using professional software such as <strong>Photoshop, Lightroom, and Capture One</strong>.",
                     "<strong>Art Direction & UI Aesthetics:</strong> Practical application of visual balance, spatial hierarchy, contrast, and color theory concepts, with direct transfer to web interface design.",
                     "<strong>Digital Asset Optimization:</strong> Format management, technical image compression, and preparation of high-fidelity digital assets optimized for smooth web loading performance (WPO)."
                 ]
             },
             {
-                "id": 4,
                 "title": "Self-Taught Specialization in Full-Stack Web Development",
                 "place": "App Brewery London / Self-Directed Learning",
                 "duration": "+40 hours of practical specialization",
@@ -443,13 +441,20 @@
                 {
                     "title": "Digital Project Management",
                     "description": "Coordination of multidisciplinary teams for the execution of technological and commercial projects."
+                },
+                {
+                    "title": "AI Automation & Governance",
+                    "description": "Design of autonomous agents (SDR), multi-stage logical workflows, and hybrid customer service architectures (Human-in-the-Loop)."
                 }
             ],
             "technical": [
                 "React.js",
+                "Node.js & Express",
                 "JavaScript (ES6+)",
-                "HTML5",
-                "CSS3",
+                "AI Engineering (Function Calling)",
+                "API & Webhook Architecture",
+                "Cybersecurity (SHA-256 Validation)",
+                "HTML5 & CSS3",
                 "Tailwind CSS",
                 "Git & GitHub",
                 "SQL for data analysis",
@@ -457,26 +462,31 @@
                 "GitHub Actions (CI/CD)"
             ],
             "tools": [
+                "Professional English (B2/C1)",
+                "Google Ads",
                 "Google Analytics 4",
                 "Google Search Console",
+                "Google Keyword Planner",
+                "Hetzner VPS Cloud",
+                "Schema Markup (JSON-LD)",
+                "Chatwoot Omnichannel",
+                "Meta Cloud API (WhatsApp)",
+                "Cal.com API",
                 "Looker Studio",
                 "Optimizely",
-                "Google Ads",
                 "BrightEdge",
-                "Google Keyword Planner",
-                "Schema Markup (JSON-LD)",
                 "Photoshop",
                 "Illustrator",
                 "Lightroom",
                 "Capture One",
                 "Mailchimp",
-                "Professional English (B2/C1)"
+                "Coolify (DevOps)"
             ]
         }
     },
     "contact": {
         "title": "Contact",
-        "subtitle": "If you are interested in collaborating or have any questions, feel free to contact me. I am always interested in hearing about new and compelling challenges.",
+        "subtitle": "If you are interested in collaborating or have any questions, feel free to contact me. I am always open to hearing about new and compelling challenges.",
         "whatsapp": "WhatsApp",
         "linkedin": "LinkedIn",
         "github": "GitHub",

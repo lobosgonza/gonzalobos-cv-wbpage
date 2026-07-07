@@ -23,8 +23,9 @@ const Contact = () => {
 		{ name: t('contact.github'), icon: <FaGithub className='w-4 h-4' />, url: 'https://github.com/lobosgonza' },
 	];
 
+	// Modificado: Eliminado border-4 y añadidas transiciones grupales
 	const blockClass =
-		'flex items-center space-x-4 p-4 rounded-none bg-white border-4  hover:bg-stone-50 transition-colors duration-200 text-xs font-black uppercase tracking-widest text-structural';
+		'group flex items-center justify-between space-x-4 p-4 rounded-none bg-white hover:bg-[#0d9488] transition-all duration-300 text-xs font-black uppercase tracking-widest text-structural';
 
 	return (
 		<section id='contact' className='py-16 sm:py-20 bg-concrete'>
@@ -35,30 +36,36 @@ const Contact = () => {
 
 					<div className='grid lg:grid-cols-2 gap-12 items-start'>
 						<div className='space-y-4'>
-							<button onClick={handleCopyEmail} className={`${blockClass} w-full text-left justify-between`}>
+							<button onClick={handleCopyEmail} className={`${blockClass} w-full text-left`}>
 								<div className='flex items-center space-x-4 min-w-0 flex-grow'>
-									<span className={isCopied ? 'text-emerald-700 flex-shrink-0' : 'text-primary flex-shrink-0'}>
+									<span
+										className={
+											isCopied ? 'text-emerald-700 group-hover:text-white flex-shrink-0 transition-colors' : 'text-primary group-hover:text-white flex-shrink-0 transition-colors'
+										}>
 										{isCopied ? <FaCheck className='w-4 h-4' /> : <FaClipboard className='w-4 h-4' />}
 									</span>
-									{/* MÁGIA DE CORRECCIÓN: 
-										Agregamos 'break-all' para forzar el quiebre de palabra en celulares compactos
-									*/}
-									<span className={`uppercase text-xs font-black break-all ${isCopied ? 'text-emerald-700' : 'text-structural'}`}>
+									<span
+										className={`uppercase text-xs font-black break-all ${isCopied ? 'text-emerald-700 group-hover:text-white' : 'text-structural group-hover:text-white'} transition-colors`}>
 										{isCopied ? t('contact.copied') : emailAddress}
 									</span>
 								</div>
-								{!isCopied && <span className='text-[10px] text-stone-400 font-black tracking-widest uppercase flex-shrink-0 pl-2'>Copiar</span>}
+								{!isCopied && (
+									<span className='text-[10px] text-stone-400 group-hover:text-white/80 font-black tracking-widest uppercase flex-shrink-0 pl-2 transition-colors'>Copiar</span>
+								)}
 							</button>
 
 							{socialLinks.map((link, index) => (
 								<a key={index} href={link.url} target='_blank' rel='noopener noreferrer' className={blockClass}>
-									<span className='text-primary'>{link.icon}</span>
-									<span>{link.name}</span>
+									<div className='flex items-center space-x-4'>
+										<span className='text-primary group-hover:text-white transition-colors'>{link.icon}</span>
+										<span className='group-hover:text-white transition-colors'>{link.name}</span>
+									</div>{' '}
+									<span className='text-[10px] text-stone-400 group-hover:text-white/80 font-black tracking-widest uppercase flex-shrink-0 pl-2 transition-colors'>Entrar</span>
 								</a>
 							))}
 						</div>
 
-						<div className='bg-white p-8 rounded-none border-4 '>
+						<div className='bg-[#ffffff] p-8 rounded-none'>
 							<h3 className='text-sm font-black uppercase tracking-widest text-structural mb-6 font-display'>{t('contact.sendMessage')}</h3>
 							<ContactForm />
 						</div>

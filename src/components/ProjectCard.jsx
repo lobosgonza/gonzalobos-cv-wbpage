@@ -9,7 +9,7 @@ const ProjectCard = ({ project }) => {
 		<div className='bg-white rounded-none shadow-sm flex flex-col h-full  transition-colors duration-300'>
 			<img src={project.image} alt={project.title} className='w-full h-full  transition-all duration-500' />
 
-			<div className='p-5 flex flex-col flex-grow'>
+			<div className='p-5 flex flex-col flex-grow '>
 				<span className='text-[10px] font-black uppercase tracking-wide md:tracking-widest text-primary mb-1 block break-words w-full'>
 					{project.category} {project.sector && `• ${project.sector}`}
 				</span>

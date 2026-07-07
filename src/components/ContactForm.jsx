@@ -33,8 +33,8 @@ export const ContactForm = () => {
 		);
 	};
 
-	const inputClass =
-		'w-full px-3 py-2 border border-stone-300 rounded-none text-stone-900 bg-stone-50/50 text-xs font-medium focus:outline-none focus:border-teal-700 transition-colors placeholder-stone-400';
+	// Asignamos la clase aislada y limpia
+	const inputClass = 'contact-input';
 	const labelClass = 'block text-[10px] font-black uppercase tracking-widest text-stone-500 mb-1';
 
 	return (
@@ -71,7 +71,7 @@ export const ContactForm = () => {
 				<button
 					type='submit'
 					disabled={isSending}
-					className='w-full py-3 px-4 bg-stone-800 hover:bg-teal-700 text-stone-100 text-xs font-black uppercase tracking-widest shadow-md transition-colors duration-300 disabled:opacity-50 rounded-none'>
+					className='w-full py-3 px-4 bg-stone-800 hover:bg-[#0d9488] text-stone-100 text-xs font-black uppercase tracking-widest transition-colors duration-300 disabled:opacity-50 rounded-none shadow-none'>
 					{isSending ? 'Enviando...' : t('contact.formSend')}
 				</button>
 			</div>

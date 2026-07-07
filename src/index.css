@@ -6,10 +6,6 @@
    1. CONFIGURACIÓN GLOBAL (Cemento Limpio)
    ========================================== */
 
-/* ==========================================
-   1. CONFIGURACIÓN GLOBAL (Cemento Limpio)
-   ========================================== */
-
 body.fade-out {
 	opacity: 0;
 }
@@ -28,8 +24,6 @@ body.fade-out {
 .img {
 	height: 200px;
 	width: 200px;
-	border-radius: 0px !important;
-	/* border: 1px solid #1a1816 !important; */
 	object-fit: cover;
 }
 
@@ -37,22 +31,36 @@ body.fade-out {
    2. INTERFACES MONOLÍTICAS (Fusión Suiza)
    ========================================== */
 
-/* Las Tarjetas pierden la sombra de cómic. 
-   Ahora son bloques planos, masivos y flotan mediante contraste puro. */
+/* Las Tarjetas pierden la sombra. Bloques planos masivos. */
 .bg-white {
 	background-color: #ffffff !important;
-	/* border: 1px solid #1a1816 !important; */
-	border-radius: 0px !important;
-	box-shadow: none !important; /* Adiós sombra de diario */
+	box-shadow: none !important;
 	transform: none !important;
-	transition: background-color 0.25s ease;
+	/* Añadimos 'color' para que las letras cambien de forma fluida junto al fondo */
+	transition:
+		background-color 0.25s ease,
+		color 0.25s ease !important;
 }
 
-/* En lugar de hundirse como caricatura, la tarjeta brutalista suiza 
-   cambia sutilmente su fondo a un tono piedra al pasar el mouse */
+/* Cambio de fondo a Jade al pasar el mouse */
 .bg-white:hover {
-	background-color: #f5f4f0 !important;
-	border-color: #0d9488 !important;
+	background-color: #0d9488 !important;
+}
+
+/* Forzamos que los textos, enlaces y títulos muten a blanco en hover */
+.bg-white:hover h3,
+.bg-white:hover h4,
+.bg-white:hover ul li,
+.bg-white:hover p,
+.bg-white:hover a,
+.bg-white:hover span {
+	color: #ffffff !important;
+}
+
+/* Suavizado especial para que los badges de tecnología contrasten bien en el hover */
+.bg-white:hover .bg-stone-100 {
+	background-color: rgba(255, 255, 255, 0.2) !important;
+	color: #ffffff !important;
 }
 
 /* Secciones de Navegación */
@@ -61,19 +69,19 @@ body.fade-out {
 }
 .bg-white\/90 {
 	background-color: #eae7e2 !important;
-	border-b: 1px solid #1a1816 !important;
-}
-.bg-stone-100 {
-	background-color: #1a1816 !important; /* El Footer se vuelve un bloque negro masivo */
-	color: #eae7e2 !important;
-	border-t: none !important;
 }
 
-/* Forzamos que los textos dentro del footer negro se lean en color cemento */
-.bg-stone-100 text-stone-600,
-.bg-stone-100 p,
-.bg-stone-100 span,
-.bg-stone-100 strong {
+/* CAMBIO CLAVE: Apuntamos al footer directamente para no romper el bg-stone-100 de Tailwind */
+footer,
+.main-footer {
+	background-color: #1a1816 !important;
+	color: #eae7e2 !important;
+}
+
+footer p,
+footer span,
+footer strong,
+footer a {
 	color: #eae7e2 !important;
 }
 
@@ -81,7 +89,6 @@ body.fade-out {
    3. TIPOGRAFÍA SUIZA (Pesada y Compacta)
    ========================================== */
 
-/* En tu index.css, donde definimos los títulos */
 .text-stone-900,
 .text-stone-800,
 .text-slate-900,
@@ -89,7 +96,6 @@ body.fade-out {
 	color: #1a1816 !important;
 	font-weight: 900 !important;
 	text-transform: uppercase;
-	/* tracking-tighter extremo: pega las letras para eliminar las bolsas de aire */
 	letter-spacing: -0.05em !important;
 }
 
@@ -99,7 +105,7 @@ body.fade-out {
 
 .swiper-pagination-bullet {
 	width: 16px;
-	height: 3px; /* Líneas delgadas de plano técnico */
+	height: 3px;
 	border-radius: 0px !important;
 	background-color: #1a1816;
 	opacity: 0.2;
@@ -109,21 +115,15 @@ body.fade-out {
 .swiper-pagination-bullet-active {
 	width: 32px;
 	opacity: 1;
-	background-color: #0d9488 !important; /* Jade Activo */
+	background-color: #0d9488 !important;
 }
 
 /* ==========================================
-   5. TEXTURA DE PLANO TÉCNICO (Malla de 1px)
+   5. TEXTURA DE PLANO TÉCNICO & BOTONES
    ========================================== */
 
-/* Sustituimos los bloques cómicos por una grilla técnica hiper-fina
-   que simula un plano de coordenadas de ingeniería. */
-
-/* Ajustamos los botones de formularios para que sean bloques sólidos sin sombras */
 button[type='submit'],
 .inline-flex.items-center.gap-2.bg-stone-800 {
-	border: 1px solid #1a1816 !important;
-	border-radius: 0px !important;
 	background-color: #1a1816 !important;
 	color: #eae7e2 !important;
 	box-shadow: none !important;
@@ -134,6 +134,49 @@ button[type='submit'],
 
 button[type='submit']:hover,
 .inline-flex.items-center.gap-2.bg-stone-800:hover {
-	background-color: #0d9488 !important; /* Cambio directo a Jade */
+	background-color: #0d9488 !important;
 	color: #ffffff !important;
+}
+
+/* ==========================================
+   6. COMPONENTE ESPECÍFICO: FORMULARIO DE CONTACTO
+   ========================================== */
+
+.contact-input {
+	width: 100%;
+	padding: 8px 12px !important; /* px-3 py-2 */
+	border: none !important;
+	border-radius: 0px !important;
+	background-color: #f5f5f4 !important; /* bg-stone-100 */
+	color: #1c1917 !important; /* text-stone-900 */
+	font-size: 0.75rem !important; /* text-xs */
+	font-weight: 500 !important;
+	transition: all 0.2s ease-in-out !important;
+	outline: none !important;
+}
+
+/* Estado por defecto del placeholder */
+.contact-input::placeholder {
+	color: #a8a29e !important; /* placeholder-stone-400 */
+	transition: color 0.2s ease-in-out;
+}
+
+/* HOVER: Solo se activa si el input NO tiene el foco (no se está escribiendo) */
+.contact-input:hover:not(:focus) {
+	background-color: #0d9488 !important; /* Jade */
+	color: #ffffff !important; /* Texto blanco */
+}
+
+.contact-input:hover:not(:focus)::placeholder {
+	color: rgba(255, 255, 255, 0.6) !important; /* Placeholder blanco sutil */
+}
+
+/* FOCUS: Cuando el usuario hace clic para escribir, se congela en el estado neutro */
+.contact-input:focus {
+	background-color: #f5f5f4 !important;
+	color: #1c1917 !important;
+}
+
+.contact-input:focus::placeholder {
+	color: #a8a29e !important;
 }

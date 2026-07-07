@@ -10,17 +10,17 @@
     },
     "hero": {
         "name": "Gonzalo Lobos",
-        "title": "Estrategia de Negocios, E-commerce y Desarrollo Web.",
-        "subtitle": "Convierto estrategias en experiencias digitales que impulsan el crecimiento.",
+        "title": "Estrategia de Negocios, Desarrollo Web e Inteligencia Artificial aplicada.",
+        "subtitle": "Conecto la ingeniería comercial con arquitecturas frontend modernas y agentes autónomos de IA para optimizar la conversión de tu negocio.",
         "primaryButton": "Ver Trabajos Recientes",
         "secondaryButton": "Contacto"
     },
     "about": {
         "title": "Sobre Mí",
         "imageAlt": "Retrato de Gonzalo Lobos, especialista en Ecommerce y Desarrollo Web",
-        "introduction": "Soy un profesional apasionado por conectar <strong>negocios y tecnología</strong>. Aplicando mi experiencia en liderar iniciativas de e-commerce para <strong>marcas globales</strong>, me enfoco en crear <strong>experiencias de usuario memorables</strong> que impulsan la conversión y fomentan la lealtad.",
-        "skills": "Conecto la analítica con el desarrollo. Me apoyo en <strong>Google Analytics 4</strong>, <strong>Search Console</strong> y <strong>BrightEdge</strong> para guiar la estrategia. Mi experiencia en <strong>front-end</strong> (React, Tailwind CSS) me permite luego diseñar prototipos y asegurar una implementación técnica precisa.",
-        "callToAction": "Busco conectar con equipos innovadores para crear productos digitales excepcionales. Si mi perfil resuena contigo, hablemos."
+        "introduction": "Soy un profesional apasionado por fusionar <strong>estrategia de negocios y tecnología</strong>. A lo largo de mi trayectoria, he liderado iniciativas de e-commerce de alta demanda para <strong>marcas globales</strong>, enfocándome en diseñar <strong>experiencias de usuario memorables (UX/UI)</strong> que no solo retienen clientes, sino que disparan las tasas de conversión.",
+        "skills": "Mi enfoque integra la analítica avanzada con el desarrollo técnico. Conduzco la toma de decisiones utilizando <strong>Google Analytics 4, Search Console y BrightEdge</strong>. En el ecosistema de desarrollo, domino el desarrollo frontend con <strong>React y Tailwind CSS</strong>, permitiéndome prototipar e implementar interfaces ultra rápidas.<br><br>Mi factor diferencial es la capacidad de automatizar procesos comerciales mediante Inteligencia Artificial, hito consolidado con el desarrollo de <strong>OSCAR</strong>: un agente comercial autónomo e integrado a modelos de lenguaje (Gemini AI) que actúa como fuente única de verdad. Poseo la formación y la calidad humana necesarias para actuar como puente lingüístico y estratégico entre equipos técnicos, clientes y áreas comerciales.",
+        "callToAction": "Busco incorporarme a equipos innovadores orientados al crecimiento digital. Si buscas un perfil técnico con mentalidad de negocio y experiencia en IA, conversemos."
     },
     "projects": {
         "title": "Trabajos Realizados",
@@ -32,6 +32,30 @@
             "showLess": "Ver menos ▲"
         },
         "items": [
+            {
+                "id": "expansis-oscar",
+                "title": "OSCAR: Agente Comercial Autónomo e Infraestructura de IA",
+                "category": "Ingeniería de IA & DevOps",
+                "sector": "Automatización Comercial & Ciberseguridad",
+                "image": "/images/expansis-oscar-web.webp",
+                "description": "Diseño, desarrollo y despliegue de un <strong>asistente conversacional inteligente (SDR)</strong> y arquitectura de API centralizada de extremo a extremo. El sistema interconecta de forma segura la API Oficial de WhatsApp (Meta), Chatwoot y la API v2 de Cal.com mediante el uso de <strong>Function Calling</strong> con Gemini 2.5 Flash. Todo el ecosistema está contenerizado y alojado de forma independiente en un VPS de <strong>Hetzner</strong> gestionado a través de <strong>Coolify</strong>, asegurando alta disponibilidad y baja latencia.",
+                "results": [
+                    "Seguridad Criptográfica Avanzada: Implementación de validación de firmas SHA-256 en Webhooks para mitigar peticiones fraudulentas.",
+                    "Fuente Única de Verdad (SSoT): Arquitectura dual que alimenta en tiempo real al bot de WhatsApp y al frontend del sitio web oficial indexable (SEO con Schema.org).",
+                    "Gobernanza Automatizada (Human-in-the-Loop): Red de seguridad dual con freno de mano analógico ('mano-humana') y sistema inteligente de truncado de strings para evitar excepciones en la API de Meta.",
+                    "Lógica Consultiva por Etapas: Algoritmo SDR que prioriza el diagnóstico técnico del lead y la escucha activa antes de habilitar la función de agendamiento."
+                ],
+                "tags": [
+                    "Node.js",
+                    "Gemini AI (Tools)",
+                    "Hetzner VPS",
+                    "Coolify (DevOps)",
+                    "Meta Cloud API",
+                    "Ciberseguridad SHA-256"
+                ],
+                "liveUrl": "https://api.whatsapp.com/send/?phone=56988318443&text=%C2%A1Hola%21+%0A%0AMe+gustar%C3%ADa+potenciar+mi+negocio+con+un+%2ADesarrollo+Web%2A+a+medida.%0A%0A%C2%BFPodr%C3%ADan+darme+m%C3%A1s+detalles%3F&type=phone_number&app_absent=0",
+                "repoUrl": null
+            },
             {
                 "id": "2v-express",
                 "title": "2V Express",
@@ -135,28 +159,6 @@
                     "Sector Legal"
                 ],
                 "liveUrl": "https://estudiobrkovic.cl/",
-                "repoUrl": null
-            },
-            {
-                "id": "expansis-oscar",
-                "title": "OSCAR: Agente Comercial Inteligente",
-                "category": "Agentes de IA",
-                "sector": "Automatización Comercial",
-                "image": "/images/expansis-oscar-web.webp",
-                "description": "Diseño y desarrollo de un <strong>agente conversacional autónomo y arquitectura de API centralizada</strong>. El proyecto interconecta los modelos de lenguaje avanzado de Gemini 2.5 Flash con la API oficial de WhatsApp (Meta) y Chatwoot, implementando un modelo de 'Única Fuente de Verdad' (Single Source of Truth) para sincronizar en tiempo real el conocimiento corporativo del bot y de la página web de la agencia.",
-                "results": [
-                    "Automatización del embudo de ventas y calificación de leads mediante respuestas ultra-sintéticas orientadas a la conversión (Cal.com)",
-                    "Arquitectura híbrida orientada a eventos con sistema de seguridad 'Human-in-the-Loop' para desvíos automáticos por etiquetas",
-                    "Exposición de endpoints API protegidos con soporte CORS para el consumo dinámico de datos del ecosistema en el frontend"
-                ],
-                "tags": [
-                    "Node.js",
-                    "Express",
-                    "Gemini AI",
-                    "Webhooks",
-                    "Conversational AI"
-                ],
-                "liveUrl": "https://api.whatsapp.com/send/?phone=56988318443&text=%C2%A1Hola%21+%0A%0AMe+gustar%C3%ADa+potenciar+mi+negocio+con+un+%2ADesarrollo+Web%2A+a+medida.%0A%0A%C2%BFPodr%C3%ADan+darme+m%C3%A1s+detalles%3F&type=phone_number&app_absent=0",
                 "repoUrl": null
             }
         ]
@@ -439,13 +441,20 @@
                 {
                     "title": "Gestión de Proyectos Digitales",
                     "description": "Coordinación de equipos multidisciplinarios para la ejecución de proyectos tecnológicos y comerciales."
+                },
+                {
+                    "title": "Automatización con IA & Gobernanza",
+                    "description": "Diseño de agentes autónomos (SDR), flujos lógicos por etapas y arquitectura híbrida de atención (Human-in-the-Loop)."
                 }
             ],
             "technical": [
                 "React.js",
+                "Node.js & Express",
                 "JavaScript (ES6+)",
-                "HTML5",
-                "CSS3",
+                "Ingeniería de IA (Function Calling)",
+                "Arquitectura de APIs & Webhooks",
+                "Ciberseguridad (Validación SHA-256)",
+                "HTML5 & CSS3",
                 "Tailwind CSS",
                 "Git & GitHub",
                 "SQL para análisis de datos",
@@ -453,20 +462,25 @@
                 "GitHub Actions (CI/CD)"
             ],
             "tools": [
+                "Inglés Profesional (B2/C1)",
+                "Google Ads",
                 "Google Analytics 4",
                 "Google Search Console",
+                "Google Keyword Planner",
+                "Hetzner VPS Cloud",
+                "Schema Markup (JSON-LD)",
+                "Chatwoot Omnicanal",
+                "Meta Cloud API (WhatsApp)",
+                "Cal.com API",
                 "Looker Studio",
                 "Optimizely",
-                "Google Ads",
                 "BrightEdge",
-                "Google Keyword Planner",
-                "Schema Markup (JSON-LD)",
                 "Photoshop",
                 "Illustrator",
                 "Lightroom",
                 "Capture One",
                 "Mailchimp",
-                "Inglés Profesional (B2/C1)"
+                "Coolify (DevOps)"
             ]
         }
     },
