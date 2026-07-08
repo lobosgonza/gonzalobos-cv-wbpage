@@ -27,7 +27,7 @@ function PrintCVContent() {
 						gonzalo.lobos.ramirez@gmail.com
 					</a>{' '}
 					{' | '}
-					<strong>Portfolio:</strong>{' '}
+					<strong>{isEn ? 'Portfolio:' : 'Portafolio:'}</strong>{' '}
 					<a href='https://gonzalobos.com' target='_blank' rel='noreferrer' style={{ color: '#000', textDecoration: 'none', fontWeight: 'bold' }}>
 						gonzalobos.com
 					</a>{' '}
@@ -88,7 +88,6 @@ function PrintCVContent() {
 							<span>
 								{currentExperience.title} — <em style={{ fontStyle: 'normal', color: '#333' }}>{currentExperience.place}</em>
 							</span>
-							{/* CORRECCIÓN DE UNIFORMIDAD: Formato adaptado de tres letras para el mes de inicio */}
 							<span style={{ float: 'right', fontWeight: 'normal', fontSize: '8pt' }}>{isEn ? 'May 2026 – Present' : 'may. 2026 – Actualidad'}</span>
 						</div>
 						<ul style={{ margin: '2px 0 0 0', paddingLeft: '12px', fontSize: '8pt', lineHeight: '1.25' }}>
@@ -141,7 +140,8 @@ function PrintCVContent() {
 							<span>
 								{edu.title} — <span style={{ fontWeight: 'normal' }}>{edu.place}</span>
 							</span>
-							<span style={{ float: 'right', fontWeight: 'normal', fontSize: '8pt' }}>{edu.duration.split(' - ')[0]}</span>
+							{/* CORRECCIÓN: Renderizado directo de la fecha completa de inicio a fin desde el JSON */}
+							<span style={{ float: 'right', fontWeight: 'normal', fontSize: '8pt' }}>{edu.duration}</span>
 						</div>
 					</div>
 				))}
