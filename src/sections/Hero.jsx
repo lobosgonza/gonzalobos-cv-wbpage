@@ -2,7 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import PrintCVButton from '../components/PrintCVButton'; // <-- Importación del nuevo botón analítico
+import PrintCVButton from '../components/PrintCVButton';
 
 const ButtonIcon = ({ children }) => <div className='w-5 h-5 flex-shrink-0'>{children}</div>;
 
@@ -22,16 +22,11 @@ const Hero = () => {
 		<section id='home' className='relative min-h-screen flex items-center justify-start bg-concrete bg-textura-prehispanica overflow-hidden'>
 			<div className='container mx-auto px-6 text-left max-w-5xl'>
 				<motion.div initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6, ease: 'easeOut' }} className='space-y-4'>
-					{/* TITULO PRINCIPAL: Letra masiva, compacta y aplastada */}
 					<h1 className='uppercase text-5xl md:text-7xl lg:text-8xl font-black font-display text-structural tracking-tighter leading-none'>{t('hero.name')}</h1>
-
-					{/* SUBTITULO: Un bloque rígido con acento Jade de fondo */}
 					<div className='inline-block bg-primary text-white px-3 py-1 text-sm md:text-base font-black uppercase tracking-wider'>{t('hero.title')}</div>
-
-					{/* PÁRRAFO: Mayúsculas de peso medio estilo manifiesto */}
 					<p className='uppercase text-xs md:text-sm font-medium tracking-widest max-w-2xl text-structural/80 leading-relaxed pt-2'>{t('hero.subtitle')}</p>
 
-					{/* BOTONES: Bloques monolíticos con borde grueso de acero */}
+					{/* BOTONES */}
 					<div className='mt-10 flex flex-col sm:flex-row items-stretch sm:items-center justify-start gap-4 pt-4'>
 						<motion.a
 							href='#projects'
@@ -50,12 +45,8 @@ const Hero = () => {
 							{t('hero.primaryButton')}
 						</motion.a>
 
-						{/* NUEVO BOTÓN CV: Bloque plano con comportamiento flex de estiramiento */}
-						<motion.div
-							whileTap={{ scale: 0.98 }}
-							className='border-structural flex  items-center justify-center gap-3  border-2 hover:border-primary hover:bg-primary hover:text-white text-structural font-black py-3.5 px-8 text-xs uppercase tracking-widest transition-all duration-200'>
-							<PrintCVButton />
-						</motion.div>
+						{/* CORRECCIÓN: Invocación directa del botón limpio sin el bloque motion.div que rompía el clic */}
+						<PrintCVButton />
 					</div>
 				</motion.div>
 			</div>
