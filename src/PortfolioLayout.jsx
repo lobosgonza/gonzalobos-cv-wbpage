@@ -1,4 +1,4 @@
-// src/PortfolioLayout.js
+// src/PortfolioLayout.jsx
 import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import Navbar from './sections/Navbar';
@@ -11,11 +11,11 @@ import Skills from './sections/Skills';
 import Studies from './sections/Studies';
 import Contact from './sections/Contact';
 import Footer from './sections/Footer';
+import PrintCVContent from './components/PrintCVContent'; // <-- 1. Importamos el contenido de impresión
 
 function PortfolioLayout({ lang }) {
 	const { i18n } = useTranslation();
 
-	// Forzamos a i18next a usar el idioma de la URL en lugar del navegador
 	useEffect(() => {
 		if (i18n.language !== lang) {
 			i18n.changeLanguage(lang);
@@ -24,7 +24,6 @@ function PortfolioLayout({ lang }) {
 
 	const isEs = lang === 'es';
 
-	// Configuración del Schema adaptado a cada idioma de forma nativa
 	const schemaData = {
 		'@context': 'https://schema.org',
 		'@type': 'Person',
@@ -40,13 +39,12 @@ function PortfolioLayout({ lang }) {
 
 	return (
 		<>
-			{/* Inyección segura del Schema mediante el flujo de renderizado de React */}
 			<script type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
 			<Navbar />
 			<main>
 				<Hero />
-				<About />
 				<Projects />
+				<About />
 				<CaseStudies />
 				<Experience />
 				<Studies />
@@ -54,6 +52,9 @@ function PortfolioLayout({ lang }) {
 				<Contact />
 			</main>
 			<Footer />
+
+			{/* 2. LO MONTAMOS AQUÍ: Hermano de main, libre e independiente en la raíz */}
+			<PrintCVContent />
 		</>
 	);
 }

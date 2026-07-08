@@ -498,10 +498,15 @@
         "formSuccess": "Message sent! Thanks for reaching out.",
         "formError": "There was an error sending the message. Please try again later.",
         "copied": "Copied to clipboard!",
-        "sendMessage": "Send me a message"
+        "sendMessage": "Send me a message",
+        "downloadCvBtn": "Download CV",
+        "labelBajar": "Get",
+        "labelHablar": "Chat",
+        "labelCopiar": "Copy"
     },
     "footer": {
         "rights": "All rights reserved.",
-        "button": "Back to Top"
+        "button": "Back to Top",
+        "downloadCv": "Download CV"
     }
 }

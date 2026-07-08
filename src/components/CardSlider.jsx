@@ -55,11 +55,11 @@ const CardSlider = ({ items, renderItem }) => {
 				</AnimatePresence>
 			</div>
 
-			{/* Controles Geométricos */}
-			<button onClick={goToPrevious} className='absolute top-[40%] -left-2 z-10 p-2 bg-white/90 text-stone-700 shadow-sm rounded-none' aria-label='Anterior'>
+			{/* Controles Geométricos: Fondos Transparentes y Sin Sombras */}
+			<button onClick={goToPrevious} className='absolute top-[40%] -left-2 z-10 p-2 bg-transparent text-stone-700 rounded-none' aria-label='Anterior'>
 				<ArrowIcon className='h-5 w-5 transform rotate-180' />
 			</button>
-			<button onClick={goToNext} className='absolute top-[40%] -right-2 z-10 p-2 bg-white/90 text-stone-700 shadow-sm rounded-none' aria-label='Siguiente'>
+			<button onClick={goToNext} className='absolute top-[40%] -right-2 z-10 p-2 bg-transparent text-stone-700 rounded-none' aria-label='Siguiente'>
 				<ArrowIcon className='h-5 w-5' />
 			</button>
 

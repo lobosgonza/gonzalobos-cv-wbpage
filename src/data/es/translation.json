@@ -498,10 +498,15 @@
         "formSuccess": "¡Mensaje enviado! Gracias por contactarme.",
         "formError": "Hubo un error al enviar el mensaje. Inténtalo más tarde.",
         "copied": "¡Copiado al portapapeles!",
-        "sendMessage": "Envíame un mensaje"
+        "sendMessage": "Envíame un mensaje",
+        "downloadCvBtn": "Descargar CV",
+        "labelBajar": "Bajar",
+        "labelHablar": "Hablar",
+        "labelCopiar": "Copiar"
     },
     "footer": {
         "rights": "Todos los derechos reservados.",
-        "button": "Volver al inicio"
+        "button": "Volver al inicio",
+        "downloadCv": "Descargar CV"
     }
 }

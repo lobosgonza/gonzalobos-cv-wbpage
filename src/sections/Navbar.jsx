@@ -41,7 +41,9 @@ function Navbar() {
 	};
 
 	return (
-		<nav className={`fixed w-full z-50  transition-all duration-300 ${isScrolled ? 'bg-white shadow-none' : 'bg-concrete'}`}>
+		/* 1. CONTROL DE COLOR EN SCROLL: Forzamos el color concreto/piedra de tu marca (#eae7e2) 
+		   para que nunca pierda identidad visual ni contraste frente al contenido */
+		<nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-[#eae7e2] border-b border-stone-300/80 shadow-sm' : 'bg-concrete'}`}>
 			<div className='container mx-auto px-6 py-4 flex justify-between items-center max-w-5xl'>
 				<a href='#home' onClick={(e) => handleScrollLink(e, '#home')} className='uppercase text-xl font-black text-structural font-display tracking-tighter'>
 					Gonzalo Lobos
@@ -62,7 +64,7 @@ function Navbar() {
 						<LanguageSwitcher />
 					</div>
 					<div className='md:hidden'>
-						<button onClick={toggleMenu} className='z-50 relative text-structural focus:outline-none'>
+						<button onClick={toggleMenu} className='z-50 relative text-structural focus:outline-none' aria-label='Menu'>
 							<svg xmlns='http://www.w3.org/2000/svg' className='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor' strokeWidth={2.5}>
 								{isOpen ? <path d='M6 18L18 6M6 6l12 12' /> : <path d='M4 6h16M4 12h16m-7 6h7' />}
 							</svg>
@@ -71,27 +73,41 @@ function Navbar() {
 				</div>
 			</div>
 
+			{/* 2. CONTROL INTERACTIVO DE CIERRE EN MOBILE */}
 			<AnimatePresence>
 				{isOpen && (
-					<motion.div
-						className='md:hidden absolute top-0 left-0 w-full bg-white border-b-4  pt-20 pb-8 px-6 text-left'
-						initial={{ opacity: 0, y: '-100%' }}
-						animate={{ opacity: 1, y: 0 }}
-						exit={{ opacity: 0, y: '-100%' }}
-						transition={{ duration: 0.25 }}>
-						<ul className='flex flex-col items-start space-y-4 uppercase text-lg font-black tracking-tight'>
-							{navLinks.map((link) => (
-								<li key={link.id} onClick={closeMenu}>
-									<a href={`#${link.id}`} onClick={(e) => handleScrollLink(e, `#${link.id}`)} className='text-structural hover:text-primary'>
-										{t(link.labelKey)}
-									</a>
+					<>
+						{/* BACKDROP: Capa translúcida de fondo que detecta el clic/toque afuera del menú */}
+						<motion.div
+							className='fixed inset-0 bg-black/40 z-30 md:hidden'
+							initial={{ opacity: 0 }}
+							animate={{ opacity: 1 }}
+							exit={{ opacity: 0 }}
+							transition={{ duration: 0.2 }}
+							onClick={closeMenu} // Al tocar fuera, colapsa el menú
+						/>
+
+						{/* MENÚ DESPLEGABLE MOBILE */}
+						<motion.div
+							className='md:hidden absolute top-0 left-0 w-full bg-[#eae7e2] border-b-4 border-primary pt-20 pb-8 px-6 text-left z-40 shadow-xl'
+							initial={{ opacity: 0, y: '-100%' }}
+							animate={{ opacity: 1, y: 0 }}
+							exit={{ opacity: 0, y: '-100%' }}
+							transition={{ duration: 0.25, ease: 'easeOut' }}>
+							<ul className='flex flex-col items-start space-y-4 uppercase text-lg font-black tracking-tight'>
+								{navLinks.map((link) => (
+									<li key={link.id} onClick={closeMenu}>
+										<a href={`#${link.id}`} onClick={(e) => handleScrollLink(e, `#${link.id}`)} className='text-structural hover:text-primary transition-colors'>
+											{t(link.labelKey)}
+										</a>
+									</li>
+								))}
+								<li className='pt-4 border-t border-stone-300 w-full flex justify-start'>
+									<LanguageSwitcher />
 								</li>
-							))}
-							<li className='pt-4 border-t  w-full flex justify-start'>
-								<LanguageSwitcher />
-							</li>
-						</ul>
-					</motion.div>
+							</ul>
+						</motion.div>
+					</>
 				)}
 			</AnimatePresence>
 		</nav>

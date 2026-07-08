@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import PrintCVButton from '../components/PrintCVButton'; // <-- Importación del nuevo botón analítico
 
 const ButtonIcon = ({ children }) => <div className='w-5 h-5 flex-shrink-0'>{children}</div>;
 
@@ -49,22 +50,12 @@ const Hero = () => {
 							{t('hero.primaryButton')}
 						</motion.a>
 
-						<motion.a
-							href='#contact'
-							onClick={(e) => handleScroll(e, '#contact')}
-							className='border-structural flex  items-center justify-center gap-3  border-2 hover:border-primary hover:bg-primary hover:text-white text-structural font-black py-3.5 px-8 text-xs uppercase tracking-widest transition-all duration-200'
-							whileTap={{ scale: 0.98 }}>
-							<ButtonIcon>
-								<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth={2.5} stroke='currentColor'>
-									<path
-										strokeLinecap='round'
-										strokeLinejoin='round'
-										d='M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75'
-									/>
-								</svg>
-							</ButtonIcon>
-							{t('hero.secondaryButton')}
-						</motion.a>
+						{/* NUEVO BOTÓN CV: Bloque plano con comportamiento flex de estiramiento */}
+						<motion.div
+							whileTap={{ scale: 0.98 }}
+							className='border-structural flex  items-center justify-center gap-3  border-2 hover:border-primary hover:bg-primary hover:text-white text-structural font-black py-3.5 px-8 text-xs uppercase tracking-widest transition-all duration-200'>
+							<PrintCVButton />
+						</motion.div>
 					</div>
 				</motion.div>
 			</div>

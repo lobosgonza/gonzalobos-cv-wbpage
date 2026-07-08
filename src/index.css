@@ -180,3 +180,55 @@ button[type='submit']:hover,
 .contact-input:focus::placeholder {
 	color: #a8a29e !important;
 }
+
+/* ==========================================
+   7. CONFIGURACIÓN DE IMPRESIÓN NATIVA (CV PDF)
+   ========================================== */
+
+#print-cv-area {
+	display: none !important;
+}
+
+@media print {
+	/* Desconectar componentes web globales */
+	nav,
+	main,
+	footer,
+	.navbar,
+	#home {
+		display: none !important;
+		visibility: hidden !important;
+		height: 0 !important;
+	}
+
+	/* Configuración monolítica del lienzo de impresión */
+	#print-cv-area {
+		display: block !important;
+		visibility: visible !important;
+		background-color: #ffffff !important;
+		color: #1a1816 !important;
+		font-family: Arial, Helvetica, sans-serif !important;
+		width: 100% !important;
+		height: auto !important;
+	}
+
+	/* Forzar visualización de contenedores alineados lado a lado (Títulos y fechas) */
+	#print-cv-area div[style*='display: flex'] {
+		display: flex !important;
+		justify-content: space-between !important;
+		align-items: center !important;
+		width: 100% !important;
+	}
+
+	/* Evitar quiebres de página accidentales en secciones críticas */
+	section,
+	header {
+		page-break-inside: avoid !important;
+	}
+
+	/* CONFIGURACIÓN CRUCIAL: Obligar al motor de PDF a ajustarse a 1 página Letter */
+	@page {
+		size: letter;
+		margin: 0.6cm 0.8cm 0.6cm 0.8cm; /* Márgenes optimizados de alta densidad */
+	}
+}
