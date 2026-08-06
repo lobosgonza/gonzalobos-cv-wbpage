@@ -419,52 +419,113 @@
     "skills": {
         "title": "Toolbox",
         "subtitle": "Specialties, Technologies & Credentials",
+        "viewAccreditation": "View Credential",
+        "accreditationsTitle": "Featured Credentials",
         "categories": [
             {
-                "name": "Strategy & Analytics",
-                "tools": [
-                    "Google Analytics",
-                    "SEO & SEM",
-                    "Digital Strategy",
-                    "CRO"
+                "name": "Strategy & Business",
+                "subtitle": "My vision for driving measurable results.",
+                "groups": [
+                    {
+                        "title": "E-commerce & Growth",
+                        "tools": [
+                            "E-commerce Roadmap",
+                            "P&L Management",
+                            "CRO & Funnels",
+                            "A/B Testing",
+                            "High-Impact Campaigns"
+                        ]
+                    },
+                    {
+                        "title": "Marketing & Automation",
+                        "tools": [
+                            "SEO & SEM",
+                            "CRM Strategy",
+                            "AI Automation",
+                            "SDR Agents",
+                            "Human-in-the-Loop"
+                        ]
+                    }
                 ]
             },
             {
-                "name": "Design & UX/UI",
-                "tools": [
-                    "Figma",
-                    "Design Systems",
-                    "Prototyping",
-                    "Wireframing"
+                "name": "Technical Skills",
+                "subtitle": "Languages and frameworks to build and prototype.",
+                "groups": [
+                    {
+                        "title": "Frontend & Frameworks",
+                        "tools": [
+                            "React.js",
+                            "JavaScript (ES6+)",
+                            "Tailwind CSS",
+                            "HTML5 & CSS3"
+                        ]
+                    },
+                    {
+                        "title": "Backend, AI & APIs",
+                        "tools": [
+                            "Node.js & Express",
+                            "AI Function Calling",
+                            "APIs & Webhooks",
+                            "SHA-256 Security",
+                            "SQL"
+                        ]
+                    },
+                    {
+                        "title": "Infrastructure & CI/CD",
+                        "tools": [
+                            "Firebase",
+                            "Git & GitHub",
+                            "GitHub Actions"
+                        ]
+                    }
                 ]
             },
             {
-                "name": "Development & Web",
-                "tools": [
-                    "React",
-                    "JavaScript",
-                    "Tailwind CSS",
-                    "HTML5 / CSS3",
-                    "Git"
-                ]
-            },
-            {
-                "name": "Management & Agile",
-                "tools": [
-                    "Jira / Trello / Asana",
-                    "Project Management",
-                    "Case Studies"
+                "name": "Tools & Platforms",
+                "subtitle": "The software stack I use on a daily basis.",
+                "groups": [
+                    {
+                        "title": "Analytics & Digital Marketing",
+                        "tools": [
+                            "Google Analytics 4",
+                            "Google Ads",
+                            "Looker Studio",
+                            "Search Console",
+                            "Keyword Planner",
+                            "Optimizely",
+                            "BrightEdge"
+                        ]
+                    },
+                    {
+                        "title": "Cloud, APIs & DevOps",
+                        "tools": [
+                            "Hetzner VPS",
+                            "Chatwoot",
+                            "Meta Cloud API (WhatsApp)",
+                            "Cal.com API",
+                            "Coolify"
+                        ]
+                    },
+                    {
+                        "title": "Design & Media",
+                        "tools": [
+                            "Photoshop",
+                            "Illustrator",
+                            "Lightroom",
+                            "Capture One",
+                            "Mailchimp"
+                        ]
+                    }
                 ]
             }
         ],
-        "accreditationsTitle": "Featured Accreditations",
         "accreditations": [
             {
-                "title": "Skillshop Certification",
+                "title": "Google Analytics 4 Certification",
                 "issuer": "Google / Skillshop",
                 "icon": "google-analytics",
                 "tags": [
-                    "Google Ads",
                     "Analytics"
                 ],
                 "url": "https://skillshop.credential.net/4b7861b8-16ec-4f85-aa58-ef6e790529ad#acc.1fzqx6OW"
@@ -479,8 +540,7 @@
                 ],
                 "url": "https://cert.efset.org/en/q1tvRk"
             }
-        ],
-        "viewAcccreditation": "View Accreditation"
+        ]
     },
     "contact": {
         "title": "Contact",
