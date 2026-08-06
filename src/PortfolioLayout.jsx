@@ -12,6 +12,7 @@ import Studies from './sections/Studies';
 import Contact from './sections/Contact';
 import Footer from './sections/Footer';
 import PrintCVContent from './components/PrintCVContent'; // <-- 1. Importamos el contenido de impresión
+import Accreditations from './sections/Accreditations';
 
 function PortfolioLayout({ lang }) {
 	const { i18n } = useTranslation();
@@ -49,6 +50,7 @@ function PortfolioLayout({ lang }) {
 				<Experience />
 				<Studies />
 				<Skills />
+
 				<Contact />
 			</main>
 			<Footer />

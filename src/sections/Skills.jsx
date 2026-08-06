@@ -1,117 +1,98 @@
-// src/sections/Skills.jsx
 import React from 'react';
-import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import SectionTitle from '../components/SectionTitle';
 import AnimatedSection from '../components/AnimatedSection';
 
-// 1. SUB-COMPONENTE: Badge de Tecnología Rígido
-const SkillBadge = ({ name }) => {
-	return (
-		<motion.div
-			className='bg-primary text-white font-black px-2.5 py-1 text-[11px] uppercase tracking-wider rounded-none shadow-none'
-			variants={{ hidden: { opacity: 0, y: 5 }, visible: { opacity: 1, y: 0 } }}>
-			{name}
-		</motion.div>
-	);
+// Helper para renderizar el ícono según la propiedad "icon"
+const renderAccreditationIcon = (iconName) => {
+	switch (iconName) {
+		case 'google-analytics':
+			return (
+				<svg className='w-6 h-6 text-amber-500 fill-current' viewBox='0 0 24 24'>
+					<path d='M12 3a1 1 0 0 0-1 1v14a1 1 0 0 0 2 0V4a1 1 0 0 0-1-1zm5 6a1 1 0 0 0-1 1v8a1 1 0 0 0 2 0v-8a1 1 0 0 0-1-1zM7 15a1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-1-1z' />
+				</svg>
+			);
+		case 'ef-set':
+			return <span className='font-black text-xs tracking-tighter bg-structural text-white px-1.5 py-0.5 rounded-none border border-structural'>EF</span>;
+		default:
+			return null;
+	}
 };
 
-// 2. SUB-COMPONENTE: Contenedor de Icono de Columna
-const SkillColumnIcon = ({ children }) => <div className=' text-primary w-8 h-8 flex items-center justify-start mb-2   pb-1'>{children}</div>;
-
-// 3. COMPONENTE PRINCIPAL SECCIÓN
 function Skills() {
 	const { t } = useTranslation();
-	const skillsData = t('skills', { returnObjects: true }) || {};
-	const { items = {} } = skillsData;
-	const { strategy = [], technical = [], tools = [] } = items;
 
-	// ESTRUCTURA DE DATOS: Mapeamos dinámicamente la configuración de cada columna brutalista
-	const columnsConfig = [
-		{
-			id: 'strategy',
-			title: skillsData.strategyTitle,
-			desc: skillsData.strategyDesc,
-			renderType: 'list',
-			data: strategy,
-			icon: (
-				<svg xmlns='http://www.w3.org/2000/svg' className='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor' strokeWidth={2.5}>
-					<path
-						strokeLinecap='round'
-						strokeLinejoin='round'
-						d='M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z'
-					/>
-				</svg>
-			),
-		},
-		{
-			id: 'technical',
-			title: skillsData.technicalTitle,
-			desc: skillsData.technicalDesc,
-			renderType: 'badges',
-			data: technical,
-			icon: (
-				<svg xmlns='http://www.w3.org/2000/svg' className='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor' strokeWidth={2.5}>
-					<path strokeLinecap='round' strokeLinejoin='round' d='M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4' />
-				</svg>
-			),
-		},
-		{
-			id: 'tools',
-			title: skillsData.toolsTitle,
-			desc: skillsData.toolsDesc,
-			renderType: 'badges',
-			data: tools,
-			icon: (
-				<svg xmlns='http://www.w3.org/2000/svg' className='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor' strokeWidth={2.5}>
-					<path
-						strokeLinecap='round'
-						strokeLinejoin='round'
-						d='M9.75 17.375c-4.418 0-8-1.119-8-2.5.0-1.381 3.582-2.5 8-2.5 4.418 0 8 1.119 8 2.5.0 1.381-3.582 2.5-8 2.5zM9.75 12.125c-4.418 0-8-1.119-8-2.5.0-1.381 3.582-2.5 8-2.5 4.418 0 8 1.119 8 2.5.0 1.381-3.582 2.5-8 2.5zM9.75 6.875c-4.418 0-8-1.119-8-2.5C1.75 3.0, 5.332 1.881, 9.75 1.881c4.418 0 8 1.119 8 2.5.0 1.381-3.582 2.5-8 2.5z'
-					/>
-				</svg>
-			),
-		},
-	];
+	const categories = t('skills.categories', { returnObjects: true }) || [];
+	const accreditations = t('skills.accreditations', { returnObjects: true }) || [];
+
+	const validCategories = Array.isArray(categories) ? categories : [];
+	const validAccreditations = Array.isArray(accreditations) ? accreditations : [];
 
 	return (
-		<section id='skills' className='py-16 sm:py-20 bg-concrete  '>
+		<section id='skills' className='py-16 sm:py-20 bg-concrete'>
 			<AnimatedSection>
-				{/* Contenedor unificado rígidamente a la grilla izquierda máxima de 5xl */}
 				<div className='container mx-auto px-6 max-w-5xl text-left'>
-					<SectionTitle title={skillsData.title} />
+					<SectionTitle title={t('skills.title')} subtitle={t('skills.subtitle')} />
 
-					<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12'>
-						{/* ITERACIÓN EFICIENTE: Mapeamos los bloques monolíticos */}
-						{columnsConfig.map((col) => (
-							<div key={col.id} className='bg-structural p-6   flex flex-col text-left rounded-none shadow-none'>
-								<SkillColumnIcon>{col.icon}</SkillColumnIcon>
+					{/* BLOQUE 1: Categorías de la Caja de Herramientas */}
+					<div className='grid grid-cols-1 md:grid-cols-2 gap-8 mt-12'>
+						{validCategories.map((cat, index) => (
+							<div key={index} className='bg-white p-6 flex flex-col h-full text-left rounded-none shadow-none border-l-4 border-stone-300'>
+								<h3 className='text-sm font-black text-primary uppercase tracking-widest mb-4'>{cat.name}</h3>
 
-								<h3 className='text-lg font-black text-stone-200 uppercase tracking-tight mb-1'>{col.title}</h3>
-								<p className='text-[10px] uppercase font-bold text-stone-400 tracking-widest mb-6'>{col.desc}</p>
-
-								{/* ENRUTADOR DE RENDERIZADO INTERNO SEGÚN EL TIPO */}
-								{col.renderType === 'list' ? (
-									/* Layout tipo manifiesto/lista (Usado en Estrategia) */
-									<div className='space-y-4 uppercase text-xs font-medium tracking-wide text-structural/80'>
-										{col.data.map((skill) => (
-											<div key={skill.title} className='  pl-2.5 text-left'>
-												<h4 className='font-black text-primary text-xs tracking-wider'>{skill.title}</h4>
-												<p className='text-[11px] text-stone-200 mt-0.5 leading-relaxed normal-case font-sans font-semibold'>{skill.description}</p>
-											</div>
+								<div className='flex flex-wrap gap-2 mt-auto'>
+									{cat.tools &&
+										cat.tools.map((tool, i) => (
+											<span key={i} className='bg-stone-100 text-structural font-black px-2.5 py-1 text-[10px] uppercase tracking-wider rounded-none'>
+												{tool}
+											</span>
 										))}
-									</div>
-								) : (
-									/* Layout tipo rejilla de bloques de datos (Usado en Técnico y Herramientas) */
-									<div className='flex flex-wrap justify-start gap-2 '>
-										{col.data.map((skill) => (
-											<SkillBadge key={skill} name={skill} />
-										))}
-									</div>
-								)}
+								</div>
 							</div>
 						))}
 					</div>
+
+					{/* BLOQUE 2: Acreditaciones realizadas */}
+					{validAccreditations.length > 0 && (
+						<div className='mt-16 pt-12 border-t-2 border-stone-200'>
+							<h3 className='text-base font-black text-structural uppercase tracking-wider mb-8'>{t('skills.accreditationsTitle')}</h3>
+
+							<div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
+								{validAccreditations.map((item, index) => (
+									<div key={index} className='bg-white p-6 flex flex-col justify-between h-full text-left rounded-none shadow-none border-l-4 border-primary'>
+										<div>
+											<div className='flex items-center justify-between mb-2'>
+												<h4 className='text-lg font-black text-structural uppercase tracking-tight'>{item.title}</h4>
+												{/* Ícono de la Acreditación */}
+												<div className='ml-3 flex-shrink-0'>{renderAccreditationIcon(item.icon)}</div>
+											</div>
+											<p className='text-[10px] font-black text-stone-500 uppercase tracking-widest mb-4'>{item.issuer}</p>
+
+											{Array.isArray(item.tags) && (
+												<div className='flex flex-wrap gap-1.5 mb-5'>
+													{item.tags.map((tag) => (
+														<span key={tag} className='bg-stone-100 text-structural font-black px-2 py-0.5 text-[9px] uppercase tracking-wider rounded-none'>
+															{tag}
+														</span>
+													))}
+												</div>
+											)}
+										</div>
+
+										<div className='mt-4 pt-4 border-t-2 border-stone-100'>
+											<a
+												href={item.url}
+												target='_blank'
+												rel='noopener noreferrer'
+												className='inline-flex items-center text-primary font-black text-xs uppercase tracking-widest hover:underline'>
+												{t('skills.viewAcccreditation', 'Ver Acreditación')} →
+											</a>
+										</div>
+									</div>
+								))}
+							</div>
+						</div>
+					)}
 				</div>
 			</AnimatedSection>
 		</section>

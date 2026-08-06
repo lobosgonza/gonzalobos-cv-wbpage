@@ -418,71 +418,68 @@
     },
     "skills": {
         "title": "Caja de Herramientas",
-        "strategyTitle": "Estrategia & Negocio",
-        "strategyDesc": "Mi visión para impactar en resultados.",
-        "technicalTitle": "Habilidades Técnicas",
-        "technicalDesc": "Lenguajes para construir y prototipar.",
-        "toolsTitle": "Herramientas & Plataformas",
-        "toolsDesc": "El stack de software que uso a diario.",
-        "items": {
-            "strategy": [
-                {
-                    "title": "Estrategia E-commerce",
-                    "description": "Definición de roadmap, gestión de P&L y liderazgo de campañas de alto impacto (Cyber Day, Black Friday)."
-                },
-                {
-                    "title": "Optimización de la Tasa de Conversión (CRO)",
-                    "description": "Análisis del funnel de ventas, A/B testing (Optimizely) y mejora continua de la experiencia de usuario (UX/UI)."
-                },
-                {
-                    "title": "Marketing Digital & SEO",
-                    "description": "Estrategias de posicionamiento orgánico, SEM y automatización de marketing para la fidelización (CRM)."
-                },
-                {
-                    "title": "Gestión de Proyectos Digitales",
-                    "description": "Coordinación de equipos multidisciplinarios para la ejecución de proyectos tecnológicos y comerciales."
-                },
-                {
-                    "title": "Automatización con IA & Gobernanza",
-                    "description": "Diseño de agentes autónomos (SDR), flujos lógicos por etapas y arquitectura híbrida de atención (Human-in-the-Loop)."
-                }
-            ],
-            "technical": [
-                "React.js",
-                "Node.js & Express",
-                "JavaScript (ES6+)",
-                "Ingeniería de IA (Function Calling)",
-                "Arquitectura de APIs & Webhooks",
-                "Ciberseguridad (Validación SHA-256)",
-                "HTML5 & CSS3",
-                "Tailwind CSS",
-                "Git & GitHub",
-                "SQL para análisis de datos",
-                "Firebase",
-                "GitHub Actions (CI/CD)"
-            ],
-            "tools": [
-                "Inglés Profesional (B2/C1)",
-                "Google Ads",
-                "Google Analytics 4",
-                "Google Search Console",
-                "Google Keyword Planner",
-                "Hetzner VPS Cloud",
-                "Schema Markup (JSON-LD)",
-                "Chatwoot Omnicanal",
-                "Meta Cloud API (WhatsApp)",
-                "Cal.com API",
-                "Looker Studio",
-                "Optimizely",
-                "BrightEdge",
-                "Photoshop",
-                "Illustrator",
-                "Lightroom",
-                "Capture One",
-                "Mailchimp",
-                "Coolify (DevOps)"
-            ]
-        }
+        "subtitle": "Especialidades, Tecnologías y Acreditaciones",
+        "categories": [
+            {
+                "name": "Estrategia & Analytics",
+                "tools": [
+                    "Google Analytics",
+                    "SEO & SEM",
+                    "Estrategia Digital",
+                    "CRO"
+                ]
+            },
+            {
+                "name": "Diseño & UX/UI",
+                "tools": [
+                    "Figma",
+                    "Design Systems",
+                    "Prototipado",
+                    "Wireframing"
+                ]
+            },
+            {
+                "name": "Desarrollo & Web",
+                "tools": [
+                    "React",
+                    "JavaScript",
+                    "Tailwind CSS",
+                    "HTML5 / CSS3",
+                    "Git"
+                ]
+            },
+            {
+                "name": "Gestión & Metodologías",
+                "tools": [
+                    "Gestión de Proyectos",
+                    "Jira / Trello / Asana",
+                    "Caso de Estudio"
+                ]
+            }
+        ],
+        "accreditationsTitle": "Acreditaciones Destacadas",
+        "accreditations": [
+            {
+                "title": "Certificación Google Analytics",
+                "issuer": "Google / Skillshop",
+                "icon": "google-analytics",
+                "tags": [
+                    "Analytics"
+                ],
+                "url": "https://skillshop.credential.net/4b7861b8-16ec-4f85-aa58-ef6e790529ad#acc.1fzqx6OW"
+            },
+            {
+                "title": "Certificación de Inglés EF SET",
+                "issuer": "EF SET",
+                "icon": "ef-set",
+                "tags": [
+                    "Inglés C2 / C1",
+                    "Idiomas"
+                ],
+                "url": "https://cert.efset.org/en/q1tvRk"
+            }
+        ],
+        "viewAcccreditation": "Ver Acreditación"
     },
     "contact": {
         "title": "Contacto",

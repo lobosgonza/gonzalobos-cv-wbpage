@@ -1,4 +1,3 @@
-// src/components/PrintCVContent.jsx
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
@@ -9,9 +8,19 @@ function PrintCVContent() {
 	const pastExperience = t('experience.past', { returnObjects: true }) || [];
 	const currentExperience = t('experience.current', { returnObjects: true }) || {};
 	const educationItems = t('studies.items', { returnObjects: true }) || [];
-	const strategySkills = t('skills.items.strategy', { returnObjects: true }) || [];
-	const technicalSkills = t('skills.items.technical', { returnObjects: true }) || [];
-	const toolsSkills = t('skills.items.tools', { returnObjects: true }) || [];
+
+	// Validaciones defensivas para habilidades
+	const rawCategories = t('skills.categories', { returnObjects: true });
+	const categories = Array.isArray(rawCategories) ? rawCategories : [];
+
+	const rawStrategy = t('skills.items.strategy', { returnObjects: true });
+	const strategySkills = Array.isArray(rawStrategy) ? rawStrategy : [];
+
+	const rawTechnical = t('skills.items.technical', { returnObjects: true });
+	const technicalSkills = Array.isArray(rawTechnical) ? rawTechnical : [];
+
+	const rawTools = t('skills.items.tools', { returnObjects: true });
+	const toolsSkills = Array.isArray(rawTools) ? rawTools : [];
 
 	return (
 		<div id='print-cv-area' className='hidden'>
@@ -91,33 +100,36 @@ function PrintCVContent() {
 							<span style={{ float: 'right', fontWeight: 'normal', fontSize: '8pt' }}>{isEn ? 'May 2026 – Present' : 'may. 2026 – Actualidad'}</span>
 						</div>
 						<ul style={{ margin: '2px 0 0 0', paddingLeft: '12px', fontSize: '8pt', lineHeight: '1.25' }}>
-							{currentExperience.responsibilities?.map((resp, i) => (
-								<li key={i} style={{ marginBottom: '1px' }}>
-									{resp}
-								</li>
-							))}
+							{Array.isArray(currentExperience.responsibilities) &&
+								currentExperience.responsibilities.map((resp, i) => (
+									<li key={i} style={{ marginBottom: '1px' }}>
+										{resp}
+									</li>
+								))}
 						</ul>
 					</div>
 				)}
 
 				{/* Cargos Anteriores */}
-				{pastExperience.map((job) => (
-					<div key={job.id} style={{ marginBottom: '6px' }}>
-						<div style={{ display: 'flex', justifyContent: 'space-between', fontWeight: '700', fontSize: '8.5pt' }}>
-							<span>
-								{job.title} — <em style={{ fontStyle: 'normal', color: '#333' }}>{job.place}</em>
-							</span>
-							<span style={{ float: 'right', fontWeight: 'normal', fontSize: '8pt' }}>{job.duration.split(' (')[0]}</span>
+				{Array.isArray(pastExperience) &&
+					pastExperience.map((job) => (
+						<div key={job.id} style={{ marginBottom: '6px' }}>
+							<div style={{ display: 'flex', justifyContent: 'space-between', fontWeight: '700', fontSize: '8.5pt' }}>
+								<span>
+									{job.title} — <em style={{ fontStyle: 'normal', color: '#333' }}>{job.place}</em>
+								</span>
+								<span style={{ float: 'right', fontWeight: 'normal', fontSize: '8pt' }}>{job.duration ? job.duration.split(' (')[0] : ''}</span>
+							</div>
+							<ul style={{ margin: '2px 0 0 0', paddingLeft: '12px', fontSize: '8pt', lineHeight: '1.25' }}>
+								{Array.isArray(job.responsibilities) &&
+									job.responsibilities.slice(0, 4).map((resp, i) => (
+										<li key={i} style={{ marginBottom: '1px' }}>
+											{resp}
+										</li>
+									))}
+							</ul>
 						</div>
-						<ul style={{ margin: '2px 0 0 0', paddingLeft: '12px', fontSize: '8pt', lineHeight: '1.25' }}>
-							{job.responsibilities?.slice(0, 4).map((resp, i) => (
-								<li key={i} style={{ marginBottom: '1px' }}>
-									{resp}
-								</li>
-							))}
-						</ul>
-					</div>
-				))}
+					))}
 			</section>
 
 			{/* EDUCACIÓN ACADÉMICA */}
@@ -134,17 +146,17 @@ function PrintCVContent() {
 					}}>
 					{t('studies.title')}
 				</h3>
-				{educationItems.map((edu, i) => (
-					<div key={i} style={{ marginBottom: '4px' }}>
-						<div style={{ display: 'flex', justifyContent: 'space-between', fontWeight: '700', fontSize: '8.5pt' }}>
-							<span>
-								{edu.title} — <span style={{ fontWeight: 'normal' }}>{edu.place}</span>
-							</span>
-							{/* CORRECCIÓN: Renderizado directo de la fecha completa de inicio a fin desde el JSON */}
-							<span style={{ float: 'right', fontWeight: 'normal', fontSize: '8pt' }}>{edu.duration}</span>
+				{Array.isArray(educationItems) &&
+					educationItems.map((edu, i) => (
+						<div key={i} style={{ marginBottom: '4px' }}>
+							<div style={{ display: 'flex', justifyContent: 'space-between', fontWeight: '700', fontSize: '8.5pt' }}>
+								<span>
+									{edu.title} — <span style={{ fontWeight: 'normal' }}>{edu.place}</span>
+								</span>
+								<span style={{ float: 'right', fontWeight: 'normal', fontSize: '8pt' }}>{edu.duration}</span>
+							</div>
 						</div>
-					</div>
-				))}
+					))}
 			</section>
 
 			{/* HABILIDADES & IA STACK */}
@@ -162,15 +174,33 @@ function PrintCVContent() {
 					{t('skills.title')}
 				</h3>
 				<div style={{ fontSize: '8pt', lineHeight: '1.35' }}>
-					<div style={{ marginBottom: '2px' }}>
-						<strong>{t('skills.strategyTitle')}:</strong> {strategySkills.map((s) => s.title).join(', ')}
-					</div>
-					<div style={{ marginBottom: '2px' }}>
-						<strong>{t('skills.technicalTitle')}:</strong> {technicalSkills.join(', ')}
-					</div>
-					<div>
-						<strong>{t('skills.toolsTitle')}:</strong> {toolsSkills.join(', ')}
-					</div>
+					{/* Renderizado dinámico si usas la estructura por categorías */}
+					{categories.length > 0 ? (
+						categories.map((cat, i) => (
+							<div key={i} style={{ marginBottom: '2px' }}>
+								<strong>{cat.name}:</strong> {Array.isArray(cat.tools) ? cat.tools.join(', ') : ''}
+							</div>
+						))
+					) : (
+						/* Fallback dinámico si usas la estructura antigua */
+						<>
+							{strategySkills.length > 0 && (
+								<div style={{ marginBottom: '2px' }}>
+									<strong>{t('skills.strategyTitle')}:</strong> {strategySkills.map((s) => (typeof s === 'string' ? s : s.title)).join(', ')}
+								</div>
+							)}
+							{technicalSkills.length > 0 && (
+								<div style={{ marginBottom: '2px' }}>
+									<strong>{t('skills.technicalTitle')}:</strong> {technicalSkills.join(', ')}
+								</div>
+							)}
+							{toolsSkills.length > 0 && (
+								<div>
+									<strong>{t('skills.toolsTitle')}:</strong> {toolsSkills.join(', ')}
+								</div>
+							)}
+						</>
+					)}
 				</div>
 			</section>
 		</div>

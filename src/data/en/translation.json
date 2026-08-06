@@ -418,71 +418,69 @@
     },
     "skills": {
         "title": "Toolbox",
-        "strategyTitle": "Strategy & Business",
-        "strategyDesc": "My vision for impacting business goals.",
-        "technicalTitle": "Technical Skills",
-        "technicalDesc": "Languages I use to build and prototype.",
-        "toolsTitle": "Tools & Platforms",
-        "toolsDesc": "My day-to-day software stack.",
-        "items": {
-            "strategy": [
-                {
-                    "title": "E-commerce Strategy",
-                    "description": "Roadmap definition, P&L management, and leadership of high-impact campaigns (Cyber Day, Black Friday)."
-                },
-                {
-                    "title": "Conversion Rate Optimization (CRO)",
-                    "description": "Sales funnel analysis, A/B testing (Optimizely), and continuous improvement of user experience (UX/UI)."
-                },
-                {
-                    "title": "Digital Marketing & SEO",
-                    "description": "Organic positioning strategies, SEM, and marketing automation for customer loyalty (CRM)."
-                },
-                {
-                    "title": "Digital Project Management",
-                    "description": "Coordination of multidisciplinary teams for the execution of technological and commercial projects."
-                },
-                {
-                    "title": "AI Automation & Governance",
-                    "description": "Design of autonomous agents (SDR), multi-stage logical workflows, and hybrid customer service architectures (Human-in-the-Loop)."
-                }
-            ],
-            "technical": [
-                "React.js",
-                "Node.js & Express",
-                "JavaScript (ES6+)",
-                "AI Engineering (Function Calling)",
-                "API & Webhook Architecture",
-                "Cybersecurity (SHA-256 Validation)",
-                "HTML5 & CSS3",
-                "Tailwind CSS",
-                "Git & GitHub",
-                "SQL for data analysis",
-                "Firebase",
-                "GitHub Actions (CI/CD)"
-            ],
-            "tools": [
-                "Professional English (B2/C1)",
-                "Google Ads",
-                "Google Analytics 4",
-                "Google Search Console",
-                "Google Keyword Planner",
-                "Hetzner VPS Cloud",
-                "Schema Markup (JSON-LD)",
-                "Chatwoot Omnichannel",
-                "Meta Cloud API (WhatsApp)",
-                "Cal.com API",
-                "Looker Studio",
-                "Optimizely",
-                "BrightEdge",
-                "Photoshop",
-                "Illustrator",
-                "Lightroom",
-                "Capture One",
-                "Mailchimp",
-                "Coolify (DevOps)"
-            ]
-        }
+        "subtitle": "Specialties, Technologies & Credentials",
+        "categories": [
+            {
+                "name": "Strategy & Analytics",
+                "tools": [
+                    "Google Analytics",
+                    "SEO & SEM",
+                    "Digital Strategy",
+                    "CRO"
+                ]
+            },
+            {
+                "name": "Design & UX/UI",
+                "tools": [
+                    "Figma",
+                    "Design Systems",
+                    "Prototyping",
+                    "Wireframing"
+                ]
+            },
+            {
+                "name": "Development & Web",
+                "tools": [
+                    "React",
+                    "JavaScript",
+                    "Tailwind CSS",
+                    "HTML5 / CSS3",
+                    "Git"
+                ]
+            },
+            {
+                "name": "Management & Agile",
+                "tools": [
+                    "Jira / Trello / Asana",
+                    "Project Management",
+                    "Case Studies"
+                ]
+            }
+        ],
+        "accreditationsTitle": "Featured Accreditations",
+        "accreditations": [
+            {
+                "title": "Skillshop Certification",
+                "issuer": "Google / Skillshop",
+                "icon": "google-analytics",
+                "tags": [
+                    "Google Ads",
+                    "Analytics"
+                ],
+                "url": "https://skillshop.credential.net/4b7861b8-16ec-4f85-aa58-ef6e790529ad#acc.1fzqx6OW"
+            },
+            {
+                "title": "EF SET English Certificate",
+                "issuer": "EF SET",
+                "icon": "ef-set",
+                "tags": [
+                    "English C2 / C1",
+                    "Languages"
+                ],
+                "url": "https://cert.efset.org/en/q1tvRk"
+            }
+        ],
+        "viewAcccreditation": "View Accreditation"
     },
     "contact": {
         "title": "Contact",
