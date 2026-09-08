@@ -50,7 +50,7 @@ function PortfolioLayout({ lang }) {
 				<Experience />
 				<Studies />
 				<Skills />
-
+				<Accreditations />
 				<Contact />
 			</main>
 			<Footer />

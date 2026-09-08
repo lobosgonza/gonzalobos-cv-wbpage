@@ -520,27 +520,40 @@
                 ]
             }
         ],
-        "accreditations": [
-            {
-                "title": "Google Analytics 4 Certification",
-                "issuer": "Google / Skillshop",
-                "icon": "google-analytics",
-                "tags": [
-                    "Analytics"
-                ],
-                "url": "https://skillshop.credential.net/4b7861b8-16ec-4f85-aa58-ef6e790529ad#acc.1fzqx6OW"
-            },
-            {
-                "title": "EF SET English Certificate",
-                "issuer": "EF SET",
-                "icon": "ef-set",
-                "tags": [
-                    "English C2 / C1",
-                    "Languages"
-                ],
-                "url": "https://cert.efset.org/en/q1tvRk"
-            }
-        ]
+        "accreditations": {
+            "title": "Featured Certifications",
+            "viewButton": "View Certification",
+            "items": [
+                {
+                    "title": "Google Analytics 4 Certification",
+                    "issuer": "Google / Skillshop",
+                    "icon": "google-analytics",
+                    "tags": [
+                        "Analytics"
+                    ],
+                    "url": "https://skillshop.credential.net/4b7861b8-16ec-4f85-aa58-ef6e790529ad#acc.1fzqx6OW"
+                },
+                {
+                    "title": "EF SET English Certificate",
+                    "issuer": "EF SET",
+                    "icon": "ef-set",
+                    "tags": [
+                        "English C2 / C1",
+                        "Languages"
+                    ],
+                    "url": "https://cert.efset.org/en/q1tvRk"
+                },
+                {
+                    "title": "Google Ads Search Certification",
+                    "issuer": "Google Skillshop",
+                    "icon": "google-ads",
+                    "tags": [
+                        "Search Ads"
+                    ],
+                    "url": "https://skillshop.credential.net/2e362451-37c2-4631-b076-d02d95f57ebb"
+                }
+            ]
+        }
     },
     "contact": {
         "title": "Contact",
