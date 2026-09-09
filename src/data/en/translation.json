@@ -18,8 +18,8 @@
     "about": {
         "title": "About Me",
         "imageAlt": "Portrait of Gonzalo Lobos, E-commerce and Web Development Specialist",
-        "introduction": "I am a professional passionate about merging <strong>business strategy and technology</strong>. Throughout my career, I have led high-demand e-commerce initiatives for <strong>global brands</strong>, focusing on designing <strong>memorable user experiences (UX/UI)</strong> that not only retain customers but skyrocket conversion rates.",
-        "skills": "My approach integrates advanced analytics with technical development. I drive data-backed decision-making using <strong>Google Analytics 4, Search Console, and BrightEdge</strong>. Within the development ecosystem, I master frontend engineering with <strong>React and Tailwind CSS</strong>, enabling me to prototype and deploy ultra-fast interfaces.<br><br>My key differentiator is the ability to automate business processes through Artificial Intelligence, a milestone consolidated with the creation of <strong>OSCAR</strong>: an autonomous commercial agent integrated with large language models (Gemini AI) that acts as a Single Source of Truth (SSoT). I possess the professional background and interpersonal skills required to act as a linguistic and strategic bridge between technical teams, clients, and commercial business units.",
+        "introduction": "Specialist in <strong>digital strategy, e-commerce, and web development</strong>, focused on maximizing conversion and optimizing user experience (UX/UI). Proficient in frontend engineering with <strong>React & Tailwind CSS</strong>, advanced analytics via <strong>GA4 & Technical SEO</strong>, and commercial automation through <strong>Artificial Intelligence</strong>. Experienced in bridging strategy and technical execution across cross-functional teams. Based in Chile with immediate availability for relocation to Mexico.",
+        "skills": "",
         "callToAction": "I am looking to join innovative teams focused on digital growth. If you are seeking a technical profile with a business mindset and AI expertise, let's connect."
     },
     "projects": {

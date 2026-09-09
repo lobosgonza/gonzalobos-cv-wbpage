@@ -44,8 +44,8 @@ function PortfolioLayout({ lang }) {
 			<Navbar />
 			<main>
 				<Hero />
-				<Projects />
 				<About />
+				<Projects />
 				<CaseStudies />
 				<Experience />
 				<Studies />

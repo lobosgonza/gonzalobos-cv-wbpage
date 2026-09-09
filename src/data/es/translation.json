@@ -18,8 +18,8 @@
     "about": {
         "title": "Sobre Mí",
         "imageAlt": "Retrato de Gonzalo Lobos, especialista en Ecommerce y Desarrollo Web",
-        "introduction": "Soy un profesional apasionado por fusionar <strong>estrategia de negocios y tecnología</strong>. A lo largo de mi trayectoria, he liderado iniciativas de e-commerce de alta demanda para <strong>marcas globales</strong>, enfocándome en diseñar <strong>experiencias de usuario memorables (UX/UI)</strong> que no solo retienen clientes, sino que disparan las tasas de conversión.",
-        "skills": "Mi enfoque integra la analítica avanzada con el desarrollo técnico. Conduzco la toma de decisiones utilizando <strong>Google Analytics 4, Search Console y BrightEdge</strong>. En el ecosistema de desarrollo, domino el desarrollo frontend con <strong>React y Tailwind CSS</strong>, permitiéndome prototipar e implementar interfaces ultra rápidas.<br><br>Mi factor diferencial es la capacidad de automatizar procesos comerciales mediante Inteligencia Artificial, hito consolidado con el desarrollo de <strong>OSCAR</strong>: un agente comercial autónomo e integrado a modelos de lenguaje (Gemini AI) que actúa como fuente única de verdad. Poseo la formación y la calidad humana necesarias para actuar como puente lingüístico y estratégico entre equipos técnicos, clientes y áreas comerciales.",
+        "introduction": "Especialista en <strong>estrategia digital, e-commerce y desarrollo web</strong>, enfocado en maximizar la conversión y optimizar la experiencia de usuario (UX/UI). Domino el desarrollo frontend con <strong>React y Tailwind CSS</strong>, la analítica avanzada con <strong>GA4 y SEO técnico</strong>, y la automatización comercial mediante <strong>Inteligencia Artificial</strong>. Lidero la integración estratégica y técnica entre equipos, clientes y unidades de negocio. Con base en Chile y disponibilidad inmediata para radicarme en México.",
+        "skills": "",
         "callToAction": "Busco incorporarme a equipos innovadores orientados al crecimiento digital. Si buscas un perfil técnico con mentalidad de negocio y experiencia en IA, conversemos."
     },
     "projects": {

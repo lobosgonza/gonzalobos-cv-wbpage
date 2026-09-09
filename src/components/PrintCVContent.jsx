@@ -13,6 +13,10 @@ function PrintCVContent() {
 	const rawCategories = t('skills.categories', { returnObjects: true });
 	const categories = Array.isArray(rawCategories) ? rawCategories : [];
 
+	// Validaciones defensivas para acreditaciones
+	const rawAccreditations = t('skills.accreditations.items', { returnObjects: true });
+	const accreditations = Array.isArray(rawAccreditations) ? rawAccreditations : [];
+
 	const rawStrategy = t('skills.items.strategy', { returnObjects: true });
 	const strategySkills = Array.isArray(rawStrategy) ? rawStrategy : [];
 
@@ -28,7 +32,13 @@ function PrintCVContent() {
 			<header style={{ borderBottom: '1.5px solid #1a1816', paddingBottom: '6px', marginBottom: '10px' }}>
 				<h1 style={{ fontSize: '20pt', fontWeight: '900', margin: '0 0 1px 0', textTransform: 'uppercase', letterSpacing: '-0.03em', lineHeight: '1.1' }}>{t('hero.name')}</h1>
 				<h2 style={{ fontSize: '10.5pt', fontWeight: '700', color: '#0d9488', margin: '0 0 4px 0', textTransform: 'uppercase', letterSpacing: '0.02em' }}>{t('hero.title')}</h2>
-
+				{/* UBICACIÓN Y DISPONIBILIDAD DE TRASLADO */}
+				<p style={{ fontSize: '8pt', color: '#1a1816', fontWeight: '700', margin: '0 0 3px 0', lineHeight: '1.3' }}>
+					📍{' '}
+					{isEn
+						? 'Santiago, Chile (Open to Relocation to Mexico | On-site / Hybrid / Remote)'
+						: 'Santiago, Chile (Disponibilidad de traslado a México | Modalidad Presencial / Híbrida / Remota)'}
+				</p>
 				{/* ENLACES INTERACTIVOS ACCESIBLES */}
 				<p style={{ fontSize: '8pt', color: '#333', margin: '0', lineHeight: '1.3' }}>
 					<strong>Email:</strong>{' '}
@@ -159,8 +169,8 @@ function PrintCVContent() {
 					))}
 			</section>
 
-			{/* HABILIDADES & IA STACK */}
-			<section style={{ marginBottom: '0' }}>
+			{/* HABILIDADES & TOOLBOX */}
+			<section style={{ marginBottom: '10px' }}>
 				<h3
 					style={{
 						fontSize: '9.5pt',
@@ -174,13 +184,17 @@ function PrintCVContent() {
 					{t('skills.title')}
 				</h3>
 				<div style={{ fontSize: '8pt', lineHeight: '1.35' }}>
-					{/* Renderizado dinámico si usas la estructura por categorías */}
 					{categories.length > 0 ? (
-						categories.map((cat, i) => (
-							<div key={i} style={{ marginBottom: '2px' }}>
-								<strong>{cat.name}:</strong> {Array.isArray(cat.tools) ? cat.tools.join(', ') : ''}
-							</div>
-						))
+						categories.map((cat, i) => {
+							// Extrae y aplana todas las herramientas contenidas dentro de cat.groups
+							const allTools = Array.isArray(cat.groups) ? cat.groups.flatMap((group) => (Array.isArray(group.tools) ? group.tools : [])) : [];
+
+							return (
+								<div key={i} style={{ marginBottom: '2px' }}>
+									<strong>{cat.name}:</strong> {allTools.join(', ')}
+								</div>
+							);
+						})
 					) : (
 						/* Fallback dinámico si usas la estructura antigua */
 						<>
@@ -203,6 +217,31 @@ function PrintCVContent() {
 					)}
 				</div>
 			</section>
+
+			{/* ACREDITACIONES DESTACADAS */}
+			{accreditations.length > 0 && (
+				<section style={{ marginBottom: '0' }}>
+					<h3
+						style={{
+							fontSize: '9.5pt',
+							fontWeight: '900',
+							textTransform: 'uppercase',
+							borderBottom: '1px solid #1a1816',
+							paddingBottom: '1px',
+							marginBottom: '4px',
+							letterSpacing: '0.05em',
+						}}>
+						{t('skills.accreditations.title', 'Acreditaciones Destacadas')}
+					</h3>
+					<div style={{ fontSize: '8pt', lineHeight: '1.35' }}>
+						{accreditations.map((acc, i) => (
+							<div key={i} style={{ marginBottom: '2px' }}>
+								<strong>{acc.title}</strong> — {acc.issuer}
+							</div>
+						))}
+					</div>
+				</section>
+			)}
 		</div>
 	);
 }
