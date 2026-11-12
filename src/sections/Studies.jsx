@@ -16,7 +16,7 @@ const StudyRow = ({ study }) => {
 			variants={{ hidden: { opacity: 0, x: -10 }, visible: { opacity: 1, x: 0 } }}>
 			<div className='absolute -left-[8px] top-7 h-4 w-4 bg-primary group-hover:bg-white transition-colors transform rotate-45 z-10'></div>
 
-			<h4 className='text-lg font-black text-structural group-hover:text-white transition-colors uppercase tracking-tight'>{study.title}</h4>
+			<h3 className='text-lg font-black text-structural group-hover:text-white transition-colors uppercase tracking-tight'>{study.title}</h3>
 			<p className='text-xs font-black text-primary group-hover:text-white/90 transition-colors uppercase tracking-wider mt-0.5'>
 				{study.place} · <span className='text-stone-500 group-hover:text-white/80 normal-case font-bold transition-colors'>{study.location}</span>
 			</p>

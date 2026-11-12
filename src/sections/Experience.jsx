@@ -41,7 +41,7 @@ const ExperienceCard = ({ exp }) => {
 				</span>
 			)}
 
-			<h4 className='text-lg font-black text-structural group-hover:text-white transition-colors uppercase tracking-tight pr-12'>{exp.title}</h4>
+			<h3 className='text-lg font-black text-structural group-hover:text-white transition-colors uppercase tracking-tight pr-12'>{exp.title}</h3>
 			<p className='text-xs font-black text-primary group-hover:text-white/90 transition-colors uppercase tracking-wider mt-0.5'>{exp.place}</p>
 			<p className='text-[10px] font-bold text-stone-400 group-hover:text-white/70 transition-colors uppercase tracking-widest mt-1 mb-3'>{exp.duration}</p>
 
@@ -71,9 +71,9 @@ const ExperienceCard = ({ exp }) => {
 								animate={{ height: 'auto', opacity: 1 }}
 								exit={{ height: 0, opacity: 0 }}
 								className='overflow-hidden bg-stone-50 group-hover:bg-white/10 p-4 rounded-none mt-2 uppercase text-[11px] font-medium tracking-wide text-stone-600 group-hover:text-white space-y-2 transition-colors'>
-								<h5 className='text-[10px] font-black uppercase tracking-widest text-stone-400 group-hover:text-white/60 mb-3 transition-colors'>
+								<h4 className='text-[10px] font-black uppercase tracking-widest text-stone-400 group-hover:text-white/60 mb-3 transition-colors'>
 									{t('experience.detailedTasksTitle', { defaultValue: 'Tareas Específicas e Impacto Técnico' })}
-								</h5>
+								</h4>
 								<ul className='space-y-1.5 list-none pl-0'>
 									{exp.detailedTasks.map((task, idx) => (
 										<li key={idx} className="before:content-['–'] before:mr-2" dangerouslySetInnerHTML={{ __html: task }} />
@@ -167,9 +167,9 @@ function Experience() {
 														animate={{ height: 'auto', opacity: 1 }}
 														exit={{ height: 0, opacity: 0 }}
 														className='overflow-hidden bg-stone-50 group-hover:bg-white/10 p-5 rounded-none mt-4 uppercase text-[11px] font-medium tracking-wide text-stone-600 group-hover:text-white transition-colors'>
-														<h5 className='text-[10px] font-black uppercase tracking-widest text-stone-400 group-hover:text-white/60 mb-3 transition-colors'>
+														<h4 className='text-[10px] font-black uppercase tracking-widest text-stone-400 group-hover:text-white/60 mb-3 transition-colors'>
 															{t('experience.detailedTasksTitle', { defaultValue: 'Tareas Específicas e Impacto Técnico' })}
-														</h5>
+														</h4>
 														<ul className='space-y-2 list-none pl-0'>
 															{currentExperience.detailedTasks.map((task, idx) => (
 																<li key={idx} className="before:content-['–'] before:mr-2" dangerouslySetInnerHTML={{ __html: task }} />

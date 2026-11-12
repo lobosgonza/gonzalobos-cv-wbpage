@@ -24,7 +24,11 @@ export default function Accreditations() {
 										{item.icon && (
 											<img
 												src={`/images/icons/${item.icon}.svg`}
-												alt={item.title}
+												alt={`${item.title} — ${item.issuer}`}
+												width={24}
+												height={24}
+												loading='lazy'
+												decoding='async'
 												className='w-6 h-6 object-contain mt-0.5 shrink-0'
 												onError={(e) => {
 													e.target.style.display = 'none';

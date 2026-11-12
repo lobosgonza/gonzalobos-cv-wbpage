@@ -32,8 +32,8 @@ function PrintCVContent() {
 		<div id='print-cv-area' className='hidden'>
 			{/* ENCABEZADO (Full Width - Abarca las dos columnas) */}
 			<header id='print-cv-header'>
-				<h1 style={{ fontSize: '20pt', fontWeight: '900', margin: '0 0 1px 0', textTransform: 'uppercase', letterSpacing: '-0.03em', lineHeight: '1.1' }}>{t('hero.name')}</h1>
-				<h2 style={{ fontSize: '10pt', fontWeight: '700', color: '#0d9488', margin: '0 0 4px 0', textTransform: 'uppercase', letterSpacing: '0.02em' }}>{t('hero.title')}</h2>
+				<p style={{ fontSize: '20pt', fontWeight: '900', margin: '0 0 1px 0', textTransform: 'uppercase', letterSpacing: '-0.03em', lineHeight: '1.1' }}>{t('hero.name')}</p>
+				<p style={{ fontSize: '10pt', fontWeight: '700', color: '#0d9488', margin: '0 0 4px 0', textTransform: 'uppercase', letterSpacing: '0.02em' }}>{t('hero.title')}</p>
 				<p style={{ fontSize: '7.5pt', color: '#1a1816', fontWeight: '700', margin: '0 0 3px 0' }}>
 					{isEn
 						? 'Santiago, Chile (Open to Relocation to Mexico | On-site / Hybrid / Remote)'
@@ -51,13 +51,13 @@ function PrintCVContent() {
 			<div id='print-cv-left-col'>
 				{/* SOBRE MÍ */}
 				<section>
-					<h3 style={sectionTitleStyle}>{t('navbar.about')}</h3>
+					<p style={sectionTitleStyle}>{t('navbar.about')}</p>
 					<p dangerouslySetInnerHTML={{ __html: t('about.introduction') }} style={textStyle} />
 				</section>
 
 				{/* CAJA DE HERRAMIENTAS (Skills) */}
 				<section>
-					<h3 style={sectionTitleStyle}>{t('skills.title')}</h3>
+					<p style={sectionTitleStyle}>{t('skills.title')}</p>
 					<div style={{ fontSize: '7.5pt', lineHeight: '1.3' }}>
 						{categories.map((cat, i) => {
 							const allTools = Array.isArray(cat.groups) ? cat.groups.flatMap((group) => (Array.isArray(group.tools) ? group.tools : [])) : [];
@@ -75,7 +75,7 @@ function PrintCVContent() {
 				{/* ACREDITACIONES */}
 				{accreditations.length > 0 && (
 					<section>
-						<h3 style={sectionTitleStyle}>{t('skills.accreditations.title', 'Acreditaciones')}</h3>
+						<p style={sectionTitleStyle}>{t('skills.accreditations.title', 'Acreditaciones')}</p>
 						<div style={{ fontSize: '7.5pt', lineHeight: '1.3' }}>
 							{accreditations.map((acc, i) => (
 								<div key={i} style={{ marginBottom: '3px' }}>
@@ -93,7 +93,7 @@ function PrintCVContent() {
 			<div id='print-cv-right-col'>
 				{/* EXPERIENCIA PROFESIONAL */}
 				<section>
-					<h3 style={sectionTitleStyle}>{t('experience.sectionTitle')}</h3>
+					<p style={sectionTitleStyle}>{t('experience.sectionTitle')}</p>
 
 					{/* Cargo Actual (Expansis Pro) */}
 					{currentExperience && currentExperience.title && (
@@ -131,7 +131,7 @@ function PrintCVContent() {
 
 				{/* EDUCACIÓN ACADÉMICA */}
 				<section>
-					<h3 style={sectionTitleStyle}>{t('studies.title')}</h3>
+					<p style={sectionTitleStyle}>{t('studies.title')}</p>
 					{Array.isArray(educationItems) &&
 						educationItems.map((edu, i) => (
 							<div key={i} style={{ marginBottom: '3px' }}>

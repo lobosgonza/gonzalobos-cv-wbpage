@@ -18,7 +18,15 @@ function About() {
 						{/* Imagen: Bloque monolítico sólido */}
 						<div className='md:col-span-1 flex justify-start'>
 							<div className='p-0 w-full max-w-[280px] bg-white'>
-								<img src={profileImage} alt={t('about.imageAlt')} className='w-full h-auto object-cover' />
+								<img
+									src={profileImage}
+									alt={t('about.imageAlt')}
+									width={400}
+									height={400}
+									fetchPriority='high'
+									decoding='async'
+									className='w-full h-auto aspect-square object-cover'
+								/>
 							</div>
 						</div>
 

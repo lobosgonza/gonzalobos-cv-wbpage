@@ -1,11 +1,20 @@
 // src/components/Footer.jsx
 import React from 'react';
-import { motion } from 'framer-motion'; // <-- REPARADO: Origen correcto de animación[cite: 23]
-import { useTranslation } from 'react-i18next'; // <-- REPARADO: Origen correcto del Hook[cite: 23]
+import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { FaWhatsapp, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 function Footer() {
-	const { t, i18n } = useTranslation(); //[cite: 23]
+	const { t, i18n } = useTranslation();
+	const navigate = useNavigate();
+	const location = useLocation();
+
+	const switchLanguage = (nextLang) => {
+		const hash = location.hash || '';
+		i18n.changeLanguage(nextLang);
+		navigate(`/${nextLang}${hash}`);
+	};
 
 	const scrollToTop = () => {
 		window.scrollTo({
@@ -101,13 +110,13 @@ function Footer() {
 				<div className='text-[11px] font-black uppercase tracking-widest text-stone-400 border-l-2 pl-3 py-0.5'>
 					{' '}
 					{/*[cite: 23] */}
-					<button onClick={() => i18n.changeLanguage('en')} className={`hover:text-primary transition-colors ${i18n.language.startsWith('en') ? 'text-white font-black' : ''}`}>
+					<button onClick={() => switchLanguage('en')} className={`hover:text-primary transition-colors ${i18n.language.startsWith('en') ? 'text-white font-black' : ''}`}>
 						{' '}
 						{/*[cite: 23] */}
 						EN
 					</button>
 					<span className='mx-3 text-stone-700'>|</span> {/*[cite: 23] */}
-					<button onClick={() => i18n.changeLanguage('es')} className={`hover:text-primary transition-colors ${i18n.language.startsWith('es') ? 'text-white font-black' : ''}`}>
+					<button onClick={() => switchLanguage('es')} className={`hover:text-primary transition-colors ${i18n.language.startsWith('es') ? 'text-white font-black' : ''}`}>
 						{' '}
 						{/*[cite: 23] */}
 						ES

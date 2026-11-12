@@ -50,6 +50,7 @@ body.fade-out {
 /* Forzamos que los textos, enlaces y títulos muten a blanco en hover */
 .bg-white:hover h3,
 .bg-white:hover h4,
+.bg-white:hover h5,
 .bg-white:hover ul li,
 .bg-white:hover p,
 .bg-white:hover a,
