@@ -12,7 +12,7 @@ export default function Accreditations() {
 	return (
 		<section id='accreditations' className='py-16 sm:py-20 bg-concrete'>
 			<AnimatedSection>
-				<div className='container mx-auto px-6 max-w-5xl text-left'>
+				<div className='container mx-auto px-2 max-w-6xl text-left'>
 					<SectionTitle title={t('skills.accreditations.title', 'Acreditaciones Destacadas')} />
 
 					<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12'>

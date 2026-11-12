@@ -48,9 +48,11 @@ const ExperienceCard = ({ exp }) => {
 			<ul className='space-y-1.5 text-xs font-medium uppercase tracking-wide text-structural/80 group-hover:text-white transition-colors leading-relaxed list-none mb-3'>
 				{exp.responsibilities &&
 					exp.responsibilities.map((resp, index) => (
-						<li key={index} className="before:content-['■'] before:text-primary group-hover:before:text-white before:mr-2 transition-colors">
-							{resp}
-						</li>
+						<li
+							key={index}
+							className="before:content-['■'] before:text-primary group-hover:before:text-white before:mr-2 transition-colors"
+							dangerouslySetInnerHTML={{ __html: resp }}
+						/>
 					))}
 			</ul>
 
@@ -93,7 +95,7 @@ function Experience() {
 
 	const startDate = currentExperience.startDate;
 	const [calculatedExp, setCalculatedExp] = useState({ years: 0, months: 0 });
-
+	const [isCurrentOpen, setIsCurrentOpen] = useState(false);
 	useEffect(() => {
 		if (startDate) {
 			const { years, months } = calculateExperience(startDate);
@@ -122,7 +124,7 @@ function Experience() {
 	return (
 		<section id='experience' className='py-16 sm:py-20 bg-concrete'>
 			<AnimatedSection>
-				<div className='container mx-auto px-6 max-w-5xl text-left'>
+				<div className='container mx-auto px-2 max-w-6xl text-left'>
 					<SectionTitle title={t('experience.sectionTitle')} />
 
 					{/* -----------------------------------------------------------
@@ -142,11 +144,42 @@ function Experience() {
 									<ul className='space-y-2 list-none pl-0'>
 										{currentExperience.responsibilities &&
 											currentExperience.responsibilities.map((item, index) => (
-												<li key={index} className="before:content-['■'] before:text-primary group-hover:before:text-white before:mr-2 transition-colors">
-													{item}
-												</li>
+												<li
+													key={index}
+													className="before:content-['■'] before:text-primary group-hover:before:text-white before:mr-2 transition-colors"
+													dangerouslySetInnerHTML={{ __html: item }}
+												/>
 											))}
 									</ul>
+
+									{currentExperience.detailedTasks && currentExperience.detailedTasks.length > 0 && (
+										<div className='pt-2'>
+											<button
+												onClick={() => setIsCurrentOpen(!isCurrentOpen)}
+												className='text-[10px] font-black uppercase tracking-widest text-primary group-hover:text-white flex items-center gap-1 focus:outline-none transition-colors'>
+												{isCurrentOpen ? t('projects.headings.showLess', { defaultValue: 'Ver menos ▲' }) : t('projects.headings.showMore', { defaultValue: 'Ver más ▼' })}
+											</button>
+
+											<AnimatePresence initial={false}>
+												{isCurrentOpen && (
+													<motion.div
+														initial={{ height: 0, opacity: 0 }}
+														animate={{ height: 'auto', opacity: 1 }}
+														exit={{ height: 0, opacity: 0 }}
+														className='overflow-hidden bg-stone-50 group-hover:bg-white/10 p-5 rounded-none mt-4 uppercase text-[11px] font-medium tracking-wide text-stone-600 group-hover:text-white transition-colors'>
+														<h5 className='text-[10px] font-black uppercase tracking-widest text-stone-400 group-hover:text-white/60 mb-3 transition-colors'>
+															{t('experience.detailedTasksTitle', { defaultValue: 'Tareas Específicas e Impacto Técnico' })}
+														</h5>
+														<ul className='space-y-2 list-none pl-0'>
+															{currentExperience.detailedTasks.map((task, idx) => (
+																<li key={idx} className="before:content-['–'] before:mr-2" dangerouslySetInnerHTML={{ __html: task }} />
+															))}
+														</ul>
+													</motion.div>
+												)}
+											</AnimatePresence>
+										</div>
+									)}
 								</div>
 							</div>
 						</div>

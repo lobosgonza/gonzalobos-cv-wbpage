@@ -53,7 +53,7 @@ function Studies() {
 	return (
 		<section id='studies' className='py-16 sm:py-20 bg-concrete'>
 			<AnimatedSection>
-				<div className='container mx-auto px-6 max-w-5xl text-left'>
+				<div className='container mx-auto px-2 max-w-6xl text-left'>
 					<SectionTitle title={t('studies.title')} />
 
 					{/* 2. RENDERIZADO DUAL RESPONSIVO */}

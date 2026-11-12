@@ -39,7 +39,7 @@ const Contact = () => {
 	return (
 		<section id='contact' className='py-16 sm:py-20 bg-concrete'>
 			<AnimatedSection>
-				<div className='container mx-auto px-6 max-w-5xl text-left'>
+				<div className='container mx-auto px-2 max-w-6xl text-left'>
 					<SectionTitle title={t('contact.title')} />
 					<p className='text-left uppercase text-xs font-medium tracking-widest text-stone-500 mb-12 max-w-xl leading-relaxed'>{t('contact.subtitle')}</p>
 

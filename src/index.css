@@ -201,34 +201,52 @@ button[type='submit']:hover,
 		height: 0 !important;
 	}
 
-	/* Configuración monolítica del lienzo de impresión */
+	/* Configuraci n de Canvas A4 / Letter a 2 Columnas */
 	#print-cv-area {
-		display: block !important;
+		display: grid !important;
+		/* Columna Izquierda (32%) y Derecha (68%) */
+		grid-template-columns: 32% 1fr;
+		gap: 0.6cm;
 		visibility: visible !important;
 		background-color: #ffffff !important;
 		color: #1a1816 !important;
 		font-family: Arial, Helvetica, sans-serif !important;
 		width: 100% !important;
 		height: auto !important;
+		align-items: start;
 	}
 
-	/* Forzar visualización de contenedores alineados lado a lado (Títulos y fechas) */
-	#print-cv-area div[style*='display: flex'] {
-		display: flex !important;
-		justify-content: space-between !important;
-		align-items: center !important;
-		width: 100% !important;
+	/* El encabezado abarca ambas columnas (full width) */
+	#print-cv-header {
+		grid-column: 1 / -1;
+		border-bottom: 1.5px solid #1a1816;
+		padding-bottom: 4px;
+		margin-bottom: 4px;
 	}
 
-	/* Evitar quiebres de página accidentales en secciones críticas */
+	#print-cv-left-col {
+		display: flex;
+		flex-direction: column;
+		gap: 10px; /* Separaci n vertical entre secciones de la izquierda */
+	}
+
+	#print-cv-right-col {
+		display: flex;
+		flex-direction: column;
+		gap: 10px; /* Separaci n vertical entre experiencias/educaci n */
+		border-left: 1px solid #e7e5e4; /* L nea separadora sutil */
+		padding-left: 0.6cm;
+	}
+
+	/* Evitar quiebres de p gina accidentales en secciones cr ticas */
 	section,
 	header {
 		page-break-inside: avoid !important;
 	}
 
-	/* CONFIGURACIÓN CRUCIAL: Obligar al motor de PDF a ajustarse a 1 página Letter */
+	/* CONFIGURACI N CRUCIAL: M rgenes s per reducidos para ganar espacio vital */
 	@page {
 		size: letter;
-		margin: 0.6cm 0.8cm 0.6cm 0.8cm; /* Márgenes optimizados de alta densidad */
+		margin: 0.4cm 0.5cm 0.4cm 0.5cm;
 	}
 }

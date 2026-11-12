@@ -82,7 +82,7 @@ function CaseStudies() {
 		<section id='caseStudies' className='py-16 sm:py-20 bg-concrete '>
 			<AnimatedSection>
 				{/* CORRECCIÓN: Agregamos max-w-5xl y text-left para amarrar la grilla */}
-				<div className='container mx-auto px-6 max-w-5xl text-left'>
+				<div className='container mx-auto px-2 max-w-6xl text-left'>
 					<SectionTitle title={t('caseStudies.title')} subtitle={t('caseStudies.subtitle')} />
 
 					{studiesCount < DESKTOP_SLIDER_THRESHOLD && (

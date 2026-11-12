@@ -30,7 +30,7 @@ function Skills() {
 	return (
 		<section id='skills' className='py-16 sm:py-20 bg-concrete'>
 			<AnimatedSection>
-				<div className='container mx-auto px-6 max-w-5xl text-left'>
+				<div className='container mx-auto px-2 max-w-6xl text-left'>
 					<SectionTitle title={t('skills.title', 'Caja de Herramientas')} subtitle={t('skills.subtitle', 'Especialidades, Tecnologías y Acreditaciones')} />
 
 					{/* BLOQUE 1: Cajas Negras Organizadas por Subgrupos */}

@@ -7,7 +7,6 @@ import LanguageSwitcher from '../components/LanguageSwitcher';
 const navLinks = [
 	{ id: 'about', labelKey: 'navbar.about' },
 	{ id: 'projects', labelKey: 'navbar.projects' },
-	{ id: 'caseStudies', labelKey: 'navbar.caseStudies' },
 	{ id: 'experience', labelKey: 'navbar.experience' },
 	{ id: 'studies', labelKey: 'navbar.studies' },
 	{ id: 'skills', labelKey: 'navbar.skills' },

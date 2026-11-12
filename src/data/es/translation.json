@@ -10,20 +10,20 @@
     },
     "hero": {
         "name": "Gonzalo Lobos",
-        "title": "Estrategia de Negocios, Desarrollo Web e Inteligencia Artificial aplicada.",
-        "subtitle": "Conecto la ingeniería comercial con arquitecturas frontend modernas y agentes autónomos de IA para optimizar la conversión de tu negocio.",
+        "title": "Comercio Electrónico, Paid Media (SEM & Meta) y Desarrollo Web",
+        "subtitle": "Construyo plataformas web y gestiono campañas de adquisición en Google Ads y Meta. Conecto el tráfico calificado con experiencias de alta conversión, integrando flujos de automatización e IA para agilizar la atención de prospectos.",
         "primaryButton": "Ver Trabajos Recientes",
         "secondaryButton": "Contacto"
     },
     "about": {
         "title": "Sobre Mí",
         "imageAlt": "Retrato de Gonzalo Lobos, especialista en Ecommerce y Desarrollo Web",
-        "introduction": "Especialista en <strong>estrategia digital, e-commerce y desarrollo web</strong>, enfocado en maximizar la conversión y optimizar la experiencia de usuario (UX/UI). Domino el desarrollo frontend con <strong>React y Tailwind CSS</strong>, la analítica avanzada con <strong>GA4 y SEO técnico</strong>, y la automatización comercial mediante <strong>Inteligencia Artificial</strong>. Lidero la integración estratégica y técnica entre equipos, clientes y unidades de negocio. Con base en Chile y disponibilidad inmediata para radicarme en México.",
+        "introduction": "Soy <strong>Ingeniero Comercial especializado en E-commerce, Paid Media y Desarrollo Frontend</strong>.<br>Uno la visión financiera y el retorno de inversión con la ejecución técnica: planifico y optimizo campañas de adquisición en Google Ads y Meta Ads dirigidas a landing pages y tiendas ultrarrápidas, diseñados para convertir sin fricción en el checkout.<br>Cuento con más de 4 años de experiencia corporativa en Nespresso liderando la operación de eventos masivos (Cyber Days y Black Friday), auditorías de conversión con GA4 y SEO técnico.<br>Hoy, como fundador en Expansis Pro, integro flujos de IA aplicada y WhatsApp API para responder, filtrar y agendar prospectos en segundos, evitando que los leads de pauta se enfríen.",
         "skills": "",
-        "callToAction": "Busco incorporarme a equipos innovadores orientados al crecimiento digital. Si buscas un perfil técnico con mentalidad de negocio y experiencia en IA, conversemos."
+        "callToAction": "Busco trabajar con equipos innovadores orientados al crecimiento digital. Si buscas un perfil técnico con mentalidad de negocio y experiencia en IA, conversemos."
     },
     "projects": {
-        "title": "Trabajos Realizados",
+        "title": "Proyectos & Casos de Éxito",
         "liveButton": "Ver Proyecto",
         "repoButton": "Ver Código",
         "headings": {
@@ -38,12 +38,11 @@
                 "category": "Ingeniería de IA & DevOps",
                 "sector": "Automatización Comercial & Ciberseguridad",
                 "image": "/images/expansis-oscar-web.webp",
-                "description": "Diseño, desarrollo y despliegue de un <strong>asistente conversacional inteligente (SDR)</strong> y arquitectura de API centralizada de extremo a extremo. El sistema interconecta de forma segura la API Oficial de WhatsApp (Meta), Chatwoot y la API v2 de Cal.com mediante el uso de <strong>Function Calling</strong> con Gemini 2.5 Flash. Todo el ecosistema está contenerizado y alojado de forma independiente en un VPS de <strong>Hetzner</strong> gestionado a través de <strong>Coolify</strong>, asegurando alta disponibilidad y baja latencia.",
+                "description": "Diseño y despliegue de un <strong>asistente comercial (SDR) con IA</strong> y API centralizada. Conecta WhatsApp Cloud API, Chatwoot y Cal.com mediante <strong>Function Calling</strong> (Gemini 2.5 Flash) en un VPS Hetzner con Coolify, automatizando la cualificación y agenda de leads 24/7.",
                 "results": [
-                    "Seguridad Criptográfica Avanzada: Implementación de validación de firmas SHA-256 en Webhooks para mitigar peticiones fraudulentas.",
-                    "Fuente Única de Verdad (SSoT): Arquitectura dual que alimenta en tiempo real al bot de WhatsApp y al frontend del sitio web oficial indexable (SEO con Schema.org).",
-                    "Gobernanza Automatizada (Human-in-the-Loop): Red de seguridad dual con freno de mano analógico ('mano-humana') y sistema inteligente de truncado de strings para evitar excepciones en la API de Meta.",
-                    "Lógica Consultiva por Etapas: Algoritmo SDR que prioriza el diagnóstico técnico del lead y la escucha activa antes de habilitar la función de agendamiento."
+                    "Validación criptográfica SHA-256 en Webhooks contra peticiones fraudulentas.",
+                    "Arquitectura SSoT que sincroniza en vivo el bot de WhatsApp y la web SEO.",
+                    "Flujo SDR consultivo con control humano (Human-in-the-Loop) y agenda directa."
                 ],
                 "tags": [
                     "Node.js",
@@ -62,11 +61,11 @@
                 "category": "Branding & Desarrollo Web",
                 "sector": "Logística Internacional & Courier",
                 "image": "/images/2VExpress-web.webp",
-                "description": "Desarrollo integral de <strong>identidad corporativa y ecosistema digital</strong> para una empresa especializada en el retiro de excedentes. El proyecto abarcó desde la definición estratégica de marca (branding) hasta la habilitación técnica de canales de comunicación profesional y una plataforma web de alta autoridad, generando coherencia operativa en cada punto de contacto.",
+                "description": "Desarrollo integral de <strong>identidad corporativa y plataforma web</strong> para empresa de logística y retiro de excedentes. Abarcó desde la estrategia de marca (branding) hasta la habilitación de canales profesionales y un sitio web rápido orientado a proyectar autoridad comercial.",
                 "results": [
-                    "Creación de identidad visual completa (Logo y Manual de Estilo)",
-                    "Digitalización corporativa: Configuración de correos, firmas y herramientas de comunicación",
-                    "Desarrollo web optimizado para proyectar solidez en un sector industrial de baja rotación"
+                    "Identidad visual completa: logotipo, paleta y manual de estilo corporativo.",
+                    "Digitalización operativa con correos, firmas y canales de contacto.",
+                    "Plataforma web en React optimizada para proyectar solidez B2B."
                 ],
                 "tags": [
                     "React",
@@ -78,16 +77,39 @@
                 "repoUrl": null
             },
             {
+                "id": "expansis-pro",
+                "title": "Expansis Pro",
+                "category": "Desarrollo Web, Paid Media & Automatización",
+                "sector": "Consultoría Digital & Performance Marketing",
+                "image": "/images/proyecto-expansis-pro.webp",
+                "description": "Ecosistema digital integral de <strong>Expansis Pro</strong>. Unifica una plataforma web en <strong>React</strong> orientada a conversión (CRO), campañas de adquisición en <strong>Google Ads y Meta Ads</strong>, y flujos de <strong>IA con WhatsApp API</strong> para filtrar y atender prospectos al instante.",
+                "results": [
+                    "Web ultrarrápida en React optimizada para Core Web Vitals y SEO técnico.",
+                    "Campañas en Google Ads y Meta Ads con medición de eventos en GA4.",
+                    "Asistente con IA y agenda directa que acelera la respuesta a leads."
+                ],
+                "tags": [
+                    "React",
+                    "Google Ads",
+                    "Meta Ads",
+                    "GA4 & Medición",
+                    "Automatización IA",
+                    "CRO"
+                ],
+                "liveUrl": "https://www.expansispro.com/",
+                "repoUrl": null
+            },
+            {
                 "id": "claudia-gallardo",
                 "title": "Claudia Gallardo",
                 "category": "Desarrollo Web & Portafolio",
                 "sector": "Dirección de Arte & Cine Internacional",
                 "image": "/images/ClaudiaGallardo-web.webp",
-                "description": "Desarrollo de portafolio para Directora de Arte de trayectoria internacional. El proyecto consistió en crear una <strong>vitrina digital de alto impacto</strong> para organizar una filmografía destacada en plataformas como Netflix, HBO y Prime Video. La arquitectura se centró en una estética cinematográfica que proyecta el estatus de una ganadora del Premio Pedro Sienna.",
+                "description": "Portafolio web de alto impacto para Directora de Arte ganadora del Premio Pedro Sienna. Diseñado con una <strong>estética cinematográfica y minimalista</strong> para exhibir su filmografía internacional en Netflix, HBO y Prime Video con carga fluida.",
                 "results": [
-                    "Arquitectura de información diseñada para destacar producciones de clase mundial",
-                    "Interfaz minimalista y sofisticada que cede el protagonismo a la obra visual",
-                    "Optimización de activos para la carga fluida de galerías en alta resolución"
+                    "Arquitectura de información enfocada en producciones internacionales.",
+                    "Interfaz minimalista que cede todo el protagonismo a la obra visual.",
+                    "Optimización de activos para carga fluida de galerías en alta calidad."
                 ],
                 "tags": [
                     "React",
@@ -99,37 +121,16 @@
                 "repoUrl": null
             },
             {
-                "id": "lobos-miniexcavadoras",
-                "title": "Lobos Miniexcavadoras",
-                "category": "Desarrollo Web",
-                "sector": "Movimiento de Tierra & Construcción",
-                "image": "/images/lobosMiniexcavadoras-web.webp",
-                "description": "Desarrollo de una infraestructura digital de alto rendimiento para el sector industrial. Transformamos la presencia online en una máquina de <strong>generación de leads locales, priorizando la velocidad de carga en terreno y una arquitectura técnica que proyecta la solidez operativa de la marca.",
-                "results": [
-                    "Optimización de conversión estratégica para arriendo de maquinaria",
-                    "Interfaz ultra-rápida (WPO) diseñada para uso en condiciones de baja señal",
-                    "Posicionamiento de autoridad en el mercado del Valle del Aconcagua"
-                ],
-                "tags": [
-                    "React",
-                    "Tailwind CSS",
-                    "SEO Local",
-                    "Servicios Industriales"
-                ],
-                "liveUrl": "https://lobosminiexcavadoras.cl/",
-                "repoUrl": null
-            },
-            {
                 "id": "gonzalo-lobos",
                 "title": "Gonzalo Lobos",
                 "category": "Consultoría & Branding",
                 "sector": "Psicología Organizacional & Estrategia",
                 "image": "/images/gonzalobos-web.webp",
-                "description": "Diseño de ecosistema digital para marca personal de alto nivel. El proyecto sintetiza una trayectoria en <strong>psicología organizacional</strong> con herramientas de gestión de negocios, creando una plataforma que equilibra <strong>humanismo y robustez técnica</strong> para atraer clientes corporativos.",
+                "description": "Ecosistema digital para marca personal ejecutiva que integra trayectoria en <strong>psicología organizacional</strong> y gestión de negocios. Plataforma diseñada para equilibrar <strong>humanismo y robustez técnica</strong>, proyectando autoridad ante clientes corporativos.",
                 "results": [
-                    "Unificación de narrativa estratégica y sistema de estilo visual",
-                    "Arquitectura web optimizada para el posicionamiento de autoridad personal",
-                    "Estructura orientada a la *captación de clientes B2B de alto valor"
+                    "Unificación de narrativa estratégica y sistema visual de marca.",
+                    "Arquitectura web optimizada para posicionamiento de autoridad.",
+                    "Estructura enfocada en la captación de clientes B2B de alto valor."
                 ],
                 "tags": [
                     "React",
@@ -143,19 +144,20 @@
             {
                 "id": "estudio-brkovic",
                 "title": "Estudio Jurídico Brkovic",
-                "category": "Desarrollo Web Corporativo",
+                "category": "Desarrollo Web & Paid Media (SEM)",
                 "sector": "Servicios Legales & Litigación Compleja",
                 "image": "/images/estudiobrkovic-web.webp",
-                "description": "Desarrollo de una <strong>plataforma web institucional premium</strong> para una firma de Abogados con más de 30 años de trayectoria en alta complejidad y derechos humanos. El ecosistema fue diseñado bajo una arquitectura limpia y solemne que organiza múltiples áreas de práctica especializada, balanceando la seriedad institucional con flujos de conversión optimizados.",
+                "description": "Desarrollo de <strong>plataforma web institucional y campañas en Google Ads</strong> para firma legal con más de 30 años de trayectoria. Combina una arquitectura en React sobria y veloz (WPO) con pauta de búsqueda (SEM) segmentada para captar consultas legales calificadas.",
                 "results": [
-                    "Arquitectura modular para la indexación y desglose de áreas complejas (Justicia, DD.HH. y Defensa de Comunidades)",
-                    "Integración estratégica de canales de atención inmediata y asesoría directa vía WhatsApp",
-                    "Optimización avanzada de rendimiento (WPO) mediante precarga de activos críticos para una navegación sin fricciones"
+                    "Captación continua de leads calificados mediante campañas SEM en Google Ads.",
+                    "Tracking de conversiones (llamadas y WhatsApp) para optimizar el CPL.",
+                    "Web modular en React con flujos de contacto directos y alta velocidad."
                 ],
                 "tags": [
+                    "Google Ads",
+                    "SEM",
                     "React",
                     "Tailwind CSS",
-                    "Infraestructura Digital",
                     "Sector Legal"
                 ],
                 "liveUrl": "https://estudiobrkovic.cl/",
@@ -270,82 +272,85 @@
             "startDate": "2026-05-01",
             "duration": "{{years}} años y {{months}} meses",
             "responsibilities": [
-                "Liderar la dirección general de Expansis Pro, enfocada en la optimización operativa y estratégica de negocios.",
-                "Diseñar estrategias digitales y definir la hoja de ruta tecnológica para empresas que buscan escalar su presencia online y mejorar su conversión.",
-                "Proveer consultoría operativa aplicando metodologías de eficiencia y estándares de excelencia en procesos digitales.",
-                "Gestionar proyectos digitales de forma integral, supervisando el desarrollo de plataformas y alineando el diseño con los objetivos comerciales.",
-                "Brindar acompañamiento estratégico y asesoría personalizada en la implementación de herramientas para optimizar la gestión empresarial."
+                "<strong>Dirección General:</strong> Liderazgo estratégico y operativo de Expansis Pro, enfocado en rentabilidad y escala.",
+                "<strong>Paid Media (SEM & Social):</strong> Gestión de Google Ads y Meta Ads para maximizar adquisición y ROAS.",
+                "<strong>Estrategia Digital & CRO:</strong> Diseño de hojas de ruta para escalar la presencia online y conversión."
             ],
-            "detailedTasks": []
+            "detailedTasks": [
+                "<strong>Desarrollo Web:</strong> Dirección de plataformas y landings veloces alineadas con objetivos comerciales.",
+                "<strong>Automatización e IA:</strong> Integración de flujos y WhatsApp API para agilizar la atención de prospectos.",
+                "<strong>Consultoría Operativa:</strong> Optimización de procesos digitales bajo estándares de eficiencia y control.",
+                "<strong>Analítica y Reporting:</strong> Creación de informes en Looker Studio con métricas clave de rendimiento."
+            ]
         },
         "past": [
             {
                 "id": 1,
                 "title": "Ecommerce Merchandising Specialist",
                 "place": "Nestlé Nespresso SA",
-                "duration": "dic. 2021 – abr. 2026 (4 años y 5 meses)",
+                "duration": "dic. 2021 — abr. 2026 (4 años y 5 meses)",
                 "responsibilities": [
-                    "Asegurar la excelencia operativa y la correcta adaptación local de la estrategia global de e-commerce para Nespresso.com, garantizando un flujo de compra sin fricciones.",
-                    "Orquestación y ejecución exitosa de más de 30 campañas comerciales anuales de alta demanda (Cyber Days, Black Friday y HVC).",
-                    "Implementar mejoras de UX/UI en plataformas digitales, optimizando la navegación y funcionalidad para los usuarios."
+                    "Asegurar la excelencia operativa y adaptación local de la estrategia e-commerce en Nespresso.com sin fricciones.",
+                    "Orquestar y ejecutar más de 30 campañas anuales de alta demanda (Cyber Days, Black Friday y HVC).",
+                    "Implementar mejoras de UX/UI en plataformas digitales para optimizar la navegación y conversión."
                 ],
                 "detailedTasks": [
-                    "<strong>Optimización y Debugging del Checkout:</strong> Auditoría del embudo de ventas en Nespresso.cl combinando <strong>GA4</strong> y <strong>Glassbox</strong> para analizar sesiones en vivo, detectar errores técnicos y corregir caídas críticas de conversión.",
-                    "<strong>Validación de Tags y Pixeles:</strong> Uso constante de <strong>Google Tag Assistant</strong> para testear e implementar correctamente las etiquetas de medición e integraciones del sitio web, asegurando la data de comportamiento.",
-                    "<strong>SEO Técnico y Rendimiento Orgánico:</strong> Monitoreo de indexación, salud del sitio y optimización de palabras clave utilizando herramientas avanzadas como <strong>Google Search Console (GSC)</strong> y <strong>BrightEdge</strong>.",
-                    "<strong>Coordinación Ágil de Campañas:</strong> Control y sincronización diaria de requerimientos con equipos de diseño y stock a través de <strong>Jira, Asana y Trello</strong> para cumplir con los plazos de lanzamientos y envíos de email masivo (HVC / Reactivación)."
+                    "<strong>Optimización de Checkout:</strong> Auditoría con GA4 y Glassbox para corregir errores y caídas de conversión.",
+                    "<strong>Validación de Tags:</strong> Implementación y testeo con Google Tag Assistant para asegurar integridad de datos.",
+                    "<strong>SEO Técnico y Orgánico:</strong> Monitoreo de indexación y keywords con Google Search Console y BrightEdge.",
+                    "<strong>Optimización Omnicanal:</strong> Estandarización de Boutique Pickup en 100% de tiendas, elevando su adopción.",
+                    "<strong>Coordinación Ágil:</strong> Sincronización diaria con diseño y stock vía Jira y Asana para envíos y lanzamientos."
                 ]
             },
             {
                 "id": 2,
                 "title": "Gestor de Desarrollo Formativo",
                 "place": "Todo Mejora",
-                "duration": "mar. 2021 – dic. 2021 (10 meses)",
+                "duration": "mar. 2021 — dic. 2021 (10 meses)",
                 "responsibilities": [
-                    "Coordinación de capacitaciones en el área de la salud y educación.",
-                    "Gestión de ingresos y egresos.",
-                    "Coordinación de pagos con instituciones.",
-                    "Gestión de convocatorias mediante campañas de email marketing con Mailchimp."
+                    "Coordinación de capacitaciones en el área de salud y educación.",
+                    "Gestión operativa de ingresos, egresos y pagos con instituciones.",
+                    "Gestión de convocatorias mediante email marketing con Mailchimp."
                 ],
                 "detailedTasks": [
-                    "Para mitigar la fricción en la coordinación remota de capacitaciones, centralicé la comunicación interdepartamental implementando canales de seguimiento en <strong>Slack</strong>, aumentando la velocidad de respuesta del equipo.",
-                    "Con el objetivo de maximizar la asistencia a convocatorias institucionales, estructuré bases de datos segmentadas y ejecuté campañas masivas de email marketing a través de <strong>Mailchimp</strong>, supervisando métricas de apertura (Open Rate).",
-                    "Administré el control operativo de flujos financieros, coordinando de manera directa los estados de pago con entidades de salud y educación para asegurar la continuidad de los programas."
+                    "Centralicé la comunicación remota entre áreas con canales en Slack, acelerando los tiempos de respuesta.",
+                    "Segmenté bases de datos y ejecuté campañas de email marketing en Mailchimp, optimizando la tasa de apertura.",
+                    "Administré flujos financieros y estados de pago con instituciones de salud y educación para asegurar continuidad."
                 ]
             },
             {
                 "id": 3,
                 "title": "Desarrollador Front-End",
                 "place": "Simple y Creativo",
-                "duration": "mar. 2020 – feb. 2021 (1 año)",
+                "duration": "mar. 2020 — feb. 2021 (1 año)",
                 "responsibilities": [
-                    "Desarrollo y optimización de sitios web y landing pages responsivas orientadas a la conversión.",
-                    "Traducción de requerimientos comerciales en estructuras de información, wireframes y prototipos visuales."
+                    "Desarrollo de sitios web y landing pages responsivas enfocadas en conversión.",
+                    "Traducción de requerimientos comerciales en wireframes y prototipos visuales."
                 ],
                 "detailedTasks": [
-                    "<strong>Ecosistema WordPress y Builders:</strong> Construcción, personalización y mantenimiento de sitios autogestionables utilizando maquetadores avanzados como <strong>Divi</strong> y <strong>Elementor</strong>.",
-                    "<strong>Diseño de Interfaces (UI):</strong> Creación de mockups de alta fidelidad y flujos de usuario (user flows) para asegurar la usabilidad y consistencia visual antes de la maquetación técnica.",
-                    "<strong>Levantamiento de Requerimientos:</strong> Reuniones directas con clientes finales para la definición de alcances de proyecto, mapas de sitio (sitemaps) y control de plazos de entrega."
+                    "<strong>WordPress y Builders:</strong> Desarrollo y mantenimiento de sitios autogestionables con Divi y Elementor.",
+                    "<strong>Diseño de Interfaces (UI):</strong> Creación de mockups y user flows para asegurar usabilidad web.",
+                    "<strong>Levantamiento Técnico:</strong> Definición de alcances, sitemaps y plazos en reuniones directas con clientes."
                 ]
             },
             {
                 "id": 4,
                 "title": "Técnico en Fotografía",
                 "place": "Estudio FE",
-                "duration": "oct. 2019 – dic. 2019 (3 meses)",
+                "duration": "oct. 2019 — dic. 2019 (3 meses)",
                 "responsibilities": [
-                    "Asistencia en producción digital (foto y audiovisual) para grandes marcas.",
-                    "Coordinación de equipos y casting para proyectos."
+                    "Asistencia en producción digital fotográfica y audiovisual para grandes marcas.",
+                    "Coordinación operativa de equipos técnicos y casting para proyectos comerciales."
                 ]
             },
             {
                 "id": 5,
                 "title": "Gestión de Productos de Marketing",
                 "place": "Grupo Copesa",
-                "duration": "jun. 2015 – dic. 2015 (7 meses)",
+                "duration": "jun. 2015 — dic. 2015 (7 meses)",
                 "responsibilities": [
                     "Gestión de campañas de suscripción para el diario La Tercera.",
-                    "Coordinación de equipos de diseño y diagramación para material gráfico.",
+                    "Coordinación de equipos de diseño y diagramación de material gráfico.",
                     "Seguimiento de presupuesto y gestión de contratos con proveedores."
                 ]
             }
@@ -370,7 +375,7 @@
                 ]
             },
             {
-                "title": "Ingeniería Comercial, Mención en Administración de Empresas",
+                "title": "Ingeniería Comercial, Mención en Administración",
                 "place": "Universidad Adolfo Ibáñez",
                 "duration": "2011 - 2015",
                 "location": "Santiago, Chile",
@@ -419,102 +424,106 @@
     "skills": {
         "title": "Caja de Herramientas",
         "subtitle": "Especialidades, Tecnologías y Acreditaciones",
-        "viewAcccreditation": "Ver Acreditación",
+        "viewAccreditation": "Ver Acreditación",
         "accreditationsTitle": "Acreditaciones Destacadas",
         "categories": [
             {
-                "name": "Estrategia & Negocio",
-                "subtitle": "Mi visión para impactar en resultados.",
+                "name": "Adquisición & E-commerce",
+                "subtitle": "Cómo atraigo tráfico calificado y escalo ventas.",
                 "groups": [
                     {
-                        "title": "E-commerce & Growth",
+                        "title": "Paid Media & Demanda (SEM / SEO)",
                         "tools": [
-                            "Roadmap E-commerce",
-                            "Gestión P&L",
-                            "CRO & Funnels",
-                            "A/B Testing",
-                            "Cyber Day / Black Friday"
-                        ]
-                    },
-                    {
-                        "title": "Marketing & Automatización",
-                        "tools": [
-                            "SEO & SEM",
-                            "Estrategia CRM",
-                            "Automatización IA",
-                            "Agentes SDR",
-                            "Human-in-the-Loop"
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "Habilidades Técnicas",
-                "subtitle": "Lenguajes para construir y prototipar.",
-                "groups": [
-                    {
-                        "title": "Frontend & Frameworks",
-                        "tools": [
-                            "React.js",
-                            "JavaScript (ES6+)",
-                            "Tailwind CSS",
-                            "HTML5 & CSS3"
-                        ]
-                    },
-                    {
-                        "title": "Backend, IA & APIs",
-                        "tools": [
-                            "Node.js & Express",
-                            "Function Calling IA",
-                            "APIs & Webhooks",
-                            "Ciberseguridad SHA-256",
-                            "SQL"
-                        ]
-                    },
-                    {
-                        "title": "Infraestructura & CI/CD",
-                        "tools": [
-                            "Firebase",
-                            "Git & GitHub",
-                            "GitHub Actions"
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "Herramientas & Plataformas",
-                "subtitle": "El stack de software que uso a diario.",
-                "groups": [
-                    {
-                        "title": "Analytics & Marketing Digital",
-                        "tools": [
-                            "Google Analytics 4",
                             "Google Ads",
-                            "Looker Studio",
-                            "Search Console",
+                            "Meta Ads",
+                            "SEO & SEM",
                             "Keyword Planner",
-                            "Optimizely",
+                            "Search Console",
                             "BrightEdge"
                         ]
                     },
                     {
-                        "title": "Cloud, APIs & DevOps",
+                        "title": "Operación E-commerce & Retención",
                         "tools": [
-                            "Hetzner VPS",
-                            "Chatwoot",
-                            "Meta Cloud API (WhatsApp)",
-                            "Cal.com API",
-                            "Coolify"
+                            "Roadmap E-commerce",
+                            "Gestión P&L",
+                            "Cyber Day / Black Friday",
+                            "Estrategia CRM",
+                            "Mailchimp"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Analítica, CRO & Diseño UI",
+                "subtitle": "Cómo mido el retorno y optimizo la experiencia.",
+                "groups": [
+                    {
+                        "title": "Data & Atribución",
+                        "tools": [
+                            "Google Analytics 4",
+                            "Google Tag Manager",
+                            "Looker Studio",
+                            "SQL"
                         ]
                     },
                     {
-                        "title": "Diseño",
+                        "title": "Conversión & Experimentación",
                         "tools": [
+                            "CRO & Funnels",
+                            "A/B Testing",
+                            "Optimizely"
+                        ]
+                    },
+                    {
+                        "title": "Diseño & Activos Visuales",
+                        "tools": [
+                            "Figma",
+                            "Canva",
                             "Photoshop",
                             "Illustrator",
                             "Lightroom",
-                            "Capture One",
-                            "Mailchimp"
+                            "Capture One"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Desarrollo Web & Automatización",
+                "subtitle": "Cómo construyo plataformas y acelero leads.",
+                "groups": [
+                    {
+                        "title": "Desarrollo Full-Stack",
+                        "tools": [
+                            "React.js",
+                            "JavaScript (ES6+)",
+                            "Tailwind CSS",
+                            "HTML5 & CSS3",
+                            "Node.js & Express"
+                        ]
+                    },
+                    {
+                        "title": "Automatización IA & Mensajería",
+                        "tools": [
+                            "Automatización IA",
+                            "Function Calling IA",
+                            "Agentes SDR",
+                            "Human-in-the-Loop",
+                            "Meta Cloud API (WhatsApp)",
+                            "Chatwoot",
+                            "Cal.com API"
+                        ]
+                    },
+                    {
+                        "title": "Infraestructura & Seguridad",
+                        "tools": [
+                            "APIs & Webhooks",
+                            "Ciberseguridad SHA-256",
+                            "Hetzner VPS",
+                            "Coolify",
+                            "Firebase",
+                            "Git & GitHub",
+                            "GitHub Actions"
                         ]
                     }
                 ]
@@ -525,6 +534,15 @@
             "viewButton": "Ver Acreditación",
             "items": [
                 {
+                    "title": "Acreditación en Campañas de Búsqueda de Google Ads",
+                    "issuer": "Google Skillshop",
+                    "icon": "google-ads",
+                    "tags": [
+                        "Anuncios de Búsqueda"
+                    ],
+                    "url": "https://skillshop.credential.net/2e362451-37c2-4631-b076-d02d95f57ebb"
+                },
+                {
                     "title": "Certificación Google Analytics 4",
                     "issuer": "Google / Skillshop",
                     "icon": "google-analytics",
@@ -534,7 +552,25 @@
                     "url": "https://skillshop.credential.net/4b7861b8-16ec-4f85-aa58-ef6e790529ad#acc.1fzqx6OW"
                 },
                 {
-                    "title": "Certificado de Inglés EF SET",
+                    "title": "Foundations: Data, Data, Everywhere",
+                    "issuer": "Google / Coursera",
+                    "tags": [
+                        "Análisis de Datos",
+                        "Data Analytics"
+                    ],
+                    "url": "https://coursera.org/share/aa446668a232d1632d34dbe99c71945c"
+                },
+                {
+                    "title": "Ask Questions to Make Data-Driven Decisions",
+                    "issuer": "Google / Coursera",
+                    "tags": [
+                        "Toma de Decisiones",
+                        "KPIs & Métricas"
+                    ],
+                    "url": "https://coursera.org/share/30a729aa906721a1cad1f218a1e74da8"
+                },
+                {
+                    "title": "Certificado de Inglés Avanzado (C1)",
                     "issuer": "EF SET",
                     "icon": "ef-set",
                     "tags": [
@@ -542,15 +578,6 @@
                         "Idiomas"
                     ],
                     "url": "https://cert.efset.org/en/q1tvRk"
-                },
-                {
-                    "title": "Acreditación en Campañas de Búsqueda de Google Ads",
-                    "issuer": "Google Skillshop",
-                    "icon": "google-ads",
-                    "tags": [
-                        "Anuncios de Búsqueda"
-                    ],
-                    "url": "https://skillshop.credential.net/2e362451-37c2-4631-b076-d02d95f57ebb"
                 }
             ]
         }

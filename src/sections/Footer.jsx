@@ -32,7 +32,7 @@ function Footer() {
 			transition={{ duration: 0.4, ease: 'easeOut' }}>
 			{' '}
 			{/*[cite: 23] */}
-			<div className='container mx-auto px-6 max-w-5xl flex flex-col items-start space-y-8 text-left'>
+			<div className='container mx-auto px-2 max-w-6xl flex flex-col items-start space-y-8 text-left'>
 				{' '}
 				{/*[cite: 23] */}
 				{/* 1. CONTENEDOR DE BOTONES: Bloques verticales en mobile (flex-col items-stretch) y fila en desktop (sm:flex-row) */}

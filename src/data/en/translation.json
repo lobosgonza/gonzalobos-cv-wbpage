@@ -10,20 +10,20 @@
     },
     "hero": {
         "name": "Gonzalo Lobos",
-        "title": "Business Strategy, Web Development & Applied Artificial Intelligence.",
-        "subtitle": "Bridging business administration with modern frontend architectures and autonomous AI agents to maximize business conversion.",
+        "title": "E-commerce, Paid Media (SEM & Meta) & Web Development",
+        "subtitle": "I build web platforms and manage acquisition campaigns on Google Ads and Meta. I connect qualified traffic with high-converting experiences, integrating automation and AI workflows to accelerate lead response.",
         "primaryButton": "View Recent Work",
         "secondaryButton": "Contact"
     },
     "about": {
         "title": "About Me",
         "imageAlt": "Portrait of Gonzalo Lobos, E-commerce and Web Development Specialist",
-        "introduction": "Specialist in <strong>digital strategy, e-commerce, and web development</strong>, focused on maximizing conversion and optimizing user experience (UX/UI). Proficient in frontend engineering with <strong>React & Tailwind CSS</strong>, advanced analytics via <strong>GA4 & Technical SEO</strong>, and commercial automation through <strong>Artificial Intelligence</strong>. Experienced in bridging strategy and technical execution across cross-functional teams. Based in Chile with immediate availability for relocation to Mexico.",
+        "introduction": "I am a <strong>Business Engineer specializing in E-commerce, Paid Media, and Frontend Development</strong>.<br>I bridge financial vision and return on investment with hands-on technical execution: I plan and optimize acquisition campaigns across Google Ads and Meta Ads directed at ultra-fast landing pages and online stores engineered for frictionless checkout conversion.<br>I bring over 4 years of corporate experience at Nespresso leading high-demand commercial operations (Cyber Days and Black Friday), conversion audits with GA4, and technical SEO.<br>Today, as Founder of Expansis Pro, I also integrate applied AI workflows and WhatsApp API to respond to, qualify, and schedule incoming prospects in seconds, preventing paid leads from going cold.",
         "skills": "",
-        "callToAction": "I am looking to join innovative teams focused on digital growth. If you are seeking a technical profile with a business mindset and AI expertise, let's connect."
+        "callToAction": "I am looking to work with innovative teams focused on digital growth. If you are seeking a technical profile with a business mindset and AI expertise, let's connect."
     },
     "projects": {
-        "title": "Recent Projects",
+        "title": "Projects & Success Cases",
         "liveButton": "View Project",
         "repoButton": "View Code",
         "headings": {
@@ -38,12 +38,11 @@
                 "category": "AI Engineering & DevOps",
                 "sector": "Commercial Automation & Cybersecurity",
                 "image": "/images/expansis-oscar-web.webp",
-                "description": "End-to-end design, development, and deployment of an <strong>intelligent conversational assistant (SDR)</strong> and centralized API architecture. The system securely interconnects the Official WhatsApp API (Meta), Chatwoot, and the Cal.com v2 API using <strong>Function Calling</strong> with Gemini 2.5 Flash. The entire ecosystem is containerized and independently hosted on a <strong>Hetzner</strong> VPS managed via <strong>Coolify</strong>, ensuring high availability and low latency.",
+                "description": "Design and deployment of an <strong>AI sales assistant (SDR)</strong> and centralized API. Connects WhatsApp Cloud API, Chatwoot, and Cal.com via <strong>Function Calling</strong> (Gemini 2.5 Flash) on a Hetzner VPS with Coolify, automating 24/7 lead qualification and booking.",
                 "results": [
-                    "Advanced Cryptographic Security: Implementation of SHA-256 signature validation on Webhooks to mitigate fraudulent requests.",
-                    "Single Source of Truth (SSoT): Dual architecture that feeds the WhatsApp bot and the indexable official website frontend in real time (SEO with Schema.org).",
-                    "Automated Governance (Human-in-the-Loop): Dual safety net featuring an analog handbrake ('human intervention') and an intelligent string-truncation system to prevent exceptions in Meta's API.",
-                    "Multi-Stage Consultative Logic: SDR algorithm prioritizing the lead's technical diagnosis and active listening before enabling scheduling features."
+                    "SHA-256 cryptographic signature validation on Webhooks against fraudulent requests.",
+                    "SSoT architecture syncing the WhatsApp bot and SEO website in real time.",
+                    "Consultative SDR flow with Human-in-the-Loop control and direct scheduling."
                 ],
                 "tags": [
                     "Node.js",
@@ -62,11 +61,11 @@
                 "category": "Branding & Web Development",
                 "sector": "International Logistics & Courier",
                 "image": "/images/2VExpress-web.webp",
-                "description": "Comprehensive development of a <strong>corporate identity and digital ecosystem</strong> for a company specializing in surplus removal. The project ranged from strategic brand definition (branding) to the technical enablement of professional communication channels and a high-authority web platform, delivering operational consistency across every touchpoint.",
+                "description": "End-to-end development of <strong>corporate identity and web platform</strong> for a logistics and surplus removal company. Covered brand strategy (branding), professional communication channels, and a fast website built to project commercial authority.",
                 "results": [
-                    "Creation of a complete visual identity (Logo and Style Guide)",
-                    "Corporate digitalization: Configuration of corporate emails, signatures, and communication tools",
-                    "Optimized web development to project industry solidity in a low-turnover industrial sector"
+                    "Complete visual identity: logo, color palette, and corporate style guide.",
+                    "Operational digitalization with corporate emails, signatures, and contact channels.",
+                    "React web platform optimized to project B2B industry solidity."
                 ],
                 "tags": [
                     "React",
@@ -78,16 +77,39 @@
                 "repoUrl": null
             },
             {
+                "id": "expansis-pro",
+                "title": "Expansis Pro",
+                "category": "Web Development, Paid Media & Automation",
+                "sector": "Digital Consulting & Performance Marketing",
+                "image": "/images/proyecto-expansis-pro.webp",
+                "description": "Comprehensive digital ecosystem for <strong>Expansis Pro</strong>. Unifies a conversion-focused <strong>React</strong> web platform (CRO), paid acquisition campaigns on <strong>Google Ads and Meta Ads</strong>, and <strong>AI + WhatsApp API</strong> workflows to filter and respond to leads instantly.",
+                "results": [
+                    "Ultra-fast React website optimized for Core Web Vitals and technical SEO.",
+                    "Google Ads and Meta Ads campaigns with GA4 event conversion tracking.",
+                    "AI assistant with direct scheduling that accelerates inbound lead response."
+                ],
+                "tags": [
+                    "React",
+                    "Google Ads",
+                    "Meta Ads",
+                    "GA4 & Analytics",
+                    "AI Automation",
+                    "CRO"
+                ],
+                "liveUrl": "https://www.expansispro.com/",
+                "repoUrl": null
+            },
+            {
                 "id": "claudia-gallardo",
                 "title": "Claudia Gallardo",
                 "category": "Web Development & Portfolio",
                 "sector": "Art Direction & International Cinema",
                 "image": "/images/ClaudiaGallardo-web.webp",
-                "description": "Portfolio development for an Art Director with an international career. The project consisted of creating a <strong>high-impact digital showcase</strong> to organize a prominent filmography across platforms like Netflix, HBO, and Prime Video. The architecture centered on a cinematographic aesthetic that projects the status of a Pedro Sienna Award winner.",
+                "description": "High-impact web portfolio for an international Art Director and Pedro Sienna Award winner. Designed with a <strong>cinematic, minimalist aesthetic</strong> to showcase her international filmography on Netflix, HBO, and Prime Video with smooth loading.",
                 "results": [
-                    "Information architecture designed to highlight world-class productions",
-                    "Minimalist and sophisticated interface that gives center stage to the visual work",
-                    "Asset optimization for smooth loading of high-resolution galleries"
+                    "Information architecture tailored to highlight world-class productions.",
+                    "Minimalist interface giving center stage to visual storytelling.",
+                    "Asset optimization for smooth loading of high-resolution galleries."
                 ],
                 "tags": [
                     "React",
@@ -99,37 +121,16 @@
                 "repoUrl": null
             },
             {
-                "id": "lobos-miniexcavadoras",
-                "title": "Lobos Mini Excavators",
-                "category": "Web Development",
-                "sector": "Earthmoving & Construction",
-                "image": "/images/lobosMiniexcavadoras-web.webp",
-                "description": "Development of a high-performance digital infrastructure for the industrial sector. We transformed the online presence into a local <strong>lead generation machine</strong>, prioritizing loading speed on-site (WPO) and a technical architecture that projects the brand's operational solidity.",
-                "results": [
-                    "Strategic conversion optimization for machinery rental",
-                    "Ultra-fast interface (WPO) designed for optimal performance in low-signal field conditions",
-                    "Authority positioning in the Aconcagua Valley market"
-                ],
-                "tags": [
-                    "React",
-                    "Tailwind CSS",
-                    "Local SEO",
-                    "Industrial Services"
-                ],
-                "liveUrl": "https://lobosminiexcavadoras.cl/",
-                "repoUrl": null
-            },
-            {
                 "id": "gonzalo-lobos",
                 "title": "Gonzalo Lobos",
                 "category": "Consulting & Branding",
                 "sector": "Organizational Psychology & Strategy",
                 "image": "/images/gonzalobos-web.webp",
-                "description": "Digital ecosystem design for a high-level personal brand. The project synthesizes a career in <strong>organizational psychology</strong> with business management tools, creating a platform that balances <strong>humanism and technical robustness</strong> to attract corporate clients.",
+                "description": "Executive personal brand digital ecosystem integrating a background in <strong>organizational psychology</strong> with business management. Built to balance <strong>humanism and technical robustness</strong>, projecting authority to corporate clients.",
                 "results": [
-                    "Unification of strategic narrative and visual style system",
-                    "Web architecture optimized for personal authority positioning",
-                    "Structure oriented toward capturing high-value B2B clients"
+                    "Unification of strategic narrative and visual brand system.",
+                    "Web architecture optimized for personal authority positioning.",
+                    "Structure geared toward capturing high-value B2B clients."
                 ],
                 "tags": [
                     "React",
@@ -143,19 +144,20 @@
             {
                 "id": "estudio-brkovic",
                 "title": "Brkovic Law Firm",
-                "category": "Corporate Web Development",
+                "category": "Web Development & Paid Media (SEM)",
                 "sector": "Legal Services & Complex Litigation",
                 "image": "/images/estudiobrkovic-web.webp",
-                "description": "Development of a <strong>premium institutional web platform</strong> for a law firm with over 30 years of experience in high complexity and human rights. The ecosystem was designed under a clean and solemn architecture that organizes multiple specialized practice areas, balancing institutional seriousness with optimized conversion flows.",
+                "description": "Development of an <strong>institutional web platform and Google Ads campaigns</strong> for a law firm with over 30 years of experience. Combines a fast, clean React architecture (WPO) with segmented Paid Search (SEM) to capture qualified legal inquiries.",
                 "results": [
-                    "Modular architecture for indexing and breaking down complex areas (Justice, Human Rights, and Community Defense)",
-                    "Strategic integration of immediate response channels and direct advisory via WhatsApp",
-                    "Advanced performance optimization (WPO) through preloading of critical assets for friction-free navigation"
+                    "Continuous acquisition of qualified leads via Google Ads SEM campaigns.",
+                    "Conversion tracking (calls and WhatsApp) to optimize Cost Per Lead (CPL).",
+                    "Modular React website with direct contact flows and high loading speed."
                 ],
                 "tags": [
+                    "Google Ads",
+                    "SEM",
                     "React",
                     "Tailwind CSS",
-                    "Digital Infrastructure",
                     "Legal Sector"
                 ],
                 "liveUrl": "https://estudiobrkovic.cl/",
@@ -183,7 +185,7 @@
                     "App"
                 ],
                 "problem": "Need to execute multiple simultaneous campaigns across web and app platforms to boost sales.",
-                "objective": "Orchestrate over 30 annual campaigns, ensuring a consistent user experience.",
+                "objective": "Orchestrate over 30 annual campaigns ensuring a consistent user experience.",
                 "actions": [
                     "Planning and execution of the annual commercial campaign calendar.",
                     "Cross-functional coordination with design, development, and marketing teams.",
@@ -270,79 +272,82 @@
             "startDate": "2026-05-01",
             "duration": "{{years}} years and {{months}} months",
             "responsibilities": [
-                "Leadership and overall direction of Expansis Pro, a digital solutions firm focused on strategic and operational business optimization.",
-                "Digital Strategy Design: Defining technological roadmaps for businesses looking to scale their online presence and maximize conversions.",
-                "Operational Consulting: Applying efficiency methodologies and excellence standards to digital processes, leveraging high-level operational experience.",
-                "Digital Project Management: End-to-end supervision of platform development, ensuring that architecture and layout align perfectly with client business goals.",
-                "Strategic Advisory: Providing personalized guidance on implementing digital tools to optimize management and drive business growth."
+                "<strong>General Management:</strong> Strategic and operational leadership of Expansis Pro focused on profitability.",
+                "<strong>Paid Media (SEM & Social):</strong> Managing Google Ads and Meta Ads campaigns to maximize acquisition & ROAS.",
+                "<strong>Digital Strategy & CRO:</strong> Defining roadmaps to scale online presence and conversion."
             ],
-            "detailedTasks": []
+            "detailedTasks": [
+                "<strong>Web Development:</strong> End-to-end supervision of fast platforms aligned with business goals.",
+                "<strong>Automation & Applied AI:</strong> Deploying AI workflows and WhatsApp API to qualify inbound leads instantly.",
+                "<strong>Operational Consulting:</strong> Streamlining digital processes under efficiency and control standards.",
+                "<strong>Analytics & Reporting:</strong> Building Looker Studio dashboards with key KPIs for data-driven decisions."
+            ]
         },
         "past": [
             {
                 "id": 1,
                 "title": "Ecommerce Merchandising Specialist",
                 "place": "Nestlé Nespresso SA",
-                "duration": "Dec 2021 – Apr 2026 (4 years and 5 months)",
+                "duration": "Dec 2021 — Apr 2026 (4 years and 5 months)",
                 "responsibilities": [
-                    "Ensure operational excellence and correct local adaptation of the global e-commerce strategy for Nespresso.com, guaranteeing a frictionless checkout flow.",
-                    "Successful orchestration and execution of over 30 high-demand annual commercial campaigns (Cyber Days, Black Friday, and HVC).",
-                    "Implement UX/UI improvements on digital platforms, optimizing navigation and functionality for users."
+                    "Ensure operational excellence and local adaptation of the e-commerce strategy on Nespresso.com smoothly.",
+                    "Orchestrate and execute over 30 high-demand annual campaigns (Cyber Days, Black Friday, and HVC).",
+                    "Implement UX/UI improvements across digital platforms to optimize user navigation and conversion."
                 ],
                 "detailedTasks": [
-                    "<strong>Checkout Optimization & Debugging:</strong> Auditing the sales funnel on Nespresso.cl combining <strong>GA4</strong> and <strong>Glassbox</strong> to analyze live sessions, detect technical glitches, and fix critical conversion drops.",
-                    "<strong>Tag & Pixel Validation:</strong> Continuous use of <strong>Google Tag Assistant</strong> to test and correctly implement measurement tags and website integrations, ensuring behavioral data integrity.",
-                    "<strong>Technical SEO & Organic Performance:</strong> Monitoring indexing, site health, and keyword optimization using advanced tools such as <strong>Google Search Console (GSC)</strong> and <strong>BrightEdge</strong>.",
-                    "<strong>Agile Campaign Coordination:</strong> Daily control and synchronization of requirements with design and inventory teams through <strong>Jira, Asana, and Trello</strong> to meet launch deadlines and high-volume email deployments (HVC / Reactivation)."
+                    "<strong>Checkout Optimization:</strong> Funnel audits with GA4 and Glassbox to fix glitches and conversion drops.",
+                    "<strong>Tag Validation:</strong> Implementing and testing tags with Google Tag Assistant to ensure data integrity.",
+                    "<strong>Technical & Organic SEO:</strong> Monitoring indexing and keywords with Google Search Console and BrightEdge.",
+                    "<strong>Omnichannel Optimization:</strong> Standardizing Boutique Pickup across 100% of stores, boosting adoption.",
+                    "<strong>Agile Coordination:</strong> Daily sync with design and stock teams via Jira and Asana for launches."
                 ]
             },
             {
                 "id": 2,
                 "title": "Training Development Manager",
                 "place": "Todo Mejora",
-                "duration": "Mar 2021 – Dec 2021 (10 months)",
+                "duration": "Mar 2021 — Dec 2021 (10 months)",
                 "responsibilities": [
                     "Coordination of professional training programs in the health and education sectors.",
-                    "Budgetary oversight: Management of departmental income and expenses.",
-                    "Coordination of accounts receivable and financial flows with institutional partners.",
-                    "Managed event invitations and outreach through targeted email marketing campaigns using Mailchimp."
+                    "Operational management of income, expenses, and institutional payments.",
+                    "Managing event outreach through targeted email marketing campaigns via Mailchimp."
                 ],
                 "detailedTasks": [
-                    "To mitigate friction in remote training coordination, I centralized interdepartmental communication by implementing tracking channels in <strong>Slack</strong>, increasing the team's response speed.",
-                    "With the aim of maximizing attendance at institutional call-outs, I structured segmented databases and executed massive email marketing campaigns via <strong>Mailchimp</strong>, monitoring performance metrics like Open Rate.",
-                    "Managed the operational control of financial flows, directly coordinating payment statuses with health and education entities to ensure program continuity."
+                    "Centralized remote interdepartmental communication via Slack channels, accelerating team response times.",
+                    "Segmented databases and executed Mailchimp email marketing campaigns, optimizing open rates.",
+                    "Managed financial flows and payment statuses with health and education entities to ensure continuity."
                 ]
             },
             {
                 "id": 3,
                 "title": "Front-End Developer",
                 "place": "Simple y Creativo",
-                "duration": "Mar 2020 – Feb 2021 (1 year)",
+                "duration": "Mar 2020 — Feb 2021 (1 year)",
                 "responsibilities": [
-                    "Development and optimization of responsive websites and landing pages oriented toward conversion.",
-                    "Translation of business requirements into detailed information architectures, wireframes, and high-fidelity visual prototypes."
+                    "Development of responsive websites and landing pages focused on conversion.",
+                    "Translating business requirements into wireframes and visual prototypes."
                 ],
                 "detailedTasks": [
-                    "<strong>WordPress Ecosystem & Builders:</strong> Construction, customization, and maintenance of self-managed sites using advanced builders like <strong>Divi</strong> and <strong>Elementor</strong>.",
-                    "<strong>User Interface (UI) Design:</strong> Creation of high-fidelity mockups and user flows to ensure usability and visual consistency prior to technical layout.",
-                    "<strong>Requirements Gathering:</strong> Direct meetings with end clients to define project scopes, sitemaps, and delivery deadlines."
+                    "<strong>WordPress & Builders:</strong> Building and maintaining self-managed websites with Divi and Elementor.",
+                    "<strong>UI Design:</strong> Creating mockups and user flows to ensure web usability prior to development.",
+                    "<strong>Technical Scoping:</strong> Defining project scopes, sitemaps, and timelines directly with clients."
                 ]
             },
             {
                 "id": 4,
                 "title": "Photography Technician",
                 "place": "Estudio FE",
-                "duration": "Oct 2019 – Dec 2019 (3 months)",
+                "duration": "Oct 2019 — Dec 2019 (3 months)",
                 "responsibilities": [
-                    "Assisted in digital production (photo and audiovisual) for major commercial brands.",
-                    "Coordinated creative teams and casting logistics for large-scale projects."
+                    "Assisted in digital photo and audiovisual production for major commercial brands.",
+                    "Operational coordination of technical teams and casting for commercial projects."
                 ]
             },
             {
                 "id": 5,
                 "title": "Marketing Product Management",
                 "place": "Grupo Copesa",
-                "duration": "Jun 2015 – Dec 2015 (7 months)",
+                "duration": "Jun 2015 — Dec 2015 (7 months)",
                 "responsibilities": [
                     "Managed subscription campaigns for La Tercera newspaper.",
                     "Coordinated design and layout teams for graphic materials.",
@@ -364,13 +369,13 @@
                     "Specialization in leadership models, organizational design, team dynamics, and strategic human resources management."
                 ],
                 "detailedTasks": [
-                    "<strong>Talent Management & Organizational Development (OD):</strong> Deep understanding of corporate culture, workplace climate, and organizational diagnostics, applied to the design of retention strategies, employee engagement, and aligning human capital with business goals.",
-                    "<strong>Change Management & Cultural Transformation:</strong> Design and intervention in internal change management processes, facilitating organizational transitions toward new workflows and the adoption of agile, innovative cultures.",
-                    "<strong>Leadership & High-Performance Teams:</strong> Application of group dynamics and organizational psychology tools to enhance leadership skills, optimize collaborative workflows, and resolve conflicts across multidisciplinary structures."
+                    "<strong>Talent Management & Organizational Development (OD):</strong> Deep understanding of corporate culture, workplace climate, and internal diagnostics applied to retention strategies, engagement, and aligning human capital with business goals.",
+                    "<strong>Change Management & Cultural Transformation:</strong> Design and intervention in change management processes, facilitating structural transitions toward new workflows and agile corporate cultures.",
+                    "<strong>Leadership & High-Performance Teams:</strong> Application of group dynamics and organizational psychology tools to enhance leadership skills, optimize cross-functional collaboration, and resolve conflicts."
                 ]
             },
             {
-                "title": "Business Administration, Major in Business Management",
+                "title": "Business Engineering, Major in Business Administration",
                 "place": "Universidad Adolfo Ibáñez",
                 "duration": "2011 - 2015",
                 "location": "Santiago, Chile",
@@ -391,11 +396,11 @@
                 "location": "Santiago, Chile",
                 "responsibilities": [
                     "Technical specialization in corporate image design, art direction, advanced lighting schemes, and visual advertising composition.",
-                    "Management of digital production projects and aesthetic quality control for major commercial brands."
+                    "Direction of digital production projects and aesthetic quality control for major commercial brands."
                 ],
                 "detailedTasks": [
                     "<strong>Post-Production & Digital Workflow:</strong> Advanced digital image processing, color correction, and photocomposition using professional software such as <strong>Photoshop, Lightroom, and Capture One</strong>.",
-                    "<strong>Art Direction & UI Aesthetics:</strong> Practical application of visual balance, spatial hierarchy, contrast, and color theory concepts, with direct transfer to web interface design.",
+                    "<strong>Art Direction & UI Aesthetics:</strong> Practical application of visual balance, spatial hierarchy, contrast, and color theory concepts with direct transfer to web interface design.",
                     "<strong>Digital Asset Optimization:</strong> Format management, technical image compression, and preparation of high-fidelity digital assets optimized for smooth web loading performance (WPO)."
                 ]
             },
@@ -411,7 +416,7 @@
                     "<strong>Frontend Development with React:</strong> Building dynamic user interfaces, designing reusable components, and managing complex states using React Hooks.",
                     "<strong>Backend Architecture & APIs:</strong> Implementation of robust servers and microservices with <strong>Node.js</strong> and <strong>Express.js</strong>, integrating routing logic and API consumption under REST standards.",
                     "<strong>Advanced Layout & Styling:</strong> Mastery of semantic markup and modern structuring using HTML5, CSS3, Flexbox, and Grid to ensure a seamless multi-device experience.",
-                    "<strong>Version Control & Logic:</strong> Professional management of repositories and version control using Git and GitHub, along with deepening logic skills in modern JavaScript (ES6+)."
+                    "<strong>Version Control & Logic:</strong> Professional management of repositories and version control using Git and GitHub, alongside deepening logic skills in modern JavaScript (ES6+)."
                 ]
             }
         ]
@@ -423,98 +428,102 @@
         "accreditationsTitle": "Featured Credentials",
         "categories": [
             {
-                "name": "Strategy & Business",
-                "subtitle": "My vision for driving measurable results.",
+                "name": "Acquisition & E-commerce",
+                "subtitle": "How I drive qualified traffic and scale revenue.",
                 "groups": [
                     {
-                        "title": "E-commerce & Growth",
+                        "title": "Paid Media & Demand (SEM / SEO)",
                         "tools": [
-                            "E-commerce Roadmap",
-                            "P&L Management",
-                            "CRO & Funnels",
-                            "A/B Testing",
-                            "High-Impact Campaigns"
-                        ]
-                    },
-                    {
-                        "title": "Marketing & Automation",
-                        "tools": [
-                            "SEO & SEM",
-                            "CRM Strategy",
-                            "AI Automation",
-                            "SDR Agents",
-                            "Human-in-the-Loop"
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "Technical Skills",
-                "subtitle": "Languages and frameworks to build and prototype.",
-                "groups": [
-                    {
-                        "title": "Frontend & Frameworks",
-                        "tools": [
-                            "React.js",
-                            "JavaScript (ES6+)",
-                            "Tailwind CSS",
-                            "HTML5 & CSS3"
-                        ]
-                    },
-                    {
-                        "title": "Backend, AI & APIs",
-                        "tools": [
-                            "Node.js & Express",
-                            "AI Function Calling",
-                            "APIs & Webhooks",
-                            "SHA-256 Security",
-                            "SQL"
-                        ]
-                    },
-                    {
-                        "title": "Infrastructure & CI/CD",
-                        "tools": [
-                            "Firebase",
-                            "Git & GitHub",
-                            "GitHub Actions"
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "Tools & Platforms",
-                "subtitle": "The software stack I use on a daily basis.",
-                "groups": [
-                    {
-                        "title": "Analytics & Digital Marketing",
-                        "tools": [
-                            "Google Analytics 4",
                             "Google Ads",
-                            "Looker Studio",
-                            "Search Console",
+                            "Meta Ads",
+                            "SEO & SEM",
                             "Keyword Planner",
-                            "Optimizely",
+                            "Search Console",
                             "BrightEdge"
                         ]
                     },
                     {
-                        "title": "Cloud, APIs & DevOps",
+                        "title": "E-commerce Operations & Retention",
                         "tools": [
-                            "Hetzner VPS",
-                            "Chatwoot",
-                            "Meta Cloud API (WhatsApp)",
-                            "Cal.com API",
-                            "Coolify"
+                            "E-commerce Roadmap",
+                            "P&L Management",
+                            "Cyber Day / Black Friday",
+                            "CRM Strategy",
+                            "Mailchimp"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Analytics, CRO & UI Design",
+                "subtitle": "How I measure ROI and optimize user experience.",
+                "groups": [
+                    {
+                        "title": "Data & Attribution",
+                        "tools": [
+                            "Google Analytics 4",
+                            "Google Tag Manager",
+                            "Looker Studio",
+                            "SQL"
                         ]
                     },
                     {
-                        "title": "Design & Media",
+                        "title": "Conversion & Experimentation",
                         "tools": [
+                            "CRO & Funnels",
+                            "A/B Testing",
+                            "Optimizely"
+                        ]
+                    },
+                    {
+                        "title": "Design & Visual Assets",
+                        "tools": [
+                            "Figma",
+                            "Canva",
                             "Photoshop",
                             "Illustrator",
                             "Lightroom",
-                            "Capture One",
-                            "Mailchimp"
+                            "Capture One"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Web Development & Automation",
+                "subtitle": "How I build platforms and accelerate leads.",
+                "groups": [
+                    {
+                        "title": "Full-Stack Development",
+                        "tools": [
+                            "React.js",
+                            "JavaScript (ES6+)",
+                            "Tailwind CSS",
+                            "HTML5 & CSS3",
+                            "Node.js & Express"
+                        ]
+                    },
+                    {
+                        "title": "AI Automation & Messaging",
+                        "tools": [
+                            "AI Automation",
+                            "AI Function Calling",
+                            "SDR Agents",
+                            "Human-in-the-Loop",
+                            "Meta Cloud API (WhatsApp)",
+                            "Chatwoot",
+                            "Cal.com API"
+                        ]
+                    },
+                    {
+                        "title": "Infrastructure & Security",
+                        "tools": [
+                            "APIs & Webhooks",
+                            "SHA-256 Security",
+                            "Hetzner VPS",
+                            "Coolify",
+                            "Firebase",
+                            "Git & GitHub",
+                            "GitHub Actions"
                         ]
                     }
                 ]
@@ -525,6 +534,15 @@
             "viewButton": "View Certification",
             "items": [
                 {
+                    "title": "Google Ads Search Certification",
+                    "issuer": "Google Skillshop",
+                    "icon": "google-ads",
+                    "tags": [
+                        "Search Ads"
+                    ],
+                    "url": "https://skillshop.credential.net/2e362451-37c2-4631-b076-d02d95f57ebb"
+                },
+                {
                     "title": "Google Analytics 4 Certification",
                     "issuer": "Google / Skillshop",
                     "icon": "google-analytics",
@@ -534,7 +552,25 @@
                     "url": "https://skillshop.credential.net/4b7861b8-16ec-4f85-aa58-ef6e790529ad#acc.1fzqx6OW"
                 },
                 {
-                    "title": "EF SET English Certificate",
+                    "title": "Foundations: Data, Data, Everywhere",
+                    "issuer": "Google / Coursera",
+                    "tags": [
+                        "Data Analysis",
+                        "Data Analytics"
+                    ],
+                    "url": "https://coursera.org/share/aa446668a232d1632d34dbe99c71945c"
+                },
+                {
+                    "title": "Ask Questions to Make Data-Driven Decisions",
+                    "issuer": "Google / Coursera",
+                    "tags": [
+                        "Data-Driven Decisions",
+                        "KPIs & Metrics"
+                    ],
+                    "url": "https://coursera.org/share/30a729aa906721a1cad1f218a1e74da8"
+                },
+                {
+                    "title": "English Advanced Certificate (C1)",
                     "issuer": "EF SET",
                     "icon": "ef-set",
                     "tags": [
@@ -542,15 +578,6 @@
                         "Languages"
                     ],
                     "url": "https://cert.efset.org/en/q1tvRk"
-                },
-                {
-                    "title": "Google Ads Search Certification",
-                    "issuer": "Google Skillshop",
-                    "icon": "google-ads",
-                    "tags": [
-                        "Search Ads"
-                    ],
-                    "url": "https://skillshop.credential.net/2e362451-37c2-4631-b076-d02d95f57ebb"
                 }
             ]
         }
