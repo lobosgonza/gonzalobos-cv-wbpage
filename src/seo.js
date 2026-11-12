@@ -2,21 +2,39 @@ import i18n from './i18n';
 
 export const SITE_URL = 'https://gonzalobos.com';
 export const SITE_NAME = 'Gonzalo Lobos';
-export const OG_IMAGE = `${SITE_URL}/images/gonzalo-lobos-og.jpg`;
+export const SUPPORTED_LANGS = ['es', 'en'];
+export const DEFAULT_LANG = 'es';
+
+// Imagen social 1200x630 (Open Graph / X). Retrato cuadrado para Person.image.
+export const OG_IMAGE = `${SITE_URL}/images/gonzalo-lobos-og-1200x630.jpg`;
+export const OG_IMAGE_WIDTH = '1200';
+export const OG_IMAGE_HEIGHT = '630';
+export const OG_IMAGE_TYPE = 'image/jpeg';
+export const PROFILE_IMAGE = `${SITE_URL}/images/gonzalo-lobos-og.jpg`;
+
 export const PERSON_ID = `${SITE_URL}/#person`;
 export const WEBSITE_ID = `${SITE_URL}/#website`;
+
+// Fecha de última actualización de contenido (actualizar junto con sitemap.xml <lastmod>).
+export const DATE_MODIFIED = '2026-11-12';
+
+const SAME_AS = ['https://www.linkedin.com/in/gonzalo-lobos-ram%C3%ADrez/', 'https://github.com/lobosgonza'];
 
 const KNOWS_ABOUT = [
 	'E-commerce',
 	'Paid Media',
 	'Google Ads',
+	'Search Engine Marketing',
 	'Meta Ads',
-	'Technical SEO',
-	'CRO',
+	'Conversion Rate Optimization',
 	'Google Analytics 4',
 	'Google Tag Manager',
+	'Looker Studio',
+	'Technical SEO',
 	'React',
-	'Web Development',
+	'Tailwind CSS',
+	'Frontend Web Development',
+	'WhatsApp Cloud API',
 	'AI Automation',
 ];
 
@@ -27,12 +45,21 @@ const stripHtml = (value) =>
 		.replace(/\s+/g, ' ')
 		.trim();
 
+const isIndexableUrl = (url) => typeof url === 'string' && /^https?:\/\//.test(url) && !/(api\.whatsapp\.com|wa\.me)/.test(url);
+
+export function normalizeLang(lang) {
+	const base = String(lang || '')
+		.split('-')[0]
+		.toLowerCase();
+	return SUPPORTED_LANGS.includes(base) ? base : DEFAULT_LANG;
+}
+
 export function getHtmlLang(lang) {
-	return lang === 'en' ? 'en-US' : 'es-CL';
+	return normalizeLang(lang) === 'en' ? 'en-US' : 'es-CL';
 }
 
 export function getPageSeo(lang) {
-	const locale = lang === 'en' ? 'en' : 'es';
+	const locale = normalizeLang(lang);
 	const htmlLang = getHtmlLang(locale);
 
 	return {
@@ -50,7 +77,7 @@ export function getPageSeo(lang) {
 }
 
 export function buildSchemaGraph(lang) {
-	const locale = lang === 'en' ? 'en' : 'es';
+	const locale = normalizeLang(lang);
 	const htmlLang = getHtmlLang(locale);
 	const pageUrl = `${SITE_URL}/${locale}`;
 	const jobTitle = i18n.t('seo.jobTitle', { lng: locale });
@@ -66,14 +93,23 @@ export function buildSchemaGraph(lang) {
 				'@type': 'Person',
 				'@id': PERSON_ID,
 				name: SITE_NAME,
+				givenName: 'Gonzalo',
+				familyName: 'Lobos',
 				jobTitle,
+				description: i18n.t('seo.description', { lng: locale }),
 				url: SITE_URL,
-				image: OG_IMAGE,
+				image: {
+					'@type': 'ImageObject',
+					url: PROFILE_IMAGE,
+					caption: i18n.t('about.imageAlt', { lng: locale }),
+				},
 				address: {
 					'@type': 'PostalAddress',
 					addressLocality: 'Santiago',
+					addressRegion: 'Región Metropolitana',
 					addressCountry: 'CL',
 				},
+				knowsLanguage: ['es', 'en'],
 				alumniOf: [
 					{
 						'@type': 'CollegeOrUniversity',
@@ -89,25 +125,27 @@ export function buildSchemaGraph(lang) {
 					name: 'Expansis Pro',
 					url: 'https://www.expansispro.com/',
 				},
-				sameAs: ['https://www.linkedin.com/in/gonzalo-lobos-ramírez/', 'https://github.com/lobosgonza'],
+				sameAs: SAME_AS,
 				knowsAbout: KNOWS_ABOUT,
-				hasCredential: credentialItems.map((item) => ({
-					'@type': 'EducationalOccupationalCredential',
-					name: item.title,
-					credentialCategory: 'certification',
-					url: item.url,
-					recognizedBy: {
-						'@type': 'Organization',
-						name: item.issuer,
-					},
-				})),
+				hasCredential: credentialItems
+					.filter((item) => item && item.title)
+					.map((item) => ({
+						'@type': 'EducationalOccupationalCredential',
+						name: item.title,
+						credentialCategory: 'certification',
+						...(item.url ? { url: item.url } : {}),
+						recognizedBy: {
+							'@type': 'Organization',
+							name: item.issuer,
+						},
+					})),
 			},
 			{
 				'@type': 'WebSite',
 				'@id': WEBSITE_ID,
-				url: pageUrl,
+				url: `${SITE_URL}/`,
 				name: SITE_NAME,
-				inLanguage: htmlLang,
+				inLanguage: ['es-CL', 'en-US'],
 				publisher: { '@id': PERSON_ID },
 				about: { '@id': PERSON_ID },
 			},
@@ -118,9 +156,12 @@ export function buildSchemaGraph(lang) {
 				name: i18n.t('seo.title', { lng: locale }),
 				description: i18n.t('seo.description', { lng: locale }),
 				inLanguage: htmlLang,
+				dateModified: DATE_MODIFIED,
 				isPartOf: { '@id': WEBSITE_ID },
 				mainEntity: { '@id': PERSON_ID },
 				about: { '@id': PERSON_ID },
+				primaryImageOfPage: { '@type': 'ImageObject', url: OG_IMAGE, width: 1200, height: 630 },
+				hasPart: { '@id': `${pageUrl}#projects` },
 			},
 			{
 				'@type': 'ItemList',
@@ -128,21 +169,33 @@ export function buildSchemaGraph(lang) {
 				name: i18n.t('projects.title', { lng: locale }),
 				itemListOrder: 'https://schema.org/ItemListOrderAscending',
 				numberOfItems: projectItems.length,
-				itemListElement: projectItems.map((project, index) => ({
-					'@type': 'ListItem',
-					position: index + 1,
-					item: {
-						'@type': ['CreativeWork', 'WebSite'],
-						name: project.title,
-						description: stripHtml(project.description),
-						genre: project.category,
-						url: project.liveUrl || pageUrl,
-						image: project.image ? `${SITE_URL}${project.image}` : OG_IMAGE,
-					},
-				})),
+				itemListElement: projectItems.map((project, index) => {
+					const anchorUrl = `${pageUrl}#projects`;
+					return {
+						'@type': 'ListItem',
+						position: index + 1,
+						item: {
+							'@type': 'CreativeWork',
+							'@id': `${pageUrl}#project-${project.id || index + 1}`,
+							name: project.title,
+							description: stripHtml(project.description),
+							genre: project.category,
+							inLanguage: htmlLang,
+							creator: { '@id': PERSON_ID },
+							url: isIndexableUrl(project.liveUrl) ? project.liveUrl : anchorUrl,
+							image: project.image ? `${SITE_URL}${project.image}` : OG_IMAGE,
+							...(Array.isArray(project.tags) && project.tags.length ? { keywords: project.tags.join(', ') } : {}),
+						},
+					};
+				}),
 			},
 		],
 	};
+}
+
+// JSON seguro para incrustar en <script> (evita cierre prematuro con "</script>").
+export function serializeSchema(schema) {
+	return JSON.stringify(schema).replace(/</g, '\\u003c');
 }
 
 function upsertMetaByName(name, content) {
@@ -187,6 +240,7 @@ export function applyDocumentSeo(lang) {
 	upsertMetaByName('description', seo.description);
 	upsertMetaByName('keywords', seo.keywords);
 	upsertMetaByName('author', SITE_NAME);
+	upsertMetaByName('robots', 'index, follow, max-image-preview:large, max-snippet:-1');
 	upsertMetaByName('twitter:card', 'summary_large_image');
 	upsertMetaByName('twitter:title', seo.title);
 	upsertMetaByName('twitter:description', seo.description);
@@ -196,9 +250,15 @@ export function applyDocumentSeo(lang) {
 	upsertMetaByProperty('og:title', seo.title);
 	upsertMetaByProperty('og:description', seo.description);
 	upsertMetaByProperty('og:image', seo.image);
+	upsertMetaByProperty('og:image:secure_url', seo.image);
+	upsertMetaByProperty('og:image:type', OG_IMAGE_TYPE);
+	upsertMetaByProperty('og:image:width', OG_IMAGE_WIDTH);
+	upsertMetaByProperty('og:image:height', OG_IMAGE_HEIGHT);
 	upsertMetaByProperty('og:image:alt', seo.imageAlt);
 	upsertMetaByProperty('og:url', seo.canonical);
-	upsertMetaByProperty('og:type', 'website');
+	upsertMetaByProperty('og:type', 'profile');
+	upsertMetaByProperty('profile:first_name', 'Gonzalo');
+	upsertMetaByProperty('profile:last_name', 'Lobos');
 	upsertMetaByProperty('og:site_name', SITE_NAME);
 	upsertMetaByProperty('og:locale', seo.ogLocale);
 	upsertMetaByProperty('og:locale:alternate', seo.ogLocaleAlternate);
@@ -216,6 +276,7 @@ export function getPrerenderHeadElements(lang) {
 		{ type: 'meta', props: { name: 'description', content: seo.description } },
 		{ type: 'meta', props: { name: 'keywords', content: seo.keywords } },
 		{ type: 'meta', props: { name: 'author', content: SITE_NAME } },
+		{ type: 'meta', props: { name: 'robots', content: 'index, follow, max-image-preview:large, max-snippet:-1' } },
 		{ type: 'link', props: { rel: 'canonical', href: seo.canonical } },
 		{ type: 'link', props: { rel: 'alternate', hreflang: 'es', href: `${SITE_URL}/es` } },
 		{ type: 'link', props: { rel: 'alternate', hreflang: 'en', href: `${SITE_URL}/en` } },
@@ -223,9 +284,15 @@ export function getPrerenderHeadElements(lang) {
 		{ type: 'meta', props: { property: 'og:title', content: seo.title } },
 		{ type: 'meta', props: { property: 'og:description', content: seo.description } },
 		{ type: 'meta', props: { property: 'og:image', content: seo.image } },
+		{ type: 'meta', props: { property: 'og:image:secure_url', content: seo.image } },
+		{ type: 'meta', props: { property: 'og:image:type', content: OG_IMAGE_TYPE } },
+		{ type: 'meta', props: { property: 'og:image:width', content: OG_IMAGE_WIDTH } },
+		{ type: 'meta', props: { property: 'og:image:height', content: OG_IMAGE_HEIGHT } },
 		{ type: 'meta', props: { property: 'og:image:alt', content: seo.imageAlt } },
 		{ type: 'meta', props: { property: 'og:url', content: seo.canonical } },
-		{ type: 'meta', props: { property: 'og:type', content: 'website' } },
+		{ type: 'meta', props: { property: 'og:type', content: 'profile' } },
+		{ type: 'meta', props: { property: 'profile:first_name', content: 'Gonzalo' } },
+		{ type: 'meta', props: { property: 'profile:last_name', content: 'Lobos' } },
 		{ type: 'meta', props: { property: 'og:site_name', content: SITE_NAME } },
 		{ type: 'meta', props: { property: 'og:locale', content: seo.ogLocale } },
 		{ type: 'meta', props: { property: 'og:locale:alternate', content: seo.ogLocaleAlternate } },

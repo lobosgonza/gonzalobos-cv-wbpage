@@ -21,7 +21,8 @@ const Hero = () => {
 	return (
 		<section id='home' className='relative min-h-screen flex items-center justify-start bg-concrete bg-textura-prehispanica overflow-hidden'>
 			<div className='container mx-auto px-6 text-left max-w-5xl'>
-				<motion.div initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6, ease: 'easeOut' }} className='space-y-4'>
+				{/* Sin animación de entrada: el H1 es el elemento LCP y debe ser visible desde el HTML prerenderizado */}
+				<div className='space-y-4'>
 					<h1 className='uppercase text-5xl md:text-7xl lg:text-8xl font-black font-display text-structural tracking-tighter leading-none'>{t('hero.name')}</h1>
 					<div className='inline-block bg-primary text-white px-3 py-1 text-sm md:text-base font-black uppercase tracking-wider'>{t('hero.title')}</div>
 					<p className='uppercase text-xs md:text-sm font-medium tracking-widest max-w-2xl text-structural/80 leading-relaxed pt-2'>{t('hero.subtitle')}</p>
@@ -48,7 +49,7 @@ const Hero = () => {
 						{/* CORRECCIÓN: Invocación directa del botón limpio sin el bloque motion.div que rompía el clic */}
 						<PrintCVButton />
 					</div>
-				</motion.div>
+				</div>
 			</div>
 		</section>
 	);

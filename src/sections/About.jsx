@@ -23,7 +23,7 @@ function About() {
 									alt={t('about.imageAlt')}
 									width={400}
 									height={400}
-									fetchPriority='high'
+									loading='lazy'
 									decoding='async'
 									className='w-full h-auto aspect-square object-cover'
 								/>

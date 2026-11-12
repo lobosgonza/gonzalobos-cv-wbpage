@@ -12,7 +12,7 @@ import Contact from './sections/Contact';
 import Footer from './sections/Footer';
 import PrintCVContent from './components/PrintCVContent';
 import Accreditations from './sections/Accreditations';
-import { applyDocumentSeo, buildSchemaGraph } from './seo';
+import { applyDocumentSeo, buildSchemaGraph, serializeSchema } from './seo';
 
 function PortfolioLayout({ lang }) {
 	const { i18n } = useTranslation();
@@ -31,7 +31,7 @@ function PortfolioLayout({ lang }) {
 
 	return (
 		<>
-			<script type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
+			<script type='application/ld+json' dangerouslySetInnerHTML={{ __html: serializeSchema(schemaData) }} />
 			<Navbar />
 			<main>
 				<Hero />
