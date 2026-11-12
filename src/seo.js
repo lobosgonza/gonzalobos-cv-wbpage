@@ -5,6 +5,8 @@ export const SITE_NAME = 'Gonzalo Lobos';
 export const SUPPORTED_LANGS = ['es', 'en'];
 export const DEFAULT_LANG = 'es';
 export const LAST_MODIFIED = '2026-11-12';
+// URL canónica de la portada (x-default). La raíz "/" hace 301 → /es, por eso no se usa en el schema.
+export const HOME_URL = `${SITE_URL}/${DEFAULT_LANG}`;
 
 export const OG_IMAGE = `${SITE_URL}/images/gonzalo-lobos-og-1200x630.jpg`;
 export const OG_IMAGE_WIDTH = 1200;
@@ -90,7 +92,7 @@ export function buildSchemaGraph(lang) {
 				familyName: 'Lobos Ramírez',
 				jobTitle,
 				description,
-				url: SITE_URL,
+				url: HOME_URL,
 				mainEntityOfPage: { '@id': `${pageUrl}#profilepage` },
 				image: {
 					'@type': 'ImageObject',
@@ -129,8 +131,9 @@ export function buildSchemaGraph(lang) {
 			{
 				'@type': 'WebSite',
 				'@id': WEBSITE_ID,
-				url: `${SITE_URL}/`,
+				url: HOME_URL,
 				name: SITE_NAME,
+				alternateName: 'gonzalobos.com',
 				inLanguage: ['es-CL', 'en-US'],
 				publisher: { '@id': PERSON_ID },
 				about: { '@id': PERSON_ID },
@@ -198,7 +201,7 @@ function getHeadDescriptors(lang) {
 		{ type: 'link', props: { rel: 'canonical', href: seo.canonical } },
 		{ type: 'link', props: { rel: 'alternate', hreflang: 'es', href: `${SITE_URL}/es` } },
 		{ type: 'link', props: { rel: 'alternate', hreflang: 'en', href: `${SITE_URL}/en` } },
-		{ type: 'link', props: { rel: 'alternate', hreflang: 'x-default', href: `${SITE_URL}/es` } },
+		{ type: 'link', props: { rel: 'alternate', hreflang: 'x-default', href: HOME_URL } },
 		{ type: 'meta', props: { property: 'og:title', content: seo.title } },
 		{ type: 'meta', props: { property: 'og:description', content: seo.description } },
 		{ type: 'meta', props: { property: 'og:image', content: seo.image } },
@@ -210,7 +213,7 @@ function getHeadDescriptors(lang) {
 		{ type: 'meta', props: { property: 'og:url', content: seo.canonical } },
 		{ type: 'meta', props: { property: 'og:type', content: 'profile' } },
 		{ type: 'meta', props: { property: 'profile:first_name', content: 'Gonzalo' } },
-		{ type: 'meta', props: { property: 'profile:last_name', content: 'Lobos' } },
+		{ type: 'meta', props: { property: 'profile:last_name', content: 'Lobos Ramírez' } },
 		{ type: 'meta', props: { property: 'og:site_name', content: SITE_NAME } },
 		{ type: 'meta', props: { property: 'og:locale', content: seo.ogLocale } },
 		{ type: 'meta', props: { property: 'og:locale:alternate', content: seo.ogLocaleAlternate } },

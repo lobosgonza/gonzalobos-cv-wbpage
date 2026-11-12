@@ -2,6 +2,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
+import { useTranslation } from 'react-i18next';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -13,6 +14,8 @@ const ArrowIcon = (props) => (
 );
 
 const DesktopSlider = ({ items, renderItem, sectionId, slidesPerView = 1 }) => {
+	const { i18n } = useTranslation();
+	const isEn = i18n.language === 'en';
 	const nextClass = `slider-next-${sectionId}`;
 	const prevClass = `slider-prev-${sectionId}`;
 
@@ -39,7 +42,7 @@ const DesktopSlider = ({ items, renderItem, sectionId, slidesPerView = 1 }) => {
 				<button
 					type='button'
 					className={`${prevClass} p-2.5 bg-[#eae7e2] border border-stone-300 text-stone-800 hover:bg-stone-800 hover:text-stone-100 transition-colors rounded-none`}
-					aria-label='Anterior'>
+					aria-label={isEn ? 'Previous' : 'Anterior'}>
 					<ArrowIcon className='h-5 w-5 transform rotate-180' />
 				</button>
 			</div>
@@ -47,7 +50,7 @@ const DesktopSlider = ({ items, renderItem, sectionId, slidesPerView = 1 }) => {
 				<button
 					type='button'
 					className={`${nextClass} p-2.5 bg-[#eae7e2] border border-stone-300 text-stone-800 hover:bg-stone-800 hover:text-stone-100 transition-colors rounded-none`}
-					aria-label='Siguiente'>
+					aria-label={isEn ? 'Next' : 'Siguiente'}>
 					<ArrowIcon className='h-5 w-5' />
 				</button>
 			</div>

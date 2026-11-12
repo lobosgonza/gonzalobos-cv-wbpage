@@ -19,22 +19,8 @@ export default function Accreditations() {
 						{validAccreditations.map((item, index) => (
 							<div key={index} className='bg-white rounded-none flex flex-col h-full overflow-hidden text-left shadow-none'>
 								<div className='p-6 flex flex-col flex-grow uppercase text-xs font-medium tracking-wide text-structural/90'>
-									{/* Cabecera con Icono y Título */}
+									{/* Cabecera (sin <img>: /images/icons/*.svg no existe y generaba 404) */}
 									<div className='flex items-start gap-3 mb-3'>
-										{item.icon && (
-											<img
-												src={`/images/icons/${item.icon}.svg`}
-												alt={`${item.title} — ${item.issuer}`}
-												width={24}
-												height={24}
-												loading='lazy'
-												decoding='async'
-												className='w-6 h-6 object-contain mt-0.5 shrink-0'
-												onError={(e) => {
-													e.target.style.display = 'none';
-												}}
-											/>
-										)}
 										<h3 className='text-lg font-black text-structural uppercase tracking-tight'>{item.title}</h3>
 									</div>
 

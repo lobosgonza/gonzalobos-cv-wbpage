@@ -1,6 +1,7 @@
 // src/components/CardSlider.jsx
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const ArrowIcon = (props) => (
 	<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth={3} stroke='currentColor' {...props}>
@@ -9,6 +10,8 @@ const ArrowIcon = (props) => (
 );
 
 const CardSlider = ({ items, renderItem }) => {
+	const { i18n } = useTranslation();
+	const isEn = i18n.language === 'en';
 	const [currentIndex, setCurrentIndex] = useState(0);
 	const [direction, setDirection] = useState(0);
 
@@ -56,10 +59,10 @@ const CardSlider = ({ items, renderItem }) => {
 			</div>
 
 			{/* Controles Geométricos: Fondos Transparentes y Sin Sombras */}
-			<button onClick={goToPrevious} className='absolute top-[40%] -left-2 z-10 p-2 bg-transparent text-stone-700 rounded-none' aria-label='Anterior'>
+			<button type='button' onClick={goToPrevious} className='absolute top-[40%] -left-2 z-10 p-2 bg-transparent text-stone-700 rounded-none' aria-label={isEn ? 'Previous' : 'Anterior'}>
 				<ArrowIcon className='h-5 w-5 transform rotate-180' />
 			</button>
-			<button onClick={goToNext} className='absolute top-[40%] -right-2 z-10 p-2 bg-transparent text-stone-700 rounded-none' aria-label='Siguiente'>
+			<button type='button' onClick={goToNext} className='absolute top-[40%] -right-2 z-10 p-2 bg-transparent text-stone-700 rounded-none' aria-label={isEn ? 'Next' : 'Siguiente'}>
 				<ArrowIcon className='h-5 w-5' />
 			</button>
 

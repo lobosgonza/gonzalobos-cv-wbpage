@@ -4,7 +4,8 @@ import emailjs from '@emailjs/browser';
 import { useTranslation } from 'react-i18next';
 
 export const ContactForm = () => {
-	const { t } = useTranslation();
+	const { t, i18n } = useTranslation();
+	const isEn = i18n.language === 'en';
 	const form = useRef();
 	const [isSending, setIsSending] = useState(false);
 	const [isSuccess, setIsSuccess] = useState(false);
@@ -72,7 +73,7 @@ export const ContactForm = () => {
 					type='submit'
 					disabled={isSending}
 					className='w-full py-3 px-4 bg-stone-800 hover:bg-[#0d9488] text-stone-100 text-xs font-black uppercase tracking-widest transition-colors duration-300 disabled:opacity-50 rounded-none shadow-none'>
-					{isSending ? 'Enviando...' : t('contact.formSend')}
+					{isSending ? (isEn ? 'Sending...' : 'Enviando...') : t('contact.formSend')}
 				</button>
 			</div>
 

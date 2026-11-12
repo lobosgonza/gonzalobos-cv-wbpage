@@ -2,8 +2,12 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
+// Versión 960px generada junto a cada .webp (ej: /images/x-web.webp → /images/x-web-960.webp)
+const getSmallImage = (src) => (typeof src === 'string' && src.endsWith('.webp') ? src.replace(/\.webp$/, '-960.webp') : null);
+
 const ProjectCard = ({ project }) => {
 	const { t } = useTranslation();
+	const smallImage = getSmallImage(project.image);
 
 	return (
 		/* bg-[#ffffff] evita que se active la regla global .bg-white:hover de index.css */
@@ -12,10 +16,12 @@ const ProjectCard = ({ project }) => {
 			{project.image && (
 				<div className='w-full md:w-2/5 lg:w-[38%] bg-stone-100 flex-shrink-0 flex items-center justify-center p-4 md:p-5 border-b md:border-b-0 md:border-r border-stone-200'>
 					<img
-						src={project.image}
+						src={smallImage || project.image}
+						srcSet={smallImage ? `${smallImage} 960w, ${project.image} 1920w` : undefined}
+						sizes='(min-width: 1024px) 440px, (min-width: 768px) 40vw, 100vw'
 						alt={`${project.title} — ${project.category}`}
-						width={1920}
-						height={1080}
+						width={960}
+						height={540}
 						loading='lazy'
 						decoding='async'
 						className='w-full h-auto max-h-64 md:max-h-none aspect-[16/10] object-contain border border-stone-200/80 bg-white'
