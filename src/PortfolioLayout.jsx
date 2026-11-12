@@ -12,7 +12,7 @@ import Contact from './sections/Contact';
 import Footer from './sections/Footer';
 import PrintCVContent from './components/PrintCVContent';
 import Accreditations from './sections/Accreditations';
-import { applyDocumentSeo, buildSchemaGraph, serializeSchema } from './seo';
+import { applyDocumentSeo, serializeSchema } from './seo';
 
 function PortfolioLayout({ lang }) {
 	const { i18n } = useTranslation();
@@ -27,11 +27,12 @@ function PortfolioLayout({ lang }) {
 		applyDocumentSeo(lang);
 	}, [lang, i18n.language]);
 
-	const schemaData = useMemo(() => buildSchemaGraph(lang), [lang, i18n.language]);
+	// eslint-disable-next-line react-hooks/exhaustive-deps
+	const schemaJson = useMemo(() => serializeSchema(lang), [lang, i18n.language]);
 
 	return (
 		<>
-			<script type='application/ld+json' dangerouslySetInnerHTML={{ __html: serializeSchema(schemaData) }} />
+			<script type='application/ld+json' dangerouslySetInnerHTML={{ __html: schemaJson }} />
 			<Navbar />
 			<main>
 				<Hero />

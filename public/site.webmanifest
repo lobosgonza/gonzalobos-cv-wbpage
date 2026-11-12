@@ -1,6 +1,7 @@
 {
   "name": "Gonzalo Lobos | E-commerce, Paid Media y Desarrollo Web",
   "short_name": "Gonzalo Lobos",
+  "description": "Portafolio de Gonzalo Lobos: E-commerce, Paid Media, CRO, Analítica Digital y Desarrollo Web Frontend.",
   "lang": "es-CL",
   "start_url": "/es",
   "scope": "/",
@@ -8,15 +9,7 @@
   "theme_color": "#1a1816",
   "background_color": "#eae7e2",
   "icons": [
-    {
-      "src": "/android-chrome-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/android-chrome-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
+    { "src": "/favicon-32x32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png", "purpose": "any" }
   ]
 }

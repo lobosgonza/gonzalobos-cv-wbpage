@@ -1,28 +1,28 @@
 // src/index.jsx
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import i18n from './i18n.js';
 import App from './App.jsx';
 import './index.css';
-
-// Fija el idioma según la ruta ANTES del primer render para que coincida con el HTML prerenderizado.
-const pathLang = window.location.pathname.split('/')[1];
-const initialLang = pathLang === 'en' ? 'en' : 'es';
-if (i18n.resolvedLanguage !== initialLang) {
-	i18n.changeLanguage(initialLang);
-}
+import i18n from './i18n.js';
 
 const container = document.getElementById('root');
+
+// El idioma lo dicta la URL (/es o /en), igual que en el prerender → hidratación sin desajustes
+const urlLang = window.location.pathname.split('/').filter(Boolean)[0];
+const lang = urlLang === 'en' ? 'en' : 'es';
+
 const app = (
 	<React.StrictMode>
 		<App />
 	</React.StrictMode>
 );
 
-// Si existe HTML prerenderizado (/es, /en) se hidrata en lugar de re-renderizar desde cero:
-// evita el parpadeo del contenido, mejora LCP/CLS y conserva el DOM que ya indexó Google.
-if (container.hasChildNodes()) {
-	ReactDOM.hydrateRoot(container, app);
-} else {
-	ReactDOM.createRoot(container).render(app);
-}
+i18n.changeLanguage(lang).then(() => {
+	if (container.hasChildNodes()) {
+		// HTML prerenderizado: se reutiliza (mejor LCP, sin parpadeo ni CLS)
+		ReactDOM.hydrateRoot(container, app);
+	} else {
+		// Desarrollo (npm start): no hay HTML prerenderizado
+		ReactDOM.createRoot(container).render(app);
+	}
+});

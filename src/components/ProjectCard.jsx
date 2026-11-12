@@ -14,8 +14,8 @@ const ProjectCard = ({ project }) => {
 					<img
 						src={project.image}
 						alt={`${project.title} — ${project.category}`}
-						width={1280}
-						height={800}
+						width={1920}
+						height={1080}
 						loading='lazy'
 						decoding='async'
 						className='w-full h-auto max-h-64 md:max-h-none aspect-[16/10] object-contain border border-stone-200/80 bg-white'

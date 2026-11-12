@@ -10,62 +10,31 @@
       "**/node_modules/**"
     ],
     "redirects": [
-      {
-        "source": "/",
-        "destination": "/es",
-        "type": 301
-      },
-      {
-        "source": "/index.html",
-        "destination": "/es",
-        "type": 301
-      }
-    ],
-    "rewrites": [
-      {
-        "source": "/es",
-        "destination": "/es/index.html"
-      },
-      {
-        "source": "/en",
-        "destination": "/en/index.html"
-      }
+      { "source": "/", "destination": "/es", "type": 301 },
+      { "source": "/index.html", "destination": "/es", "type": 301 },
+      { "source": "/es/index.html", "destination": "/es", "type": 301 },
+      { "source": "/en/index.html", "destination": "/en", "type": 301 }
     ],
     "headers": [
       {
         "source": "/assets/**",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "public, max-age=31536000, immutable"
-          }
-        ]
+        "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
       },
       {
         "source": "**/*.@(webp|jpg|jpeg|png|svg|ico)",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "public, max-age=2592000"
-          }
-        ]
+        "headers": [{ "key": "Cache-Control", "value": "public, max-age=2592000" }]
       },
       {
         "source": "**/*.pdf",
         "headers": [
-          {
-            "key": "X-Robots-Tag",
-            "value": "noindex"
-          }
+          { "key": "Cache-Control", "value": "public, max-age=86400" }
         ]
       },
       {
-        "source": "/@(sitemap.xml|robots.txt)",
+        "source": "**",
         "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "public, max-age=3600"
-          }
+          { "key": "X-Content-Type-Options", "value": "nosniff" },
+          { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
         ]
       }
     ]

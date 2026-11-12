@@ -14,15 +14,12 @@ i18n
 			es: { translation: esTranslation },
 		},
 		supportedLngs: ['es', 'en'],
-		nonExplicitSupportedLngs: true,
-		load: 'languageOnly',
+		nonExplicitSupportedLngs: true, // es-CL → es, en-US → en
 		fallbackLng: 'es',
-		// Recursos empaquetados: inicialización síncrona para que el primer render
-		// del cliente use el mismo idioma que el HTML prerenderizado (hidratación sin desajustes).
-		initAsync: false,
+		// La URL (/es o /en) es la única fuente de verdad del idioma.
+		// Sin caché en localStorage/cookie para no contradecir la ruta indexada.
 		detection: {
-			// La URL (/es o /en) manda; el navegador solo se usa como último recurso.
-			order: ['path', 'htmlTag', 'navigator'],
+			order: ['path', 'htmlTag'],
 			lookupFromPathIndex: 0,
 			caches: [],
 		},

@@ -21,7 +21,7 @@ function About() {
 								<img
 									src={profileImage}
 									alt={t('about.imageAlt')}
-									width={400}
+									width={387}
 									height={400}
 									loading='lazy'
 									decoding='async'
